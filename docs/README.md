@@ -1,4 +1,4 @@
-# Documentação Oficial da UNO
+# Documentação Oficial da Uno
 
 Este diretório contém toda a documentação oficial da Plataforma UNO.
 
