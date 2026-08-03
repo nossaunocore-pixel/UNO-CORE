@@ -1,6 +1,6 @@
 # UNO CORE
 
-## Engenharia Oficial da UNO
+## Engenharia Oficial da Uno
 
 Repositório oficial do núcleo da Plataforma UNO.
 
