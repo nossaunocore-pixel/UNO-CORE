@@ -1,119 +1,135 @@
 # EOU — Engenharia Oficial da UNO
 
-> A Engenharia Oficial da UNO (EOU) é a referência técnica máxima da Plataforma UNO.
+> A Engenharia Oficial da UNO (EOU) constitui a coleção oficial de documentos técnicos da Plataforma UNO.
 
 ---
 
-# Missão
+# Finalidade
 
-Projetar, documentar e manter uma arquitetura escalável, segura, modular e centrada no ser humano.
+A EOU estabelece os princípios, modelos, arquiteturas, padrões e especificações que orientam toda a evolução da Plataforma UNO.
 
-Toda implementação deverá estar alinhada aos princípios definidos neste documento.
+Seu objetivo é garantir consistência, escalabilidade, rastreabilidade e interoperabilidade entre todos os componentes do ecossistema.
 
----
-
-# Princípios Fundamentais
-
-## 1. A documentação precede a implementação.
-
-Nenhum recurso será desenvolvido antes de possuir documentação oficial.
+Toda implementação deverá possuir documentação correspondente na Engenharia Oficial.
 
 ---
 
-## 2. A arquitetura é modular.
+# Organização da Coleção
 
-A UNO é composta por módulos independentes que cooperam entre si através de interfaces bem definidas.
+A EOU está organizada em volumes independentes, cada um responsável por um domínio específico do conhecimento técnico da plataforma.
 
----
+## Fundamentos
 
-## 3. O usuário é o centro.
-
-Toda decisão técnica deve melhorar a experiência do usuário sem comprometer segurança, desempenho ou manutenção.
-
----
-
-## 4. Inteligência Artificial é infraestrutura.
-
-Na UNO, agentes inteligentes não são recursos adicionais.
-
-Eles fazem parte da arquitetura da plataforma.
+- EOU-V01 — Constituição Técnica da UNO
+- EOU-V02 — Arquitetura Oficial da UNO
+- EOU-V03 — Modelo Universal de Entidades (MUE)
+- EOU-V04 — EVA — Enciclopédia Visual Adaptativa
+- EOU-V05 — OM — Oficina Mestre
+- EOU-V06 — CO — Centro de Operações
+- EOU-V07 — CCM — Central de Coordenação de Missões
+- EOU-V08 — OPS — Sistema Universal de Missões
 
 ---
 
-## 5. Escalabilidade desde o início.
+## Catálogos Universais
 
-Toda solução deverá considerar crescimento futuro sem necessidade de reescrita completa.
+- EOU-V09 — Catálogo Universal de Capacidades
+- EOU-V10 — Catálogo Universal de Agentes
+- EOU-V11 — Catálogo Universal de Ferramentas
+- EOU-V12 — Catálogo Universal de Provedores
 
 ---
 
-# Camadas da Plataforma
+## Plataforma
 
-A arquitetura da UNO é organizada em camadas.
+- EOU-V13 — Banco de Dados Mestre
+- EOU-V14 — APIs e Gateways
+- EOU-V15 — Integrações
+- EOU-V16 — Segurança e Auditoria
+- EOU-V17 — Governança
 
-## Experiência
+---
 
-Aplicativos, interface web, voz e dispositivos inteligentes.
+## Ecossistema
+
+- EOU-V18 — Marketplace
+- EOU-V19 — Industrial
+- EOU-V20 — Infraestrutura Comunitária
+- EOU-V21 — Educação e Capacitação
+- EOU-V22 — Saúde
+- EOU-V23 — Habitação
+- EOU-V24 — Empregabilidade
+- EOU-V25 — Financeiro
+
+---
+
+## Identidade e Operação
+
+- EOU-V26 — Identidade Digital
+- EOU-V27 — Usuários e Perfis
+- EOU-V28 — Entidades
+- EOU-V29 — Projetos
+- EOU-V30 — Eventos
+- EOU-V31 — Fluxos
+- EOU-V32 — Automações
 
 ---
 
 ## Inteligência
 
-Agentes especializados, memória, contexto e automações.
+- EOU-V33 — Motor Cognitivo
+- EOU-V34 — UNO CORE
 
 ---
 
-## Serviços
+## Engenharia
 
-Módulos como:
-
-- Zelo
-- Mordomo
-- Financeiro
-- Saúde
-- Educação
-- Empresa
-- Família
+- EOU-V35 — Roadmap Oficial
+- EOU-V36 — Registros de Decisões Arquiteturais
+- EOU-V37 — Glossário Oficial
+- EOU-V38 — Padrões de Engenharia
 
 ---
 
-## Dados
+## Institucional
 
-Banco de dados, arquivos, memória, integrações e histórico.
-
----
-
-## Infraestrutura
-
-APIs, autenticação, segurança, monitoramento e serviços externos.
+- EOU-V39 — Documentação Jurídica
+- EOU-V40 — Documentação Institucional
 
 ---
 
-# Fluxo Oficial de Desenvolvimento
+# Estrutura dos Volumes
 
-Toda funcionalidade seguirá este fluxo:
+Cada volume da Engenharia Oficial possui documentação própria, histórico de versões, capítulos, anexos e diagramas.
 
-1. Ideia
-2. Engenharia
-3. Documentação
-4. Implementação
-5. Testes
-6. Publicação
-7. Evolução
+Os volumes evoluem de forma independente, preservando compatibilidade com a arquitetura geral da Plataforma UNO.
 
 ---
 
 # Relação com o MMK
 
-O MMK organiza o conhecimento.
+O MMK (Mapa Mestre do Conhecimento) organiza e relaciona toda a documentação oficial da Plataforma UNO.
 
-A EOU define como esse conhecimento será utilizado para construir a Plataforma UNO.
+A EOU representa a coleção técnica oficial referenciada pelo MMK.
 
 ---
 
-# Princípio Final
+# Fluxo de Evolução
 
-Toda evolução da UNO deve preservar três valores:
+Toda alteração relevante deverá seguir o fluxo oficial da engenharia:
 
-- Simplicidade
-- Consistência
-- Escalabilidade
+1. Proposta
+2. Análise
+3. Documentação
+4. Revisão
+5. Aprovação
+6. Implementação
+7. Evolução Contínua
+
+---
+
+# Princípio Fundamental
+
+A Engenharia Oficial precede a implementação.
+
+Nenhuma decisão estrutural da Plataforma UNO deverá existir sem documentação correspondente.
