@@ -1,5 +1,7 @@
 # EOU-V03 — Modelo Universal de Entidades (MUE)
 
+> Fundamento Conceitual Permanente da Engenharia Oficial da Plataforma UNO
+
 O **Modelo Universal de Entidades (MUE)** constitui o fundamento conceitual da Engenharia Oficial da Plataforma UNO.
 
 Este volume estabelece os princípios universais utilizados para representar entidades, identidades, relacionamentos, comunidades, ecossistemas, conhecimento, inteligência, governança, evolução e continuidade, formando uma linguagem comum para toda a Plataforma UNO.
