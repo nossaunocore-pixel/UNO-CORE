@@ -1,0 +1,38 @@
+# 110 — Composição de Capacidades
+
+## Objetivo
+
+Definir como capacidades simples podem formar capacidades mais complexas.
+
+---
+
+## Conceito
+
+Capacidades poderão ser combinadas para atender demandas que ultrapassem a atuação de um único componente.
+
+Essa composição é dinâmica e orientada pela intenção da entidade.
+
+---
+
+## Exemplos
+
+Uma composição poderá integrar:
+
+- compreensão;
+- pesquisa;
+- planejamento;
+- geração documental;
+- comunicação;
+- execução.
+
+---
+
+## Evolução
+
+Novas combinações poderão surgir continuamente conforme evolui o Ecossistema.
+
+---
+
+## Princípio
+
+Capacidades cooperando produzem soluções mais completas.
