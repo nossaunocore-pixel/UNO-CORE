@@ -2,38 +2,91 @@
 
 ## Objetivo
 
-Definir a estrutura permanente de funcionamento dos Assistentes Pessoais da Plataforma UNO.
+Definir a Arquitetura Oficial do Assistente Pessoal como a principal interface inteligente entre a entidade e todo o Ecossistema da Plataforma UNO.
 
 ---
 
 ## Conceito
 
-Todo Assistente constitui uma instância especializada da EVA dedicada ao acompanhamento contínuo de uma entidade.
+O Assistente representa a presença permanente da Plataforma junto à entidade.
 
-Sua arquitetura integra compreensão, memória, contexto, capacidades, especialistas e serviços.
+Ele acompanha continuamente sua trajetória, preservando memória, contexto, preferências, relacionamentos, objetivos e histórico de interações.
+
+Independentemente do dispositivo utilizado ou do ambiente acessado, o Assistente mantém continuidade da experiência, tornando-se o principal elo entre a entidade e todo o Ecossistema UNO.
+
+Seu propósito não consiste em substituir decisões humanas, mas em fortalecer autonomia, compreensão, aprendizagem e realização.
 
 ---
 
-## Estrutura
+## Responsabilidades
 
-O Assistente é composto por:
+Compete ao Assistente:
 
-- Interface Cognitiva;
-- Memória;
+- acompanhar continuamente a trajetória da entidade;
+- preservar memória e contexto;
+- compreender intenções;
+- facilitar comunicações;
+- organizar informações;
+- coordenar capacidades disponíveis;
+- intermediar especialistas e agentes;
+- apoiar decisões;
+- favorecer aprendizagem;
+- estimular evolução contínua.
+
+---
+
+## Características
+
+O Assistente deverá ser:
+
+- permanente;
+- contextual;
+- adaptativo;
+- colaborativo;
+- transparente;
+- confiável;
+- ético;
+- evolutivo.
+
+---
+
+## Continuidade
+
+O Assistente acompanha a entidade independentemente de:
+
+- dispositivo utilizado;
+- interface empregada;
+- ambiente acessado;
+- localização;
+- momento da interação.
+
+A experiência permanece contínua porque o relacionamento pertence à entidade, e não ao dispositivo.
+
+---
+
+## Relações
+
+A Arquitetura do Assistente relaciona-se diretamente com:
+
 - Estado Cognitivo;
-- Coordenação Cognitiva;
+- Contexto Operacional;
+- Interface Cognitiva;
+- Painel Zero;
+- Memória Cognitiva;
 - Especialistas;
-- Capacidades;
-- Integração com Serviços.
+- Agentes;
+- Ambientes da Plataforma.
 
 ---
 
 ## Evolução
 
-Cada Assistente evolui juntamente com sua entidade.
+À medida que compreende melhor a trajetória da entidade, o Assistente amplia sua capacidade de oferecer apoio contextual, preservar continuidade e fortalecer autonomia, sempre respeitando os princípios da Engenharia Oficial.
 
 ---
 
 ## Princípio
 
-Um Assistente acompanha uma trajetória, não apenas solicitações.
+O Assistente acompanha a entidade durante toda a sua jornada.
+
+Sua permanência fortalece confiança, continuidade e evolução.
