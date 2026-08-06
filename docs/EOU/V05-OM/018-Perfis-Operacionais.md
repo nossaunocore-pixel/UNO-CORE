@@ -8,84 +8,168 @@ Definir os Perfis Operacionais como a representação formal da forma de atuaç�
 
 ## Conceito
 
-Um Perfil Operacional representa o conjunto organizado de características, capacidades, responsabilidades, autoridades, preferências e comportamentos assumidos por uma entidade durante sua atuação em determinado domínio.
+Um Perfil Operacional representa o conjunto organizado de características, responsabilidades, capacidades, preferências, permissões, limitações e comportamentos assumidos por uma entidade durante sua atuação em determinado contexto operacional.
 
-Enquanto a identidade responde quem é a entidade, o Perfil Operacional responde como ela atua naquele contexto.
+Enquanto a identidade responde quem é a entidade, o Perfil Operacional responde como ela atua em determinado momento.
 
-Uma mesma entidade poderá possuir diversos perfis operacionais simultaneamente, cada um adequado às responsabilidades assumidas em diferentes ambientes.
+Uma mesma entidade poderá assumir diferentes perfis ao longo de sua jornada, preservando sua identidade enquanto adapta sua atuação às necessidades de cada domínio.
 
-O Perfil Operacional permite que o Orquestrador Mestre adapte automaticamente sua forma de interação, suas sugestões e seus níveis de autonomia conforme o contexto em que a entidade estiver atuando.
+O Perfil Operacional constitui um dos principais mecanismos de adaptação do Orquestrador Mestre.
 
 ---
 
 ## Finalidade
 
-Os Perfis Operacionais existem para permitir que uma única identidade exerça diferentes funções sem comprometer segurança, organização ou governança.
+Os Perfis Operacionais permitem que uma única entidade participe de diferentes ambientes sem gerar conflitos de responsabilidade, autoridade ou comportamento.
 
-Cada perfil organiza:
+Eles organizam a forma como a Plataforma compreende a atuação de cada participante em determinado contexto.
+
+---
+
+## Estrutura
+
+Cada Perfil Operacional poderá definir:
 
 - responsabilidades;
 - capacidades disponíveis;
 - recursos autorizados;
-- preferências de operação;
-- histórico contextual;
-- políticas específicas.
-
----
-
-## Exemplos
-
-Uma mesma pessoa poderá possuir os seguintes perfis:
-
-- Usuário Pessoal;
-- Pai ou Mãe;
-- Empresário;
-- Diretor;
-- Administrador;
-- Fundador;
-- Desenvolvedor;
-- Professor;
-- Cliente;
-- Consultor.
-
-Cada perfil representa apenas uma forma de atuação.
-
-A identidade permanece única.
-
----
-
-## Contextualização
-
-Ao identificar uma mudança de domínio, o OM poderá alterar automaticamente o Perfil Operacional ativo.
-
-Essa transição permite adaptar:
-
-- linguagem utilizada;
-- nível de detalhamento;
-- recursos apresentados;
+- nível de autonomia;
+- nível de autoridade;
+- preferências operacionais;
+- linguagem predominante;
 - prioridades;
-- automações;
-- painéis disponíveis;
-- dispositivos autorizados.
+- restrições;
+- políticas aplicáveis;
+- histórico contextual.
 
 ---
 
-## Continuidade
+## Ativação
 
-Embora diferentes perfis possam compartilhar conhecimento, cada um preserva seu próprio contexto operacional.
+A ativação de um perfil poderá ocorrer:
 
-Essa separação evita conflitos de responsabilidade e mantém a coerência das operações.
+- automaticamente pelo contexto;
+- pela entrada em determinado domínio;
+- pela utilização de determinado dispositivo;
+- por solicitação da entidade;
+- por mudança de ambiente;
+- por delegação institucional;
+- por definição administrativa.
+
+O OM deverá identificar continuamente qual perfil representa melhor a atuação atual da entidade.
+
+---
+
+## Perfis Simultâneos
+
+Uma entidade poderá manter múltiplos perfis ativos ao mesmo tempo.
+
+Por exemplo:
+
+- fundador da UNO;
+- diretor financeiro;
+- pai de família;
+- proprietário de uma residência;
+- participante de uma comunidade.
+
+O OM deverá compreender qual perfil possui predominância em cada operação.
+
+---
+
+## Prioridade entre Perfis
+
+Quando diferentes perfis puderem responder à mesma intenção, o Orquestrador Mestre deverá considerar:
+
+- domínio ativo;
+- contexto operacional;
+- autoridade necessária;
+- prioridade da operação;
+- recursos envolvidos;
+- políticas institucionais;
+- preferência da entidade.
+
+---
+
+## Perfis Temporários
+
+Determinadas operações poderão criar perfis temporários.
+
+Exemplos:
+
+- auditor;
+- visitante;
+- palestrante;
+- consultor externo;
+- responsável temporário;
+- administrador substituto.
+
+Esses perfis existirão apenas durante o período necessário para execução da operação.
+
+---
+
+## Perfis Institucionais
+
+Organizações também poderão possuir Perfis Operacionais.
+
+Exemplos:
+
+- empresa;
+- escola;
+- hospital;
+- prefeitura;
+- fundação;
+- associação.
+
+Esses perfis representam a forma como a instituição atua perante o ecossistema.
 
 ---
 
 ## Evolução
 
-Perfis Operacionais evoluem continuamente conforme novas responsabilidades são assumidas, novas capacidades são adquiridas e novos domínios passam a integrar a vida da entidade.
+Perfis Operacionais evoluem continuamente.
+
+Novas responsabilidades poderão ampliar capacidades.
+
+Mudanças institucionais poderão modificar autoridades.
+
+Novos domínios poderão exigir novos perfis.
+
+A arquitetura deverá permitir essa evolução sem alterar a identidade da entidade.
+
+---
+
+## Relação com o OM
+
+O Orquestrador Mestre utiliza os Perfis Operacionais para adaptar automaticamente:
+
+- interfaces;
+- painéis;
+- linguagem;
+- prioridades;
+- automações;
+- permissões;
+- dispositivos;
+- especialistas sugeridos;
+- recursos disponíveis.
+
+Essa adaptação torna a experiência natural, preservando segurança e governança.
+
+---
+
+## Relação com o MUE
+
+A identidade é definida pelo Modelo Universal de Entidades.
+
+O Perfil Operacional representa uma manifestação temporária dessa identidade durante sua atuação no ecossistema.
 
 ---
 
 ## Princípio
 
-A identidade permanece constante.
+A identidade define quem a entidade é.
 
-O perfil adapta a forma de atuação.
+O domínio define onde ela atua.
+
+O perfil define como ela atua.
+
+O Orquestrador Mestre adapta toda a Plataforma a partir dessa compreensão.
