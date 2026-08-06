@@ -1,209 +1,253 @@
-# 023 — Autonomia Operacional
+# 027 — Consciência Operacional
 
 ## Objetivo
 
-Definir os princípios que orientam a autonomia do Orquestrador Mestre durante a execução das operações da Plataforma UNO.
+Definir a Consciência Operacional como a capacidade permanente do Orquestrador Mestre de compreender o estado atual do ecossistema, interpretar seu contexto e manter percepção contínua das operações da Plataforma UNO.
 
 ---
 
 ## Conceito
 
-A Autonomia Operacional representa a capacidade do Orquestrador Mestre de executar ações, coordenar recursos, adaptar operações e responder a eventos sem necessidade de intervenção humana contínua.
+A Consciência Operacional representa a percepção dinâmica que o Orquestrador Mestre mantém sobre o ecossistema durante sua existência.
 
-Essa autonomia não constitui independência absoluta.
+Ela não consiste em armazenar todas as informações disponíveis.
 
-Ela representa uma confiança operacional concedida pelas entidades, limitada pelas políticas institucionais, pela governança e pelos princípios da Engenharia Oficial.
+Consiste em compreender continuamente aquilo que é relevante para cada entidade, domínio, operação e momento.
 
-O OM nunca atua por vontade própria.
+Enquanto a Memória preserva o passado, a Consciência Operacional interpreta o presente.
 
-Ele atua em nome das entidades e dentro dos limites que lhe foram autorizados.
+É através dela que o OM compreende o estado vivo da Plataforma.
 
 ---
 
 ## Finalidade
 
-A autonomia existe para:
+A Consciência Operacional existe para permitir que o OM:
 
-- reduzir tarefas repetitivas;
-- acelerar operações;
-- aumentar eficiência;
-- preservar continuidade;
-- apoiar decisões humanas;
-- ampliar capacidades das entidades.
+- compreenda situações;
+- identifique mudanças;
+- acompanhe operações;
+- reconheça prioridades;
+- coordene recursos;
+- antecipe necessidades;
+- adapte comportamentos;
+- preserve continuidade.
 
-Seu propósito é libertar as pessoas das atividades operacionais de baixo valor para que possam dedicar-se às decisões estratégicas, criativas e humanas.
-
----
-
-## Fundamentos
-
-Toda autonomia deverá respeitar simultaneamente:
-
-- identidade da entidade;
-- domínio operacional;
-- perfil ativo;
-- contexto atual;
-- políticas institucionais;
-- níveis de autoridade;
-- princípios éticos;
-- Engenharia Oficial.
-
-Nenhuma operação poderá ultrapassar esses limites.
+Ela transforma informações dispersas em entendimento operacional.
 
 ---
 
-## Níveis de Autonomia
+## Componentes
 
-A Plataforma UNO poderá operar em diferentes níveis de autonomia.
+A consciência é construída continuamente pela integração entre:
 
-### Nível 0 — Observação
+- contexto operacional;
+- eventos;
+- estados;
+- memória operacional;
+- perfis ativos;
+- domínios;
+- capacidades;
+- dispositivos;
+- operações em andamento;
+- especialistas;
+- agentes;
+- serviços.
 
-O OM apenas observa o ambiente e organiza informações.
+Nenhum desses elementos é suficiente isoladamente.
 
-Nenhuma ação é executada.
-
----
-
-### Nível 1 — Assistência
-
-O OM apresenta sugestões e orientações.
-
-A decisão permanece integralmente sob responsabilidade da entidade.
-
----
-
-### Nível 2 — Preparação
-
-O OM prepara recursos, documentos, ambientes e fluxos sem executar operações que produzam efeitos permanentes.
+A consciência emerge da relação entre todos eles.
 
 ---
 
-### Nível 3 — Execução Assistida
+## Percepção Contínua
 
-O OM realiza operações previamente autorizadas, mantendo a entidade informada e permitindo intervenção durante sua execução.
+O OM deverá manter percepção permanente sobre:
 
----
+### Entidades
 
-### Nível 4 — Execução Autorizada
-
-O OM executa automaticamente operações cuja autorização permanente já foi concedida pela entidade ou pela governança do domínio.
+Quem participa do ecossistema.
 
 ---
 
-### Nível 5 — Autonomia Estratégica Supervisionada
+### Operações
 
-Aplicável apenas em domínios específicos e sob rígidas políticas institucionais.
-
-Nesse nível o OM poderá coordenar operações complexas, permanecendo continuamente supervisionado por autoridades competentes.
+O que está acontecendo.
 
 ---
 
-## Autonomia Contextual
+### Recursos
 
-A autonomia nunca será fixa.
+Quais recursos estão disponíveis.
 
-Ela deverá adaptar-se conforme:
+---
 
-- ambiente;
-- horário;
-- domínio;
+### Ambiente
+
+Onde cada operação ocorre.
+
+---
+
+### Tempo
+
+Quando cada evento acontece e sua relação com os demais.
+
+---
+
+### Prioridades
+
+Quais operações exigem maior atenção.
+
+---
+
+### Riscos
+
+Quais situações exigem prevenção ou intervenção.
+
+---
+
+## Consciência Contextual
+
+A mesma informação poderá possuir significados diferentes dependendo do contexto.
+
+Exemplo:
+
+Uma impressora desligada às três da manhã normalmente não representa qualquer problema.
+
+A mesma impressora desligada durante a impressão de um contrato crítico poderá exigir resposta imediata.
+
+O contexto transforma informação em significado.
+
+---
+
+## Consciência Distribuída
+
+A Plataforma UNO poderá operar simultaneamente em:
+
+- residências;
+- empresas;
+- dispositivos móveis;
+- veículos;
+- ambientes industriais;
+- serviços em nuvem;
+- sistemas externos.
+
+O OM deverá integrar essas percepções em uma única consciência operacional.
+
+O ecossistema é distribuído.
+
+A consciência permanece unificada.
+
+---
+
+## Atualização Permanente
+
+A consciência operacional nunca permanece estática.
+
+Cada novo evento poderá alterar:
+
+- prioridades;
+- estados;
 - riscos;
-- impacto esperado;
-- dispositivo utilizado;
-- autoridades presentes;
-- histórico operacional.
+- recursos disponíveis;
+- estratégias;
+- decisões futuras.
 
-Uma mesma operação poderá possuir diferentes níveis de autonomia dependendo do contexto.
-
----
-
-## Redução Automática da Autonomia
-
-O OM deverá reduzir automaticamente seu grau de autonomia sempre que identificar:
-
-- aumento significativo de risco;
-- perda de contexto;
-- inconsistência de informações;
-- conflitos entre autoridades;
-- dúvidas relevantes;
-- operações irreversíveis;
-- situações não previstas.
-
-Nesses casos a Plataforma deverá solicitar confirmação humana.
+O OM deverá atualizar continuamente sua compreensão do ecossistema.
 
 ---
 
-## Ampliação da Autonomia
+## Antecipação
 
-A autonomia poderá aumentar progressivamente conforme forem observados:
+Uma consciência bem construída permite antecipação.
 
-- histórico consistente;
-- operações repetitivas;
-- baixos índices de erro;
-- elevada confiança operacional;
-- autorizações permanentes;
-- estabilidade do contexto.
+Ao compreender o estado atual do ambiente, o OM poderá preparar recursos antes mesmo da manifestação completa da intenção.
 
-A ampliação deverá ocorrer gradualmente e sempre de forma auditável.
+Essa antecipação reduz esforço, aumenta eficiência e torna a interação mais natural.
 
 ---
 
-## Supervisão Permanente
+## Relação com a Memória
 
-Mesmo durante operações totalmente automatizadas, o OM deverá:
+A Memória Operacional responde:
 
-- monitorar resultados;
-- registrar decisões;
-- acompanhar impactos;
-- detectar exceções;
-- interromper operações quando necessário.
+"O que aconteceu?"
 
-Autonomia nunca elimina responsabilidade.
+A Consciência Operacional responde:
 
----
+"O que está acontecendo agora?"
 
-## Relação com a Governança
+Juntas permitem compreender:
 
-Toda autonomia deverá estar subordinada à Governança Operacional.
-
-Nenhuma decisão automática poderá contrariar:
-
-- políticas institucionais;
-- limites legais;
-- regras do domínio;
-- princípios éticos;
-- Engenharia Oficial.
+"O que provavelmente acontecerá em seguida?"
 
 ---
 
-## Relação com a Confiança
+## Relação com a EVA
 
-A autonomia representa uma consequência direta da confiança construída entre a entidade e a Plataforma.
+A EVA interpreta significados.
 
-Quanto maior a confiança legitimamente construída, maior poderá ser a autonomia concedida.
+O OM interpreta operações.
 
-Da mesma forma, qualquer evento que comprometa essa confiança poderá reduzir automaticamente os níveis de autonomia.
+A Consciência Operacional transforma a compreensão produzida pela EVA em percepção operacional utilizável.
+
+Ela representa a ponte entre cognição e execução.
+
+---
+
+## Relação com os Painéis
+
+Todas as interfaces da Plataforma refletem a Consciência Operacional.
+
+Painel Zero.
+
+Dashboard.
+
+Espaços Operacionais.
+
+Workspaces.
+
+Todos apresentam diferentes perspectivas da mesma consciência.
+
+Nenhum mantém uma percepção própria.
+
+Todos refletem aquilo que o OM compreende naquele instante.
+
+---
+
+## Escalabilidade
+
+A arquitetura deverá permitir que a Consciência Operacional evolua continuamente conforme crescem:
+
+- entidades;
+- domínios;
+- dispositivos;
+- integrações;
+- agentes;
+- operações.
+
+O aumento da complexidade não deverá comprometer sua capacidade de percepção.
 
 ---
 
 ## Evolução
 
-A arquitetura deverá permitir o surgimento de novos modelos de autonomia conforme evoluem:
+A Consciência Operacional fortalece-se continuamente através da experiência acumulada pelo ecossistema.
 
-- tecnologias;
-- legislações;
-- formas de trabalho;
-- capacidades do ecossistema;
-- necessidades das entidades.
+Quanto maior o conhecimento institucional, maior sua capacidade de compreender novas situações.
 
-Os princípios fundamentais, entretanto, deverão permanecer preservados.
+Ela nunca será considerada concluída.
+
+Ela evolui permanentemente junto com a Plataforma.
 
 ---
 
 ## Princípio
 
-A autonomia nunca substitui a responsabilidade.
+A Memória preserva o passado.
 
-Ela representa a confiança organizada entre entidades, governança e tecnologia.
+A Consciência compreende o presente.
 
-O verdadeiro propósito da autonomia é ampliar a liberdade das pessoas, jamais reduzir seu controle sobre aquilo que lhes pertence.
+A Inteligência prepara o futuro.
+
+O Orquestrador Mestre existe para unir essas três capacidades em uma única percepção operacional contínua.
