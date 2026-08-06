@@ -2,134 +2,230 @@
 
 ## Objetivo
 
-Definir o Painel Zero como o ambiente inicial e permanente de interação entre cada entidade e a Plataforma UNO.
+Definir o Painel Zero como o ambiente inicial, permanente e pessoal de interação entre cada entidade e a Plataforma UNO.
 
 ---
 
 ## Conceito
 
-O Painel Zero representa o primeiro espaço operacional acessado por uma entidade dentro da Plataforma UNO.
+O Painel Zero representa o primeiro ambiente operacional da Plataforma UNO.
 
-Ele não constitui um painel administrativo, um dashboard ou um sistema de controle.
+Ele não é um Dashboard.
 
-O Painel Zero representa um espaço neutro, pessoal e permanente onde a entidade inicia sua jornada operacional.
+Não é uma tela inicial.
 
-Sua função é servir como ponto de partida para todas as demais operações do ecossistema.
+Não é um menu.
 
-Assim como uma casa possui um hall de entrada antes de seus cômodos, toda entidade inicia sua experiência no Painel Zero antes de acessar qualquer domínio operacional.
+O Painel Zero representa o espaço onde a entidade encontra a Plataforma antes mesmo de iniciar qualquer operação.
+
+É um ambiente neutro, silencioso e permanentemente disponível.
+
+Nele existe apenas a entidade, seu Assistente Pessoal e todas as possibilidades que poderão surgir durante sua jornada.
+
+É o ponto de partida de todo o universo operacional.
 
 ---
 
 ## Filosofia
 
-O Painel Zero representa o estado de possibilidades.
+Toda operação nasce de uma intenção.
 
-Nenhum ambiente foi selecionado.
+Toda intenção nasce em algum lugar.
 
-Nenhuma operação foi iniciada.
+O Painel Zero representa esse lugar.
 
-Nenhum domínio está ativo.
+Ele é o instante anterior à construção de qualquer ambiente operacional.
 
-Existe apenas a entidade e todas as possibilidades que podem surgir a partir dela.
+Enquanto nenhum domínio foi selecionado, nenhuma oficina foi aberta e nenhuma atividade foi iniciada, a entidade permanece em seu próprio espaço.
 
-É o ponto onde intenção e existência se encontram.
+Esse espaço pertence exclusivamente a ela.
 
 ---
 
 ## Inspiração Conceitual
 
-O Painel Zero pode ser compreendido como um espaço semelhante ao ambiente branco apresentado em Matrix antes da construção de qualquer cenário.
+O Painel Zero pode ser comparado ao ambiente branco apresentado no filme *Matrix*, onde equipamentos, roupas e cenários surgiam conforme a necessidade.
 
-Nesse espaço não existe limitação física.
+Da mesma forma, o Painel Zero representa um universo ainda não materializado.
 
-Existe apenas potencial.
+Nada está rigidamente construído.
 
-Da mesma forma, o Painel Zero representa o momento anterior à construção do ambiente operacional da entidade.
+Tudo pode surgir conforme a intenção da entidade.
 
-A partir dele, toda a Plataforma UNO é organizada dinamicamente conforme identidade, contexto e necessidades.
+A diferença é que, na Plataforma UNO, esse ambiente não representa uma simulação.
 
----
-
-## Estrutura
-
-O Painel Zero poderá apresentar:
-
-- identidade da entidade;
-- presença operacional;
-- assistente pessoal;
-- conversação contínua;
-- sugestões inteligentes;
-- objetivos atuais;
-- atividades recentes;
-- notificações relevantes;
-- acessos rápidos;
-- estado geral do ecossistema.
-
-Sua organização deverá privilegiar simplicidade e clareza.
+Representa o nascimento do universo operacional pessoal.
 
 ---
 
-## Papel do Assistente
+## O Universo da Entidade
 
-O Assistente Pessoal constitui a presença permanente da Plataforma dentro do Painel Zero.
+Cada entidade possui um único Painel Zero.
 
-Ele acompanha continuamente a entidade, interpreta intenções, organiza operações e auxilia na navegação entre os diferentes domínios.
+Ele representa seu espaço permanente dentro da Plataforma.
 
-O Painel Zero existe para facilitar essa convivência permanente.
+É nesse ambiente que a entidade poderá:
+
+- conversar com seu assistente;
+- refletir;
+- registrar ideias;
+- buscar conhecimento;
+- acompanhar objetivos;
+- acessar suas organizações;
+- visualizar suas oficinas;
+- comunicar-se com outras pessoas;
+- receber recomendações;
+- organizar sua rotina.
+
+Tudo parte desse ambiente.
 
 ---
 
-## Personalização
+## O Assistente Permanente
 
-Cada entidade poderá possuir um Painel Zero único.
+O Assistente Pessoal habita permanentemente o Painel Zero.
 
-Sua organização poderá adaptar-se conforme:
+Ele não aparece apenas quando solicitado.
+
+Ele acompanha continuamente a entidade.
+
+Compreende seu contexto.
+
+Preserva sua memória.
+
+Organiza suas operações.
+
+Sugere caminhos.
+
+Responde perguntas.
+
+Aprende continuamente.
+
+O Painel Zero representa o local onde essa convivência acontece naturalmente.
+
+---
+
+## Construção Dinâmica
+
+Ao selecionar determinado contexto, o OM constrói dinamicamente o ambiente correspondente.
+
+Por exemplo:
+
+Ao entrar na empresa, poderá surgir o Dashboard Executivo.
+
+Ao acessar uma Oficina, surgirá seu ambiente especializado.
+
+Ao iniciar um projeto, poderá nascer um Workspace Inteligente.
+
+Ao retornar ao Painel Zero, tudo volta ao seu estado essencial.
+
+A entidade permanece.
+
+Os ambientes mudam.
+
+---
+
+## Personalização Viva
+
+Nenhum Painel Zero será igual ao outro.
+
+Sua organização evolui continuamente considerando:
 
 - hábitos;
-- perfil operacional;
-- contexto;
 - preferências;
-- dispositivos utilizados;
-- histórico de utilização.
+- contexto;
+- histórico;
+- dispositivos;
+- objetivos;
+- forma de trabalho;
+- modo de interação.
 
-O ambiente evolui junto com a entidade.
+O ambiente cresce junto com sua entidade.
 
 ---
 
 ## Continuidade
 
-Independentemente do dispositivo utilizado, o Painel Zero deverá preservar a continuidade da experiência.
+Independentemente do dispositivo utilizado, a entidade sempre retornará ao mesmo Painel Zero.
 
-Ao trocar de computador para celular, de tablet para veículo ou de qualquer outro dispositivo, a entidade continuará exatamente do ponto onde interrompeu sua atividade.
+Celular.
+
+Computador.
+
+Tablet.
+
+Veículo.
+
+Óculos inteligentes.
+
+Casa inteligente.
+
+O ambiente adapta sua forma.
+
+Jamais sua identidade.
+
+---
+
+## Relação com os Espaços Operacionais
+
+O Painel Zero não substitui os demais ambientes.
+
+Ele conecta todos eles.
+
+Assim como uma residência possui diferentes cômodos, a Plataforma UNO possui diferentes Espaços Operacionais.
+
+A entidade transita naturalmente entre eles.
+
+O Painel Zero permanece como sua referência permanente.
+
+É sempre para ele que a jornada retorna.
+
+---
+
+## Relação com o Dashboard
+
+O Dashboard representa a atividade.
+
+O Painel Zero representa a presença.
+
+O primeiro organiza operações.
+
+O segundo organiza a existência da entidade dentro da Plataforma.
 
 ---
 
 ## Segurança
 
-O Painel Zero representa um ambiente pessoal.
+O Painel Zero constitui um ambiente estritamente pessoal.
 
-Nenhuma informação pertencente a outros domínios poderá ser apresentada sem autorização correspondente.
+Nenhuma informação pertencente a outros domínios será apresentada sem autorização correspondente.
 
-A identidade da entidade constitui o principal mecanismo de organização desse ambiente.
+Toda personalização respeitará identidade, privacidade, governança e autoridade.
 
 ---
 
 ## Evolução
 
-O Painel Zero deverá evoluir continuamente.
+Novos recursos poderão surgir continuamente.
 
-Novos recursos poderão surgir sem alterar sua essência.
+Novas formas de interação poderão ser incorporadas.
 
-Seu objetivo permanecerá o mesmo:
+Novos dispositivos poderão participar da experiência.
 
-ser o primeiro espaço de encontro entre a entidade e a Plataforma UNO.
+Nada disso alterará sua essência.
+
+O Painel Zero continuará sendo o primeiro lugar onde a entidade encontra seu universo digital.
 
 ---
 
 ## Princípio
 
-Antes das operações existe a presença.
+Antes dos sistemas existe a pessoa.
 
-Antes dos painéis existe a entidade.
+Antes das operações existe a intenção.
 
-O Painel Zero é o início de toda jornada dentro da Plataforma UNO.
+Antes dos ambientes existe a presença.
+
+O Painel Zero representa esse primeiro encontro entre a entidade e a Plataforma UNO.
+
+É dali que nasce todo o universo operacional.
