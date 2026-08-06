@@ -2,81 +2,218 @@
 
 ## Objetivo
 
-Definir o Dashboard Operacional como o principal ambiente de gestão, supervisão e controle das operações conduzidas pela Plataforma UNO.
+Definir o Dashboard Operacional como o principal ambiente de gestão, supervisão e coordenação das operações realizadas dentro da Plataforma UNO.
 
 ---
 
 ## Conceito
 
-O Dashboard Operacional representa o espaço onde informações, indicadores, operações e recursos são organizados para apoiar a tomada de decisão.
+O Dashboard Operacional representa o ambiente onde informações, indicadores, recursos e operações são organizados para apoiar a tomada de decisão.
 
-Enquanto o Painel Zero privilegia a experiência pessoal da entidade, o Dashboard privilegia a visão operacional.
+Enquanto o Painel Zero representa o universo pessoal da entidade, o Dashboard representa seu ambiente de trabalho.
 
-Ele reúne informações relevantes para gestão de domínios, equipes, organizações e operações complexas.
+É nele que a operação ganha forma.
+
+Cada Dashboard constitui uma visão especializada do ecossistema, construída dinamicamente conforme o contexto, a autoridade e os objetivos da entidade.
+
+---
+
+## Filosofia
+
+O Dashboard não existe para mostrar informações.
+
+Ele existe para apoiar decisões.
+
+Cada elemento apresentado deverá possuir utilidade operacional.
+
+Informações irrelevantes não devem competir pela atenção da entidade.
+
+O silêncio também é uma forma de inteligência.
 
 ---
 
 ## Finalidade
 
-O Dashboard existe para permitir que gestores, administradores e demais autoridades compreendam rapidamente o estado do ecossistema sob sua responsabilidade.
+O Dashboard existe para:
 
-Seu objetivo não é apenas exibir informações.
+- organizar operações;
+- apresentar indicadores;
+- acompanhar resultados;
+- supervisionar recursos;
+- facilitar decisões;
+- reduzir complexidade;
+- apoiar coordenação.
 
-Seu verdadeiro propósito é apoiar decisões.
+Seu propósito é transformar grandes volumes de informação em compreensão imediata.
+
+---
+
+## Construção Dinâmica
+
+Nenhum Dashboard será fixo.
+
+O Orquestrador Mestre deverá construí-lo continuamente considerando:
+
+- perfil operacional;
+- domínio ativo;
+- contexto atual;
+- dispositivo utilizado;
+- prioridades;
+- operações em andamento;
+- nível de autoridade.
+
+O ambiente adapta-se naturalmente à realidade da entidade.
 
 ---
 
 ## Componentes
 
-O Dashboard poderá reunir:
+Um Dashboard poderá reunir:
 
 - indicadores;
-- operações em andamento;
-- recursos disponíveis;
-- agentes ativos;
-- especialistas disponíveis;
+- metas;
+- operações ativas;
+- tarefas;
 - notificações;
+- documentos recentes;
+- agendas;
+- especialistas disponíveis;
+- agentes ativos;
+- dispositivos conectados;
+- mapas;
+- gráficos;
+- alertas;
 - métricas;
-- riscos;
-- prioridades;
-- mapas operacionais;
-- fluxos;
 - auditorias.
 
----
-
-## Adaptação
-
-Cada Dashboard deverá ser construído conforme:
-
-- domínio operacional;
-- perfil da entidade;
-- nível de autoridade;
-- responsabilidades;
-- contexto atual.
-
-Não existirão dois Dashboards necessariamente iguais.
+Cada componente representa um recurso operacional.
 
 ---
 
-## Operação
+## Widgets Inteligentes
 
-O Dashboard constitui o principal centro de supervisão operacional da Plataforma UNO.
+Os elementos apresentados deverão comportar-se como Widgets Inteligentes.
 
-A partir dele poderão ser iniciadas, acompanhadas, interrompidas ou concluídas operações autorizadas.
+Cada Widget poderá:
+
+- atualizar-se automaticamente;
+- adaptar conteúdo;
+- reorganizar prioridade;
+- expandir detalhes;
+- interagir com outros Widgets;
+- sugerir ações.
+
+O Dashboard deixa de ser estático.
+
+Passa a representar um organismo vivo.
+
+---
+
+## Dashboards Especializados
+
+Uma entidade poderá possuir diferentes Dashboards.
+
+Por exemplo:
+
+- Dashboard Executivo;
+- Dashboard Financeiro;
+- Dashboard Comercial;
+- Dashboard Jurídico;
+- Dashboard Industrial;
+- Dashboard Educacional;
+- Dashboard Residencial;
+- Dashboard da UNO;
+- Dashboard de Projetos.
+
+Todos compartilham a mesma arquitetura.
+
+Mudam apenas sua especialização.
+
+---
+
+## Dashboard Móvel
+
+Em dispositivos móveis, o Dashboard deverá adaptar-se naturalmente.
+
+Seu objetivo não será substituir a experiência completa do ambiente de trabalho.
+
+Será oferecer acesso rápido às informações e ações mais relevantes.
+
+No celular, prioridade deve ser dada à simplicidade, à conversação e às decisões rápidas.
+
+---
+
+## Relação com o Painel Zero
+
+O Painel Zero representa o ponto de partida.
+
+O Dashboard representa o ambiente de execução.
+
+A entidade inicia sua jornada no Painel Zero.
+
+Quando decide atuar em determinado domínio, o Dashboard correspondente é construído automaticamente.
+
+Ao concluir sua atividade, poderá retornar ao Painel Zero.
+
+---
+
+## Relação com os Espaços Operacionais
+
+Cada Espaço Operacional poderá possuir seu próprio Dashboard.
+
+Assim como cada cômodo de uma casa possui características diferentes, cada ambiente operacional apresenta indicadores e ferramentas específicos.
+
+O Dashboard adapta-se ao espaço.
+
+Não o contrário.
+
+---
+
+## Colaboração
+
+O Dashboard poderá refletir operações compartilhadas entre múltiplas entidades.
+
+Nesse caso, cada participante visualizará apenas aquilo que sua autoridade permitir.
+
+A experiência permanece personalizada, mesmo em ambientes colaborativos.
 
 ---
 
 ## Continuidade
 
-As informações deverão atualizar-se continuamente conforme o estado do ecossistema.
+Uma operação iniciada no computador poderá continuar no tablet ou no celular.
 
-O Dashboard representa a visão viva da operação.
+O Dashboard preservará:
+
+- contexto;
+- estado atual;
+- documentos;
+- indicadores;
+- operações abertas;
+- prioridades.
+
+A entidade continuará exatamente do ponto onde interrompeu sua atividade.
+
+---
+
+## Evolução
+
+Novos Widgets, indicadores e recursos poderão ser incorporados continuamente.
+
+A arquitetura deverá permitir expansão sem comprometer simplicidade, desempenho ou identidade.
+
+O Dashboard evolui junto com o ecossistema.
 
 ---
 
 ## Princípio
 
-O Painel Zero aproxima a entidade.
+O Painel Zero representa a presença.
 
-O Dashboard organiza a operação.
+O Dashboard representa a ação.
+
+Enquanto o primeiro organiza o universo da entidade, o segundo organiza o trabalho realizado dentro dele.
+
+O verdadeiro Dashboard não informa apenas o que acontece.
+
+Ele ajuda a decidir o que deve acontecer em seguida.
