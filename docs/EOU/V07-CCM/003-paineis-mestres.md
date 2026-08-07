@@ -532,6 +532,8 @@ Não existem para produzir mais informações.
 
 Existem para produzir melhor compreensão.
 
+Cada Painel Mestre representa a consciência operacional de uma capacidade específica do ecossistema.
+
 ---
 
 # Princípio Final
@@ -552,7 +554,7 @@ E fortalecem continuamente a inteligência coletiva da Plataforma UNO.
 
 A Engenharia Oficial estabelece os Painéis Mestres como componentes permanentes da arquitetura operacional da Plataforma UNO.
 
-Eles representam muito mais do que interfaces gráficas.
+Eles representam muito mais do que interfaces tecnológicas
 
 Representam ambientes vivos de cooperação entre pessoas, Inteligências Artificiais e missões.
 
