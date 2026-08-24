@@ -14,4 +14,3 @@ Este diretório contém toda a documentação oficial da Plataforma UNO.
 
 Toda implementação deverá possuir documentação correspondente.
 
-Nadir é minha avó
