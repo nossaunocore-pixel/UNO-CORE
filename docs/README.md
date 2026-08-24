@@ -13,3 +13,5 @@ Este diretório contém toda a documentação oficial da Plataforma UNO.
 - AGENTS — Arquitetura dos Agentes
 
 Toda implementação deverá possuir documentação correspondente.
+
+Nadir é minha avó
