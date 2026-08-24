@@ -1,1 +1,45 @@
-
+# Workflow: autenticação OIDC para GCP + execução do script update_dola.py
+# Dispara em push para a branch main
+name: GCP OIDC Auth — Dola Deploy
+on:
+  push:
+    branches:
+      - main
+# Permissões necessárias: id-token para OIDC e contents: write caso o workflow faça pushes/PRs
+permissions:
+  id-token: write
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # Autenticação OIDC para assumir a Service Account no GCP via Workload Identity Federation
+      - name: Authenticate to GCP using Workload Identity Federation
+        uses: google-github-actions/auth@v1
+        with:
+          # Provider e Service Account exatos fornecidos
+          workload_identity_provider: "projects/664061478043/locations/global/workloadIdentityPools/github-pool/providers/github-provider"
+          service_account: "dola-workflow-sa@uno-core-a9125.iam.gserviceaccount.com"
+      - name: Set up gcloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+        with:
+          project_id: "uno-core-a9125"
+      - name: Verify authentication
+        run: |
+          echo "gcloud auth list:"
+          gcloud auth list
+          echo "gcloud project:"
+          gcloud config get-value project
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install google-cloud-aiplatform google-cloud-storage
+      - name: Run Dola update script
+        env:
+          PROJECT_ID: "uno-core-a9125"
+          LOCATION: "us-central1"
+          MODEL_ID: "text-bison@001"
+        run: |
+          python3 scripts/update_dola.py --project "${PROJECT_ID}" --location "${LOCATION}" --model "${MODEL_ID}"
