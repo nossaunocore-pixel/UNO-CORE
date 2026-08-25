@@ -1,14 +1,14 @@
-# Workflow: autenticação OIDC para GCP + execução do script update_dola.py
-# Dispara em push para a branch main
 name: GCP OIDC Auth — Dola Deploy
+
 on:
   push:
     branches:
       - main
-# Permissões necessárias: id-token para OIDC e contents: write caso o workflow faça pushes/PRs
+
 permissions:
   id-token: write
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,11 +16,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Autenticação OIDC para assumir a Service Account no GCP via Workload Identity Federation
       - name: Authenticate to GCP using Workload Identity Federation
         uses: google-github-actions/auth@v1
         with:
-                    workload_identity_provider: "projects/664061478048/locations/global/workloadIdentityPools/github-pool/providers/github-provider"
+          workload_identity_provider: "projects/664061478048/locations/global/workloadIdentityPools/github-pool/providers/github-provider"
           service_account: "dola-workflow-sa@uno-core-a9125.iam.gserviceaccount.com"
           audience: "//iam.googleapis.com/projects/664061478048/locations/global/workloadIdentityPools/github-pool/providers/github-provider"
 
