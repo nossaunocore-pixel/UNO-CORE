@@ -1,12 +1,12 @@
 import React from 'react';
-import UnoMvpApp from './mvp-v1/UnoMvpApp';
+import V6App from './v6/V6App';
 
 // Preservando referência para a arquitetura anterior sem apagá-la:
 // import { UNOGlobalShell } from './components/shell/UNOGlobalShell';
 // import { LandingPage } from './pages/p01/LandingPage';
 
 export const App: React.FC = () => {
-  return <UnoMvpApp />;
+  return <V6App />;
 };
 
 export default App;
