@@ -1,0 +1,33 @@
+UNO V6.2 — MVP VISUAL
+
+Conteúdo deste pacote:
+- Praça UNO com imagem-base limpa e módulos clicáveis reais
+- Conversa com UNO e espaço para agente pessoal configurável
+- Meu Ambiente sem avatares principais
+- Comunidade UNO (rede social interna demonstrativa)
+- Painel Mestre imersivo
+- Oficina de Modelagem em modo seguro e simulado
+- Responsividade para computador e celular
+
+INSTALAÇÃO
+1. Confirme que o terminal está na raiz do projeto uno-core.
+2. Extraia este ZIP sobre a raiz do projeto, aceitando substituir arquivos.
+3. Execute: npm.cmd run build
+4. Se o resultado for 0 erros, execute: npm.cmd run dev
+
+SEGURANÇA
+- Nenhuma chave ou segredo está incluído.
+- Métricas, publicações, limites e estados são demonstrativos.
+- A Oficina não executa mudanças reais nem publica automaticamente.
+- O fluxo real deverá exigir autenticação, autorização, branch isolada,
+  validação, auditoria e possibilidade de reversão.
+
+ARQUIVOS PRINCIPAIS
+- src/v6/V6App.tsx
+- src/v6/types.ts
+- src/v6/v6.css
+- src/v6/pages/*.tsx
+- public/assets/uno/cidade-uno-limpa-v6-2.png
+- public/assets/uno/interior-uno-v6-2.png
+
+VERSÃO: V6.2 visual

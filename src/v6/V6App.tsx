@@ -1,24 +1,28 @@
 import React, { useState } from 'react';
-import { Home, MessageCircle, Shield, UserRound } from 'lucide-react';
+import { Home, MessageCircle, Network, Shield, UserRound, Wrench } from 'lucide-react';
+import { CommunityV6 } from './pages/CommunityV6';
 import { ConversationV6 } from './pages/ConversationV6';
 import { MasterPanelV6 } from './pages/MasterPanelV6';
 import { PublicSquareV6 } from './pages/PublicSquareV6';
 import { UserSquareV6 } from './pages/UserSquareV6';
+import { WorkshopV6 } from './pages/WorkshopV6';
 import type { V6View } from './types';
 import './v6.css';
 
 const navigation: Array<{ id: V6View; label: string; icon: React.ElementType }> = [
   { id: 'praca', label: 'Praça UNO', icon: Home },
-  { id: 'conversa', label: 'Conversar', icon: MessageCircle },
-  { id: 'usuario', label: 'Meu espaço', icon: UserRound },
-  { id: 'mestre', label: 'Painel Mestre', icon: Shield }
+  { id: 'conversa', label: 'Conversas', icon: MessageCircle },
+  { id: 'usuario', label: 'Meu Ambiente', icon: UserRound },
+  { id: 'comunidade', label: 'Comunidade', icon: Network },
+  { id: 'mestre', label: 'Painel Mestre', icon: Shield },
+  { id: 'oficina', label: 'Oficina', icon: Wrench }
 ];
 
 export default function V6App() {
   const [view, setView] = useState<V6View>('praca');
 
   return (
-    <div className="v6-app">
+    <div className={`v6-app ${view === 'praca' ? 'v6-app--immersive' : ''}`}>
       <header className="v6-topbar">
         <button className="v6-brand" onClick={() => setView('praca')} aria-label="Ir para a Praça UNO">
           <span className="v6-brand-mark">UNO</span>
@@ -38,7 +42,9 @@ export default function V6App() {
         {view === 'praca' && <PublicSquareV6 onNavigate={setView} />}
         {view === 'conversa' && <ConversationV6 onNavigate={setView} />}
         {view === 'usuario' && <UserSquareV6 onNavigate={setView} />}
+        {view === 'comunidade' && <CommunityV6 onNavigate={setView} />}
         {view === 'mestre' && <MasterPanelV6 onNavigate={setView} />}
+        {view === 'oficina' && <WorkshopV6 onNavigate={setView} />}
       </main>
 
       <footer className="v6-mobile-nav">
