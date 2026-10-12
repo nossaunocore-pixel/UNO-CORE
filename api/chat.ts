@@ -93,7 +93,13 @@ export default async function handler(request: Request): Promise<Response> {
       });
 
       return Response.json(
-        { reply: result.text },
+        {
+          reply: result.text,
+          meta: {
+            provider: 'google',
+            model: 'gemini-2.5-flash'
+          }
+        },
         { status: 200 }
       );
     } catch (err) {

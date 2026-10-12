@@ -1,5 +1,5 @@
-import React, { FormEvent, useState } from 'react';
-import { Bot, BrainCircuit, FileUp, Mic, Send, Volume2 } from 'lucide-react';
+import React, { FormEvent, useEffect, useRef, useState } from 'react';
+import { Bot, BrainCircuit, FileUp, Mic, RotateCcw, Send, Trash2, Volume2, WifiOff } from 'lucide-react';
 import type { NavigateV6, UnoMessage } from '../types';
 
 const initialMessages: UnoMessage[] = [{
@@ -7,26 +7,111 @@ const initialMessages: UnoMessage[] = [{
   content: 'Estou aqui. O que você gostaria de construir ou resolver hoje?'
 }];
 
+const SESSION_KEY = 'uno:v6:conversation-session';
+
+function createId() {
+  return globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random()}`;
+}
+
+function restoreSession(): UnoMessage[] {
+  try {
+    const stored = sessionStorage.getItem(SESSION_KEY);
+    if (!stored) return initialMessages;
+    const parsed = JSON.parse(stored) as unknown;
+    if (!Array.isArray(parsed)) return initialMessages;
+    const valid = parsed.filter((item): item is UnoMessage => Boolean(item)
+      && typeof item.id === 'string'
+      && (item.role === 'user' || item.role === 'assistant')
+      && typeof item.content === 'string');
+    return valid.length ? valid.slice(-30) : initialMessages;
+  } catch {
+    return initialMessages;
+  }
+}
+
 export function ConversationV6({ onNavigate: _onNavigate }: { onNavigate: NavigateV6 }) {
-  const [messages, setMessages] = useState<UnoMessage[]>(initialMessages);
+  const [messages, setMessages] = useState<UnoMessage[]>(restoreSession);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [handsFree, setHandsFree] = useState(false);
+  const [error, setError] = useState('');
+  const [lastRequest, setLastRequest] = useState<{ text: string; history: UnoMessage[] } | null>(null);
+  const [online, setOnline] = useState(() => navigator.onLine);
+  const streamRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    sessionStorage.setItem(SESSION_KEY, JSON.stringify(messages.slice(-30)));
+    streamRef.current?.scrollTo({ top: streamRef.current.scrollHeight, behavior: 'smooth' });
+  }, [messages, loading]);
+
+  useEffect(() => {
+    const updateConnection = () => setOnline(navigator.onLine);
+    window.addEventListener('online', updateConnection);
+    window.addEventListener('offline', updateConnection);
+    return () => {
+      window.removeEventListener('online', updateConnection);
+      window.removeEventListener('offline', updateConnection);
+    };
+  }, []);
+
+  async function requestReply(text: string, history: UnoMessage[]) {
+    setLoading(true);
+    setError('');
+    setLastRequest({ text, history });
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 35000);
+
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: text,
+          history: history.slice(-12).map(({ role, content }) => ({ role, content }))
+        }),
+        signal: controller.signal
+      });
+      const data = await response.json().catch(() => ({})) as { reply?: string; error?: string };
+      if (!response.ok || !data.reply?.trim()) {
+        throw new Error(data.error || 'A UNO não recebeu uma resposta válida do motor de conversa.');
+      }
+      setMessages(current => [...current, { id: createId(), role: 'assistant', content: data.reply!.trim() }]);
+      setLastRequest(null);
+    } catch (caught) {
+      const message = caught instanceof DOMException && caught.name === 'AbortError'
+        ? 'A resposta demorou mais que o esperado. Você pode tentar novamente.'
+        : caught instanceof Error
+          ? caught.message
+          : 'O motor de conversa está temporariamente indisponível.';
+      setError(message);
+    } finally {
+      window.clearTimeout(timeout);
+      setLoading(false);
+    }
+  }
 
   async function sendMessage(event?: FormEvent) {
     event?.preventDefault();
     const text = input.trim();
-    if (!text || loading) return;
-    const userMessage: UnoMessage = { id: crypto.randomUUID(), role: 'user', content: text };
+    if (!text || loading || !online) return;
+    const history = messages;
+    const userMessage: UnoMessage = { id: createId(), role: 'user', content: text };
     const next = [...messages, userMessage];
-    setMessages(next); setInput(''); setLoading(true);
-    try {
-      const response = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text, history: messages.map(({ role, content }) => ({ role, content })) }) });
-      const data = await response.json() as { reply?: string };
-      setMessages([...next, { id: crypto.randomUUID(), role: 'assistant', content: response.ok && data.reply ? data.reply : 'Não consegui completar a resposta agora. Podemos tentar novamente.' }]);
-    } catch {
-      setMessages([...next, { id: crypto.randomUUID(), role: 'assistant', content: 'Meu motor de conversa está temporariamente indisponível. Sua mensagem continua nesta sessão.' }]);
-    } finally { setLoading(false); }
+    setMessages(next);
+    setInput('');
+    await requestReply(text, history);
+  }
+
+  function retryLastMessage() {
+    if (!lastRequest || loading || !online) return;
+    void requestReply(lastRequest.text, lastRequest.history);
+  }
+
+  function clearSession() {
+    setMessages(initialMessages);
+    setError('');
+    setLastRequest(null);
+    sessionStorage.removeItem(SESSION_KEY);
   }
 
   return <section className="v62-scene v62-conversation">
@@ -35,11 +120,11 @@ export function ConversationV6({ onNavigate: _onNavigate }: { onNavigate: Naviga
       <div className="v62-agent-portrait"><div><Bot size={72} /></div><strong>Seu agente pessoal</strong><small>Visual configurável na adesão</small></div>
     </div>
     <div className="v62-chat">
-      <header><div><span className="v6-kicker">Conversa protegida</span><h1>Converse com a UNO</h1></div><span className="v62-agent-status"><i /> UNO • EVA ouvindo</span></header>
-      <div className="v62-message-stream" aria-live="polite">{messages.map(message => <div key={message.id} className={`v62-message ${message.role}`}><span>{message.role === 'assistant' ? 'UNO' : 'Você'}</span>{message.content}</div>)}{loading && <div className="v62-message assistant">UNO está organizando a resposta…</div>}</div>
+      <header><div><span className="v6-kicker">Conversa protegida</span><h1>Converse com a UNO</h1></div><div className="v64-chat-tools"><span className={`v62-agent-status ${online ? '' : 'offline'}`}>{online ? <i /> : <WifiOff size={15} />} {online ? 'UNO • EVA ouvindo' : 'Sem conexão'}</span><button type="button" className="v64-clear-chat" onClick={clearSession} title="Limpar conversa desta sessão"><Trash2 size={17} /><span>Limpar</span></button></div></header>
+      <div ref={streamRef} className="v62-message-stream" aria-live="polite" aria-busy={loading}>{messages.map(message => <div key={message.id} className={`v62-message ${message.role}`}><span>{message.role === 'assistant' ? 'UNO' : 'Você'}</span>{message.content}</div>)}{loading && <div className="v62-message assistant v64-thinking"><span>UNO</span><b /><b /><b /><small>Organizando a resposta…</small></div>}{error && <div className="v64-chat-error" role="alert"><strong>Não foi possível concluir</strong><span>{error}</span>{lastRequest && <button type="button" onClick={retryLastMessage} disabled={loading || !online}><RotateCcw size={16} /> Tentar novamente</button>}</div>}</div>
       <div className="v62-memory-cards"><button><BrainCircuit /> <span><b>O que compreendi</b><small>Resumo autorizado da conversa</small></span></button><button><Send /> <span><b>Próximo passo</b><small>Nenhuma ação sem confirmação</small></span></button><button><Volume2 /> <span><b>Memória autorizada</b><small>Você controla o que permanece</small></span></button></div>
-      <form className="v62-composer" onSubmit={sendMessage}><button type="button" title="Anexar"><FileUp /></button><button type="button" title="Falar"><Mic /></button><input value={input} onChange={event => setInput(event.target.value)} placeholder="Digite ou fale com a UNO…" maxLength={4000}/><button className="send" disabled={!input.trim() || loading}><Send /></button><button type="button" className={handsFree ? 'active' : ''} onClick={() => setHandsFree(value => !value)}>Mãos livres</button></form>
-      <small className="v6-disclaimer">A UNO informa seus limites. Áudio e memória permanente dependem do consentimento do usuário.</small>
+      <form className="v62-composer" onSubmit={sendMessage}><button type="button" title="Anexar arquivo — em preparação" aria-label="Anexar arquivo — em preparação" disabled><FileUp /></button><button type="button" title="Falar — em preparação" aria-label="Falar — em preparação" disabled><Mic /></button><input value={input} onChange={event => setInput(event.target.value)} placeholder={online ? 'Digite ou fale com a UNO…' : 'Aguardando conexão…'} maxLength={4000} disabled={!online}/><button className="send" disabled={!input.trim() || loading || !online} title="Enviar mensagem"><Send /></button><button type="button" className={`v64-hands-free ${handsFree ? 'active' : ''}`} onClick={() => setHandsFree(value => !value)} aria-pressed={handsFree} title="Modo mãos livres — interface preparada">Mãos livres</button>{input.length > 3600 && <small className="v64-char-count">{input.length}/4000</small>}</form>
+      <small className="v6-disclaimer">Esta conversa permanece somente nesta aba enquanto ela estiver aberta. Áudio e memória permanente dependem do consentimento do usuário.</small>
     </div>
   </section>;
 }

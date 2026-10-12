@@ -1,0 +1,41 @@
+UNO V6.4.1 — CONVERSA REAL
+Data: 12/10/2026
+
+O QUE ESTE PACOTE FAZ
+- Conecta a tela Conversas ao endpoint /api/chat.
+- Envia as últimas 12 mensagens de contexto.
+- Mantém até 30 mensagens apenas na sessão da aba (sessionStorage).
+- Não grava memória permanente sem consentimento.
+- Mostra carregamento, conexão offline e erros reais da API.
+- Permite tentar novamente sem duplicar a mensagem do usuário.
+- Permite limpar a conversa da sessão.
+- Aplica limite visual e técnico de 4.000 caracteres.
+- Mantém áudio, anexos e mãos livres identificados como recursos em preparação.
+
+ARQUIVOS ALTERADOS
+- api/chat.ts
+- src/v6/pages/ConversationV6.tsx
+- src/v6/v6.css
+
+COMO INSTALAR
+1. Confirme que está na branch v6.4-conversa-real.
+2. Extraia este ZIP na raiz de uno-core.
+3. Confirme a substituição dos arquivos.
+4. Execute: npm.cmd run build
+
+COMO TESTAR
+- O comando npm.cmd run dev testa a interface visual.
+- A função /api/chat é uma função da Vercel. O teste completo deve ser feito
+  com o ambiente Vercel local configurado ou em uma URL Preview da Vercel.
+- Nenhuma chave foi incluída ou alterada por este pacote.
+
+CRITÉRIO DE APROVAÇÃO
+- A mensagem do usuário aparece uma única vez.
+- A UNO apresenta o estado "Organizando a resposta".
+- A resposta aparece na sequência e a tela rola automaticamente.
+- Em falha, aparece o motivo e o botão "Tentar novamente".
+- Ao fechar a aba, a sessão local deixa de existir.
+
+IMPORTANTE
+Não publicar em produção antes do build, do teste visual local e do teste da
+conversa em uma URL Preview.
