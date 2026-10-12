@@ -1,0 +1,15 @@
+UNO V6.3.4 - VISUALIZADOR UNIVERSAL
+
+Esta atualizacao permite abrir os cartoes da Biblioteca UNO.
+O visualizador apresenta:
+- texto autorizado;
+- imagem aprovada, quando existente;
+- fonte, versao e publico;
+- estado de aprovacao;
+- controles futuros de audio e download claramente bloqueados.
+
+INSTALACAO
+1. Pare o servidor com Ctrl+C.
+2. Extraia o pacote na pasta do projeto e confirme a substituicao.
+3. Execute npm.cmd run build.
+4. Execute npm.cmd run dev.

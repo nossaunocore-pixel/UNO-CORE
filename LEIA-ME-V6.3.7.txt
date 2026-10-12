@@ -1,0 +1,25 @@
+UNO V6.3.7 — CENTRAL DE APIs E INTEGRAÇÕES
+
+O que esta edição acrescenta:
+- botões APIs e Ferramentas ativos no Painel Mestre;
+- mapa inicial de Gemini, Firebase, Supabase, Stripe, GitHub, Vercel, YouTube e GOV.BR;
+- estados separados: configuração declarada, verificação pendente e planejada;
+- custo, limite, ambiente, finalidade e verificações por integração;
+- painel detalhado de cada ferramenta;
+- referências de variáveis protegidas sem revelar valores;
+- indicadores honestos de cotas e conexões ainda não certificadas;
+- correção do enquadramento da miniatura do avatar UNO.
+
+COMO INSTALAR
+1. Pare o servidor com Ctrl+C.
+2. Extraia este ZIP dentro da pasta raiz do projeto uno-core.
+3. Confirme a substituição dos arquivos.
+4. Execute: npm.cmd run build
+5. Se não houver erro, execute: npm.cmd run dev
+
+RESULTADO DE REFERÊNCIA
+O build validado desta edição mostrou 1493 módulos transformados.
+
+IMPORTANTE
+Esta tela não consulta provedores, testa APIs ou altera credenciais. Uma integração
+só poderá aparecer como operacional após verificação segura executada no servidor.

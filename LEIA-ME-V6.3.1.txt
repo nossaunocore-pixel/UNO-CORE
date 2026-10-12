@@ -1,0 +1,14 @@
+UNO V6.3.1 - INTERIOR DO PREDIO DA UNO
+
+Esta atualizacao separa:
+- Vitrine NOS S.A.: informacao publica.
+- Predio da UNO: acesso permanente a UNO e aos conteudos autorizados.
+- NOS S.A. interna: acesso bloqueado ate a constituicao formal.
+
+ANTES DE EXTRAIR
+1. Pare o servidor com Ctrl+C.
+2. Extraia este ZIP na pasta do projeto e confirme a substituicao.
+3. Rode npm.cmd run build.
+4. Rode npm.cmd run dev.
+
+Nao publique antes da revisao visual.

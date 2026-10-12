@@ -1,0 +1,25 @@
+UNO V6.3.6 — ACERVO MULTIMÍDIA
+
+O que esta edição acrescenta:
+- acesso ao Acervo Multimídia pela Central de Conteúdo;
+- catálogo de imagens, áudios, vídeos e roteiros;
+- pesquisa e filtros por formato;
+- identificação do módulo, origem, versão e usos previstos;
+- estados de autorização: autorizado, revisar e uso interno;
+- visualizador detalhado de cada item;
+- aviso transparente para arquivos ainda não conectados;
+- botão demonstrativo de envio ao Firebase Storage.
+
+COMO INSTALAR
+1. Pare o servidor com Ctrl+C.
+2. Extraia este ZIP dentro da pasta raiz do projeto uno-core.
+3. Confirme a substituição dos arquivos.
+4. Execute: npm.cmd run build
+5. Se não houver erro, execute: npm.cmd run dev
+
+RESULTADO DE REFERÊNCIA
+O build validado desta edição mostrou 1491 módulos transformados.
+
+IMPORTANTE
+O catálogo e seus controles são a interface funcional do MVP. Upload, armazenamento,
+reprodução de áudio/vídeo e persistência ainda serão conectados e testados.

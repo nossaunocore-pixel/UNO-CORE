@@ -1,0 +1,16 @@
+UNO V6.3.3 - BIBLIOTECA UNIVERSAL DE CONTEUDO
+
+Esta atualizacao cria:
+- biblioteca publica dentro do Predio da UNO;
+- busca e filtros por tipo de conteudo;
+- fonte, versao, publico e estado de aprovacao;
+- separacao entre aprovado, revisao humana e rascunho interno;
+- base preparada para textos, imagens, audio, video e documentos.
+
+INSTALACAO
+1. Pare o servidor com Ctrl+C.
+2. Extraia o pacote na pasta do projeto e confirme a substituicao.
+3. Execute npm.cmd run build.
+4. Execute npm.cmd run dev.
+
+Os dados atuais sao demonstrativos e deixam isso visivel na interface.

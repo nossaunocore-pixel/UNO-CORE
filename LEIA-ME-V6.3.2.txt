@@ -1,0 +1,17 @@
+UNO V6.3.2 - CADEADOS EXPLICATIVOS
+
+Ao tocar em Trabalho e Renda ou Instituicoes, a UNO agora apresenta:
+- finalidade do modulo;
+- situacao atual;
+- o que ja esta preparado;
+- motivo da indisponibilidade;
+- proximo marco;
+- aviso de transparencia.
+
+INSTALACAO
+1. Pare o servidor com Ctrl+C.
+2. Extraia este pacote na pasta do projeto e confirme a substituicao.
+3. Execute npm.cmd run build.
+4. Execute npm.cmd run dev.
+
+Nao publicar antes da revisao visual.

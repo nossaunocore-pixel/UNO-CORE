@@ -1,0 +1,30 @@
+UNO V6.3 - FUNDACAO INFORMATIVA
+
+Base: V6.2 aprovada (commit 25cb5fe)
+Branch de desenvolvimento: v6.3-foundation
+
+CONTEUDO DESTE PACOTE
+- Perfil Vivo baseado no modelo conceitual do caderno
+- Pagina Participacao
+- Vitrine NOS S.A.
+- Registro dos 9 modulos da Praca UNO
+- Registro dos 25 departamentos propostos
+- Estados, motivos de bloqueio e proximos marcos
+- Apresentacao guiada da UNO com conteudo previamente aprovado
+
+INSTALACAO NO PROJETO LOCAL
+1. Pare o servidor com Ctrl+C.
+2. Confirme que esta na pasta:
+   C:\Users\pc\.gemini\antigravity\scratch\uno-core
+3. Crie uma branch de seguranca:
+   git switch -c v6.3-foundation
+4. Extraia o pacote dentro da pasta do projeto, permitindo substituir os arquivos.
+5. Execute:
+   npm.cmd run build
+6. Se o build terminar sem erros, execute:
+   npm.cmd run dev
+
+IMPORTANTE
+- Nao publicar antes da revisao visual.
+- A V6.2 publicada permanece preservada na branch v6-visual-imersiva.
+- Dados e numeros exibidos sao informativos ou demonstrativos.

@@ -1,0 +1,25 @@
+UNO V6.3.8 — CENTRAL DE AGENTES
+
+O que esta edição acrescenta:
+- botão Agentes ativo no Painel Mestre;
+- Orquestrador Mestre em posição central;
+- fichas de Gemini, GPT, EVA, MUI, MUE, CCM, OPS e AFS;
+- missão, entradas, entregas, permissões, limites e linha de reporte;
+- estados de implementação sem afirmar integrações inexistentes;
+- filtros por camada e pesquisa;
+- fluxo visual da escuta até o registro;
+- separação expressa entre agentes da UNO e departamentos da NÓS S.A.
+
+COMO INSTALAR
+1. Pare o servidor com Ctrl+C.
+2. Extraia este ZIP dentro da pasta raiz do projeto uno-core.
+3. Confirme a substituição dos arquivos.
+4. Execute: npm.cmd run build
+5. Se não houver erro, execute: npm.cmd run dev
+
+RESULTADO DE REFERÊNCIA
+O build validado desta edição mostrou 1495 módulos transformados.
+
+IMPORTANTE
+As fichas representam a arquitetura aprovada. Esta tela não aciona agentes nem
+comprova integração técnica com modelos ou serviços externos.

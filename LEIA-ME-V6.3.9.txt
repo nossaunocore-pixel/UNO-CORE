@@ -1,0 +1,25 @@
+UNO V6.3.9 — AUDITORIA, LOGS E AUTORIZAÇÕES
+
+O que esta edição acrescenta:
+- botão Logs ativo no Painel Mestre;
+- fluxo Recebido > Analisado > Simulado > Autorizado > Executado > Auditado;
+- registros demonstrativos com ambiente, responsável, versão e estado;
+- filtros, pesquisa e painel detalhado de cada trilha;
+- linha do tempo, autorização e evidências declaradas;
+- exemplos financeiros e de publicação bloqueados aguardando autorização;
+- aviso explícito de que os dados não vieram de logs reais do Firebase;
+- exportação de relatório identificada como futura.
+
+COMO INSTALAR
+1. Pare o servidor com Ctrl+C.
+2. Extraia este ZIP dentro da pasta raiz do projeto uno-core.
+3. Confirme a substituição dos arquivos.
+4. Execute: npm.cmd run build
+5. Se não houver erro, execute: npm.cmd run dev
+
+RESULTADO DE REFERÊNCIA
+O build validado desta edição mostrou 1497 módulos transformados.
+
+IMPORTANTE
+Os registros desta versão são demonstrações do formato de auditoria. Persistência
+imutável, assinatura digital, consulta ao Firebase e exportação ainda serão conectadas.

@@ -1,0 +1,25 @@
+UNO V6.3.5 — CENTRAL DE CONTEÚDO
+
+O que esta edição acrescenta:
+- botão Conteúdos no Painel Mestre;
+- nova Central de Conteúdo da UNO;
+- fluxo visual Agente > Revisão humana > Autorização > Biblioteca;
+- formulário demonstrativo de solicitação ao agente redator;
+- simulação obrigatória antes de qualquer publicação;
+- inventário filtrável por rascunho, revisão e aprovado;
+- acesso direto à Biblioteca pública;
+- aviso transparente de que banco, agentes e publicação real ainda serão conectados.
+
+COMO INSTALAR
+1. Pare o servidor com Ctrl+C.
+2. Extraia este ZIP dentro da pasta raiz do projeto uno-core.
+3. Confirme a substituição dos arquivos.
+4. Execute: npm.cmd run build
+5. Se não houver erro, execute: npm.cmd run dev
+
+RESULTADO DE REFERÊNCIA
+O build validado desta edição mostrou 1489 módulos transformados.
+
+IMPORTANTE
+Esta tela representa o fluxo de governança do conteúdo. Ela não afirma que agentes,
+persistência no banco ou publicação automática já estejam operacionais.
