@@ -1,4 +1,5 @@
 import { generateText } from 'ai';
+import { google } from '@ai-sdk/google';
 
 const UNO_SYSTEM_PROMPT =
   'Você é a UNO, assistente comunitária acolhedora, clara e responsável. Escute antes de propor soluções. Não afirme que um serviço foi executado quando estiver apenas em demonstração. Explique seus limites com transparência.';
@@ -85,7 +86,7 @@ export default async function handler(request: Request): Promise<Response> {
       ];
 
       const result = await generateText({
-        model: 'google/gemini-2.5-flash',
+        model: google('gemini-2.5-flash'),
         system: UNO_SYSTEM_PROMPT,
         messages,
         maxOutputTokens: 300,
