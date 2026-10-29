@@ -114,3 +114,22 @@ Consulta Vercel de 2026-10-29: deployment do projeto `uno-core`, branch `v7-foun
 4. Revisar `api/chat.ts` para autenticação, limitação de uso e custo.
 5. Corrigir o código diretamente na branch `v7-foundation`, rodar build e validar o Preview.
 6. Manter produção intacta; não publicar regras Firestore nem enviar o comando final ao Antigravity antes da revisão e dos testes.
+
+
+### 12. Telas da experiência ativa exibem dados/identidade fixos
+Arquivos: `src/v6/pages/UserSquareV6.tsx`, `src/v6/pages/MasterPanelV6.tsx`.
+
+- O ambiente do usuário contém saudação fixa “Olá, Rudson”, “Identidade verificada”, “Plano cidadão • ativo” e contagens de vínculos/solicitações sem consulta visível a uma sessão autenticada ou banco.
+- O Painel Mestre apresenta métricas fixas (1.248 usuários, 184 adesões, etc.), percentuais fixos de uso das ferramentas e estados de relatório predefinidos.
+- O formulário do Painel Mestre apenas limpa o comando ao enviar; não executa uma operação real.
+- `src/v6/V6App.tsx` permite abrir o Painel Mestre por navegação local, sem verificação de sessão ou papel visível nesse caminho.
+- `src/v6/pages/ConversationV6.tsx` chama `POST /api/chat` sem enviar token de autenticação no pedido; o histórico da conversa é guardado em `sessionStorage`, não é memória permanente no servidor.
+
+**Conclusão:** a interface ativa contém elementos de apresentação que podem ser confundidos com estado operacional real. Isso deve ser corrigido ou rotulado claramente antes do lançamento. Não usar nomes pessoais fixos nem afirmar identidade verificada sem consulta a uma identidade autenticada.
+
+### 13. Critérios de correção para a próxima revisão
+- Dados pessoais e status devem derivar da sessão autenticada e do banco real; se não houver sessão, mostrar estado não autenticado.
+- Métricas devem vir de fontes persistidas e timestamps verificáveis ou aparecer como “dados demonstrativos”.
+- A navegação para o Painel Mestre deve negar acesso por padrão; servidor e banco devem impor autorização independentemente da UI.
+- O endpoint de conversa precisa validar token Firebase/Supabase (decisão arquitetural pendente), impor rate limit/limite de custo e validar tamanho/formato do histórico.
+- Não apresentar o armazenamento de sessão da conversa como memória persistente; consentimento e política de retenção precisam ser implementados separadamente.
