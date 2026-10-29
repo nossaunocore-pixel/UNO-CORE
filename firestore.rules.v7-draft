@@ -1,0 +1,44 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // V7 SECURITY DRAFT — NÃO PUBLICAR SEM TESTES E REVISÃO DO ESQUEMA.
+    // Claims só podem ser concedidas por processo confiável usando Firebase Admin SDK.
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isFounder() {
+      return signedIn() && request.auth.token.unoFounder == true;
+    }
+
+    function hasMasterAccess() {
+      return signedIn() &&
+        (request.auth.token.unoFounder == true ||
+         request.auth.token.unoMaster == true);
+    }
+
+    function hasAdminAccess() {
+      return signedIn() &&
+        (request.auth.token.unoFounder == true ||
+         request.auth.token.unoAdmin == true);
+    }
+
+    function owns(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    // Perfis: somente leitura própria. Escritas do cliente são negadas
+    // até que o esquema público do perfil seja definido e validado.
+    match /usuarios/{userId} {
+      allow read: if owns(userId);
+      allow create, update, delete: if false;
+    }
+
+    // Alertas, módulos, transações, papéis e demais coleções:
+    // negar por padrão até haver esquema e regras específicas revisadas.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
