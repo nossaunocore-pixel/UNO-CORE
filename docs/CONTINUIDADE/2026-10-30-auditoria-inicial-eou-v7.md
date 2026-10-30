@@ -340,3 +340,30 @@ O mesmo capítulo cita “Painel Mestre da Zeladoria”, mas não constitui, por
 ### 15.2 Relação com os oito volumes fundacionais
 
 A coleção atual contém ao menos três séries que precisam ser distinguidas: os oito arquivos fundacionais sob `EOU/volumes/`, os 40 diretórios EOU sob `docs/EOU/V01–V40` e os capítulos extensos dentro de alguns desses diretórios. Os nomes e números não estão alinhados de forma inequívoca. A futura ADR deverá estabelecer identificadores sem colisão, referências cruzadas e regra de precedência documental sem apagar o histórico.
+
+
+## 16. Evidência do fundador — identificação e conclusão do Volume 06
+
+O fundador forneceu a transcrição da imagem oficial da Engenharia Oficial — Plataforma UNO, Volume 06. A imagem identifica o tema como **Conhecimento Organizacional — Arquitetura Cognitiva e Institucional**, declara o ciclo 06 concluído e traz o lema “Um ciclo completo. Um fundamento eterno.”, com data de 06 de agosto de 2026.
+
+A transcrição também registra:
+- Engenharia Oficial declarada;
+- Nós S.A. fundada;
+- missão definida;
+- futuro em construção;
+- elementos de governança, curadoria, stewardship, instituição curadora, inteligência e conhecimento organizacional;
+- valor público e valor compartilhado;
+- pilares conhecer, compreender, preservar, evoluir e transformar;
+- propósito de que organizações sirvam melhor à sociedade e cada geração seja melhor que a anterior.
+
+### 16.1 Correção do diagnóstico anterior
+
+O Volume 06 **não deve ser tratado como fundamento inexistente ou não concluído**. A evidência do fundador confirma seu título, tema e estado declarado como concluído. O diretório docs/EOU/V06-CO/ possui README com o título “Conhecimento Organizacional”, coerente com a imagem. A inconsistência está na indexação: os catálogos gerais apresentam EOU-V06 como Centro de Operações (CO), e o arquivo autônomo citado no índice fundacional não está no caminho esperado.
+
+A próxima tarefa é comparar o conteúdo completo dos 53 arquivos de V06-CO com a identificação visual e com os demais documentos fundacionais, e corrigir os índices de forma rastreável após validação. Não renomear nem mover arquivos neste momento.
+
+### 16.2 Registro de termos a preservar
+
+A transcrição contém o elemento “Nósu, S.A. Fundadora”. Essa grafia foi preservada literalmente no registro de evidência. Não normalizar para “Nós S.A.” nem assumir que se trata de erro tipográfico sem confirmação do fundador.
+
+O ADR-0002 foi atualizado com esta evidência e permanece **Proposto — aguardando validação do fundador**, pois a identificação do Volume 06 está esclarecida, mas a convenção global para diferenciar volumes fundacionais e domínios EOU ainda exige mapeamento e aprovação.
