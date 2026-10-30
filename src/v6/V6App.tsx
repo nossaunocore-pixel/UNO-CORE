@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Home, MessageCircle, Network, Shield, UserRound, Wrench } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { getIdTokenResult, onIdTokenChanged } from 'firebase/auth';
+import { Home, MessageCircle, Network, UserRound, Store, Landmark, Shield, Wrench } from 'lucide-react';
 import { CommunityV6 } from './pages/CommunityV6';
 import { ConversationV6 } from './pages/ConversationV6';
 import { MasterPanelGateV7 } from './components/MasterPanelGateV7';
@@ -18,24 +19,46 @@ import { AgentsCenterV638 } from './pages/AgentsCenterV638';
 import { AuditCenterV639 } from './pages/AuditCenterV639';
 import { WorkshopV6 } from './pages/WorkshopV6';
 import { AuthControlV7 } from './components/AuthControlV7';
+import { auth } from '../services/firebase';
 import type { V6View } from './types';
 import './v6.css';
 
 const navigation: Array<{ id: V6View; label: string; icon: React.ElementType }> = [
   { id: 'praca', label: 'Praça UNO', icon: Home },
-  { id: 'conversa', label: 'Conversas', icon: MessageCircle },
+  { id: 'edificio', label: 'Institucional', icon: Landmark },
+  { id: 'nos', label: 'Vitrine', icon: Store },
+  { id: 'conversa', label: 'Conversa', icon: MessageCircle },
   { id: 'usuario', label: 'Meu Ambiente', icon: UserRound },
   { id: 'comunidade', label: 'Comunidade', icon: Network },
   { id: 'mestre', label: 'Painel Mestre', icon: Shield },
   { id: 'oficina', label: 'Oficina', icon: Wrench }
 ];
 
-const mobileNavigation = navigation.filter(({ id }) =>
-  ['praca', 'conversa', 'usuario', 'comunidade'].includes(id)
-);
+const mobileNavigation: V6View[] = ['praca', 'conversa', 'usuario', 'comunidade'];
 
 export default function V6App() {
   const [view, setView] = useState<V6View>('praca');
+  const [masterAccess, setMasterAccess] = useState(false);
+
+  useEffect(() => {
+    if (!auth) return;
+    return onIdTokenChanged(auth, async (user) => {
+      if (!user) {
+        setMasterAccess(false);
+        return;
+      }
+      try {
+        const token = await getIdTokenResult(user);
+        setMasterAccess(token.claims.unoFounder === true || token.claims.unoMaster === true);
+      } catch {
+        setMasterAccess(false);
+      }
+    });
+  }, []);
+
+  const visibleNavigation = navigation.filter(({ id }) =>
+    masterAccess || (id !== 'mestre' && id !== 'oficina')
+  );
 
   return (
     <div className={`v6-app ${view === 'praca' ? 'v6-app--immersive' : ''}`}>
@@ -45,7 +68,7 @@ export default function V6App() {
           <span><strong>União Nacional Organizada</strong><small>Tecnologia a serviço da vida real</small></span>
         </button>
         <nav className="v6-nav" aria-label="Navegação principal">
-          {navigation.map(({ id, label, icon: Icon }) => (
+          {visibleNavigation.map(({ id, label, icon: Icon }) => (
             <button key={id} className={view === id ? 'active' : ''} onClick={() => setView(id)} aria-current={view === id ? 'page' : undefined}>
               <Icon size={18} /><span>{label}</span>
             </button>
@@ -77,11 +100,13 @@ export default function V6App() {
       </main>
 
       <footer className="v6-mobile-nav" aria-label="Navegação móvel">
-        {mobileNavigation.map(({ id, label, icon: Icon }) => (
-          <button key={id} className={view === id ? 'active' : ''} onClick={() => setView(id)} aria-current={view === id ? 'page' : undefined}>
-            <Icon size={20} /><span>{label}</span>
-          </button>
-        ))}
+        {mobileNavigation.map((id) => {
+          const item = navigation.find(entry => entry.id === id)!;
+          const Icon = item.icon;
+          return <button key={id} className={view === id ? 'active' : ''} onClick={() => setView(id)} aria-current={view === id ? 'page' : undefined}>
+            <Icon size={20} /><span>{item.label}</span>
+          </button>;
+        })}
       </footer>
     </div>
   );
