@@ -179,3 +179,12 @@ Definir permissões distintas para listar, visualizar, criar, editar, moderar, a
 - Aplicar filtros por titular e escopo antes de retornar resultados; impedir enumeração de IDs e inferência de dados por contagens pequenas.
 
 **Estado atual:** a implementação de código cobre apenas a barreira de navegação por autenticação/IDU e claims founder/master. Os papéis e escopos acima são a política de referência para a camada backend futura; não estão ainda implementados nem testados em banco/API.
+
+
+## 11. Validação após as correções de conteúdo — 2026-10-30
+
+- Vercel Preview READY no commit `abb81ebeed75207252572adacab18e6468e81050` (deployment `dpl_EXMS5Hmr4JJ8J6ttWkBqKNnMG2m7`). Esse commit inclui as alterações de acesso, CSS, Meu Ambiente sem métricas fictícias, Comunidade com conteúdo demonstrativo explícito e Perfil sem nome hard-coded.
+- URL Preview: https://uno-core-3eocf42zs-rudson-cleber-rodriguez-s-projects.vercel.app (sujeita ao SSO do projeto Vercel).
+- O pipeline executou `tsc && vite build`; 1.518 módulos transformados. Bundle JavaScript 771,72 kB (gzip 205,17 kB), acima do limite de 500 kB recomendado; code-splitting pendente.
+- O HEAD documental posterior `d3b03281eb16518d8c3d9d0e20204dc18c0d1c46` adiciona a política proposta de papéis e escopos; seu deployment separado estava BUILDING na última consulta. Não houve alteração de código nesse commit.
+- Nenhum teste visual real em dispositivos, runtime autenticado Firebase Admin, RLS, autorização de dados ou fluxo ponta a ponta foi comprovado por este build.
