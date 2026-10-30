@@ -153,3 +153,69 @@ A prioridade documental recomendada passa a ser:
 5. **Construir a matriz de rastreabilidade** e registrar o status real de cada requisito, documento e componente.
 
 A expansão deve privilegiar documentos operacionais e verificáveis: escopo, atores, casos de uso, dados, permissões, fluxos, contratos, falhas, logs, critérios de aceite e testes. README introdutório, isoladamente, não equivale a engenharia pronta para implementação.
+
+
+## 10. Auditoria inicial dos branches de implementação V7
+
+A consulta de branches retornou, entre outros, `main`, `v7-foundation` e `v7-implementation`. A árvore de `main` examinada nesta auditoria contém documentação, agentes, banco-de-dados e scripts, mas não contém `src/`, `package.json`, testes, configuração Vite ou configuração Vercel. O código de aplicação está em branches separadas.
+
+Árvores consultadas:
+
+- `v7-foundation`: 195 entradas.
+- `v7-implementation`: 208 entradas.
+- `local-mvp-v1`: 131 entradas.
+
+### 10.1 Entrada atual da aplicação
+
+Nos branches `v7-foundation` e `v7-implementation`, `src/App.tsx` importa e renderiza `V6App`. Portanto, o ponto de entrada ainda utiliza a aplicação-base V6, embora existam componentes e telas com sufixo V7/V63. Isso não invalida o trabalho existente, mas significa que a denominação do branch não prova que a V7 final esteja concluída ou que todo o escopo do MVP esteja integrado.
+
+O `src/v6/V6App.tsx` de `v7-implementation` reúne navegação para Praça UNO, Institucional, Vitrine, Conversa, Meu Ambiente, Comunidade, Painel Mestre e Oficina, além de telas de Participação, Perfil, conteúdo, mídia, integrações, agentes e auditoria. A presença de rotas e componentes não prova que seus fluxos de dados e operações estejam conectados.
+
+### 10.2 Autenticação e controle de acesso
+
+No branch `v7-implementation` foram localizados:
+
+- `AuthControlV7.tsx`: login e cadastro por e-mail/senha e Google, confirmação de e-mail e saída de sessão.
+- `PageAccessGateV7.tsx`: estados de verificação, login, confirmação, provisionamento, permissão e bloqueio; tenta provisionar `uno_idu` via `/api/identity/session`.
+- `MasterPanelGateV7.tsx`: verifica claims `unoFounder` ou `unoMaster` para permitir acesso ao Painel Mestre.
+
+A lógica é um avanço documental e de código, mas precisa de validação de ponta a ponta: emissão segura das claims no servidor, endpoint de provisionamento, revogação, regras de banco e testes negativos. A interface não deve ser considerada uma fronteira de segurança isolada.
+
+### 10.3 Firebase e Supabase
+
+No branch `v7-implementation`:
+
+- O serviço Firebase só inicializa Auth/Firestore quando as seis variáveis públicas de configuração estão preenchidas; sem elas, autenticação fica indisponível.
+- O serviço Supabase exige URL e chave publicável (aceita também variável legada anon key); se faltarem, lança erro durante a inicialização do módulo.
+- O serviço Supabase tenta usar o ID token Firebase como access token e comenta que a integração Third-Party Auth do Firebase deve estar habilitada no Supabase antes de liberar operações protegidas por RLS.
+
+**Pontos de validação antes do lançamento:**
+
+1. Confirmar se a arquitetura de identidade Firebase → Supabase Third-Party Auth está realmente configurada e testada no projeto Supabase.
+2. Confirmar que o acesso público/visitante e suas consultas são autorizados pelo Supabase/RLS e que nenhum dado privado é entregue por simples ocultação de interface.
+3. Confirmar comportamento de degradação quando Supabase não estiver configurado ou indisponível, sem travar telas públicas necessárias.
+4. Testar separação de dados, permissões, sessão, revogação e acesso por perfil.
+5. Verificar se o endpoint `/api/identity/session` existe no branch implantado e se valida o token no servidor.
+
+### 10.4 Conteúdo público e Participação
+
+A tela de Comunidade consultada apresenta explicitamente sua natureza de proposta social e avisa que não representa serviços públicos oficiais, projetos em execução nem resultados reais. A tela de Participação diferencia debates, consultas, votações, assembleias e fundos; vários itens estão rotulados como “em construção”, “modo demonstrativo”, “aguardando regulamento” ou “aguardando constituição”.
+
+Essa sinalização é adequada e deve ser preservada até que existam serviços reais, regras aprovadas, consentimento, registros e testes. Não converter cartões demonstrativos em alegações de funcionalidade ativa.
+
+### 10.5 Risco de código legado demonstrativo
+
+O branch `v7-implementation` também contém `src/mvp-v1/UnoMvpApp.tsx`, no qual o estado local `isFounder` pode liberar visualmente o Painel Mestre por uma ação de demonstração. Esse fluxo não deve ser utilizado como autorização real nem confundido com o gate baseado em claims. Deve permanecer isolado como demonstração ou ser removido da composição de produção após revisão.
+
+### 10.6 Limites da auditoria de código
+
+Nesta etapa foram lidos arquivos selecionados por GitHub; não foi executado `npm install`, `tsc`, `vite build`, testes automatizados, testes de navegador, integração Supabase/Firebase, nem deploy. Também não foi validado o conteúdo de variáveis de ambiente ou segredos. Portanto, nenhum branch foi certificado como compilável, seguro ou pronto para produção.
+
+## 11. Próxima sequência de trabalho técnico
+
+1. Comparar integralmente `v7-foundation` e `v7-implementation`, identificar commits, arquivos exclusivos, divergências e branch de referência para Antigravity.
+2. Verificar presença e implementação real de `/api/identity/session`, emissão de claims e regras de acesso.
+3. Inventariar rotas e telas V7 versus a lista de requisitos do MVP (visitante, usuário, parceiro; Vitrine, Comunidade, Participação, Praça UNO, Conversa, perfil, Painel Mestre).
+4. Verificar fluxos de mídia/lives, agenda, habilidades, serviços e UNO RH, classificando cada um como tela demonstrativa, fluxo local, integração real ou ausente.
+5. Definir testes de acesso anônimo, visitante, usuário, parceiro, fundador e pessoa manualmente autorizada.
+6. Registrar os critérios de aceite e o branch de implementação escolhido antes de consolidar instruções finais para Antigravity.
