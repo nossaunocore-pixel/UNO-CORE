@@ -3,6 +3,7 @@ import { Home, MessageCircle, Network, Shield, UserRound, Wrench } from 'lucide-
 import { CommunityV6 } from './pages/CommunityV6';
 import { ConversationV6 } from './pages/ConversationV6';
 import { MasterPanelGateV7 } from './components/MasterPanelGateV7';
+import { PageAccessGateV7 } from './components/PageAccessGateV7';
 import { NosShowcaseV63 } from './pages/NosShowcaseV63';
 import { ParticipationV63 } from './pages/ParticipationV63';
 import { ProfileV63 } from './pages/ProfileV63';
@@ -29,6 +30,10 @@ const navigation: Array<{ id: V6View; label: string; icon: React.ElementType }> 
   { id: 'oficina', label: 'Oficina', icon: Wrench }
 ];
 
+const mobileNavigation = navigation.filter(({ id }) =>
+  ['praca', 'conversa', 'usuario', 'comunidade'].includes(id)
+);
+
 export default function V6App() {
   const [view, setView] = useState<V6View>('praca');
 
@@ -41,7 +46,7 @@ export default function V6App() {
         </button>
         <nav className="v6-nav" aria-label="Navegação principal">
           {navigation.map(({ id, label, icon: Icon }) => (
-            <button key={id} className={view === id ? 'active' : ''} onClick={() => setView(id)}>
+            <button key={id} className={view === id ? 'active' : ''} onClick={() => setView(id)} aria-current={view === id ? 'page' : undefined}>
               <Icon size={18} /><span>{label}</span>
             </button>
           ))}
@@ -51,27 +56,29 @@ export default function V6App() {
       </header>
 
       <main className="v6-main">
-        {view === 'praca' && <PublicSquareV6 onNavigate={setView} />}
-        {view === 'edificio' && <UnoBuildingV63 onNavigate={setView} />}
-        {view === 'biblioteca' && <KnowledgeLibraryV63 onNavigate={setView} />}
-        {view === 'conteudos' && <ContentStudioV635 onNavigate={setView} />}
-        {view === 'acervo' && <MediaLibraryV636 onNavigate={setView} />}
-        {view === 'integracoes' && <IntegrationsCenterV637 onNavigate={setView} />}
-        {view === 'agentes' && <AgentsCenterV638 onNavigate={setView} />}
-        {view === 'auditoria' && <AuditCenterV639 onNavigate={setView} />}
-        {view === 'conversa' && <ConversationV6 onNavigate={setView} />}
-        {view === 'usuario' && <UserSquareV6 onNavigate={setView} />}
-        {view === 'perfil' && <ProfileV63 onNavigate={setView} />}
-        {view === 'participacao' && <ParticipationV63 onNavigate={setView} />}
-        {view === 'comunidade' && <CommunityV6 onNavigate={setView} />}
-        {view === 'nos' && <NosShowcaseV63 />}
-        {view === 'mestre' && <MasterPanelGateV7 onNavigate={setView} />}
-        {view === 'oficina' && <WorkshopV6 onNavigate={setView} />}
+        <PageAccessGateV7 view={view}>
+          {view === 'praca' && <PublicSquareV6 onNavigate={setView} />}
+          {view === 'edificio' && <UnoBuildingV63 onNavigate={setView} />}
+          {view === 'biblioteca' && <KnowledgeLibraryV63 onNavigate={setView} />}
+          {view === 'conteudos' && <ContentStudioV635 onNavigate={setView} />}
+          {view === 'acervo' && <MediaLibraryV636 onNavigate={setView} />}
+          {view === 'integracoes' && <IntegrationsCenterV637 onNavigate={setView} />}
+          {view === 'agentes' && <AgentsCenterV638 onNavigate={setView} />}
+          {view === 'auditoria' && <AuditCenterV639 onNavigate={setView} />}
+          {view === 'conversa' && <ConversationV6 onNavigate={setView} />}
+          {view === 'usuario' && <UserSquareV6 onNavigate={setView} />}
+          {view === 'perfil' && <ProfileV63 onNavigate={setView} />}
+          {view === 'participacao' && <ParticipationV63 onNavigate={setView} />}
+          {view === 'comunidade' && <CommunityV6 onNavigate={setView} />}
+          {view === 'nos' && <NosShowcaseV63 />}
+          {view === 'mestre' && <MasterPanelGateV7 onNavigate={setView} />}
+          {view === 'oficina' && <WorkshopV6 onNavigate={setView} />}
+        </PageAccessGateV7>
       </main>
 
-      <footer className="v6-mobile-nav">
-        {navigation.map(({ id, label, icon: Icon }) => (
-          <button key={id} className={view === id ? 'active' : ''} onClick={() => setView(id)}>
+      <footer className="v6-mobile-nav" aria-label="Navegação móvel">
+        {mobileNavigation.map(({ id, label, icon: Icon }) => (
+          <button key={id} className={view === id ? 'active' : ''} onClick={() => setView(id)} aria-current={view === id ? 'page' : undefined}>
             <Icon size={20} /><span>{label}</span>
           </button>
         ))}
@@ -79,4 +86,3 @@ export default function V6App() {
     </div>
   );
 }
-
