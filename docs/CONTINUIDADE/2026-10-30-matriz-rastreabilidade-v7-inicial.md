@@ -87,3 +87,7 @@ As transcrições das oito imagens e a comparação EOU V04–V08 estão registr
 Essas fontes elevam o estado de vários requisitos para **documentado** e esclarecem a arquitetura conceitual, mas não alteram automaticamente as colunas de código, integração, teste ou liberação. Uma capacidade descrita em EOU ou em imagem histórica só poderá ser marcada como codificada/integrada/testada/liberada após evidência técnica correspondente na branch e no ambiente da V7.
 
 As correspondências diretas dos capítulos CCM 010, 014, 017 e 020 são referências documentais para requisitos e critérios de aceite futuros; não são evidência de que as mesmas capacidades estejam implementadas no MVP.
+
+## Novo documento de correspondência da Engenharia Oficial
+
+Consultar `docs/CONTINUIDADE/2026-10-30-mapa-mestre-correspondencia-eou.md` para a relação entre os componentes fundacionais, os volumes EOU atuais, as oito imagens históricas e as colisões de nomenclatura. O mapa amplia a rastreabilidade documental, mas não altera estados de código, integração, teste ou liberação da V7. Permanecem separados os estados documentado, codificado, integrado, testado e liberado.
