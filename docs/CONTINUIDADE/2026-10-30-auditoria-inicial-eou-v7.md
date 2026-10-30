@@ -312,3 +312,31 @@ Foi criado nessa mesma branch o documento complementar:
 Esse registro consolida a auditoria de código e reconcilia pontos de documentação desatualizados, especialmente o chat público sem IDU, a sessão anônima Firebase exclusiva da conversa, a navegação pública sob Supabase/RLS, retenção de sessão, migração RLS, claims administrativas e funcionalidades ainda sem evidência de integração.
 
 A branch `v7-implementation` está 57 commits à frente de `v7-foundation`, e o PR #1 está aberto em Draft, sem merge. Não foi feita mesclagem entre branches nesta ação. Os documentos V7 permanecem na branch técnica; esta auditoria e a matriz geral permanecem em `main`, até que a estratégia de consolidação seja deliberada.
+
+
+## 15. Reavaliação do Volume 6 e dos Painéis Mestres — nova fonte localizada
+
+Uma leitura mais aprofundada dos READMEs e capítulos identificou uma fonte que altera a interpretação inicial sobre o Volume 6:
+
+- O caminho fundacional anunciado `EOU/volumes/volume-06-conhecimento-organizacional.md` continua ausente e não há commits históricos para esse caminho.
+- Entretanto, existe `docs/EOU/V06-CO/` com 53 arquivos. Seu `README.md` tem o título **“EOU-V06 — Conhecimento Organizacional”** e descreve arquitetura cognitiva e institucional, preservação de conhecimento, inteligência coletiva, governança, stewardship e curadoria.
+- Ao mesmo tempo, `docs/EOU/README.md` e `docs/EOU/CATALOGO.md` chamam EOU-V06 de **Centro de Operações (CO)**.
+- A árvore `docs/EOU/V06-CO` é nomeada CO, mas seu README afirma Conhecimento Organizacional. Portanto, a documentação apresenta uma colisão de identidade: o número V06 e o nome CO estão associados a um README que descreve Conhecimento Organizacional.
+
+**Correção da conclusão:** não é correto dizer que não há material de Conhecimento Organizacional no repositório. Há um conjunto extenso e potencialmente relacionado em `docs/EOU/V06-CO/`. O que permanece ausente é o arquivo fundacional no caminho anunciado e uma declaração canônica inequívoca de que o conteúdo de `V06-CO` substitui, complementa ou apenas se relaciona ao Volume 6 fundacional. Não mover, renomear ou duplicar esses 53 arquivos antes de registrar a relação por ADR.
+
+### 15.1 Painéis Mestres — distinção conceitual necessária
+
+O capítulo `docs/EOU/V07-CCM/003-paineis-mestres.md` descreve Painéis Mestres como interfaces operacionais de capacidades específicas, integradas ao CCM, com operadores humanos, agentes, missões, histórico e escalonamento. O texto cita como exemplos painéis de zeladoria, saúde, educação, segurança, infraestrutura, prefeitura e hospital.
+
+Isso não deve ser confundido automaticamente com o **Painel Mestre do fundador** existente no produto V7. A implementação do fundador é uma área administrativa privilegiada, enquanto o conceito EOU descreve uma família de painéis operacionais por capacidade. A arquitetura V7 deverá distinguir:
+- Painel Mestre do fundador / governança e configuração global;
+- painéis administrativos e de coordenação, quando autorizados;
+- Painéis Mestres operacionais por domínio, equipe ou capacidade;
+- escopos, permissões, responsabilidades e trilhas de auditoria de cada painel.
+
+O mesmo capítulo cita “Painel Mestre da Zeladoria”, mas não constitui, por si só, a definição canônica do módulo Zelo. Preservar a nomenclatura e recuperar a definição própria de Zelo antes de criar especificação.
+
+### 15.2 Relação com os oito volumes fundacionais
+
+A coleção atual contém ao menos três séries que precisam ser distinguidas: os oito arquivos fundacionais sob `EOU/volumes/`, os 40 diretórios EOU sob `docs/EOU/V01–V40` e os capítulos extensos dentro de alguns desses diretórios. Os nomes e números não estão alinhados de forma inequívoca. A futura ADR deverá estabelecer identificadores sem colisão, referências cruzadas e regra de precedência documental sem apagar o histórico.
