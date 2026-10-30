@@ -1,5 +1,5 @@
 export interface PresentationStep {
-  moduleId: 'profile' | 'home' | 'people' | 'community' | 'live' | 'services' | 'work';
+  moduleId: 'profile' | 'home' | 'people' | 'community' | 'live' | 'building' | 'services' | 'work';
   eyebrow: string;
   title: string;
   text: string;
@@ -43,6 +43,13 @@ export const presentationTour: PresentationStep[] = [
     mediaLabel: 'Visão planejada · Vitrine Comercial'
   },
   {
+    moduleId: 'building',
+    eyebrow: 'Estrutura institucional',
+    title: 'A UNO conecta dimensões diferentes da vida real.',
+    text: 'A proposta institucional organiza pessoas, comunidades, trabalho, economia e instituições em ambientes distintos, com governança, transparência e limites de acesso.',
+    mediaLabel: 'Visão institucional · Edifício UNO'
+  },
+  {
     moduleId: 'services',
     eyebrow: 'Serviços e recursos',
     title: 'Serviços deverão informar condições e responsabilidades.',
@@ -50,7 +57,7 @@ export const presentationTour: PresentationStep[] = [
     mediaLabel: 'Princípios comerciais · Transparência'
   },
   {
-    moduleId: 'work',
+    moduleId: 'live',
     eyebrow: 'Trabalho e renda',
     title: 'Talentos locais poderão encontrar oportunidades.',
     text: 'Perfis profissionais, capacitação, portfólios e redes de trabalho farão parte da visão comercial e econômica da UNO.',
