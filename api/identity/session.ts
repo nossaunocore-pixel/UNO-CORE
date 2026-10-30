@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import { getAdminServices, verifyFirebaseRequest } from '../_lib/firebaseAdmin';
+import { getAdminServices, verifyFirebaseRequest } from '../../server/firebaseAdmin';
 
 function json(body: Record<string, unknown>, status = 200) {
   return Response.json(body, {

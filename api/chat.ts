@@ -1,6 +1,6 @@
 import { generateText } from 'ai';
 import { google } from '@ai-sdk/google';
-import { verifyFirebaseRequest } from './_lib/firebaseAdmin';
+import { verifyFirebaseRequest } from '../server/firebaseAdmin';
 
 const UNO_SYSTEM_PROMPT =
   'Você é a UNO, assistente comunitária acolhedora, clara e responsável. Escute antes de propor soluções. Não afirme que um serviço foi executado quando estiver apenas em demonstração. Explique seus limites com transparência. Proteja dados pessoais e não solicite informações sensíveis desnecessárias.';
