@@ -2,7 +2,7 @@
 
 **Branch:** `v7-implementation`  
 **Base:** `v7-foundation`  
-**Estado:** implementação inicial versionada; Preview ainda precisa ser compilada e validada.  
+**Estado:** implementação inicial versionada; build isolado aprovado e Preview Vercel READY no commit `1628e9470ab6023337ec54b5e0cac0f973484043`.  
 **Produção:** não promovida.  
 **Referência visual:** aguardando envio e aprovação do fundador antes do acabamento visual final.
 
@@ -17,6 +17,7 @@ Preparar a UNO CORE para o ciclo real pessoa → necessidade → compreensão �
 - Cliente Supabase configurado para enviar o Firebase ID token como access token.
 - Compatibilidade temporária com `VITE_SUPABASE_ANON_KEY` enquanto o projeto Vercel ainda não possui `VITE_SUPABASE_PUBLISHABLE_KEY`.
 - Endpoint server-side para validar o Firebase ID token, criar vínculo interno estável e atribuir claim `uno_idu` somente pelo Admin SDK.
+- Painel Mestre protegido na interface por claims `unoFounder`/`unoMaster`; métricas e percentuais simulados foram removidos.
 - Endpoint de conversa protegido por Firebase ID token e claim `uno_idu`.
 - Regras Firestore no repositório atualizadas para negar acesso direto do cliente às coleções, exceto leitura do próprio perfil legado.
 - Segredos de Admin SDK e UID fundador documentados apenas como nomes de variáveis; nenhum valor secreto foi adicionado ao Git.
@@ -53,7 +54,7 @@ A referência visual poderá ser incorporada quando:
 
 ## Próxima sequência técnica
 
-1. Validar build Preview e corrigir erros de compilação.
+1. Validar runtime das funções API e autenticação após configurar os segredos e integrações externos.
 2. Completar o fluxo de identidade e autorização e provar testes positivos/negativos.
 3. Preparar migração Supabase e revisão RLS, sem aplicar em produção até aprovação.
 4. Integrar persistência e módulos de domínio conforme escopo V7 aprovado.
