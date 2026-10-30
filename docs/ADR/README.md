@@ -64,3 +64,13 @@ O primeiro registro oficial da Plataforma UNO será:
 **ADR-0001 — A documentação precede a implementação.**
 
 Este princípio estabelece que nenhuma funcionalidade relevante será desenvolvida antes da existência de sua documentação correspondente.
+
+
+## ADRs registrados
+
+| ID | Documento | Estado |
+|---|---|---|
+| ADR-0001 | [Documentação precede a implementação](0001-documentacao-precede-implementacao.md) | Aceito como princípio já declarado no repositório |
+| ADR-0002 | [Identificação distinta das séries documentais da EOU](0002-identificacao-das-series-documentais.md) | Proposto — aguarda validação do fundador |
+
+O ADR-0002 não autoriza renumeração, movimentação ou reescrita de documentos. Até sua aprovação, os caminhos e títulos existentes permanecem preservados.
