@@ -138,3 +138,44 @@ Uma página só será marcada como revisada quando:
 - Comunidade deixou de apresentar nome de grupo, volume de votos, contagens de atualizações e publicações simuladas como se fossem atividade real. Os exemplos agora estão identificados como demonstrativos; publicar, apoiar, comentar, buscar e anexar permanecem indisponíveis até consentimento, moderação e persistência serem conectados.
 - Perfil Vivo deixou de exibir nome pessoal hard-coded; rótulos de privacidade agora indicam que os controles são previstos, não já operacionais.
 - Essas correções reduzem risco de apresentar dados inventados como fatos, especialmente em telas de perfil e participação comunitária.
+
+
+## 10. Modelo de autorização recomendado para a UNO
+
+A autorização final deve combinar **identidade + papel + escopo + ação + finalidade + estado de consentimento/base legal**. Papel sozinho nunca deve liberar todo o banco.
+
+### Papéis e limites propostos
+
+| Papel | Escopo mínimo | Permissões típicas | Limites obrigatórios |
+|---|---|---|---|
+| Visitante | Conteúdo público | Ler páginas públicas e informações institucionais | Sem dados pessoais não públicos, publicar ou consultar áreas privadas |
+| Pessoa | Própria identidade/conta | Ver e corrigir dados próprios, gerir preferências e solicitações | Sem acesso a dados de terceiros ou áreas administrativas |
+| Participante | Grupos/comunidades aos quais aderiu | Participar de discussões, consultas e atividades autorizadas | Sem acesso a perfis privados, grupos não associados ou dados internos |
+| Moderador | Comunidade/grupo designado | Tratar denúncias, ocultar conteúdo e aplicar regras locais | Sem acesso amplo a dados sensíveis, pagamentos ou identidade civil não necessária |
+| Responsável familiar | Vínculos familiares expressamente confirmados | Administrar apenas dados e autorizações dentro do vínculo legalmente válido | Não presumir representação de adultos; menores exigem fluxo próprio e melhor interesse |
+| Coordenador institucional | Instituição/unidade designada | Gerir atividades, equipe e registros da própria instituição | Sem cruzar dados de outras instituições ou acessar todo o universo |
+| Supervisor | Função/território designado | Acompanhar indicadores e casos encaminhados dentro da atribuição | Preferir dados agregados; acesso individual excepcional, justificado e auditado |
+| Operações | Tarefas operacionais designadas | Executar etapas autorizadas e registrar evidências | Acesso mínimo, dados mascarados quando possível, sem conceder privilégios |
+| Auditor | Escopo de auditoria aprovado | Consultar trilhas e evidências necessárias | Preferência por leitura; sem editar registros auditados ou consultar conteúdo irrelevante |
+| Administrador técnico | Configuração técnica delimitada | Gerir recursos, integrações e disponibilidade | Não equivale a autorização para ler conteúdo privado dos usuários |
+| Fundador/Mestre | Governança da plataforma | Definir políticas, delegar papéis e aprovar exceções | Não deve ser acesso irrestrito automático a todos os dados pessoais; exceções exigem finalidade, justificativa, tempo limitado e trilha |
+
+### Escopo hierárquico
+
+A permissão deve ser limitada ao cruzamento entre papel e vínculo comprovado: pessoa → casa/família → grupo → comunidade → unidade/instituição → território → universo. Pertencer a um escopo não concede automaticamente acesso a outro. Vínculos, delegações e consentimentos precisam ser revogáveis e auditáveis.
+
+### Ações separadas
+
+Definir permissões distintas para listar, visualizar, criar, editar, moderar, aprovar, executar, exportar, compartilhar, excluir e administrar permissões. Exportação em massa, leitura de dados sensíveis, pagamentos, decisões de alto impacto e ações externas devem exigir justificativa e, quando adequado, dupla aprovação humana.
+
+### Regras de governança
+
+- Negar por padrão; conceder somente o mínimo necessário e pelo menor prazo necessário.
+- Nunca confiar em papel enviado pelo cliente; resolver permissões no backend a partir de claims/associações persistidas e validadas.
+- Separar quem solicita, aprova e executa ações críticas.
+- Não permitir autoelevação de privilégio; mudanças de papel exigem autoridade delegante e log imutável.
+- Registrar ator, papel efetivo, escopo, ação, finalidade, objeto, resultado, data, versão da política e aprovador, sem duplicar conteúdo pessoal no log.
+- Usar acesso emergencial temporário (“break-glass”) somente com justificativa, expiração e revisão posterior.
+- Aplicar filtros por titular e escopo antes de retornar resultados; impedir enumeração de IDs e inferência de dados por contagens pequenas.
+
+**Estado atual:** a implementação de código cobre apenas a barreira de navegação por autenticação/IDU e claims founder/master. Os papéis e escopos acima são a política de referência para a camada backend futura; não estão ainda implementados nem testados em banco/API.
