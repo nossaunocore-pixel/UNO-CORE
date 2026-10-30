@@ -11,9 +11,11 @@ type AccessState =
   | 'provisioning_required'
   | 'forbidden';
 
-const PUBLIC_VIEWS: V6View[] = ['praca', 'nos', 'edificio'];
+const PUBLIC_VIEWS: V6View[] = [
+  'praca', 'edificio', 'nos', 'conversa', 'biblioteca', 'participacao', 'comunidade'
+];
 const MASTER_VIEWS: V6View[] = [
-  'mestre', 'oficina', 'biblioteca', 'conteudos', 'acervo',
+  'mestre', 'oficina', 'conteudos', 'acervo',
   'integracoes', 'agentes', 'auditoria'
 ];
 
