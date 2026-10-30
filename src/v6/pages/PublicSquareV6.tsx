@@ -58,7 +58,7 @@ export function PublicSquareV6({ onNavigate }: { onNavigate: NavigateV6 }) {
       </header>
 
       <div className="v6-city-map" aria-label="Ambientes públicos da Praça UNO">
-        <button className="v6-place v6-place-building" onClick={() => onNavigate('edificio')} aria-label="Conhecer a proposta institucional da UNO">
+        <button className={`v6-place v6-place-building${placeClass('building')}`} onClick={() => onNavigate('edificio')} aria-label="Conhecer a proposta institucional da UNO">
           <span className="v6-building-beacon"><Sparkles size={18} /></span>
           <span className="v6-place-card"><strong>Edifício UNO</strong><small>Propósito, princípios e estrutura institucional.</small></span>
         </button>
