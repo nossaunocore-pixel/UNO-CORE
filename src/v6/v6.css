@@ -684,7 +684,7 @@
 .v6-square--immersive .place-community { right: 14.2%; top: 65.5%; }
 .v6-square--immersive .place-live { right: 14.9%; top: 21.5%; }
 .v6-square--immersive .place-people { right: 14.2%; top: 43.5%; }
-.v6-square--immersive .v6-place-building { left: 50%; top: 49%; transform: translate(-50%,-50%); }
+.v6-square--immersive .v6-place-building { left: 50%; top: 27%; transform: translateX(-50%); }
 .v6-square--immersive .v6-place-building .v6-place-card { bottom: calc(100% + 17px); }
 .v6-square--immersive .v6-uno-presence { z-index: 8; }
 .v7-commerce-intro {
@@ -829,7 +829,7 @@
 }
 @media (max-width: 720px) {
   .v6-square-help { top: 112px; right: 13px; bottom: auto; }
-  .v6-square--immersive .v6-place-building { left: 50%; top: 50%; }
+  .v6-square--immersive .v6-place-building { left: 50%; top: 27%; transform: translateX(-50%); width: 36%; height: 30%; }
   .v6-square--immersive .place-home { left: 12%; top: 21%; }
   .v6-square--immersive .place-services { left: 12%; top: 44%; }
   .v6-square--immersive .place-profile { left: 12%; top: 67%; }
