@@ -1,11 +1,11 @@
 import React from 'react';
-import { BriefcaseBusiness, HeartHandshake, MapPin, Package, Search, ShieldCheck, ShoppingBag, Store, Truck, Users, Wrench } from 'lucide-react';
+import { Briefcase, HeartHandshake, MapPin, Package, Search, ShieldCheck, ShoppingBag, Store, Truck, Users, Wrench } from 'lucide-react';
 
 const offers = [
   { icon: ShoppingBag, title: 'Produtos e comércio local', text: 'Vitrines de lojas, produtores, pequenos negócios e ofertas do território.', state: 'Planejado' },
   { icon: Wrench, title: 'Profissionais e serviços', text: 'Descoberta de prestadores, especialistas, manutenção, cuidados e serviços sob demanda.', state: 'Planejado' },
   { icon: Truck, title: 'Entregas e mobilidade', text: 'Conexão com entregadores, transporte, coletas e logística de última milha.', state: 'Planejado' },
-  { icon: BriefcaseBusiness, title: 'Trabalho, talentos e renda', text: 'Perfis profissionais, portfólios, oportunidades, capacitação e conexões de trabalho.', state: 'Planejado' },
+  { icon: Briefcase, title: 'Trabalho, talentos e renda', text: 'Perfis profissionais, portfólios, oportunidades, capacitação e conexões de trabalho.', state: 'Planejado' },
   { icon: Package, title: 'Compras coletivas e encomendas', text: 'Organização de demandas, cotações e compras em grupo com regras transparentes.', state: 'Planejado' },
   { icon: Users, title: 'Criadores e comunidades de interesse', text: 'Vitrines de criadores, transmissões, conteúdos e apoio voluntário com destino claro.', state: 'Planejado' }
 ];
