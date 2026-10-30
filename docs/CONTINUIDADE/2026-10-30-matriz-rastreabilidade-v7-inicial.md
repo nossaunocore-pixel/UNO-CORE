@@ -22,7 +22,7 @@ A presença de código não significa integração, teste ou liberação. Quando
 |---|---|---|---|---|---|
 | V7 como primeira versão pública oficial | Decisão do fundador em conversas; nota de auditoria | Registrado | Não é funcionalidade isolada | Não confirmado | Consolidar como escopo e critério de release |
 | V8 como evolução participativa da Comunidade UNO 1 | Decisão do fundador | Registrado | Não aplicável nesta etapa | Não aplicável | Manter backlog e pontos de extensão, sem antecipar deliberações |
-| Visitante pode conhecer e conversar | `V6App.tsx`, `PageAccessGateV7.tsx`, `PublicSquareV6.tsx`, `api/chat.ts` | Parcial | Interface e endpoint codificados | Sessão visitante não confirmada | Localizar/criar sessão Firebase visitante; testar sem IDU e limites |
+| Visitante pode conhecer e conversar | `ConversationV6.tsx` usa `signInAnonymously`; `PageAccessGateV7.tsx`, `PublicSquareV6.tsx`, `api/chat.ts` | Parcial | Sessão anônima, interface e endpoint codificados | Habilitação no projeto e teste real não confirmados | Testar provedor Anonymous, quotas, retenção/limpeza e separar navegação Supabase do token técnico Firebase para chat |
 | Login Google | `AuthControlV7.tsx` usa GoogleAuthProvider e popup | Parcial | Codificado | Configuração real e teste não confirmados | Testar domínios autorizados, provedor, sessão, logout e retorno |
 | Login/cadastro por e-mail | `AuthControlV7.tsx` | Parcial | Codificado | E-mail verificado no código; teste externo não confirmado | Validar fluxos de confirmação, recuperação e bloqueios |
 | Perfis visitante, usuário e parceiro | Decisão de produto em memória e histórico | Parcial | Não foi encontrada modelagem completa de parceiro na inspeção selecionada | Não confirmado | Especificar papéis, permissões, consentimentos e transições |
@@ -49,7 +49,7 @@ A presença de código não significa integração, teste ou liberação. Quando
 1. `src/App.tsx` ainda renderiza `V6App`. A V7 precisa ser definida como evolução deliberada dessa base, com inventário de componentes preservados, substituídos e novos.
 2. O serviço Supabase lança erro durante a importação se URL/chave não estiverem disponíveis. Avaliar inicialização controlada e estados de indisponibilidade para não impedir conteúdo público.
 3. `PageAccessGateV7` libera visualmente algumas rotas públicas sem consulta direta ao Supabase. Isso não pode ser confundido com autorização de dados: consultas e operações devem depender de RLS/backend, conforme a arquitetura aprovada.
-4. `api/chat.ts` exige Firebase ID token. A sessão de visitante que fornece esse token ainda não foi localizada nos componentes de autenticação examinados.
+4. `api/chat.ts` exige Firebase ID token. `ConversationV6.tsx` cria sessão anônima via `signInAnonymously`; falta verificar habilitação do provedor no projeto e testar retenção/limpeza. A navegação e dados públicos devem continuar sob autorização Supabase/RLS, separada da sessão técnica do chat.
 5. `firestore.rules.v7-draft` é explicitamente um rascunho e não deve ser publicado sem testes.
 6. `src/mvp-v1/UnoMvpApp.tsx` contém reconhecimento local demonstrativo de fundador. Não pode ser usado como controle de acesso de produção.
 7. `ParticipationV63.tsx` identifica estados demonstrativos e pendentes. Essas declarações devem continuar explícitas até que exista operação real.
@@ -70,3 +70,8 @@ Uma linha só pode mudar para **integrado** quando houver evidência de fluxo co
 7. Definir escopo real de lives e mídia sem prometer infraestrutura ainda inexistente.
 8. Executar testes automatizados e E2E, depois validar preview e produção.
 9. Preparar backlog V8 sem antecipar decisões comunitárias.
+
+
+## Atualização de auditoria — sessão de visitante
+
+A inspeção posterior de `ConversationV6.tsx` confirmou o uso de Firebase Anonymous Auth para o chat público. A matriz foi corrigida: a lacuna não é mais “ausência de criação de sessão no código”, mas sim habilitação e teste do provedor no projeto, além da política de retenção e limpeza. O uso de Firebase para token técnico do chat deve ser mantido separado da decisão de que a navegação e os dados públicos de visitantes dependem do Supabase.
