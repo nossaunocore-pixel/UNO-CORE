@@ -1,32 +1,49 @@
 import React from 'react';
-import { Bell, Heart, MessageCircle, Radio, Search, Send, Users, Vote } from 'lucide-react';
+import { ArrowRight, BookHeart, HandHeart, HeartHandshake, MapPin, MessageCircle, ShieldCheck, Sprout, Users, Vote } from 'lucide-react';
 import type { NavigateV6 } from '../types';
 
-const posts = [
-  {
-    group: 'Exemplo de pauta comunitária',
-    title: 'Como priorizar melhorias no território?',
-    body: 'Exemplo demonstrativo de uma pauta. Nenhuma votação real, publicação ou participação comunitária está sendo registrada nesta tela.',
-    tag: 'Conteúdo demonstrativo'
-  },
-  {
-    group: 'Exemplo de comunicado institucional',
-    title: 'Encontro de apresentação da UNO',
-    body: 'Este cartão ilustra como comunicados poderão aparecer quando a publicação, a moderação e a transmissão estiverem conectadas.',
-    tag: 'Conteúdo demonstrativo'
-  }
+const socialPillars = [
+  { icon: HeartHandshake, title: 'Escuta e acolhimento', text: 'Um espaço para a pessoa ser ouvida com respeito, organizar o que está vivendo e encontrar caminhos possíveis, sem julgamento ou promessa de solução automática.' },
+  { icon: MapPin, title: 'Leitura do território', text: 'Identificar necessidades, recursos, talentos e iniciativas da rua, bairro e cidade, com dados proporcionais à participação real e proteção da privacidade.' },
+  { icon: Sprout, title: 'Projetos e ações locais', text: 'Apoiar a organização de mutirões, melhorias, campanhas, projetos comunitários e redes de cooperação com responsáveis e acompanhamento.' },
+  { icon: Vote, title: 'Participação e decisões', text: 'Separar ideias, debates, consultas, votações e deliberações formais, deixando claro quem participa e qual é o alcance de cada decisão.' },
+  { icon: HandHeart, title: 'Rede de apoio e solidariedade', text: 'Conectar voluntários, iniciativas e causas com destinatário, finalidade, critérios e prestação de contas claros. Apoio não significa adesão à plataforma.' },
+  { icon: BookHeart, title: 'Cultura, aprendizagem e convivência', text: 'Dar espaço a educação, cultura, esporte, formação, encontros e atividades que fortaleçam vínculos e capacidades locais.' }
 ];
 
 export function CommunityV6({ onNavigate }: { onNavigate: NavigateV6 }) {
-  return <section className="v62-community">
-    <header><div><span className="v6-kicker">Ambiente comunitário · demonstração</span><h1>Comunidade UNO</h1><p>Pessoas, casas e ideias conectadas com contexto, consentimento e propósito.</p></div><div className="v62-community-search"><Search/><input placeholder="Busca será conectada quando o catálogo estiver ativo…" disabled/><Bell/></div></header>
-    <div className="v62-community-layout">
-      <aside><h2>Espaços previstos</h2>{['Minha Casa','Minha Rua','Meu território','Trabalho e Renda','Grupos de interesse'].map(item=><button key={item} disabled><Users/><span>{item}<small>Dados ainda não conectados</small></span></button>)}<button className="v6-primary" onClick={()=>onNavigate('usuario')}>Ver meu perfil</button></aside>
-      <main>
-        <div className="v62-publish"><strong>Compartilhe uma ideia com sua comunidade</strong><textarea placeholder="A publicação será habilitada após conectar consentimento, moderação e persistência." disabled/><div><button disabled>Foto ou arquivo · em preparação</button><button className="v6-primary" disabled><Send size={16}/> Publicação indisponível</button></div><small>Esta interface ainda não publica nem armazena conteúdo comunitário.</small></div>
-        {posts.map(post=><article key={post.title}><header><div><b>{post.group}</b><small>Exemplo de interface · sem publicação real</small></div><span>{post.tag}</span></header><h2>{post.title}</h2><p>{post.body}</p><div><button disabled><Heart/> Apoiar · indisponível</button><button disabled><MessageCircle/> Comentar · indisponível</button><button disabled><Vote/> Sem contagem real</button></div></article>)}
-      </main>
-      <aside className="v62-community-live"><h2>Ao vivo e em pauta</h2><button disabled><Radio/><span><b>Transmissões comunitárias</b><small>Integração pendente</small></span></button><h3>Temas que poderão ser organizados</h3><button disabled>Mobilidade no território</button><button disabled>Banco de talentos</button><button disabled>Catálogo de serviços</button></aside>
+  return <section className="v62-community v7-community" aria-labelledby="community-title">
+    <header>
+      <div>
+        <span className="v6-kicker">Dimensão social · visão pública</span>
+        <h1 id="community-title">Uma comunidade que escuta, organiza e age junto.</h1>
+        <p>A UNO pretende ajudar pessoas e territórios a reconhecer desafios, reunir capacidades e transformar boas ideias em iniciativas acompanháveis.</p>
+      </div>
+      <button className="v6-primary" onClick={() => onNavigate('conversa')}><MessageCircle size={17}/> Conversar com a UNO</button>
+    </header>
+
+    <section className="v7-community-purpose">
+      <span className="v6-kicker">O ciclo de cuidado</span>
+      <div><b>Ser ouvido</b><i/><b>Ser compreendido</b><i/><b>Ser direcionado</b><i/><b>Ser nutrido</b></div>
+      <p>O ponto de partida é a pessoa. A organização coletiva só acontece com participação voluntária, contexto, responsabilidade e respeito às diferenças.</p>
+    </section>
+
+    <div className="v7-community-grid">
+      {socialPillars.map(({ icon: Icon, title, text }) => <article key={title}>
+        <span><Icon/></span><div><h2>{title}</h2><p>{text}</p></div>
+      </article>)}
     </div>
+
+    <section className="v7-community-territory">
+      <div><span className="v6-kicker">Organização progressiva</span><h2>Da pessoa ao território, sem perder o contexto.</h2><p>Os assuntos podem ser organizados por escala, sem expor dados pessoais e sem presumir que uma amostra represente toda a população.</p></div>
+      <ol><li>Pessoa</li><li>Casa e família</li><li>Rua</li><li>Bairro</li><li>Cidade</li><li>Rede de territórios</li></ol>
+    </section>
+
+    <section className="v7-community-actions">
+      <article><Users/><div><h2>Participação social</h2><p>Conheça como ideias, consultas e decisões deverão ser organizadas.</p><button onClick={() => onNavigate('participacao')}>Conhecer participação <ArrowRight size={15}/></button></div></article>
+      <article><ShieldCheck/><div><h2>Privacidade e segurança</h2><p>Informações pessoais, relatos sensíveis e vínculos privados não serão expostos por padrão.</p><small>Política de acesso e proteção em implementação</small></div></article>
+    </section>
+
+    <p className="v7-community-notice"><ShieldCheck size={17}/> Esta página apresenta a proposta social da UNO. Não representa serviços públicos oficiais, não confirma projetos em execução e não exibe contagens, votações, doações ou resultados comunitários reais. Ações futuras dependerão de adesão voluntária, governança, segurança e validação das responsabilidades.</p>
   </section>;
 }
