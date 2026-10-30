@@ -413,3 +413,7 @@ Nenhum arquivo canônico foi renomeado ou movido. Nenhum código, banco, configu
 A comparação da imagem 7 com `docs/EOU/V06-CO/051-Carta-Fundadora-da-NOS-SA.md` encontrou correspondência estrutural e textual forte: missão, propósito, princípios, forma de atuar e seção “Aquilo que Jamais Faremos” aparecem no documento atual. A imagem é compatível com síntese visual da Carta, mas não foi declarada edição textual idêntica. Nome institucional correto confirmado pelo fundador: **Nós S.A.**.
 
 A busca por nomes de arquivo localizou `docs/CONTINUIDADE/2026-10-30-varredura-eou-zelo-e-diretrizes.md`. Esse registro reafirma que **Zelo** já pertence à engenharia e não deve ser criado como sigla ou módulo independente. A definição canônica original ainda precisa ser localizada; o documento encontrado é diretriz de continuidade, não substituto da fonte canônica. Preservar a orientação: cuidado e auxílio, nunca vigilância ou controle.
+
+## 20. Mapa Mestre de Correspondência da EOU
+
+Foi criado e verificado `docs/CONTINUIDADE/2026-10-30-mapa-mestre-correspondencia-eou.md`. O mapa separa a coleção EOU atual de 40 volumes da série fundacional histórica, relaciona MUE, EVA, OM, CO, CCM, OPS e Nós S.A., classifica as oito imagens por grau de correspondência e registra divergências de nomenclatura que dependem de validação do fundador. Também estabelece estados independentes para especificado, documentado, codificado, integrado, testado e liberado. O mapa é instrumento documental; não altera fontes canônicas nem comprova implementação.
