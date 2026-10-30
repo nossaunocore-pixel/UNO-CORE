@@ -195,7 +195,7 @@ Definir permissões distintas para listar, visualizar, criar, editar, moderar, a
 - Adicionada em `src/index.css` uma base global para todos os pontos de entrada/páginas: largura mínima e fluida, mídias e controles limitados ao container, prevenção de conteúdo longo quebrar o layout, tabelas com rolagem móvel, foco visível, alvos de toque e redução de movimento.
 - Isso oferece um piso responsivo também às árvores antigas (`src/pages`, `src/modules`, `src/mvp-v1`) caso sejam ativadas no futuro.
 - A base global não substitui revisão individual de hierarquia, grids, formulários, navegação e acessibilidade de cada página legada. Essas árvores continuam fora da navegação ativa e devem passar por validação página a página antes de serem ligadas.
-- O commit de código com o fallback global é `b01cea29a4c2bc7cbada9748e9e0e67284ccad5c`. O deployment documental posterior `2dda1151244a55783e65fb5f5c81768294283dff`, que contém a mesma árvore de código, executou `tsc && vite build` e transformou 1.518 módulos; o estado final Vercel ainda aparecia BUILDING na última consulta.
+- O commit de código com o fallback global é `b01cea29a4c2bc7cbada9748e9e0e67284ccad5c`. O deployment documental posterior `2dda1151244a55783e65fb5f5c81768294283dff`, que contém a mesma árvore de código, concluiu em READY (`dpl_2fk3SjCvLdTF3PdYXiipKKXooz5v`). O pipeline executou `tsc && vite build` e transformou 1.518 módulos; bundle JS 771,72 kB (gzip 205,17 kB), com aviso acima de 500 kB.
 
 
 ## 13. Referências legais oficiais consultadas — 2026-10-30
@@ -208,3 +208,10 @@ A revisão jurídica futura deve usar a redação consolidada vigente, não apen
 Pontos da redação consolidada relevantes para o desenho: princípios e necessidade/finalidade (art. 6º); hipóteses legais (arts. 7º e 11); crianças e adolescentes (art. 14); término/eliminação (arts. 15–16); direitos dos titulares e revisão de decisões automatizadas (arts. 18–20); transferências internacionais (arts. 33–36); registro das operações e RIPD (arts. 37–38); controlador/operador/encarregado (arts. 39–41); segurança e incidentes (arts. 46–49); governança e programa de privacidade (art. 50).
 
 A Lei nº 15.352/2026 alterou, entre outros pontos, a redação do conceito de encarregado no art. 5º, VIII, conforme indicado na redação consolidada consultada. A aplicabilidade concreta de cada regra, bases legais, papel de cada entidade e mecanismo de transferência exige análise jurídica dos fluxos reais e dos contratos dos fornecedores.
+
+
+## 14. Confirmação final do fallback global — 2026-10-30
+
+- Preview READY para a árvore que inclui `src/index.css` com fallback global: deployment `dpl_2fk3SjCvLdTF3PdYXiipKKXooz5v`, commit `2dda1151244a55783e65fb5f5c81768294283dff`, URL https://uno-core-5b8nnrbnx-rudson-cleber-rodriguez-s-projects.vercel.app.
+- O HEAD documental atual é `d85caae49029ff9a0133ce8e167add030ae8d0f6`; não altera código. PR #1 permanece Draft e não mesclado; produção preservada.
+- A conclusão READY confirma build/deploy, não testes visuais reais, operação autenticada Firebase, autorização backend/RLS ou conformidade legal.
