@@ -247,3 +247,12 @@ A Praça UNO passa a apresentar três dimensões distintas:
 - O deployment do commit f7eca301dc837fc9f1c2a08abf5de225487bad44 ficou READY, antes das últimas correções de proporção da Praça e do tour institucional.
 - Deployment do commit ff4bb71bad804dd1061a1fd02f442b2bece99818 foi criado e estava QUEUED na última consulta. Não declarar a revisão final como READY até reconfirmar.
 - PR #1 permanece Draft; produção não foi promovida.
+
+
+## 16. Preview final da experiência pública — 2026-10-30
+
+- Vercel Preview READY para o commit de código `07fa1da03228a78a54f9d37ef7c2ef113733689e`, deployment `dpl_9Yzo5Z9vBpt2TsYpXcvCzVSVwjkb`.
+- URL: https://uno-core-3mnk75rxl-rudson-cleber-rodriguez-s-projects.vercel.app (protegida pela política SSO do projeto).
+- Pipeline `tsc && vite build` concluído; 1.516 módulos transformados. Bundle JavaScript 774,29 kB (gzip 206,10 kB), acima do limite recomendado de 500 kB; code-splitting segue pendente.
+- Este commit inclui a separação social/comercial/institucional, a conversa pública com sessão anônima e quota, o filtro da biblioteca para conteúdo somente aprovado e a atualização do tour público.
+- READY confirma build/deploy, não teste visual em dispositivos, operação real do Firebase Admin, habilitação do Anonymous provider, App Check, TTL Firestore ou conversa ponta a ponta. Nenhuma produção foi promovida.
