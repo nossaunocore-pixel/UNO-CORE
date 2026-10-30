@@ -78,7 +78,7 @@ Este ADR está **proposto**, não aceito. Não autoriza renomear arquivos, alter
 
 ## Evidência complementar recebida do fundador — Volume 06
 
-Em 30 de outubro de 2026, o fundador forneceu a transcrição dos elementos de uma imagem identificada como Engenharia Oficial — Plataforma UNO, Volume 06. Essa evidência informa:
+Em 30 de outubro de 2026, o fundador forneceu a transcrição de oito imagens históricas recuperadas da V6, incluindo uma imagem identificada como Engenharia Oficial — Plataforma UNO, Volume 06. O conteúdo integral transcrito está registrado em docs/CONTINUIDADE/2026-10-30-acervo-historico-oito-imagens-v6.md. A evidência da imagem 8 informa:
 
 - **Título:** Conhecimento Organizacional — Arquitetura Cognitiva e Institucional.
 - **Estado do ciclo:** 06 Concluído.
@@ -89,6 +89,13 @@ Em 30 de outubro de 2026, o fundador forneceu a transcrição dos elementos de u
 - **Pilares:** conhecer, compreender, preservar, evoluir e transformar.
 - **Propósitos:** servir melhor à sociedade e contribuir para que cada geração seja melhor que a anterior.
 
-A transcrição fornecida pelo fundador é tratada como evidência de identificação e estado declarado do Volume 06. Ela não substitui a leitura integral dos arquivos que compõem o volume nem autoriza alterar os catálogos sem reconciliação. A grafia “Nósu, S.A.” foi preservada exatamente como transcrita; confirmar a forma oficial antes de normalizar.
+A transcrição fornecida pelo fundador é tratada como evidência histórica parcial de identificação e estado declarado do Volume 06. O fundador esclareceu que a V6 se perdeu; portanto, as oito imagens são fontes parciais de recuperação e não representam a V6 integral. A existência de documentação atual em docs/EOU/V06-CO/ não deve ser confundida com recuperação comprovada do artefato V6 original. A transcrição inicial da imagem continha a forma divergente “Nósu, S.A.”. O fundador confirmou expressamente que o nome institucional correto é **Nós S.A.**; a forma divergente é tratada como erro de leitura/transcrição e não deve ser usada como denominação oficial.
 
-**Atualização da conclusão:** a identidade temática e o estado concluído do Volume 06 estão agora confirmados pela evidência fornecida pelo fundador. Permanecem pendentes a localização/organização do texto integral canônico, a correspondência entre o conteúdo do diretório V06-CO e a imagem, e a correção dos índices que apresentam V06 como Centro de Operações. O ADR continua proposto porque a convenção global de identificação das séries ainda depende de validação.
+**Atualização da conclusão:** a identidade temática e o estado concluído do ciclo do Volume 06 estão registrados a partir da imagem transcrita. A V6 integral está perdida, conforme declaração do fundador; não se deve afirmar que o texto integral foi recuperado. O diretório docs/EOU/V06-CO/ contém documentação existente intitulada Conhecimento Organizacional e deve ser examinado para determinar sua relação com o volume histórico. Permanecem pendentes o mapeamento entre as oito imagens/volumes fundacionais e os 40 domínios EOU, bem como a convenção global de identificação. O ADR continua proposto e não autoriza renomeações.
+
+
+## Evidência adicional — oito imagens históricas da V6
+
+O fundador forneceu transcrição detalhada de oito imagens, abrangendo: V04-EVA (Engenharia da Vida e da Inteligência); Catálogo de Capacidades; priorização e escalonamento de missões; tomada de decisão consciente; modelo operacional integrado do CCM; missões críticas e operações de emergência; Carta Fundadora da Nós S.A.; e Volume 06 — Conhecimento Organizacional. A transcrição integral foi registrada no acervo histórico indicado acima. Essas imagens ajudam a reconstruir conceitos e relações, mas não equivalem à recuperação da V6 integral.
+
+**Nome institucional:** o fundador confirmou que a denominação correta é **Nós S.A.**. A expressão divergente “Nósu S.A. Fundadora” presente na transcrição preliminar da imagem 8 é tratada como erro de leitura/transcrição, não como nome oficial.
