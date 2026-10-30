@@ -50,12 +50,6 @@ export default async function handler(request: Request): Promise<Response> {
     const { decoded } = await verifyFirebaseRequest(request);
     const isVisitor = typeof decoded.uno_idu !== 'string' || !decoded.uno_idu;
 
-    if (!isVisitor && typeof decoded.uno_idu !== 'string') {
-      return json({
-        error: 'Sua identidade UNO ainda não foi provisionada. Atualize a sessão e tente novamente.'
-      }, 403);
-    }
-
     let body: unknown;
     try {
       body = await request.json();
