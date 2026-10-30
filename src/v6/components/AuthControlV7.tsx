@@ -82,7 +82,7 @@ export function AuthControlV7() {
     <>
       <button
         type="button"
-        className="v6-stage"
+        className="v6-account-trigger"
         onClick={() => setOpen(true)}
         aria-label={user ? 'Abrir opções da conta' : 'Entrar ou criar conta'}
       >
