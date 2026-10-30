@@ -262,3 +262,35 @@ O componente `AuthControlV7.tsx` examinado apresenta cadastro/login por e-mail e
 - [ ] Confirmar Third-Party Auth Firebase no Supabase e testar RLS para visitante e perfis autenticados.
 
 Estes arquivos demonstram que há implementação de segurança em andamento, mas não comprovam que os serviços estejam configurados no projeto Firebase/Supabase nem que os fluxos estejam aprovados em produção.
+
+
+## 13. Correção após inspeção do fluxo de Conversa
+
+A inspeção posterior de `src/v6/pages/ConversationV6.tsx` localizou o mecanismo de sessão anônima que não aparecia em `AuthControlV7.tsx`:
+
+- A tela observa o estado Firebase Auth e chama `signInAnonymously(firebaseAuth)` quando não existe usuário.
+- A conversa usa o Firebase ID token dessa sessão para chamar `POST /api/chat`.
+- Para uma sessão com contato verificado, tenta primeiro provisionar o IDU em `/api/identity/session`; para visitante anônimo ou sem contato verificado, não exige esse provisionamento.
+- A própria tela informa que a identidade anônima pode permanecer no Firebase até que uma política de limpeza seja configurada.
+
+Assim, a lacuna anterior sobre a origem do token de visitante foi **resolvida em nível de código**: há criação explícita de sessão anônima no componente de Conversa. Permanecem pendentes a habilitação do provedor Anonymous no projeto Firebase, teste real da sessão, limites, retenção e limpeza.
+
+### 13.1 Separação de responsabilidades a reconciliar
+
+A decisão de produto registrada pelo fundador é que a navegação de visitante depende do Supabase. O código atual usa Firebase Anonymous Auth para obter o token que protege o endpoint de Conversa e o rate limit server-side. Isso pode ser compatível se as responsabilidades forem separadas:
+
+- **Supabase:** fonte de autorização e acesso aos dados públicos/visitante e navegação pública, com RLS.
+- **Firebase Anonymous Auth:** sessão técnica temporária usada apenas para identificar e limitar chamadas do chat, se essa dependência for mantida e aprovada.
+- **Firebase Auth verificado + IDU:** identidade de pessoa aderida/autenticada para áreas e operações que exigem perfil.
+
+Essa separação é uma proposta de reconciliação técnica, não uma decisão nova do fundador. O Antigravity deve validar se o código implementa de fato esse limite; o gate visual atual não substitui RLS nem autorização no servidor.
+
+### 13.2 Retenção e limpeza de sessão
+
+A conversa persiste o histórico no `sessionStorage` do navegador e o botão “Limpar” remove esse histórico local. Isso não equivale a apagar a identidade anônima do Firebase nem os registros de quota no Firestore. O endpoint grava `expiresAt` nos documentos de quota, mas a configuração de TTL do Firestore não foi verificada.
+
+Critérios pendentes:
+- [ ] Definir política de retenção para identidades anônimas Firebase.
+- [ ] Definir e verificar TTL para documentos de quota, se aplicável.
+- [ ] Explicar ao visitante a diferença entre limpar conversa local, encerrar sessão e remover dados retidos.
+- [ ] Testar renovação, persistência entre recargas, expiração e encerramento da sessão anônima.
