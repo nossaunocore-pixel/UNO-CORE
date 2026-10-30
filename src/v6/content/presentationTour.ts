@@ -9,51 +9,51 @@ export interface PresentationStep {
 export const presentationTour: PresentationStep[] = [
   {
     moduleId: 'profile',
-    eyebrow: 'Sua identidade',
-    title: 'Este é o Perfil Vivo.',
-    text: 'Ele reúne capacidades, vínculos e trajetória. Você escolhe o que permanece privado e o que deseja compartilhar.',
-    mediaLabel: 'Prévia aprovada · Perfil Vivo'
+    eyebrow: 'Pessoa e privacidade',
+    title: 'Cada pessoa mantém o controle da própria identidade.',
+    text: 'O Perfil Vivo deverá reunir capacidades, vínculos e objetivos, com escolhas claras sobre o que permanece privado e o que pode ser compartilhado.',
+    mediaLabel: 'Visão planejada · Perfil Vivo'
   },
   {
     moduleId: 'home',
-    eyebrow: 'Seu ambiente',
-    title: 'A Casa organiza a vida familiar.',
-    text: 'Moradores, responsabilidades, consentimentos e futuros serviços da residência ficam conectados sem exposição pública.',
-    mediaLabel: 'Prévia aprovada · Casa e família'
+    eyebrow: 'Casa e família',
+    title: 'A Casa organiza necessidades e responsabilidades.',
+    text: 'Moradores, responsabilidades, consentimentos e serviços da residência poderão ser conectados sem exposição pública de informações familiares.',
+    mediaLabel: 'Visão planejada · Casa e família'
   },
   {
     moduleId: 'people',
-    eyebrow: 'Sua voz',
-    title: 'Participar é mais do que votar.',
-    text: 'A UNO separa escuta, proposta, consulta, parecer e deliberação para que cada participação tenha contexto e continuidade.',
-    mediaLabel: 'Prévia aprovada · Participação'
+    eyebrow: 'Participação social',
+    title: 'A comunidade poderá transformar escuta em ação organizada.',
+    text: 'A UNO separará escuta, propostas, consultas, pareceres e deliberações para que a participação tenha contexto e continuidade.',
+    mediaLabel: 'Visão planejada · Participação'
   },
   {
     moduleId: 'community',
     eyebrow: 'Construção coletiva',
-    title: 'A Comunidade organiza os assuntos.',
-    text: 'Pessoas podem acompanhar temas da casa, rua, bairro, profissão ou interesse, com moderação e memória das decisões.',
-    mediaLabel: 'Prévia aprovada · Comunidade'
+    title: 'A Comunidade organiza os assuntos do território.',
+    text: 'Pessoas poderão acompanhar temas da casa, rua, bairro, profissão ou interesse, formar iniciativas e cooperar com moderação e transparência.',
+    mediaLabel: 'Visão planejada · Comunidade UNO'
   },
   {
     moduleId: 'live',
-    eyebrow: 'Instituição em formação',
-    title: 'Conheça a NÓS S.A.',
-    text: 'A Vitrine mostra a proposta institucional, os departamentos e o motivo de cada etapa ainda não estar disponível.',
-    mediaLabel: 'Documento aprovado · Vitrine NÓS S.A.'
+    eyebrow: 'Economia e comércio',
+    title: 'A Vitrine conecta quem oferece a quem precisa.',
+    text: 'Produtos, serviços, profissionais, pequenos negócios, compras coletivas, criadores e logística poderão ser encontrados em um só ambiente.',
+    mediaLabel: 'Visão planejada · Vitrine Comercial'
   },
   {
     moduleId: 'services',
-    eyebrow: 'Vida real',
-    title: 'Serviços serão liberados com responsabilidade.',
-    text: 'Cada serviço explica o que fará, o que já está preparado e quais validações ainda faltam para sua inauguração.',
-    mediaLabel: 'Catálogo informativo · Serviços'
+    eyebrow: 'Serviços e recursos',
+    title: 'Serviços deverão informar condições e responsabilidades.',
+    text: 'Cada oferta precisa explicar o que entrega, quem responde, quanto custa, quais taxas existem e o que ainda precisa ser validado.',
+    mediaLabel: 'Princípios comerciais · Transparência'
   },
   {
     moduleId: 'work',
-    eyebrow: 'Capacidades locais',
-    title: 'Ofícios e renda conectam talentos.',
-    text: 'O banco de talentos reunirá habilidades, oportunidades, capacitação e redes profissionais conforme as regras forem aprovadas.',
-    mediaLabel: 'Em preparação · Ofícios e renda'
+    eyebrow: 'Trabalho e renda',
+    title: 'Talentos locais poderão encontrar oportunidades.',
+    text: 'Perfis profissionais, capacitação, portfólios e redes de trabalho farão parte da visão comercial e econômica da UNO.',
+    mediaLabel: 'Visão planejada · Trabalho e renda'
   }
 ];
