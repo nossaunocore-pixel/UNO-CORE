@@ -196,3 +196,15 @@ Definir permissões distintas para listar, visualizar, criar, editar, moderar, a
 - Isso oferece um piso responsivo também às árvores antigas (`src/pages`, `src/modules`, `src/mvp-v1`) caso sejam ativadas no futuro.
 - A base global não substitui revisão individual de hierarquia, grids, formulários, navegação e acessibilidade de cada página legada. Essas árvores continuam fora da navegação ativa e devem passar por validação página a página antes de serem ligadas.
 - O commit de código com o fallback global é `b01cea29a4c2bc7cbada9748e9e0e67284ccad5c`; deployment Preview criado e aguardando conclusão na última consulta.
+
+
+## 13. Referências legais oficiais consultadas — 2026-10-30
+
+A revisão jurídica futura deve usar a redação consolidada vigente, não apenas o texto original de 2018:
+
+- Lei nº 13.709/2018 (LGPD), texto atualizado da Câmara dos Deputados: https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.html
+- Resolução CD/ANPD nº 19/2024 — Regulamento de Transferência Internacional de Dados e cláusulas-padrão contratuais: https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024
+
+Pontos da redação consolidada relevantes para o desenho: princípios e necessidade/finalidade (art. 6º); hipóteses legais (arts. 7º e 11); crianças e adolescentes (art. 14); término/eliminação (arts. 15–16); direitos dos titulares e revisão de decisões automatizadas (arts. 18–20); transferências internacionais (arts. 33–36); registro das operações e RIPD (arts. 37–38); controlador/operador/encarregado (arts. 39–41); segurança e incidentes (arts. 46–49); governança e programa de privacidade (art. 50).
+
+A Lei nº 15.352/2026 alterou, entre outros pontos, a redação do conceito de encarregado no art. 5º, VIII, conforme indicado na redação consolidada consultada. A aplicabilidade concreta de cada regra, bases legais, papel de cada entidade e mecanismo de transferência exige análise jurídica dos fluxos reais e dos contratos dos fornecedores.
