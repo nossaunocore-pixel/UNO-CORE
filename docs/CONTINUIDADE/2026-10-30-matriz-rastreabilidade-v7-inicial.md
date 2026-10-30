@@ -75,3 +75,15 @@ Uma linha só pode mudar para **integrado** quando houver evidência de fluxo co
 ## Atualização de auditoria — sessão de visitante
 
 A inspeção posterior de `ConversationV6.tsx` confirmou o uso de Firebase Anonymous Auth para o chat público. A matriz foi corrigida: a lacuna não é mais “ausência de criação de sessão no código”, mas sim habilitação e teste do provedor no projeto, além da política de retenção e limpeza. O uso de Firebase para token técnico do chat deve ser mantido separado da decisão de que a navegação e os dados públicos de visitantes dependem do Supabase.
+
+
+## Relação entre acervo histórico e rastreabilidade V7
+
+As transcrições das oito imagens e a comparação EOU V04–V08 estão registradas em:
+- `docs/CONTINUIDADE/2026-10-30-acervo-historico-oito-imagens-v6.md`;
+- `docs/CONTINUIDADE/2026-10-30-reconciliacao-preliminar-v06-co-imagens.md`;
+- `docs/CONTINUIDADE/2026-10-30-comparacao-ampliada-eou-v04-v08-imagens.md`.
+
+Essas fontes elevam o estado de vários requisitos para **documentado** e esclarecem a arquitetura conceitual, mas não alteram automaticamente as colunas de código, integração, teste ou liberação. Uma capacidade descrita em EOU ou em imagem histórica só poderá ser marcada como codificada/integrada/testada/liberada após evidência técnica correspondente na branch e no ambiente da V7.
+
+As correspondências diretas dos capítulos CCM 010, 014, 017 e 020 são referências documentais para requisitos e critérios de aceite futuros; não são evidência de que as mesmas capacidades estejam implementadas no MVP.
