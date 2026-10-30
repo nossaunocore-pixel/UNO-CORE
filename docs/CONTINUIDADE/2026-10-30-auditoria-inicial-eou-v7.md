@@ -367,3 +367,16 @@ A próxima tarefa é comparar o conteúdo completo dos 53 arquivos de V06-CO com
 A transcrição contém o elemento “Nósu, S.A. Fundadora”. Essa grafia foi preservada literalmente no registro de evidência. Não normalizar para “Nós S.A.” nem assumir que se trata de erro tipográfico sem confirmação do fundador.
 
 O ADR-0002 foi atualizado com esta evidência e permanece **Proposto — aguardando validação do fundador**, pois a identificação do Volume 06 está esclarecida, mas a convenção global para diferenciar volumes fundacionais e domínios EOU ainda exige mapeamento e aprovação.
+
+
+## 16. Acervo histórico recuperado — oito imagens da V6
+
+Em 30 de outubro de 2026, o fundador forneceu transcrição detalhada de oito imagens históricas recuperadas. O registro completo está em [Acervo histórico — transcrição das oito imagens](2026-10-30-acervo-historico-oito-imagens-v6.md).
+
+As imagens registram, entre outros conteúdos: V04-EVA — Engenharia da Vida e da Inteligência; Catálogo de Capacidades da Plataforma UNO; priorização e escalonamento de missões; tomada de decisão consciente; modelo operacional integrado do CCM; missões críticas e operações de emergência; Carta Fundadora da Nós S.A.; e Volume 06 — Conhecimento Organizacional, com ciclo declarado concluído e data de 06 de agosto de 2026.
+
+**Correção sobre a V6:** o fundador esclareceu que a V6 se perdeu e que as imagens são recuperações parciais. Não declarar a V6 integralmente recuperada. O diretório atual docs/EOU/V06-CO/ contém 53 arquivos e README intitulado Conhecimento Organizacional — Arquitetura Cognitiva e Institucional; isso comprova a existência dessa documentação no repositório, não que ela seja a V6 integral original.
+
+**Correção institucional:** o fundador confirmou que o nome oficial é **Nós S.A.**. A expressão “Nósu S.A. Fundadora” que apareceu na transcrição inicial da imagem 8 é erro de leitura/transcrição e não deve ser propagada como denominação.
+
+**Implicação para a auditoria:** as imagens acrescentam evidências sobre MUE, OM, EVA, CCM, OPS, governança, decisão, memória, capacidades e Carta Fundadora. A correspondência entre os números/títulos das imagens, os oito volumes fundacionais e os 40 diretórios de domínio EOU permanece pendente de mapeamento. Não renumerar nem mover documentos nesta etapa.
