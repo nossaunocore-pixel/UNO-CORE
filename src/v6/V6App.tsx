@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Home, MessageCircle, Network, Shield, UserRound, Wrench } from 'lucide-react';
 import { CommunityV6 } from './pages/CommunityV6';
 import { ConversationV6 } from './pages/ConversationV6';
-import { MasterPanelV6 } from './pages/MasterPanelV6';
+import { MasterPanelGateV7 } from './components/MasterPanelGateV7';
 import { NosShowcaseV63 } from './pages/NosShowcaseV63';
 import { ParticipationV63 } from './pages/ParticipationV63';
 import { ProfileV63 } from './pages/ProfileV63';
@@ -65,7 +65,7 @@ export default function V6App() {
         {view === 'participacao' && <ParticipationV63 onNavigate={setView} />}
         {view === 'comunidade' && <CommunityV6 onNavigate={setView} />}
         {view === 'nos' && <NosShowcaseV63 />}
-        {view === 'mestre' && <MasterPanelV6 onNavigate={setView} />}
+        {view === 'mestre' && <MasterPanelGateV7 onNavigate={setView} />}
         {view === 'oficina' && <WorkshopV6 onNavigate={setView} />}
       </main>
 

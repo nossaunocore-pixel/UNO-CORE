@@ -30,8 +30,8 @@ export default async function handler(request: Request): Promise<Response> {
 
     const identity = await firestore.runTransaction(async (transaction) => {
       const snapshot = await transaction.get(identityRef);
-      const claimIdu = typeof existingClaims.unoIdu === 'string'
-        ? existingClaims.unoIdu
+      const claimIdu = typeof existingClaims.uno_idu === 'string'
+        ? existingClaims.uno_idu
         : null;
 
       if (snapshot.exists) {
@@ -58,7 +58,7 @@ export default async function handler(request: Request): Promise<Response> {
     const nextClaims: Record<string, unknown> = {
       ...existingClaims,
       role: 'authenticated',
-      unoIdu: identity
+      uno_idu: identity
     };
     if (isConfiguredFounder) {
       nextClaims.unoFounder = true;
@@ -67,7 +67,7 @@ export default async function handler(request: Request): Promise<Response> {
 
     const claimsChanged =
       existingClaims.role !== 'authenticated' ||
-      existingClaims.unoIdu !== identity ||
+      existingClaims.uno_idu !== identity ||
       (isConfiguredFounder &&
         (existingClaims.unoFounder !== true || existingClaims.unoMaster !== true));
 

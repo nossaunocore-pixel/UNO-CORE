@@ -19,7 +19,7 @@ export default async function handler(request: Request): Promise<Response> {
 
   try {
     const { decoded } = await verifyFirebaseRequest(request);
-    if (typeof decoded.unoIdu !== 'string' || !decoded.unoIdu) {
+    if (typeof decoded.uno_idu !== 'string' || !decoded.uno_idu) {
       return json({
         error: 'Sua identidade UNO ainda não foi provisionada. Atualize a sessão e tente novamente.'
       }, 403);

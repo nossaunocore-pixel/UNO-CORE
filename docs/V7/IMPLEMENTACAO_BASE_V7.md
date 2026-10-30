@@ -16,8 +16,8 @@ Preparar a UNO CORE para o ciclo real pessoa → necessidade → compreensão �
 - Autenticação Firebase por e-mail/senha e Google na interface atual, com confirmação de e-mail no cadastro.
 - Cliente Supabase configurado para enviar o Firebase ID token como access token.
 - Compatibilidade temporária com `VITE_SUPABASE_ANON_KEY` enquanto o projeto Vercel ainda não possui `VITE_SUPABASE_PUBLISHABLE_KEY`.
-- Endpoint server-side para validar o Firebase ID token, criar vínculo interno estável e atribuir claim `unoIdu` somente pelo Admin SDK.
-- Endpoint de conversa protegido por Firebase ID token e claim `unoIdu`.
+- Endpoint server-side para validar o Firebase ID token, criar vínculo interno estável e atribuir claim `uno_idu` somente pelo Admin SDK.
+- Endpoint de conversa protegido por Firebase ID token e claim `uno_idu`.
 - Regras Firestore no repositório atualizadas para negar acesso direto do cliente às coleções, exceto leitura do próprio perfil legado.
 - Segredos de Admin SDK e UID fundador documentados apenas como nomes de variáveis; nenhum valor secreto foi adicionado ao Git.
 
