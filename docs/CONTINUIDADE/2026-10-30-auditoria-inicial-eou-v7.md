@@ -294,3 +294,21 @@ Critérios pendentes:
 - [ ] Definir e verificar TTL para documentos de quota, se aplicável.
 - [ ] Explicar ao visitante a diferença entre limpar conversa local, encerrar sessão e remover dados retidos.
 - [ ] Testar renovação, persistência entre recargas, expiração e encerramento da sessão anônima.
+
+
+## 14. Documentação V7 já existente na branch técnica
+
+A revisão do branch `v7-implementation` confirmou que já existem quatro documentos específicos de preparação V7:
+
+- `docs/V7/IMPLEMENTACAO_BASE_V7.md`
+- `docs/V7/PACOTE_PREPARACAO_ANTIGRAVITY.md`
+- `docs/V7/REDE_SOCIAL_E_SAIDA_UNIVERSAL.md`
+- `docs/V7/REVISAO_RESPONSIVIDADE_ACESSO_LGPD.md`
+
+Foi criado nessa mesma branch o documento complementar:
+
+- `docs/V7/REVISAO_AUDITORIA_COMPLEMENTAR_2026-10-30.md`
+
+Esse registro consolida a auditoria de código e reconcilia pontos de documentação desatualizados, especialmente o chat público sem IDU, a sessão anônima Firebase exclusiva da conversa, a navegação pública sob Supabase/RLS, retenção de sessão, migração RLS, claims administrativas e funcionalidades ainda sem evidência de integração.
+
+A branch `v7-implementation` está 57 commits à frente de `v7-foundation`, e o PR #1 está aberto em Draft, sem merge. Não foi feita mesclagem entre branches nesta ação. Os documentos V7 permanecem na branch técnica; esta auditoria e a matriz geral permanecem em `main`, até que a estratégia de consolidação seja deliberada.
