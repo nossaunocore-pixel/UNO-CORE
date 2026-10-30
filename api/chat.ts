@@ -19,11 +19,9 @@ export default async function handler(request: Request): Promise<Response> {
 
   try {
     const { decoded } = await verifyFirebaseRequest(request);
-    const signInProvider = decoded.firebase?.sign_in_provider;
-    const isAnonymousVisitor = signInProvider === 'anonymous';
+    const isVisitor = typeof decoded.uno_idu !== 'string' || !decoded.uno_idu;
 
-    if (!isAnonymousVisitor &&
-        (typeof decoded.uno_idu !== 'string' || !decoded.uno_idu)) {
+    if (!isVisitor && typeof decoded.uno_idu !== 'string') {
       return json({
         error: 'Sua identidade UNO ainda não foi provisionada. Atualize a sessão e tente novamente.'
       }, 403);
@@ -77,7 +75,7 @@ export default async function handler(request: Request): Promise<Response> {
       meta: {
         provider: 'google',
         model: 'gemini-2.5-flash',
-        identity: isAnonymousVisitor ? 'visitor' : 'verified'
+        identity: isVisitor ? 'visitor' : 'verified'
       }
     });
   } catch (error) {
