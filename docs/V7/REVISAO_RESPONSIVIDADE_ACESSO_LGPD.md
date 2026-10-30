@@ -261,3 +261,12 @@ A Praça UNO passa a apresentar três dimensões distintas:
 ### Precisão sobre retenção da identidade de visitante
 
 A sessão anônima Firebase cria um usuário anônimo no Authentication e pode persistir entre visitas no mesmo navegador. Ela não é automaticamente temporária. A interface foi ajustada para informar isso. Ainda falta definir e implementar uma política de expiração/limpeza de contas anônimas sem atividade, com prazos e base legal/aviso de privacidade aprovados. O TTL da coleção de quotas Firestore não remove contas Firebase Authentication.
+
+
+## 17. Preview READY após ajuste de retenção do visitante — 2026-10-30
+
+- Vercel Preview READY no commit de código `eec15256f3e64d93ee0299f9a4c97e232c79085b`, deployment `dpl_3acmtFPxzVE7PkgeyFgyn8apYhtc`.
+- URL: https://uno-core-e0c80gqwh-rudson-cleber-rodriguez-s-projects.vercel.app (SSO do projeto pode exigir autenticação).
+- Build `tsc && vite build` concluído; 1.516 módulos transformados. Bundle JS 774,46 kB (gzip 206,16 kB), acima do limite recomendado de 500 kB.
+- O código inclui a correção da mensagem de privacidade: identidade anônima Firebase não é descrita como temporária; a política de expiração/limpeza das contas anônimas continua pendente.
+- O HEAD documental posterior `8b7fbc5ada2375a9343263724bb42f3f94ccb9ad` não altera código. Nenhuma promoção de produção.
