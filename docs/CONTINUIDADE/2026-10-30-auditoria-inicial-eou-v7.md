@@ -406,3 +406,10 @@ A comparação documental ampliada foi registrada em [Comparação ampliada EOU 
 **V06-CO:** a correspondência temática com a imagem 8 permanece forte, sobretudo nos capítulos de governança, memória, aprendizagem, Stewardship, Curadoria, Instituição Curadora e Carta Fundadora. A V6 integral continua perdida conforme declaração do fundador; os arquivos atuais não comprovam sua recuperação integral.
 
 Nenhum arquivo canônico foi renomeado ou movido. Nenhum código, banco, configuração ou ambiente de produção foi alterado.
+
+
+## 19. Carta Fundadora e recuperação de Zelo
+
+A comparação da imagem 7 com `docs/EOU/V06-CO/051-Carta-Fundadora-da-NOS-SA.md` encontrou correspondência estrutural e textual forte: missão, propósito, princípios, forma de atuar e seção “Aquilo que Jamais Faremos” aparecem no documento atual. A imagem é compatível com síntese visual da Carta, mas não foi declarada edição textual idêntica. Nome institucional correto confirmado pelo fundador: **Nós S.A.**.
+
+A busca por nomes de arquivo localizou `docs/CONTINUIDADE/2026-10-30-varredura-eou-zelo-e-diretrizes.md`. Esse registro reafirma que **Zelo** já pertence à engenharia e não deve ser criado como sigla ou módulo independente. A definição canônica original ainda precisa ser localizada; o documento encontrado é diretriz de continuidade, não substituto da fonte canônica. Preservar a orientação: cuidado e auxílio, nunca vigilância ou controle.
