@@ -256,3 +256,8 @@ A Praça UNO passa a apresentar três dimensões distintas:
 - Pipeline `tsc && vite build` concluído; 1.516 módulos transformados. Bundle JavaScript 774,29 kB (gzip 206,10 kB), acima do limite recomendado de 500 kB; code-splitting segue pendente.
 - Este commit inclui a separação social/comercial/institucional, a conversa pública com sessão anônima e quota, o filtro da biblioteca para conteúdo somente aprovado e a atualização do tour público.
 - READY confirma build/deploy, não teste visual em dispositivos, operação real do Firebase Admin, habilitação do Anonymous provider, App Check, TTL Firestore ou conversa ponta a ponta. Nenhuma produção foi promovida.
+
+
+### Precisão sobre retenção da identidade de visitante
+
+A sessão anônima Firebase cria um usuário anônimo no Authentication e pode persistir entre visitas no mesmo navegador. Ela não é automaticamente temporária. A interface foi ajustada para informar isso. Ainda falta definir e implementar uma política de expiração/limpeza de contas anônimas sem atividade, com prazos e base legal/aviso de privacidade aprovados. O TTL da coleção de quotas Firestore não remove contas Firebase Authentication.
