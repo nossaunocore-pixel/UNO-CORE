@@ -64,3 +64,5 @@ export const presentationTour: PresentationStep[] = [
     mediaLabel: 'Visão planejada · Trabalho e renda'
   }
 ];
+
+// The public tour intentionally separates social, commercial and institutional explanations.
