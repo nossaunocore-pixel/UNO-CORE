@@ -215,3 +215,35 @@ A Lei nº 15.352/2026 alterou, entre outros pontos, a redação do conceito de e
 - Preview READY para a árvore que inclui `src/index.css` com fallback global: deployment `dpl_2fk3SjCvLdTF3PdYXiipKKXooz5v`, commit `2dda1151244a55783e65fb5f5c81768294283dff`, URL https://uno-core-5b8nnrbnx-rudson-cleber-rodriguez-s-projects.vercel.app.
 - O HEAD documental atual é `d85caae49029ff9a0133ce8e167add030ae8d0f6`; não altera código. PR #1 permanece Draft e não mesclado; produção preservada.
 - A conclusão READY confirma build/deploy, não testes visuais reais, operação autenticada Firebase, autorização backend/RLS ou conformidade legal.
+
+
+## 15. Reorganização da apresentação pública — 2026-10-30
+
+A Praça UNO passa a apresentar três dimensões distintas:
+
+1. **Comunidade — social:** escuta e acolhimento, leitura do território, iniciativas locais, participação, solidariedade e cultura/aprendizagem. A página não apresenta contagens, votações, projetos ou resultados fictícios.
+2. **Vitrine Comercial — econômica:** visão planejada de produtos, comércio local, profissionais, serviços, entregas, compras coletivas, trabalho/renda e criadores. Não há checkout, contratação, venda ou pagamento ativo.
+3. **Edifício UNO — institucional:** propósito, princípios, governança, organização por escalas e limites de acesso. A NÓS S.A. aparece apenas como estrutura jurídica/operacional futura, sem expor departamentos internos, minutas ou dados reservados.
+
+- Removidos da Praça os pontos separados de Trabalho/Renda e Instituições, para evitar exposição de módulos internos e equilibrar a composição. As capacidades comerciais aparecem agrupadas na Vitrine.
+- Reposicionado o ícone de ajuda para não sobrepor o acesso à Comunidade; o Edifício central mantém sua proporção visual.
+- O tour público agora apresenta as dimensões social, comercial e institucional. Navegação superior oculta Painel Mestre e Oficina para contas sem claims explícitas; contas com claim autorizado mantêm acesso interno.
+- A página de informação pública (biblioteca), Participação e Comunidade ficam abertas a visitantes; Perfil e Meu Ambiente continuam exigindo autenticação/IDU. Biblioteca filtra conteúdo audience=publico e exclui rascunhos.
+- Conversa pública implementada com início de sessão anônima Firebase. API aceita tokens Firebase válidos sem IDU apenas para chat público; instrução do modelo restringe o visitante a informações públicas. Para contas autenticadas com IDU, fluxo anterior permanece.
+- Cota de visitante na API: até 5 mensagens por minuto e 30 por dia por UID Firebase, persistida em uno_public_chat_limits; mensagens de visitante limitadas a 2.000 caracteres e histórico a seis mensagens. Registros incluem expiresAt de sete dias, mas a política TTL do Firestore ainda precisa ser habilitada.
+- A interface informa que a conversa envia mensagens ao provedor de IA, mantém histórico somente na sessão do navegador e orienta a não inserir senhas, documentos, dados financeiros ou informações sensíveis.
+
+### Dependências e limites da conversa pública
+
+- É necessário habilitar o provedor Anonymous em Firebase Authentication.
+- O endpoint depende de FIREBASE_SERVICE_ACCOUNT_JSON server-side, ainda ausente na última verificação anterior; sem ele, a API falha de modo seguro com 503.
+- A cota atual é por UID; Firebase App Check e controles adicionais anti-abuso devem ser configurados e testados antes da abertura em produção. Não considerar a cota isolada suficiente contra criação abusiva de múltiplas sessões anônimas.
+- Ativar TTL para uno_public_chat_limits.expiresAt e validar custo/retensão do Firestore.
+- Nenhum desses recursos foi testado ponta a ponta ainda. A navegação informativa pode abrir sem conta, mas a resposta real da IA depende das configurações acima.
+
+### Estado de build desta revisão
+
+- O build inicial identificou dois erros de TypeScript: Auth | null na sessão anônima e ícone BriefcaseBusiness não exportado. Ambos foram corrigidos na branch.
+- O deployment do commit f7eca301dc837fc9f1c2a08abf5de225487bad44 ficou READY, antes das últimas correções de proporção da Praça e do tour institucional.
+- Deployment do commit ff4bb71bad804dd1061a1fd02f442b2bece99818 foi criado e estava QUEUED na última consulta. Não declarar a revisão final como READY até reconfirmar.
+- PR #1 permanece Draft; produção não foi promovida.
