@@ -170,3 +170,29 @@ As imagens e os volumes descrevem uma arquitetura institucional muito mais ampla
 | Reconstrução integral da V6 | Não realizada nem alegada |
 | Alterações de código, bancos ou produção | Nenhuma |
 | Renomeação/movimentação de documentos canônicos | Nenhuma |
+
+
+## 12. Comparação específica — imagem 7 e Carta Fundadora da Nós S.A.
+
+O capítulo atual `docs/EOU/V06-CO/051-Carta-Fundadora-da-NOS-SA.md` possui correspondência estrutural muito forte com a imagem 7. Os títulos de seção coincidem com os blocos da imagem: Nossa Razão de Existir/Missão, Nossa Identidade, Nosso Compromisso, Nossos Princípios, Nossa Forma de Atuar, Aquilo que Jamais Faremos e Nosso Legado.
+
+A comparação do texto disponível confirma:
+- **Missão:** a Carta atual declara preservar, fortalecer, desenvolver e transmitir a Engenharia Oficial e a Plataforma UNO às gerações presentes e futuras — mesma formulação central da imagem.
+- **Propósito:** a Carta desenvolve fortalecer capacidades, desenvolver pessoas, integrar inteligências e servir à sociedade.
+- **Princípios:** Servir, Preservar, Evoluir, Compartilhar, Cooperar, Desenvolver Pessoas, Integrar Inteligências Artificiais e Fortalecer a Sociedade aparecem como seções próprias.
+- **Forma de atuar:** Compreender antes de agir, Ouvir antes de orientar, Construir antes de reivindicar, Evoluir continuamente, Preparar sucessores e Cultivar Confiança aparecem como seções próprias.
+- **Aquilo que jamais faremos:** a imagem resume proibições institucionais; a Carta atual contém seção própria com esse título e desenvolve limites contra manipulação, redução da dignidade, transferência de responsabilidade moral à IA, confusão entre autoridade e superioridade, concentração de poder e sacrifício do futuro por benefícios imediatos.
+- **Legado:** a imagem traz a frase “Não desejamos ser lembrados pelo que construímos para nós, mas pelo que fortalecemos para o mundo.” A Carta atual apresenta formulações de legado alinhadas, mas a frase exata deve ser conferida no capítulo completo antes de atribuir identidade literal.
+
+**Conclusão:** a imagem 7 é compatível com uma síntese visual da Carta Fundadora atual. A correspondência é forte, mas não se declara que a imagem e o capítulo são a mesma edição textual. O título do arquivo usa “NÓS S.A.” em caixa alta; a forma institucional confirmada pelo fundador é **Nós S.A.**, sem alteração automática do nome de arquivo histórico.
+
+## 13. Recuperação de Zelo — localização documental
+
+A varredura por nomes de arquivo localizou `docs/CONTINUIDADE/2026-10-30-varredura-eou-zelo-e-diretrizes.md`. Esse registro confirma que o nome correto é **Zelo**, que já integra a engenharia oficial e que não deve ser criado como sigla, produto independente ou arquitetura nova.
+
+O documento encontrado é um registro de continuidade e diretrizes, não a definição canônica integral do conceito. Ele indica que a busca anterior pela definição oficial permanece incompleta. Portanto:
+- há evidência documental de que Zelo já foi tratado na engenharia/continuidade;
+- ainda é necessário localizar a fonte canônica original e suas relações;
+- não criar um novo módulo Zelo nem renomear Zelo como ZEU;
+- manter a distinção entre cuidado/auxílio e vigilância/controle;
+- a auditoria de segurança, permissões e dados deve permanecer vinculada a finalidades explícitas e revisão humana.
