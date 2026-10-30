@@ -1,6 +1,7 @@
 import React, { FormEvent, useEffect, useRef, useState } from 'react';
 import { Bot, BrainCircuit, FileUp, Mic, RotateCcw, Send, Trash2, Volume2, WifiOff } from 'lucide-react';
 import type { NavigateV6, UnoMessage } from '../types';
+import { auth } from '../../services/firebase';
 
 const initialMessages: UnoMessage[] = [{
   id: 'welcome', role: 'assistant',
@@ -62,9 +63,37 @@ export function ConversationV6({ onNavigate: _onNavigate }: { onNavigate: Naviga
     const timeout = window.setTimeout(() => controller.abort(), 35000);
 
     try {
+      const user = auth?.currentUser;
+      if (!user) {
+        throw new Error('Entre na sua conta para conversar com a UNO.');
+      }
+
+      let idToken = await user.getIdToken();
+      let identityResponse = await fetch('/api/identity/session', {
+        method: 'POST',
+        headers: { Authorization: 'Bearer ' + idToken }
+      });
+      let identityData = await identityResponse.json().catch(() => ({})) as { error?: string; status?: string };
+
+      if (identityResponse.status === 202 && identityData.status === 'claims_refresh_required') {
+        idToken = await user.getIdToken(true);
+        identityResponse = await fetch('/api/identity/session', {
+          method: 'POST',
+          headers: { Authorization: 'Bearer ' + idToken }
+        });
+        identityData = await identityResponse.json().catch(() => ({})) as { error?: string; status?: string };
+      }
+
+      if (!identityResponse.ok) {
+        throw new Error(identityData.error || 'Não foi possível validar sua identidade UNO.');
+      }
+
       const response = await fetch('/api/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + idToken
+        },
         body: JSON.stringify({
           message: text,
           history: history.slice(-12).map(({ role, content }) => ({ role, content }))
@@ -124,7 +153,7 @@ export function ConversationV6({ onNavigate: _onNavigate }: { onNavigate: Naviga
       <div ref={streamRef} className="v62-message-stream" aria-live="polite" aria-busy={loading}>{messages.map(message => <div key={message.id} className={`v62-message ${message.role}`}><span>{message.role === 'assistant' ? 'UNO' : 'Você'}</span>{message.content}</div>)}{loading && <div className="v62-message assistant v64-thinking"><span>UNO</span><b /><b /><b /><small>Organizando a resposta…</small></div>}{error && <div className="v64-chat-error" role="alert"><strong>Não foi possível concluir</strong><span>{error}</span>{lastRequest && <button type="button" onClick={retryLastMessage} disabled={loading || !online}><RotateCcw size={16} /> Tentar novamente</button>}</div>}</div>
       <div className="v62-memory-cards"><button><BrainCircuit /> <span><b>O que compreendi</b><small>Resumo autorizado da conversa</small></span></button><button><Send /> <span><b>Próximo passo</b><small>Nenhuma ação sem confirmação</small></span></button><button><Volume2 /> <span><b>Memória autorizada</b><small>Você controla o que permanece</small></span></button></div>
       <form className="v62-composer" onSubmit={sendMessage}><button type="button" title="Anexar arquivo — em preparação" aria-label="Anexar arquivo — em preparação" disabled><FileUp /></button><button type="button" title="Falar — em preparação" aria-label="Falar — em preparação" disabled><Mic /></button><input value={input} onChange={event => setInput(event.target.value)} placeholder={online ? 'Digite ou fale com a UNO…' : 'Aguardando conexão…'} maxLength={4000} disabled={!online}/><button className="send" disabled={!input.trim() || loading || !online} title="Enviar mensagem"><Send /></button><button type="button" className={`v64-hands-free ${handsFree ? 'active' : ''}`} onClick={() => setHandsFree(value => !value)} aria-pressed={handsFree} title="Modo mãos livres — interface preparada">Mãos livres</button>{input.length > 3600 && <small className="v64-char-count">{input.length}/4000</small>}</form>
-      <small className="v6-disclaimer">Esta conversa permanece somente nesta aba enquanto ela estiver aberta. Áudio e memória permanente dependem do consentimento do usuário.</small>
+      <small className="v6-disclaimer">A sessão é autenticada pelo Firebase. O histórico ainda permanece nesta aba; persistência de conversas e memória depende da integração de dados e do consentimento do usuário.</small>
     </div>
   </section>;
 }

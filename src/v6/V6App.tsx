@@ -16,6 +16,7 @@ import { IntegrationsCenterV637 } from './pages/IntegrationsCenterV637';
 import { AgentsCenterV638 } from './pages/AgentsCenterV638';
 import { AuditCenterV639 } from './pages/AuditCenterV639';
 import { WorkshopV6 } from './pages/WorkshopV6';
+import { AuthControlV7 } from './components/AuthControlV7';
 import type { V6View } from './types';
 import './v6.css';
 
@@ -45,7 +46,8 @@ export default function V6App() {
             </button>
           ))}
         </nav>
-        <span className="v6-stage">V6 · ambiente de desenvolvimento</span>
+        <AuthControlV7 />
+        <span className="v6-stage">V7 · base funcional em preparação</span>
       </header>
 
       <main className="v6-main">
