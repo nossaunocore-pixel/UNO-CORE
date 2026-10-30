@@ -219,3 +219,46 @@ Nesta etapa foram lidos arquivos selecionados por GitHub; não foi executado `np
 4. Verificar fluxos de mídia/lives, agenda, habilidades, serviços e UNO RH, classificando cada um como tela demonstrativa, fluxo local, integração real ou ausente.
 5. Definir testes de acesso anônimo, visitante, usuário, parceiro, fundador e pessoa manualmente autorizada.
 6. Registrar os critérios de aceite e o branch de implementação escolhido antes de consolidar instruções finais para Antigravity.
+
+
+## 12. Verificação complementar dos endpoints e regras de segurança V7
+
+A inspeção adicional do branch `v7-implementation` confirmou a existência de:
+
+- `api/identity/session.ts`
+- `server/firebaseAdmin.ts`
+- `api/chat.ts`
+- `firestore.rules`
+- `firestore.rules.v7-draft`
+- `spec/FOUNDER_IDENTITY_BOOTSTRAP_V7.md`
+
+### 12.1 Provisionamento do IDU
+
+O endpoint `POST /api/identity/session` valida o Firebase ID token no servidor por Firebase Admin SDK, exige e-mail verificado ou telefone, cria ou recupera um vínculo em `uno_identity_links/{firebaseUid}` e emite a claim `uno_idu`. O reconhecimento do fundador depende de `UNO_FOUNDER_UID` configurado no ambiente server-side. A configuração exige `FIREBASE_SERVICE_ACCOUNT_JSON`; sem ela, o endpoint retorna indisponibilidade de provisionamento.
+
+A especificação `spec/FOUNDER_IDENTITY_BOOTSTRAP_V7.md` determina que a claim de fundador seja concedida exclusivamente por processo confiável, que a autorização mestre seja manual e auditável e que o bootstrap seja testado antes de qualquer alteração no Firebase Console. Essas salvaguardas devem ser preservadas.
+
+### 12.2 Regras Firestore
+
+O arquivo `firestore.rules` usa negação por padrão: bloqueia leitura/escrita em `uno_identity_links`, permite apenas leitura própria em `usuarios/{firebaseUid}` e nega escritas do cliente. O arquivo `firestore.rules.v7-draft` declara expressamente que é rascunho e não deve ser publicado sem testes e revisão do esquema.
+
+**Não publicar o rascunho como regra definitiva sem matriz de permissões, testes de segurança e revisão das coleções efetivamente usadas.** Também é necessário reconciliar o modelo de dados descrito na documentação com as regras restritivas atualmente existentes.
+
+### 12.3 Chat público/visitante
+
+O endpoint `api/chat.ts` exige um Firebase ID token para processar qualquer mensagem. Quando o token não contém `uno_idu`, classifica a sessão como visitante e aplica limites de 5 mensagens por minuto e 30 por dia por UID, persistidos em `uno_public_chat_limits`. O prompt do sistema orienta a não revelar dados internos e a não afirmar execução de serviços que estejam apenas em demonstração.
+
+O componente `AuthControlV7.tsx` examinado apresenta cadastro/login por e-mail e login Google, mas não mostra criação de sessão anônima. O endpoint de bootstrap de IDU, por sua vez, exige contato verificado. Assim, **a origem e o ciclo de vida do Firebase ID token de visitante ainda precisam ser encontrados e testados**. Sem uma sessão Firebase válida, a conversa pública receberá 401, mesmo que a tela esteja visualmente acessível.
+
+### 12.4 Pendências objetivas para o Antigravity
+
+- [ ] Identificar onde a sessão de visitante é criada, renovada e encerrada; se não existir, especificar e implementar fluxo explícito de sessão anônima ou alternativa aprovada.
+- [ ] Testar visitante sem IDU, usuário autenticado com IDU, usuário sem contato verificado e usuário sem sessão.
+- [ ] Testar a criação de IDU idempotente e o tratamento de conflito de vínculo.
+- [ ] Verificar que apenas `UNO_FOUNDER_UID` no servidor concede `unoFounder`; não aceitar claims fornecidas pelo cliente.
+- [ ] Definir como `unoMaster` será concedida manualmente, registrada, revisada e revogada.
+- [ ] Verificar expiração, atualização e revogação de tokens e autorização em cada endpoint.
+- [ ] Executar testes das regras Firestore em Emulator Suite antes de qualquer publicação.
+- [ ] Confirmar Third-Party Auth Firebase no Supabase e testar RLS para visitante e perfis autenticados.
+
+Estes arquivos demonstram que há implementação de segurança em andamento, mas não comprovam que os serviços estejam configurados no projeto Firebase/Supabase nem que os fluxos estejam aprovados em produção.
