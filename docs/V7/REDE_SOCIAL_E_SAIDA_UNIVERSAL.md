@@ -3,6 +3,14 @@ Data: 2026-10-30
 Branch de implementação: v7-implementation
 Status: requisito aprovado para implementação; ainda não declarar entregue.
 
+## 0. Arquitetura acordada: visitantes, Supabase e Firebase
+- A navegação pública/visitante da UNO depende somente do Supabase. O acesso às páginas e aos dados públicos deve ser resolvido pela integração Supabase, sem exigir criação de usuário anônimo ou autenticação visitante no Firebase.
+- O Supabase é a camada de dados dos usuários e deve controlar a leitura pública permitida por políticas RLS adequadas. A interface não substitui autorização no banco.
+- O Firebase não é pré-requisito da navegação de visitante nem deve ser tratado como dependência para liberar as páginas públicas no Preview.
+- O banco/estrutura de dados do Firebase será criado, estruturado e preenchido posteriormente pelo Antigravity, na etapa de preparação para produção, conforme a arquitetura institucional/operacional da UNO. Não antecipar essa etapa nem declarar o Firebase configurado antes da execução e validação pelo Antigravity.
+- Esta decisão não autoriza expor dados privados: conteúdo público aprovado pode ser lido por visitantes; dados pessoais, conteúdo restrito e ações de escrita permanecem sujeitos a autenticação, autorização e políticas apropriadas.
+- A rede social deve priorizar funções sem APIs externas. A persistência e sincronização de dados sociais seguem o backend próprio definido para cada domínio; a navegação pública de visitante permanece dependente apenas do Supabase.
+
 ## 1. Rede social no MVP
 A UNO deve incluir uma dimensão de rede social própria, integrada à navegação da plataforma. O trabalho deve priorizar funções que não dependem de APIs de terceiros.
 
@@ -25,7 +33,7 @@ A UNO deve incluir uma dimensão de rede social própria, integrada à navegaç�
 - Não inserir publicações, perfis, contagens, comentários, curtidas ou notificações fictícias como se fossem atividade real.
 - Distinguir claramente conteúdo demonstrativo de conteúdo publicado por participantes.
 - A camada local pode permitir rascunhos, pré-visualização, filtros, preferências e interações de demonstração no próprio dispositivo.
-- A sincronização entre pessoas exige persistência e autorização no backend próprio da UNO (Firebase/Supabase) ou serviço equivalente. “Sem API de terceiros” não significa “sem comunicação com backend”.
+- A sincronização entre pessoas exige persistência e autorização no backend próprio da UNO. Para a navegação pública/visitante, a fonte definida é o Supabase; não introduzir dependência do Firebase para esse acesso. “Sem API de terceiros” não significa “sem comunicação com backend”.
 - Não anunciar uma publicação como compartilhada com a comunidade enquanto ela não tiver sido persistida e confirmada pelo servidor.
 - Ações que alterem dados devem ser autorizadas no servidor e nas regras do banco, não apenas ocultadas na interface.
 - Definir privacidade e audiência por publicação; padrão conservador, com prévia clara antes de publicar.
@@ -77,7 +85,7 @@ Todo elemento temporário que se sobreponha à página ou interrompa o fluxo dev
 1. A área de rede social aparece na navegação e respeita o modelo de acesso.
 2. É possível testar funções locais sem APIs de terceiros, com rótulo claro quando os dados não são compartilhados.
 3. Nenhuma interação de demonstração é apresentada como ação social real.
-4. A sincronização multiusuário só é habilitada após backend, regras, autorização e testes.
+4. A sincronização multiusuário só é habilitada após backend, regras, autorização e testes; a navegação de visitante usa apenas Supabase. Firebase será preparado pelo Antigravity posteriormente, na etapa de produção.
 5. Todo modal/popover/drawer/tour/visualizador relevante tem botão de saída.
 6. Em Android, Voltar fecha a sobreposição superior antes de navegar para fora da tela.
 7. Em desktop, Escape fecha a sobreposição superior quando aplicável.
