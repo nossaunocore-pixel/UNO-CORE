@@ -68,9 +68,9 @@ export function PublicSquareV6({ onNavigate }: { onNavigate: NavigateV6 }) {
           <span className="v6-place-card"><strong>Meu Ambiente</strong><small>Seu espaço pessoal, disponível após entrar.</small></span>
         </button>
 
-        <button className={`v6-place place-services${placeClass('services')}`} onClick={() => onNavigate('participacao')}>
+        <button className={`v6-place place-services${placeClass('services')}`} onClick={() => onNavigate('conversa')}>
           <span className="v6-place-icon"><HeartHandshake /></span>
-          <span className="v6-place-card"><strong>Participação</strong><small>Escuta, propostas e decisões comunitárias.</small></span>
+          <span className="v6-place-card"><strong>Acolhimento e apoio</strong><small>Escuta, orientação e próximos caminhos.</small></span>
         </button>
 
         <button className={`v6-place place-profile${placeClass('profile')}`} onClick={() => onNavigate('perfil')}>
