@@ -380,3 +380,12 @@ As imagens registram, entre outros conteúdos: V04-EVA — Engenharia da Vida e 
 **Correção institucional:** o fundador confirmou que o nome oficial é **Nós S.A.**. A expressão “Nósu S.A. Fundadora” que apareceu na transcrição inicial da imagem 8 é erro de leitura/transcrição e não deve ser propagada como denominação.
 
 **Implicação para a auditoria:** as imagens acrescentam evidências sobre MUE, OM, EVA, CCM, OPS, governança, decisão, memória, capacidades e Carta Fundadora. A correspondência entre os números/títulos das imagens, os oito volumes fundacionais e os 40 diretórios de domínio EOU permanece pendente de mapeamento. Não renumerar nem mover documentos nesta etapa.
+
+
+## 17. Reconciliação preliminar do EOU-V06-CO
+
+Foi consultada a árvore Git recursiva e confirmada a existência de **53 arquivos** em `docs/EOU/V06-CO/`: README e 52 capítulos numerados de 001 a 052. Os títulos e introduções dos 52 capítulos foram inventariados. O conjunto aborda organização, pessoas, equipes, responsabilidades, processos, fluxos, orquestração, decisão, governança, inteligência, memória, aprendizagem, evolução, valor público, Stewardship, Curadoria, Instituição Curadora, Carta Fundadora e Declaração da Engenharia Oficial.
+
+A reconciliação preliminar está registrada em [Reconciliação preliminar — imagens recuperadas e EOU-V06-CO](2026-10-30-reconciliacao-preliminar-v06-co-imagens.md). O relatório identifica divergências internas de nomenclatura: README como Conhecimento Organizacional; capítulo 001 como Catálogo Organizacional; catálogos gerais como Centro de Operações. Também identifica que os capítulos 050–052 cobrem Instituição Curadora, Carta Fundadora da NÓS S.A. e Declaração da Engenharia Oficial.
+
+**Conclusão:** o conjunto V06-CO existente apresenta correspondência temática substancial com as imagens recuperadas, mas não há evidência suficiente para afirmar que seja a V6 integral original. A declaração do fundador de que a V6 se perdeu permanece válida. Não houve renomeação, movimentação ou exclusão dos 53 arquivos.
