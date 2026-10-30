@@ -389,3 +389,20 @@ Foi consultada a árvore Git recursiva e confirmada a existência de **53 arquiv
 A reconciliação preliminar está registrada em [Reconciliação preliminar — imagens recuperadas e EOU-V06-CO](2026-10-30-reconciliacao-preliminar-v06-co-imagens.md). O relatório identifica divergências internas de nomenclatura: README como Conhecimento Organizacional; capítulo 001 como Catálogo Organizacional; catálogos gerais como Centro de Operações. Também identifica que os capítulos 050–052 cobrem Instituição Curadora, Carta Fundadora da NÓS S.A. e Declaração da Engenharia Oficial.
 
 **Conclusão:** o conjunto V06-CO existente apresenta correspondência temática substancial com as imagens recuperadas, mas não há evidência suficiente para afirmar que seja a V6 integral original. A declaração do fundador de que a V6 se perdeu permanece válida. Não houve renomeação, movimentação ou exclusão dos 53 arquivos.
+
+
+## 18. Comparação ampliada dos volumes EOU V04–V08 com as imagens recuperadas
+
+A comparação documental ampliada foi registrada em [Comparação ampliada EOU V04–V08 e imagens recuperadas](2026-10-30-comparacao-ampliada-eou-v04-v08-imagens.md). Foram confirmadas as contagens: V04-EVA 146 arquivos/145 capítulos; V05-OM 101/100; V06-CO 53/52; V07-CCM 22/21; V08-OPS 34/33.
+
+**Correspondências diretas:** as imagens 3, 4, 5 e 6 correspondem por número e título aos capítulos V07-CCM 014 (Priorização e Escalonamento), 010 (Tomada de Decisão Consciente), 020 (Modelo Operacional Integrado) e 017 (Missões Críticas e Operações de Emergência). Os conteúdos atuais desenvolvem os temas das imagens com maior profundidade.
+
+**V04-EVA:** os sete núcleos cognitivos da imagem 1 encontram correspondência temática na coleção atual de 145 capítulos. Contudo, a imagem expande EVA como “Engenharia da Vida e da Inteligência”, enquanto o README atual define “Ecossistema de Valor e Aprendizagem”. Não normalizar sem validação.
+
+**V05-OM:** há divergência interna material: README chama OM de “Oficina Mestre”; capítulo 001 define “Orquestrador Mestre”; a imagem 1 descreve OM como camada que orquestra recursos e operações. Separar os conceitos antes de qualquer renomeação.
+
+**V08-OPS:** a documentação atual complementa V07-CCM: CCM coordena missões, contexto, prioridade e decisão; OPS sustenta, observa, recupera e evolui as capacidades operacionais. O capítulo 028 de OPS amplia a doutrina de crise/emergência, sem substituir o CCM.
+
+**V06-CO:** a correspondência temática com a imagem 8 permanece forte, sobretudo nos capítulos de governança, memória, aprendizagem, Stewardship, Curadoria, Instituição Curadora e Carta Fundadora. A V6 integral continua perdida conforme declaração do fundador; os arquivos atuais não comprovam sua recuperação integral.
+
+Nenhum arquivo canônico foi renomeado ou movido. Nenhum código, banco, configuração ou ambiente de produção foi alterado.
