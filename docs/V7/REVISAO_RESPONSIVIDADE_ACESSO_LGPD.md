@@ -130,3 +130,11 @@ Uma página só será marcada como revisada quando:
 - Aviso não bloqueante: bundle JS de 770,89 kB acima do limite de 500 kB; recomenda-se code-splitting/dynamic import.
 - READY comprova build/deploy, não validação visual em aparelhos, runtime Firebase Admin, chamadas autenticadas nem autorização dos dados.
 - O Preview está sujeito à proteção SSO da Vercel. Produção não foi promovida.
+
+
+## 9. Integridade dos dados demonstrativos — 2026-10-30
+
+- Meu Ambiente deixou de exibir o nome fixo de uma pessoa e passou a usar o nome de exibição da conta autenticada, com fallback neutro. Contagens, vínculos familiares, solicitações, adesão e permissões fictícias foram substituídos por estados explícitos de integração pendente.
+- Comunidade deixou de apresentar nome de grupo, volume de votos, contagens de atualizações e publicações simuladas como se fossem atividade real. Os exemplos agora estão identificados como demonstrativos; publicar, apoiar, comentar, buscar e anexar permanecem indisponíveis até consentimento, moderação e persistência serem conectados.
+- Perfil Vivo deixou de exibir nome pessoal hard-coded; rótulos de privacidade agora indicam que os controles são previstos, não já operacionais.
+- Essas correções reduzem risco de apresentar dados inventados como fatos, especialmente em telas de perfil e participação comunitária.
