@@ -188,3 +188,11 @@ Definir permissões distintas para listar, visualizar, criar, editar, moderar, a
 - O pipeline executou `tsc && vite build`; 1.518 módulos transformados. Bundle JavaScript 771,72 kB (gzip 205,17 kB), acima do limite de 500 kB recomendado; code-splitting pendente.
 - O HEAD documental posterior `d3b03281eb16518d8c3d9d0e20204dc18c0d1c46` adiciona a política proposta de papéis e escopos; seu deployment separado estava BUILDING na última consulta. Não houve alteração de código nesse commit.
 - Nenhum teste visual real em dispositivos, runtime autenticado Firebase Admin, RLS, autorização de dados ou fluxo ponta a ponta foi comprovado por este build.
+
+
+## 12. Fallback global para árvores legadas — 2026-10-30
+
+- Adicionada em `src/index.css` uma base global para todos os pontos de entrada/páginas: largura mínima e fluida, mídias e controles limitados ao container, prevenção de conteúdo longo quebrar o layout, tabelas com rolagem móvel, foco visível, alvos de toque e redução de movimento.
+- Isso oferece um piso responsivo também às árvores antigas (`src/pages`, `src/modules`, `src/mvp-v1`) caso sejam ativadas no futuro.
+- A base global não substitui revisão individual de hierarquia, grids, formulários, navegação e acessibilidade de cada página legada. Essas árvores continuam fora da navegação ativa e devem passar por validação página a página antes de serem ligadas.
+- O commit de código com o fallback global é `b01cea29a4c2bc7cbada9748e9e0e67284ccad5c`; deployment Preview criado e aguardando conclusão na última consulta.
