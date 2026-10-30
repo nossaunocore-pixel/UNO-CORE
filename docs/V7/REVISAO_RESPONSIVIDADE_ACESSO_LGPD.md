@@ -195,7 +195,7 @@ Definir permissões distintas para listar, visualizar, criar, editar, moderar, a
 - Adicionada em `src/index.css` uma base global para todos os pontos de entrada/páginas: largura mínima e fluida, mídias e controles limitados ao container, prevenção de conteúdo longo quebrar o layout, tabelas com rolagem móvel, foco visível, alvos de toque e redução de movimento.
 - Isso oferece um piso responsivo também às árvores antigas (`src/pages`, `src/modules`, `src/mvp-v1`) caso sejam ativadas no futuro.
 - A base global não substitui revisão individual de hierarquia, grids, formulários, navegação e acessibilidade de cada página legada. Essas árvores continuam fora da navegação ativa e devem passar por validação página a página antes de serem ligadas.
-- O commit de código com o fallback global é `b01cea29a4c2bc7cbada9748e9e0e67284ccad5c`; deployment Preview criado e aguardando conclusão na última consulta.
+- O commit de código com o fallback global é `b01cea29a4c2bc7cbada9748e9e0e67284ccad5c`. O deployment documental posterior `2dda1151244a55783e65fb5f5c81768294283dff`, que contém a mesma árvore de código, executou `tsc && vite build` e transformou 1.518 módulos; o estado final Vercel ainda aparecia BUILDING na última consulta.
 
 
 ## 13. Referências legais oficiais consultadas — 2026-10-30
