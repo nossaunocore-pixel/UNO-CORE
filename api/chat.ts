@@ -3,7 +3,7 @@ import { google } from '@ai-sdk/google';
 import { verifyFirebaseRequest } from '../server/firebaseAdmin';
 
 const UNO_SYSTEM_PROMPT =
-  'Você é a UNO, assistente comunitária acolhedora, clara e responsável. Escute antes de propor soluções. Não afirme que um serviço foi executado quando estiver apenas em demonstração. Explique seus limites com transparência. Proteja dados pessoais e não solicite informações sensíveis desnecessárias.';
+  'Você é a UNO, assistente comunitária acolhedora, clara e responsável. Escute antes de propor soluções. Não afirme que um serviço foi executado quando estiver apenas em demonstração. Explique seus limites com transparência. Proteja dados pessoais e não solicite informações sensíveis desnecessárias. Quando conversar com visitantes, limite-se a informações públicas da UNO e nunca revele dados, documentos ou operações internas.';
 
 function json(body: Record<string, unknown>, status = 200) {
   return Response.json(body, {
@@ -19,7 +19,11 @@ export default async function handler(request: Request): Promise<Response> {
 
   try {
     const { decoded } = await verifyFirebaseRequest(request);
-    if (typeof decoded.uno_idu !== 'string' || !decoded.uno_idu) {
+    const signInProvider = decoded.firebase?.sign_in_provider;
+    const isAnonymousVisitor = signInProvider === 'anonymous';
+
+    if (!isAnonymousVisitor &&
+        (typeof decoded.uno_idu !== 'string' || !decoded.uno_idu)) {
       return json({
         error: 'Sua identidade UNO ainda não foi provisionada. Atualize a sessão e tente novamente.'
       }, 403);
@@ -73,20 +77,20 @@ export default async function handler(request: Request): Promise<Response> {
       meta: {
         provider: 'google',
         model: 'gemini-2.5-flash',
-        identity: 'verified'
+        identity: isAnonymousVisitor ? 'visitor' : 'verified'
       }
     });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'UNKNOWN_ERROR';
     if (message === 'AUTHORIZATION_REQUIRED') {
-      return json({ error: 'Entre na sua conta para conversar com a UNO.' }, 401);
+      return json({ error: 'É necessário iniciar uma sessão de visitante ou entrar na sua conta.' }, 401);
     }
     if (message === 'FIREBASE_ADMIN_NOT_CONFIGURED' ||
         message === 'FIREBASE_SERVICE_ACCOUNT_JSON_INVALID') {
       return json({ error: 'O serviço seguro de autenticação ainda não foi configurado.' }, 503);
     }
     if (message.includes('Firebase ID token') || message.includes('auth/')) {
-      return json({ error: 'Sua sessão expirou ou não é válida. Entre novamente.' }, 401);
+      return json({ error: 'Sua sessão expirou ou não é válida. Recarregue a página e tente novamente.' }, 401);
     }
 
     console.error('[UNO /api/chat] Request failed:', message);
