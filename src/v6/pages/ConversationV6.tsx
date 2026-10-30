@@ -44,13 +44,14 @@ export function ConversationV6({ onNavigate: _onNavigate }: { onNavigate: Naviga
   const streamRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!auth) {
+    const firebaseAuth = auth;
+    if (!firebaseAuth) {
       setVisitorStatus('A conversa de visitantes ainda depende da configuração segura do Firebase.');
       return;
     }
     let cancelled = false;
     let creatingAnonymous = false;
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+    const unsubscribe = onAuthStateChanged(firebaseAuth, async (user) => {
       if (user) {
         if (!cancelled) {
           setVisitorReady(true);
@@ -61,7 +62,7 @@ export function ConversationV6({ onNavigate: _onNavigate }: { onNavigate: Naviga
       if (creatingAnonymous) return;
       creatingAnonymous = true;
       try {
-        await signInAnonymously(auth);
+        await signInAnonymously(firebaseAuth);
       } catch {
         if (!cancelled) {
           setVisitorReady(false);
