@@ -106,7 +106,8 @@ export function ConversationV6({ onNavigate: _onNavigate }: { onNavigate: Naviga
       }
 
       let idToken = await user.getIdToken();
-      if (!user.isAnonymous) {
+      const visitorMode = user.isAnonymous || (!user.emailVerified && !user.phoneNumber);
+      if (!visitorMode) {
         let identityResponse = await fetch('/api/identity/session', {
           method: 'POST',
           headers: { Authorization: 'Bearer ' + idToken }
