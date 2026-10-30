@@ -120,3 +120,13 @@ Uma página só será marcada como revisada quando:
 - dados pessoais e sensíveis tiverem finalidade, base legal, retenção e direitos dos titulares definidos.
 
 **Estado desta entrega:** primeira camada transversal de navegação, responsividade e acessibilidade adicionada ao código. Não declarar conformidade LGPD, autorização ponta a ponta ou revisão visual integral concluída até os bloqueios e testes acima serem resolvidos.
+
+
+## 8. Resultado do build/Preview — 2026-10-30
+
+- Vercel Preview READY no commit `b29273c665a3b55e217442965eac0e91c3cf86d8` (deployment `dpl_BzRom3dnSgLZt5kNLAxkuyj3vYbv`).
+- Vercel Preview READY também no commit `48d040bbc3188c54b11466344327b9d5ccd0c243` (deployment `dpl_3DarYTfWkvfKpiEui4zwnrEbWpFM`). O HEAD posterior `cb1f51188b569e6ae0efa6c62950e4b0ab021ae3` preserva a mesma árvore de arquivos do commit READY.
+- O pipeline executou `tsc && vite build`; 1.518 módulos foram transformados e o deployment concluiu.
+- Aviso não bloqueante: bundle JS de 770,89 kB acima do limite de 500 kB; recomenda-se code-splitting/dynamic import.
+- READY comprova build/deploy, não validação visual em aparelhos, runtime Firebase Admin, chamadas autenticadas nem autorização dos dados.
+- O Preview está sujeito à proteção SSO da Vercel. Produção não foi promovida.
