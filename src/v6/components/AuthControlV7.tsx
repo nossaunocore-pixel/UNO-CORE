@@ -26,6 +26,8 @@ export function AuthControlV7() {
     return onAuthStateChanged(auth, setUser);
   }, []);
 
+  const accountUser = user?.isAnonymous ? null : user;
+
   async function submitEmail(event: FormEvent) {
     event.preventDefault();
     if (!auth || busy) return;
@@ -84,9 +86,9 @@ export function AuthControlV7() {
         type="button"
         className="v6-account-trigger"
         onClick={() => setOpen(true)}
-        aria-label={user ? 'Abrir opções da conta' : 'Entrar ou criar conta'}
+        aria-label={accountUser ? 'Abrir opções da conta' : 'Entrar ou criar conta'}
       >
-        {user ? (user.displayName || user.email || 'Minha conta') : 'Entrar'}
+        {accountUser ? (accountUser.displayName || accountUser.email || 'Minha conta') : 'Entrar'}
       </button>
 
       {open && (
@@ -114,7 +116,7 @@ export function AuthControlV7() {
               <div>
                 <small style={{ color: '#67e8f9' }}>IDENTIDADE UNO</small>
                 <h2 id="uno-auth-title" style={{ margin: '6px 0 0', fontSize: 22 }}>
-                  {user ? 'Sua conta' : mode === 'signin' ? 'Entrar na UNO' : 'Criar conta'}
+                  {accountUser ? 'Sua conta' : mode === 'signin' ? 'Entrar na UNO' : 'Criar conta'}
                 </h2>
               </div>
               <button type="button" onClick={() => setOpen(false)} aria-label="Fechar" style={{ padding: 8 }}>✕</button>
@@ -126,11 +128,11 @@ export function AuthControlV7() {
               </p>
             )}
 
-            {user ? (
+            {accountUser ? (
               <div style={{ marginTop: 20 }}>
-                <p>{user.email || user.phoneNumber || 'Conta autenticada'}</p>
+                <p>{accountUser.email || accountUser.phoneNumber || 'Conta autenticada'}</p>
                 <p style={{ color: '#94a3b8', fontSize: 13 }}>
-                  {user.emailVerified ? 'E-mail confirmado' : 'E-mail aguardando confirmação'}
+                  {accountUser.emailVerified ? 'E-mail confirmado' : 'E-mail aguardando confirmação'}
                 </p>
                 <button type="button" onClick={leaveAccount} style={{ marginTop: 12, padding: '10px 14px' }}>
                   Sair da conta
