@@ -111,3 +111,45 @@ O README raiz e `GOVERNANCE.md` contêm declarações amplas de soberania popula
 Esta é uma **auditoria inicial parcial**. Não certifica a completude da EOU, não valida juridicamente os modelos operacionais, não atesta o estado do código da V7 e não comprova deploy, integração ou funcionamento em produção.
 
 Nenhum arquivo canônico foi alterado nesta etapa. Esta nota é um registro de diagnóstico e continuidade.
+
+
+## 7. Resultado da varredura integral da árvore EOU (30/10/2026)
+
+A árvore Git foi consultada de forma recursiva e retornou **651 entradas, sem truncamento**. A contagem de arquivos por diretório EOU mostrou uma diferença material entre os oito primeiros domínios e os demais:
+
+| Diretório | Arquivos | Situação observada |
+|---|---:|---|
+| V01 — Constituição Técnica | 8 | README + capítulos |
+| V02 — Arquitetura Oficial | 8 | README + capítulos |
+| V03 — MUE | 158 | README + documentação extensa |
+| V04 — EVA | 146 | README + documentação extensa |
+| V05 — OM | 101 | README + documentação extensa |
+| V06 — CO | 53 | README + documentação extensa |
+| V07 — CCM | 22 | README + documentação |
+| V08 — OPS | 34 | README + documentação |
+| V09 a V40 | 1 arquivo por diretório | Somente README em cada diretório |
+
+**Atenção à numeração:** o diretório `docs/EOU/V06-CO` existe e contém 53 arquivos; ele pertence à série de domínios EOU e não substitui o arquivo fundacional `EOU/volumes/volume-06-conhecimento-organizacional.md`, que permanece ausente no caminho anunciado. Essa distinção precisa constar nos índices para evitar confusão.
+
+O dado de 1 README nos diretórios V09–V40 significa que esses 32 domínios estão, no snapshot consultado, em estado de estrutura inicial/descrição introdutória. Não significa que suas funções estejam codificadas ou prontas. A documentação detalhada desses domínios ainda precisa ser produzida e revisada conforme prioridade e dependências da V7.
+
+## 8. Busca ampliada por Volume 6, Zelo e MMK
+
+- A árvore completa não contém arquivo cujo caminho indique `volume-06-conhecimento-organizacional.md`, nem outro caminho com nome equivalente a Conhecimento Organizacional.
+- A consulta ao histórico GitHub filtrada pelo caminho exato do Volume 6 retornou lista vazia de commits. Isso não prova inexistência em cópias externas, mas não há histórico desse caminho disponível no repositório examinado.
+- A árvore contém apenas uma ocorrência de caminho com o termo `Zelo`: o registro de continuidade `docs/CONTINUIDADE/2026-10-30-varredura-eou-zelo-e-diretrizes.md`. As buscas de conteúdo no índice de código para “Zelo”, “MMK”, “Mapa Mestre do Conhecimento”, “UNO RH”, “Painel Mestre”, “Comunidade UNO 1” e “V7 MVP” não retornaram resultados.
+- Não foi encontrado caminho de arquivo nomeado MMK ou Mapa Mestre.
+
+**Interpretação responsável:** o fundador afirma que Zelo e o MMK pertencem à engenharia oficial ou a documentos anteriores. A auditoria deste repositório não localizou suas fontes canônicas no snapshot atual. Isso é uma lacuna de recuperação documental, não autorização para inventar definições nem prova de que tais documentos nunca existiram. Manter a nota de continuidade como referência de contexto e solicitar/recuperar fonte canônica em histórico, outro repositório ou material de origem antes de consolidar a especificação.
+
+## 9. Consequência para o plano de expansão
+
+A prioridade documental recomendada passa a ser:
+
+1. **Resolver a arquitetura de numeração e nomenclatura**: distinguir os oito volumes fundacionais da série de 40 domínios EOU e corrigir referências quebradas por meio de ADR, sem renumeração silenciosa.
+2. **Preservar a documentação densa existente** nos domínios V01–V08; não substituir os 522 arquivos desses diretórios por resumos ou novos textos redundantes.
+3. **Expandir seletivamente V09–V40** conforme dependências e escopo real do MVP, iniciando pelos domínios de arquitetura, segurança, governança, identidade, usuários/perfis, fluxos, marketplace, empregabilidade, financeiro e institucional.
+4. **Recuperar Zelo e MMK** por fonte verificável antes de tratá-los como especificação fechada.
+5. **Construir a matriz de rastreabilidade** e registrar o status real de cada requisito, documento e componente.
+
+A expansão deve privilegiar documentos operacionais e verificáveis: escopo, atores, casos de uso, dados, permissões, fluxos, contratos, falhas, logs, critérios de aceite e testes. README introdutório, isoladamente, não equivale a engenharia pronta para implementação.
