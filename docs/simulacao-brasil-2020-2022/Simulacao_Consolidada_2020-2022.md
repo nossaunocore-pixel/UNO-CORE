@@ -656,3 +656,58 @@ O caixa da UNO deve continuar separado do valor social mobilizado: doações rec
 | UNO — resultados | Funis e métricas definidos | Dados observados de piloto: alcance, ativação, demanda, oferta, atendimento confirmado, custo e retenção |
 
 **Status:** aprofundamento em andamento. Os achados acima não autorizam estimativa nacional de vidas salvas, empregos criados ou empresas preservadas pela UNO. Esses efeitos só poderão ser quantificados depois de definir escala territorial, adoção realista, capacidade de atendimento, adicionalidade e grupo de comparação.
+
+
+## 23. Infraestrutura de manifestação, memória de pautas e participação comunitária
+
+### 23.1 Princípio institucional
+
+A engenharia UNO deve ser avaliada também pela capacidade de tornar visíveis necessidades, reivindicações e propostas coletivas que, embora debatidas por diferentes grupos e frentes sociais, permanecem sem solução. A Comunidade 1 é concebida como ambiente aberto de expressão, escuta, organização e acompanhamento de pautas históricas e espontâneas.
+
+Esse ambiente amplia os meios de participação e não substitui o direito de manifestação presencial, reunião pacífica, associação, petição, imprensa ou atuação política. A Constituição Federal protege a livre manifestação do pensamento (art. 5º, IV), o acesso à informação (XIV), a reunião pacífica (XVI) e a associação (XVII). A Declaração Universal dos Direitos Humanos protege a liberdade de opinião e expressão (art. 19), reunião e associação pacíficas (art. 20) e participação na condução dos assuntos públicos (art. 21). A existência de um espaço digital ou físico da UNO não pode ser apresentada como substituta desses direitos.
+
+### 23.2 Componentes funcionais propostos
+
+1. **Memória de pautas históricas:** catalogar reivindicações documentadas em diferentes períodos, incluindo 2020–2022, com origem, data, território, grupo afetado, demanda original, evidências disponíveis, respostas recebidas e situação conhecida.
+2. **Pautas espontâneas:** permitir que qualquer participante proponha novos temas, sem exigir filiação a entidade, partido, associação ou grupo organizado.
+3. **Espaço de manifestação:** oferecer publicação de texto, áudio, vídeo, debate coletivo e encontros presenciais quando houver local, acessibilidade e condições de segurança adequadas.
+4. **Organização por território e tema:** relacionar pautas semelhantes sem apagar diferenças de contexto, autoria, prioridade ou solução defendida.
+5. **Contrapontos e deliberação:** permitir apoio, discordância fundamentada, propostas alternativas, perguntas e sínteses; apoio ou volume de manifestações não equivale automaticamente a consenso social.
+6. **Encaminhamento rastreável:** registrar se a pauta foi encaminhada a órgão público, entidade, prestador ou responsável competente, com data, protocolo quando existente, resposta, prazo informado e situação.
+7. **Retorno à comunidade:** publicar atualizações, inclusive quando não houver resposta, quando a competência for de outra instituição ou quando não existir capacidade para atendimento.
+
+### 23.3 Garantias, limites e proteção
+
+- A participação deve ser voluntária; ninguém pode ser obrigado a se associar, se identificar publicamente ou apoiar uma pauta.
+- Oferecer opções de exposição pública, participação com identidade protegida perante outros usuários e canais reservados para situações sensíveis, observadas as exigências legais aplicáveis. Não prometer anonimato absoluto quando a lei ou a segurança técnica não o permitirem.
+- Proteger dados pessoais, localização, imagens, documentos e informações de pessoas vulneráveis; coletar somente o necessário e definir acesso, retenção, correção e remoção conforme a legislação.
+- Moderar ameaças, perseguição, divulgação indevida de dados, fraude, assédio e incitação à violência, com critérios publicados, registro de decisões e possibilidade de contestação.
+- Não tratar crítica, denúncia, discordância, sátira ou manifestação pacífica como violação apenas por ser inconveniente à organização ou a uma autoridade.
+- Distinguir opinião, relato pessoal, alegação, evidência documental, informação verificada e decisão institucional.
+- A UNO não se atribui poder público, não decide políticas estatais, não garante atendimento por terceiros e não substitui canais oficiais de denúncia, emergência, ouvidoria ou Justiça.
+- A existência de um ambiente digital ou de um espaço físico de manifestação não condiciona, limita ou substitui o direito de reunião e manifestação fora da UNO.
+
+### 23.4 Indicadores para avaliação da engenharia
+
+| Dimensão | Indicador observável |
+|---|---|
+| Acesso | Pessoas que conseguem registrar uma pauta; taxa de abandono; acessibilidade e participação por território |
+| Pluralidade | Diversidade territorial e temática; proporção de pautas individuais, coletivas e institucionais |
+| Memória | Pautas históricas com origem, data, evidência e situação documentadas |
+| Escuta | Tempo até primeira resposta; proporção de manifestações que recebem confirmação de recebimento |
+| Encaminhamento | Pautas encaminhadas ao responsável competente; protocolos e comprovantes registrados |
+| Responsividade | Respostas recebidas, justificativas de não atendimento e atualizações dentro do prazo informado |
+| Resultado | Mudanças ou atendimentos confirmados, sem atribuir causalidade à UNO sem avaliação |
+| Segurança | Incidentes de exposição, assédio ou ameaça; tempo de resposta; recursos e correções |
+| Confiança | Satisfação com o processo, percepção de imparcialidade e possibilidade de contestar moderação |
+| Integridade | Histórico de alterações, critérios de agrupamento, transparência de moderação e trilha de auditoria |
+
+### 23.5 Como isso entra na simulação Brasil 2020–2022
+
+A simulação deve construir um inventário de pautas públicas e sociais existentes em cada ano, distinguindo: (a) demandas já debatidas antes do período; (b) demandas que surgiram durante 2020, 2021 ou 2022; (c) respostas e políticas efetivamente adotadas no Brasil real; (d) lacunas e necessidades que permaneceram; e (e) o que uma camada de orquestração poderia plausivelmente melhorar por informação, conexão, organização, encaminhamento e acompanhamento.
+
+Não se deve afirmar que a UNO teria resolvido uma pauta apenas por permitir sua manifestação. O efeito plausível precisa ser medido em etapas: pauta registrada → informação qualificada → pessoas afetadas ou interessadas ouvidas → competência identificada → encaminhamento consentido → resposta recebida → atendimento ou mudança confirmada. A simulação deve separar resultados atribuíveis à atuação da UNO, resultados de políticas públicas ou organizações externas e mudanças que ocorreriam independentemente.
+
+**Referências normativas e institucionais:** Constituição Federal de 1988, art. 5º, IV, XIV, XVI e XVII (https://www4.planalto.gov.br/legislacao/legis-federal/constituicao); Declaração Universal dos Direitos Humanos, arts. 19–21 (https://www.un.org/pt/node/212447); explicação da ONU Brasil sobre reunião pacífica e associação, inclusive em grupos online (https://brasil.un.org/pt-br/81866-artigo-20-liberdade-de-reuni%C3%A3o-e-associa%C3%A7%C3%A3o); iniciativas brasileiras de participação social, ouvidoria e consultas públicas (https://www.gov.br/governodigital/pt-br/participacao-social).
+
+**Status:** requisito institucional incorporado ao modelo de avaliação; desenho operacional, governança de conteúdo, proteção de dados, acessibilidade e eventual espaço físico ainda precisam de especificação e validação.
