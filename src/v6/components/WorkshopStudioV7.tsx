@@ -64,14 +64,7 @@ export function WorkshopStudioV7() {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [changeSummary, setChangeSummary] = useState('Criação inicial');
-  const [definitionText, setDefinitionText] = useState('{
-  "purpose": "",
-  "capabilities": [],
-  "permissions": [],
-  "dependencies": [],
-  "limits": {},
-  "tests": []
-}');
+  const [definitionText, setDefinitionText] = useState(JSON.stringify({ purpose: '', capabilities: [], permissions: [], dependencies: [], limits: {}, tests: [] }, null, 2));
   const [loading, setLoading] = useState(false);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('Carregue os rascunhos para começar.');
@@ -121,14 +114,7 @@ export function WorkshopStudioV7() {
     setName('');
     setDescription('');
     setChangeSummary('Criação inicial');
-    setDefinitionText('{
-  "purpose": "",
-  "capabilities": [],
-  "permissions": [],
-  "dependencies": [],
-  "limits": {},
-  "tests": []
-}');
+    setDefinitionText(JSON.stringify({ purpose: '', capabilities: [], permissions: [], dependencies: [], limits: {}, tests: [] }, null, 2));
     setMessage('Novo rascunho. Preencha a definição e salve.');
   }
 
