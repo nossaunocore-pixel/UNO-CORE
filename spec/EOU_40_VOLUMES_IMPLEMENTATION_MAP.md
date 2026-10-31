@@ -23,7 +23,7 @@
 | V02 | Arquitetura Oficial | `docs/EOU/V02-Arquitetura-Oficial`; `spec/ARCHITECTURE.md`; `core/kernel` | Documentado/parcial; contratos de módulos, eventos, dados e confiança. |
 | V03 | MUE | `docs/EOU/V03-MUE`; `src/modules/EntidadesView.tsx` | Documentado/demonstrativo; consolidar entidade, relações, ciclo de vida e IDU. |
 | V04 | EVA | `docs/EOU/V04-EVA`; `core/capabilities`, `core/memory`, `core/brain` | Documentado/parcial; modelo de valor, aprendizagem e evidências operacionais. |
-| V05 | Oficina Mestre (catálogo 40) | `docs/EOU/V05-OM`; `src/v6/pages/WorkshopV6.tsx` | Conflito com V05 legado “Ordem de Missão”; delimitar Oficina, ciclo de criação e aprovação. |
+| V05 | Oficina Mestre (catálogo 40) | `docs/EOU/V05-OM`; `src/v6/pages/WorkshopV6.tsx`, `src/v6/components/WorkshopStudioV7.tsx`, `api/workshop/*` | Conflito com V05 legado “Ordem de Missão”; delimitar Oficina, ciclo de criação e aprovação. |
 | V06 | Centro de Operações (catálogo 40) | `docs/EOU/V06-CO`; `src/modules/CentroView.tsx` | Conflito com V06 legado “Conhecimento Organizacional”; confirmar nomenclatura e continuidade da série de 8. |
 | V07 | CCM | `docs/EOU/V07-CCM`; `core/agents`, `core/engine`, `core/governance` | Documentado/parcial; missões, agentes, delegação, supervisão e autorização humana. |
 | V08 | OPS | `docs/EOU/V08-OPS`; `core/engine`, `core/governance` | Documentado/parcial; operações, estados, observabilidade, incidentes e reversão. |
@@ -35,28 +35,28 @@
 | V14 | APIs e Gateways | `docs/EOU/V14-APIs-e-Gateways/README.md`; `api/`, `server/firebaseAdmin.ts` | README-base/parcial; contratos versionados, autenticação, rate limits, erros, idempotência e gateway IA. |
 | V15 | Integrações | `docs/EOU/V15-Integracoes/README.md`; `core/integrations`, `IntegrationsCenterV637.tsx` | README-base/parcial; ciclo de conexão, consentimento, escopo, saúde, desconexão e contingência. |
 | V16 | Segurança e Auditoria | `docs/EOU/V16-Seguranca-e-Auditoria/README.md`; `spec/SECURITY_GOVERNANCE_V7.md`, `AuditCenterV639.tsx` | README-base/parcial; ameaça, política, evidência, trilha, resposta a incidente e testes negativos. |
-| V17 | Governança | `docs/EOU/V17-Governanca/README.md`; `core/governance`, `MasterPanelV6.tsx` | README-base/parcial; RBAC/ABAC, delegação, alçadas, aprovação, revogação e auditoria. |
-| V18 | Marketplace | `docs/EOU/V18-Marketplace/README.md`; `MarketplaceView.tsx`, `ServicosExternosView.tsx`, `NosShowcaseV63.tsx`, `src/domain/catalog.ts` | README-base/demonstrativo; catálogo de produtos/serviços próprios e terceiros, contratação e responsabilidade. |
+| V17 | Governança | `docs/EOU/V17-Governanca/README.md`; `core/governance`, `MasterPanelV6.tsx`, `server/panelAuthorization.ts`, `api/admin/panel-access.ts`, `api/identity/panel-access.ts` | README-base/parcial; RBAC/ABAC, delegação, alçadas, aprovação, revogação e auditoria. |
+| V18 | Marketplace | `docs/EOU/V18-Marketplace/README.md`; `MarketplaceView.tsx`, `ServicosExternosView.tsx`, `NosShowcaseV63.tsx`, `src/domain/catalog.ts`, `src/services/publicContent.ts` | README-base/demonstrativo; catálogo de produtos/serviços próprios e terceiros, contratação e responsabilidade. |
 | V19 | Industrial | `docs/EOU/V19-Industrial/README.md` | README-base/não iniciado; delimitar indústria, produção, manutenção, logística e integrações OT. |
-| V20 | Infraestrutura Comunitária | `docs/EOU/V20-Infraestrutura-Comunitaria/README.md`; `CommunityV6.tsx`, `ParticipationV63.tsx` | README-base/demonstrativo; recursos compartilhados, território, gestão, participação e transparência. |
+| V20 | Infraestrutura Comunitária | `docs/EOU/V20-Infraestrutura-Comunitaria/README.md`; `CommunityV6.tsx`, `ParticipationV63.tsx`, `src/domain/publicContent.ts`, `supabase/migrations/20261031173000_public_content_read_models.sql` | README-base/demonstrativo; recursos compartilhados, território, gestão, participação e transparência. |
 | V21 | Educação e Capacitação | `docs/EOU/V21-Educacao-e-Capacitacao/README.md` | README-base/não iniciado; instituições, cursos, matrículas, trilhas, certificados e serviços ativos. |
 | V22 | Saúde | `docs/EOU/V22-Saude/README.md`; `src/modules/SaudeView.tsx` | README-base/demonstrativo; escopo preventivo, dados sensíveis, consentimento e limites regulatórios. |
-| V23 | Habitação | `docs/EOU/V23-Habitacao/README.md`; `src/modules/HabitacionalView.tsx` | README-base/demonstrativo; moradia, imóveis, famílias, ofertas e serviços associados. |
-| V24 | Empregabilidade | `docs/EOU/V24-Empregabilidade/README.md`; `src/modules/UsuariosView.tsx`, perfil | README-base/demonstrativo; ofícios, habilidades, oportunidades, profissionais, negócios e renda. |
-| V25 | Financeiro | `docs/EOU/V25-Financeiro/README.md`; `docs/STRIPE_TEST_CATALOG.md` | README-base/teste; ledger, tarifas, carteira, Stripe, Connect, conciliação, tributos e controles. |
+| V23 | Habitação | `docs/EOU/V23-Habitacao/README.md`; `src/modules/HabitacionalView.tsx`, `src/v6/pages/HouseV7.tsx` | README-base/demonstrativo; moradia, imóveis, famílias, ofertas e serviços associados. |
+| V24 | Empregabilidade | `docs/EOU/V24-Empregabilidade/README.md`; `src/modules/UsuariosView.tsx`, `src/v6/pages/EmploymentIncomeV7.tsx`, perfil | README-base/demonstrativo; ofícios, habilidades, oportunidades, profissionais, negócios e renda. |
+| V25 | Financeiro | `docs/EOU/V25-Financeiro/README.md`; `docs/STRIPE_TEST_CATALOG.md`, `src/domain/panels.ts`, `src/v6/pages/WalletV7.tsx` | README-base/teste; ledger, tarifas, carteira, Stripe, Connect, conciliação, tributos e controles. |
 | V26 | Identidade Digital | `docs/EOU/V26-Identidade-Digital/README.md`; `api/identity/session.ts`, `server/firebaseAdmin.ts` | README-base/parcial; IDU, provedores, credenciais, recuperação, claims e ciclo de vida. |
 | V27 | Usuários e Perfis | `docs/EOU/V27-Usuarios-e-Perfis/README.md`; `ProfileV63.tsx`, `UserSquareV6.tsx`, `src/domain/panels.ts` | README-base/demonstrativo; perfil pessoal, casa, preferências, consentimentos e escopos. |
 | V28 | Entidades | `docs/EOU/V28-Entidades/README.md`; `src/modules/EntidadesView.tsx` | README-base/demonstrativo; definir fronteira em relação ao MUE V03 e catálogo aplicado de tipos. |
 | V29 | Projetos | `docs/EOU/V29-Projetos/README.md`; `src/modules/ProjetosView.tsx` | README-base/demonstrativo; ciclo de projeto, responsável, recursos, orçamento, metas e resultado. |
-| V30 | Eventos | `docs/EOU/V30-Eventos/README.md`; componentes Comunidade/Participação | README-base/não iniciado; eventos/festivais, organizador, agenda, inscrição, ingresso e publicação em Lazer. |
+| V30 | Eventos | `docs/EOU/V30-Eventos/README.md`; `src/v6/pages/LeisureV7.tsx`, `src/domain/publicContent.ts` | README-base/não iniciado; eventos/festivais, organizador, agenda, inscrição, ingresso e publicação em Lazer. |
 | V31 | Fluxos | `docs/EOU/V31-Fluxos/README.md`; `core/engine`, `src/modules/ExecucoesView.tsx` | README-base/parcial; estados, transições, contratos, compensação, idempotência e histórico. |
 | V32 | Automações | `docs/EOU/V32-Automacoes/README.md`; `core/engine` | README-base/não iniciado; gatilhos, agenda, condições, permissões, aprovação e pausa segura. |
 | V33 | Motor Cognitivo | `docs/EOU/V33-Motor-Cognitivo/README.md`; `core/brain`, `api/chat.ts`, `api/public/chat.ts` | README-base/parcial; contexto, memória, seleção de modelo, custos, avaliação e guardrails. |
 | V34 | UNO CORE | `docs/EOU/V34-UNO-CORE/README.md`; `core/kernel`, `src/v6/V6App.tsx` | README-base/parcial; composição do kernel, módulos, contratos e bootstrapping. |
 | V35 | Roadmap Oficial | `docs/EOU/V35-Roadmap-Oficial/README.md`; `spec/ROADMAP.md` | README-base/parcial; marcos, dependências, critérios de saída e evidências. |
-| V36 | ADR | `docs/EOU/V36-ADR/README.md`; `spec/DECISIONS.md`, `spec/ADR` | README-base/parcial; ciclo de decisão, status, precedência, revisão e supersessão. |
+| V36 | ADR | `docs/EOU/V36-ADR/README.md`; `spec/DECISIONS.md`, `spec/ADR/ADR-0013-public-visitor-supabase-navigation.md` | README-base/parcial; ciclo de decisão, status, precedência, revisão e supersessão. |
 | V37 | Glossário Oficial | `docs/EOU/V37-Glossario-Oficial/README.md` | README-base; criar glossário versionado e reconciliar termos/acrônimos. |
-| V38 | Padrões de Engenharia | `docs/EOU/V38-Padroes-de-Engenharia/README.md`; `spec/ENGINEERING/guidelines.md`, CI | README-base/parcial; qualidade, revisão, testes, segurança, observabilidade e release. |
+| V38 | Padrões de Engenharia | `docs/EOU/V38-Padroes-de-Engenharia/README.md`; `spec/ENGINEERING/guidelines.md`, `.github/workflows/ci.yml`, `tests/domain-contracts.test.mjs` | README-base/parcial; qualidade, revisão, testes, segurança, observabilidade e release. |
 | V39 | Documentação Jurídica | `docs/EOU/V39-Documentacao-Juridica/README.md`; requisitos em `MASTER_SPEC.md` | README-base/não iniciado; contratos, privacidade, termos, CDC, LGPD e revisão profissional. |
 | V40 | Documentação Institucional | `docs/EOU/V40-Documentacao-Institucional/README.md`; `MASTER_SPEC.md` | README-base/não iniciado; missão, identidade, governança, estrutura e atos institucionais validados. |
 
@@ -82,3 +82,12 @@ Usar `spec/VOLUME_SPEC_TEMPLATE.md`. Cada volume precisa declarar finalidade, es
 6. V35–V40: roadmap, ADR, glossário, padrões, jurídico e institucional como camadas de controle contínuo.
 
 Esta ordem é de dependência técnica; não altera a numeração nem aprova os conflitos V05/V06.
+
+
+## Registro de código transversal
+
+- `src/domain/volumes.ts` contém o registro máquina-legível dos 40 volumes, seus estados documentais e as pendências V05/V06.
+- `src/domain/panels.ts` define os painéis com acesso padrão negado; Stripe é subárea do Painel Contábil e Financeiro.
+- `src/domain/experiences.ts` define as áreas Perfil, Casa, Emprego e Renda, Instituições, Comunidade, Participação, Lazer, Vitrine, Serviços e Serviços Ativos.
+- `WorkshopStudioV7` e as APIs de Oficina criam, editam, versionam, clonam e submetem rascunhos; não aprovam nem ativam.
+- `src/services/publicContent.ts` é a camada de leitura pública Supabase; as tabelas correspondentes só estarão disponíveis após aplicação da migration de read models.
