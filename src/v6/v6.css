@@ -1123,3 +1123,33 @@
 .v7-panel-workspace>footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;color:#8daabd}
 .v7-panel-workspace>footer button{display:inline-flex;align-items:center;gap:6px;padding:9px 12px;border:1px solid rgba(105,211,240,.2);border-radius:10px;background:rgba(5,28,48,.7);color:#cdefff;cursor:pointer}
 @media(max-width:720px){.v7-panel-workspace{width:calc(100% - 28px);padding:26px 0 100px}.v7-panel-workspace>header{flex-direction:column}.v7-panel-workspace>footer{align-items:flex-start;flex-direction:column}.v7-panel-assignment{padding:16px}}
+
+.v7-workshop-studio{margin:24px 0;padding:22px;border:1px solid rgba(104,216,244,.2);border-radius:20px;background:rgba(3,19,38,.82);color:#edfaff}
+.v7-workshop-studio>header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.v7-workshop-studio>header h2{margin:0 0 8px;font-size:1.45rem}
+.v7-workshop-studio>header p{max-width:720px;color:#a8c1d2;line-height:1.55}
+.v7-workshop-studio>header>button,.v7-workshop-list-heading button{display:inline-flex;align-items:center;gap:7px;padding:9px 11px;border:1px solid rgba(100,219,255,.25);border-radius:10px;background:rgba(4,36,60,.8);color:#c9f2ff;cursor:pointer}
+.v7-workshop-layout{display:grid;grid-template-columns:minmax(220px,280px) minmax(0,1fr);gap:16px;margin-top:18px}
+.v7-workshop-layout>aside,.v7-workshop-layout>main{min-width:0;padding:15px;border:1px solid rgba(103,208,239,.15);border-radius:15px;background:rgba(5,27,49,.72)}
+.v7-workshop-list-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.v7-workshop-list-heading>b{font-size:.9rem}
+.v7-workshop-asset-list{display:flex;flex-direction:column;gap:7px;max-height:520px;overflow:auto}
+.v7-workshop-asset-list>button{display:flex;flex-direction:column;align-items:flex-start;gap:5px;padding:11px;border:1px solid rgba(103,208,239,.13);border-radius:10px;background:rgba(2,17,32,.75);color:#eafaff;text-align:left;cursor:pointer}
+.v7-workshop-asset-list>button.selected{border-color:#62ddff;background:rgba(0,103,147,.22)}
+.v7-workshop-asset-list>button b{font-size:.82rem}
+.v7-workshop-asset-list>button span,.v7-workshop-asset-list>button small{color:#95b3c6;font-size:.7rem}
+.v7-workshop-empty{color:#8faabd;font-size:.8rem}
+.v7-workshop-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.v7-workshop-form-grid label{display:flex;flex-direction:column;gap:6px;color:#b8d4e2;font-size:.76rem;font-weight:750}
+.v7-workshop-form-grid label.wide{grid-column:1/-1}
+.v7-workshop-form-grid input,.v7-workshop-form-grid select,.v7-workshop-form-grid textarea{width:100%;padding:10px 11px;border:1px solid rgba(105,204,231,.22);border-radius:9px;background:#04172a;color:#eafaff;font:inherit;font-size:.83rem}
+.v7-workshop-form-grid input:disabled,.v7-workshop-form-grid select:disabled,.v7-workshop-form-grid textarea:disabled{opacity:.55}
+.v7-workshop-form-grid .v7-workshop-json{min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.76rem;line-height:1.5;white-space:pre}
+.v7-workshop-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.v7-workshop-actions button{display:inline-flex;align-items:center;gap:7px;padding:10px 13px;border:1px solid rgba(99,224,255,.3);border-radius:10px;background:rgba(0,112,151,.2);color:#dffaff;font-weight:800;cursor:pointer}
+.v7-workshop-actions button:disabled{opacity:.4;cursor:not-allowed}
+.v7-workshop-message{margin-top:12px;padding:10px 12px;border-radius:9px;background:rgba(5,32,55,.8);color:#a8dff1;font-size:.78rem}
+.v7-workshop-safety{display:flex;align-items:flex-start;gap:8px;margin-top:16px;color:#9cb6c7;font-size:.76rem;line-height:1.55}
+.v7-workshop-safety svg{flex:0 0 auto;color:#67e4ff}
+@media(max-width:850px){.v7-workshop-layout{grid-template-columns:1fr}.v7-workshop-asset-list{max-height:260px}}
+@media(max-width:600px){.v7-workshop-studio{padding:14px}.v7-workshop-studio>header{flex-direction:column}.v7-workshop-form-grid{grid-template-columns:1fr}.v7-workshop-form-grid label.wide{grid-column:auto}}
