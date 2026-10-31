@@ -98,6 +98,10 @@ A EOU está organizada em volumes independentes, cada um responsável por um dom
 
 ---
 
+## Modelo Econômico Transversal
+
+- [Modelo Econômico e de Negócios Universal da UNO CORE](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md) — proposta transversal para seleção de soluções, classificação de custos, métricas, transparência e distribuição justa de receitas. Os pontos reservados ao fundador permanecem pendentes de ratificação.
+
 # Estrutura dos Volumes
 
 Cada volume da Engenharia Oficial possui documentação própria, histórico de versões, capítulos, anexos e diagramas.
