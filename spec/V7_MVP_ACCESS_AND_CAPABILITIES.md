@@ -5,18 +5,19 @@
 
 ## 1. Jornada de entrada
 
-1. Pessoa acessa landing page e boas-vindas sem autenticação.
-2. CTA “Conheça o UNO” solicita autenticação Google.
-3. Backend valida token e provisiona/recupera IDU.
-4. A pessoa entra como visitante autenticado, sem assinatura automática.
-5. Capacidades internas gratuitas podem ser usadas quando estiverem implementadas e seguras.
-6. Capacidades que geram consumo, dependem de terceiros, contrato, qualificação ou autorização permanecem condicionadas.
+1. Pessoa acessa landing page, boas-vindas e áreas públicas sem conta Google/Firebase.
+2. A navegação pública usa Supabase com chave publishable/anon e políticas RLS de leitura.
+3. A Conversa pública cria uma sessão anônima no Supabase Auth, com cotas e limite global diário aprovado; não cria Perfil UNO, IDU ou adesão.
+4. Para acessar perfil, casa, emprego e renda, carteira, serviços ativos, publicar, comentar, votar ou realizar ações pessoais, a pessoa inicia autenticação Google.
+5. Backend valida o token Google e provisiona/recupera IDU; a pessoa entra como visitante autenticado, sem assinatura automática.
+6. Capacidades internas gratuitas podem ser usadas quando estiverem implementadas e seguras.
+7. Capacidades que geram consumo, dependem de terceiros, contrato, qualificação ou autorização permanecem condicionadas.
 
 ## 2. Matriz de perfis
 
 | Perfil | Identidade | Capacidades gratuitas internas | Consumo/API | Externas/restritas |
 |---|---|---|---|---|
-| Visitante anônimo | Não | Landing e boas-vindas apenas | Não | Não |
+| Visitante anônimo | Supabase público; sessão anônima Supabase apenas para Conversa | Leitura das rotas públicas; Conversa pública com cotas e limite global aprovado | Somente Conversa pública limitada, após CAPTCHA e orçamento configurados | Não; sem perfil, carteira, escrita, voto, contratação ou painéis |
 | Visitante autenticado | Google + IDU | Sim, conforme catálogo e limites | Não, salvo autorização/adesão aplicável | Não, salvo autorização explícita e requisito atendido |
 | Usuário aderido | Google + IDU + adesão válida | Sim | Conforme plano, limites e consentimento | Conforme contrato, qualificação e autorização |
 | Parceiro | Google + IDU + vínculo verificado | Sim | Conforme escopo e acordo | Conforme escopo, contrato e autorização |
@@ -39,13 +40,13 @@ Uma capacidade pode carregar mais de uma classe. O catálogo deve negar por padr
 | Universo/capacidade | Classe pretendida | Visitante autenticado | Condição para liberar |
 |---|---|---|---|
 | Perfil básico e preferências | Gratuita interna | Sim | IDU, controles de privacidade |
-| Navegação pelos universos | Gratuita interna | Sim | Implementação e acesso autenticado |
-| Conversa interna sem API paga | Gratuita interna | Sim | Motor local/interno funcional, limites e aviso |
-| Conversa com IA/API externa | Consumo | Não por padrão | Plano/limite, custo, consentimento e gateway seguro |
-| Feed, publicações e comentários | Gratuita interna | Sim | Persistência, RLS, moderação e controles de abuso |
+| Navegação pelos universos | Gratuita interna | Leitura pública: sim via Supabase; áreas pessoais: não | Conteúdo público com RLS; áreas pessoais exigem Google + IDU |
+| Conversa interna sem API paga | Gratuita interna | Conforme motor interno implementado | Motor local/interno funcional, limites e aviso |
+| Conversa pública com IA/API externa | Consumo | Sim, somente modo público limitado | Sessão anônima Supabase, quota por usuário, limite global diário aprovado, CAPTCHA/Turnstile, orçamento, conteúdo público e endpoint separado |
+| Feed, publicações e comentários | Gratuita interna | Leitura pública: sim; escrita: não | Persistência, RLS, moderação; escrita exige Google + IDU e controles de abuso |
 | Mensagens entre usuários | Gratuita interna | Sim | RLS, bloqueio/denúncia e proteção contra abuso |
-| Propostas e votação interna | Gratuita interna | Sim | Regras de elegibilidade, integridade e auditoria |
-| Vitrine e catálogo informativo | Gratuita interna | Sim | Dados corretos e status transparente |
+| Propostas e votação interna | Gratuita interna | Leitura pública: sim; envio/voto: conforme elegibilidade | Regras de elegibilidade, identidade, integridade e auditoria |
+| Vitrine, eventos e catálogo público de serviços | Gratuita interna | Sim, leitura pública via Supabase | Dados corretos, origem própria/terceiro, status transparente e RLS |
 | Contratação/compra/pedido | Externa/consumo/restrita | Não por padrão | Parceiros, pagamentos, termos e integrações validados |
 | Serviços de órgãos externos | Externa/restrita | Não por padrão | Convênio/API, consentimento e autorização |
 | Pagamentos, carteira, saques e repasses | Consumo/restrita | Não | Formalização, Stripe live, validação jurídica/financeira |
@@ -64,10 +65,11 @@ Uma capacidade pode carregar mais de uma classe. O catálogo deve negar por padr
 
 ## 6. Critérios de aceite
 
-1. Usuário anônimo não acessa nenhuma rota interna por URL direta.
-2. A única autenticação oferecida no MVP é Google.
-3. Google autenticado sem IDU válido não acessa dados internos.
-4. Visitante autenticado acessa apenas capacidades gratuitas elegíveis.
+1. Visitante anônimo acessa somente a allowlist pública via Supabase, inclusive por URL direta.
+2. Visitante anônimo não acessa dados pessoais, áreas privadas, escrita, votação, contratação ou painéis.
+3. A única autenticação pessoal oferecida no MVP é Google; sessão anônima Supabase é exclusiva da camada pública/Conversa.
+4. Google autenticado sem IDU válido não acessa dados pessoais internos.
+5. Visitante autenticado acessa apenas capacidades gratuitas elegíveis.
 5. Capacidades de consumo, externas e restritas negam por padrão sem elegibilidade.
 6. Alterar estado no frontend não altera permissões no servidor.
 7. RLS e endpoints impedem acesso a dados de outro IDU.
@@ -83,3 +85,12 @@ Uma capacidade pode carregar mais de uma classe. O catálogo deve negar por padr
 - Implementar catálogo de capacidades e enforcement server-side.
 - Criar testes unitários, integração e E2E para todos os perfis.
 - Separar landing e boas-vindas da aplicação interna; atualmente o app V6/V7 observado inicia em `praca`, portanto a jornada pública completa ainda precisa ser implementada.
+
+
+## 8. Regra de precedência — ADR-0013
+
+A allowlist pública inicial é: `praca`, `edificio` (leitura pública), `nos`/Vitrine, `comunidade` (leitura), `participacao` (consultas/resultados), `conversa`, Lazer/Eventos e catálogo público de Serviços. A rota técnica pode compartilhar telas, mas dados e ações continuam separados por finalidade.
+
+A sessão anônima Supabase não é IDU e não deve ser tratada como perfil permanente. O endpoint `/api/public/chat` só responde sobre informações públicas, exige JWT Supabase anônimo válido, limite por usuário e variável `PUBLIC_CHAT_GLOBAL_DAILY_LIMIT`. Se o limite global não estiver configurado, o endpoint falha fechado.
+
+Antes de produção, habilitar Anonymous Sign-Ins, CAPTCHA/Turnstile, limite diário global aprovado pelo fundador, política de limpeza de contas anônimas, tabelas públicas com RLS e testes de negação. A especificação de precedência é `spec/ADR/ADR-0013-public-visitor-supabase-navigation.md`.
