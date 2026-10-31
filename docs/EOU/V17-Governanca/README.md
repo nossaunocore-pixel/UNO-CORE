@@ -1,6 +1,6 @@
 # EOU-V17 — Governança
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado; regras finais exigem aprovação do fundador
 - Relacionados: V01 Constituição, V05 Oficina Mestre, V06 Centro de Operações, V07 CCM, V08 OPS, V10 Agentes, V16 Segurança, V26 Identidade, V36 ADR
 
