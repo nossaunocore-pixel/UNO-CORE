@@ -85,3 +85,15 @@ O fundador e revisão técnica devem confirmar:
 ## 9. Estado de implementação
 
 Nenhum runtime, scheduler, engine, agente, ferramenta ou comando operacional é habilitado por este ADR. Todos os itens acima permanecem proposta documental até ratificação e implementação verificável.
+
+
+## 10. Condições adicionais identificadas na leitura dos fundamentos
+
+Esta proposta não poderá ser ratificada sem resolver as seguintes inconsistências documentais:
+
+- V05 atual é Oficina Mestre, mas contém 100 capítulos legados cujo capítulo 001 define OM como Orquestrador Mestre. O inventário está em V05-OM/INVENTARIO-LEGADO-100-CAPITULOS.md. O Orquestrador Mestre deve ser tratado como conceito transversal distinto do volume V05 atual.
+- V06 atual é Centro de Operações, mas contém 52 capítulos legados de organização/curadoria institucional. O inventário está em V06-CO/INVENTARIO-LEGADO-52-CAPITULOS.md.
+- V08 é chamado no catálogo/README de Sistema Universal de Missões, mas os 33 capítulos descrevem OPS como Capacidade Operacional Sistêmica. O registro de decisão pendente está em V08-OPS/DECISAO-PENDENTE-ESCOPO-OPS.md. A tabela de responsabilidades deste ADR para V08 é apenas uma hipótese até essa decisão.
+- V07 contém descrições institucionais (incluindo composição de Sala do Cérebro) que não podem ser interpretadas como grants, cargos ou poderes vigentes sem V17/V39/V40.
+
+A proposta ADR-EOU-003 permanece não aprovada e deve ser revisada após o fundador decidir o escopo de V08 e a destinação do legado de V05/V06.
