@@ -44,3 +44,18 @@ Após a decisão, atualizar de forma coordenada catálogo, README, glossário, m
 ## Estado de segurança
 
 Até a decisão, V04 deve ser tratado como domínio com definição pendente. Nenhum comportamento de produção, API, schema, permissão ou agente deve ser inferido deste registro.
+
+
+## Evidência adicional encontrada no legado de V06
+
+A inspeção do capítulo `V06-CO/001-Proposito-do-CO.md` encontrou uma terceira expansão histórica: **“Engenharia da Vida e da Inteligência (EVA)”**. O mesmo capítulo define CO como **“Catálogo Organizacional”**, uma quarta forma de identificar o escopo legado do volume V06, distinta do título “Conhecimento Organizacional” usado no README histórico e do nome atual “Centro de Operações”.
+
+O diretório V04 contém **145 capítulos numerados**. Seus títulos cobrem compreensão, aprendizagem, conhecimento, memória, assistentes, contexto, cognição, agentes, capacidades, curadoria e evolução do conhecimento. Essa estrutura é evidência de que o conteúdo atual de V04 se desenvolveu majoritariamente como ecossistema de aprendizagem/cognição; não prova que essa seja a expansão que o fundador deseja oficializar e não elimina a alternativa “Enciclopédia Visual Adaptativa”.
+
+Assim, a decisão pendente passa a comparar pelo menos três usos documentados da sigla EVA:
+
+1. **Enciclopédia Visual Adaptativa** — nome registrado no catálogo atual.
+2. **Ecossistema de Valor e Aprendizagem** — expansão do README atual de V04.
+3. **Engenharia da Vida e da Inteligência** — expansão encontrada em capítulo legado de V06.
+
+Não consolidar, fundir ou renomear essas definições sem confirmação explícita do fundador. A leitura do restante dos 145 capítulos e o mapeamento do legado de V06 ainda podem revelar outras ocorrências ou nuances.
