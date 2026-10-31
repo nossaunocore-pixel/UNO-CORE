@@ -22,10 +22,10 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 | EOU-V02 | Arquitetura Oficial da UNO |
 | EOU-V03 | Modelo Universal de Entidades (MUE) |
 | EOU-V04 | [EVA — definição pendente](V04-EVA/DECISAO-PENDENTE-EVA.md) |
-| EOU-V05 | Oficina Mestre (OM) |
-| EOU-V06 | [Centro de Operações (CO)](V06-CO/README.md) |
+| EOU-V05 | [Oficina Mestre (OM)](V05-OM/README.md) |
+| EOU-V06 | [Centro de Operações (CO)](V06-CO/README.md) — [inventário do legado](V06-CO/INVENTARIO-LEGADO-52-CAPITULOS.md) |
 | EOU-V07 | Central de Coordenação de Missões (CCM) |
-| EOU-V08 | Sistema Universal de Missões (OPS) |
+| EOU-V08 | [Sistema Universal de Missões (OPS) — escopo pendente](V08-OPS/DECISAO-PENDENTE-ESCOPO-OPS.md) |
 
 ---
 
@@ -170,3 +170,10 @@ V18 governa descoberta e contratação de ofertas; V19 trata coordenação infor
 
 - **V04 — EVA:** há divergência entre “Enciclopédia Visual Adaptativa” (catálogo anterior) e “Ecossistema de Valor e Aprendizagem” (README existente). Nenhuma expansão foi escolhida. Ver [registro de decisão pendente](V04-EVA/DECISAO-PENDENTE-EVA.md). A definição oficial depende de confirmação do fundador.
 - **V06 — Centro de Operações (CO):** nomenclatura confirmada pelo fundador. O README foi harmonizado e o texto anterior foi preservado em [histórico de Conhecimento Organizacional](V06-CO/HISTORICO-CONHECIMENTO-ORGANIZACIONAL.md). O escopo técnico atual ainda está em harmonização; capítulos legados não foram apagados nem automaticamente adotados.
+
+
+### Legados estruturais identificados em V05–V08
+
+- V05: 100 capítulos do antigo Orquestrador Mestre; inventário em `V05-OM/INVENTARIO-LEGADO-100-CAPITULOS.md`. O V05 atual é Oficina Mestre.
+- V06: 52 capítulos do antigo domínio organizacional; inventário em `V06-CO/INVENTARIO-LEGADO-52-CAPITULOS.md`. O V06 atual é Centro de Operações.
+- V08: nome atual “Sistema Universal de Missões” diverge do conteúdo OPS de operações sistêmicas; decisão pendente em `V08-OPS/DECISAO-PENDENTE-ESCOPO-OPS.md`.
