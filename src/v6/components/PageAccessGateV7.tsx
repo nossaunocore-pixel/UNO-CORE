@@ -11,9 +11,12 @@ type AccessState =
   | 'provisioning_required'
   | 'forbidden';
 
+type GateState = { view: V6View; status: AccessState };
+
 // Public visitor navigation is Supabase-backed and does not require Firebase/Google.
 const PUBLIC_VIEWS: V6View[] = [
-  'praca', 'edificio', 'instituicoes', 'nos', 'lazer', 'servicos', 'comunidade', 'participacao', 'conversa'
+  'praca', 'edificio', 'instituicoes', 'nos', 'lazer', 'servicos',
+  'comunidade', 'participacao', 'conversa'
 ];
 
 const MASTER_VIEWS: V6View[] = [
@@ -36,23 +39,29 @@ export function PageAccessGateV7({
   view: V6View;
   children: React.ReactNode;
 }) {
-  const [state, setState] = useState<AccessState>('checking');
+  const [gate, setGate] = useState<GateState>({ view: 'praca', status: 'allowed' });
 
   useEffect(() => {
+    const update = (status: AccessState) => setGate({ view, status });
+
     if (PUBLIC_VIEWS.includes(view)) {
-      setState('allowed');
+      update('allowed');
       return;
     }
 
     if (!auth) {
-      setState('login_required');
+      update('login_required');
       return;
     }
 
     let cancelled = false;
+    const setStatus = (status: AccessState) => {
+      if (!cancelled) update(status);
+    };
+
     const unsubscribe = onIdTokenChanged(auth, async (user) => {
       if (!user || user.isAnonymous) {
-        if (!cancelled) setState('login_required');
+        setStatus('login_required');
         return;
       }
 
@@ -60,16 +69,16 @@ export function PageAccessGateV7({
         (provider) => provider.providerId === 'google.com'
       );
       if (!authenticatedWithGoogle) {
-        if (!cancelled) setState('login_required');
+        setStatus('login_required');
         return;
       }
 
-      if (!cancelled) setState('checking');
+      setStatus('checking');
 
       try {
         let tokenResult = await getIdTokenResult(user);
         if (tokenResult.claims.email_verified !== true) {
-          if (!cancelled) setState('verification_required');
+          setStatus('verification_required');
           return;
         }
 
@@ -77,23 +86,21 @@ export function PageAccessGateV7({
             !tokenResult.claims.uno_idu.trim()) {
           const response = await fetch('/api/identity/session', {
             method: 'POST',
-            headers: { Authorization: `Bearer ${await user.getIdToken()}` }
+            headers: { Authorization: 'Bearer ' + await user.getIdToken() }
           });
 
           if (!response.ok && response.status !== 202) {
-            if (!cancelled) setState('provisioning_required');
+            setStatus('provisioning_required');
             return;
           }
 
-          if (response.status === 202) {
-            await user.getIdToken(true);
-          }
+          if (response.status === 202) await user.getIdToken(true);
           tokenResult = await getIdTokenResult(user, true);
         }
 
         if (typeof tokenResult.claims.uno_idu !== 'string' ||
             !tokenResult.claims.uno_idu.trim()) {
-          if (!cancelled) setState('provisioning_required');
+          setStatus('provisioning_required');
           return;
         }
 
@@ -105,13 +112,13 @@ export function PageAccessGateV7({
             '/api/identity/panel-access?scope=' + encodeURIComponent(requiredScope),
             { headers: { Authorization: 'Bearer ' + await user.getIdToken() } }
           );
-          if (!cancelled) setState(accessResponse.ok ? 'allowed' : 'forbidden');
+          setStatus(accessResponse.ok ? 'allowed' : 'forbidden');
           return;
         }
 
-        if (!cancelled) setState('allowed');
+        setStatus('allowed');
       } catch {
-        if (!cancelled) setState('provisioning_required');
+        setStatus('provisioning_required');
       }
     });
 
@@ -121,14 +128,20 @@ export function PageAccessGateV7({
     };
   }, [view]);
 
-  if (PUBLIC_VIEWS.includes(view) || state === 'allowed') return <>{children}</>;
+  const state: AccessState = gate.view === view
+    ? gate.status
+    : PUBLIC_VIEWS.includes(view) ? 'allowed' : 'checking';
+
+  if (PUBLIC_VIEWS.includes(view) || (gate.view === view && gate.status === 'allowed')) {
+    return <>{children}</>;
+  }
 
   const messages: Record<Exclude<AccessState, 'allowed'>, string> = {
     checking: 'Verificando sua identidade e as permissões desta área…',
     login_required: 'Para conhecer os ambientes internos, entre com uma conta Google pelo botão Entrar.',
     verification_required: 'A conta Google precisa apresentar um e-mail verificado antes de continuar.',
     provisioning_required: 'Não foi possível validar ou provisionar sua Identidade UNO. O acesso permanece bloqueado até a configuração segura do serviço.',
-    forbidden: 'Sua conta não possui autorização para esta área. O acesso mestre depende de concessão explícita e validada.'
+    forbidden: 'Sua conta não possui autorização para esta área. O acesso depende de concessão explícita e validada.'
   };
 
   return (
@@ -136,7 +149,7 @@ export function PageAccessGateV7({
       <div className="v7-access-state__icon" aria-hidden="true">⌑</div>
       <span className="v6-kicker">Controle de acesso UNO</span>
       <h1>{state === 'checking' ? 'Verificação de acesso' : 'Área protegida'}</h1>
-      <p>{messages[state]}</p>
+      <p>{messages[state as Exclude<AccessState, 'allowed'>]}</p>
       <small>A navegação visual não concede privilégios. As operações com dados também devem ser autorizadas no servidor e nas regras do banco.</small>
     </section>
   );
