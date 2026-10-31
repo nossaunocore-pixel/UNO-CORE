@@ -177,3 +177,8 @@ V18 governa descoberta e contratação de ofertas; V19 trata coordenação infor
 - V05: 100 capítulos do antigo Orquestrador Mestre; inventário em `V05-OM/INVENTARIO-LEGADO-100-CAPITULOS.md`. O V05 atual é Oficina Mestre.
 - V06: 52 capítulos do antigo domínio organizacional; inventário em `V06-CO/INVENTARIO-LEGADO-52-CAPITULOS.md`. O V06 atual é Centro de Operações.
 - V08: nome atual “Sistema Universal de Missões” diverge do conteúdo OPS de operações sistêmicas; decisão pendente em `V08-OPS/DECISAO-PENDENTE-ESCOPO-OPS.md`.
+
+
+## Auditoria dos fundamentos V01–V08
+
+O inventário estrutural dos oito volumes fundamentais, incluindo contagem de capítulos, maturidade e divergências de nomenclatura/escopo, está em [INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md](INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md). A primeira passagem identificou 522 capítulos numerados nos oito diretórios; nem todos foram lidos integralmente. O documento distingue inventário estrutural de auditoria semântica completa.
