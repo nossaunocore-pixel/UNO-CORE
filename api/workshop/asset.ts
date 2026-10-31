@@ -49,7 +49,7 @@ export default async function handler(request: Request): Promise<Response> {
       const [assetResult, versionsResult] = await Promise.all([
         admin.from('workshop_assets').select('*').eq('id', id).maybeSingle(),
         admin.from('workshop_asset_versions')
-          .select('id,version,change_summary,changed_by_idu,created_at')
+          .select('id,version,change_summary,created_at')
           .eq('asset_id', id)
           .order('version', { ascending: false })
       ]);
