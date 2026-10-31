@@ -33,8 +33,12 @@ create table if not exists public.catalog_items (
   title text not null,
   summary text not null default '',
   responsible_entity_id text not null,
+  responsible_public_name text not null,
   provider_entity_id text not null,
+  provider_public_name text not null,
   seller_entity_id text,
+  seller_public_name text,
+  category_label text,
   external_provider_id text,
   terms_version text,
   category_id text,
@@ -64,7 +68,9 @@ create table if not exists public.catalog_items (
     check (currency is null or currency ~ '^[A-Z]{3}$'),
   constraint catalog_items_title_not_blank_check check (length(trim(title)) > 0),
   constraint catalog_items_responsibility_check
-    check (length(trim(responsible_entity_id)) > 0 and length(trim(provider_entity_id)) > 0)
+    check (length(trim(responsible_entity_id)) > 0 and length(trim(provider_entity_id)) > 0),
+  constraint catalog_items_public_names_check
+    check (length(trim(responsible_public_name)) > 0 and length(trim(provider_public_name)) > 0)
 );
 
 create table if not exists public.community_posts (
@@ -95,6 +101,7 @@ create table if not exists public.events (
   description text not null default '',
   event_type text not null,
   organizer_entity_id text not null,
+  organizer_public_name text not null,
   starts_at timestamptz not null,
   ends_at timestamptz,
   venue_name text,
@@ -111,7 +118,8 @@ create table if not exists public.events (
   updated_at timestamptz not null default now(),
   constraint events_time_check check (ends_at is null or ends_at >= starts_at),
   constraint events_location_size_check check (pg_column_size(public_location) <= 8192),
-  constraint events_title_not_blank_check check (length(trim(title)) > 0)
+  constraint events_title_not_blank_check check (length(trim(title)) > 0),
+  constraint events_organizer_public_name_check check (length(trim(organizer_public_name)) > 0)
 );
 
 create table if not exists public.participation_items (
