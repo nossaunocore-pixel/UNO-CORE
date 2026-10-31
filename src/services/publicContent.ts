@@ -43,7 +43,7 @@ export async function listPublicCatalogItems(
 ): Promise<PublicCatalogItem[]> {
   let query = getClient()
     .from('catalog_items')
-    .select('id,slug,kind,origin,title,summary,responsible_entity_id,provider_entity_id,seller_entity_id,external_provider_id,terms_version,category_id,institution_id,price_amount,currency,region_ids,status,public_details,published_at')
+    .select('id,slug,kind,origin,title,summary,responsible_public_name,provider_public_name,seller_public_name,category_label,price_amount,currency,region_ids,status,public_details,published_at')
     .in('status', ['published', 'available'])
     .eq('visibility', 'public');
 
@@ -73,7 +73,7 @@ export async function listPublicCommunityPosts(limit = 30): Promise<PublicCommun
 export async function listPublicEvents(limit = 30): Promise<PublicEvent[]> {
   const { data, error } = await getClient()
     .from('events')
-    .select('id,slug,title,summary,description,event_type,organizer_entity_id,starts_at,ends_at,venue_name,public_location,registration_mode,registration_url,status,published_at')
+    .select('id,slug,title,summary,description,event_type,organizer_public_name,starts_at,ends_at,venue_name,public_location,registration_mode,registration_url,status,published_at')
     .in('status', ['published', 'cancelled', 'completed'])
     .eq('visibility', 'public')
     .order('starts_at', { ascending: true })
