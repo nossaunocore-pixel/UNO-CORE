@@ -34,7 +34,7 @@ create table if not exists public.workshop_assets (
   constraint workshop_asset_definition_size_check check (pg_column_size(definition) <= 65536),
   constraint workshop_asset_origin_scope_check
     check (
-      (asset_type in ('product', 'service') and origin in ('uno', 'third_party'))
+      (asset_type in ('product', 'service') and origin is not null and origin in ('uno', 'third_party'))
       or (asset_type not in ('product', 'service') and origin is null)
     )
 );
@@ -112,7 +112,7 @@ begin
   ) then
     raise exception 'WORKSHOP_ASSET_TYPE_INVALID';
   end if;
-  if p_asset_type in ('product', 'service') and p_origin not in ('uno', 'third_party') then
+  if p_asset_type in ('product', 'service') and (p_origin is null or p_origin not in ('uno', 'third_party')) then
     raise exception 'WORKSHOP_ASSET_ORIGIN_REQUIRED';
   end if;
   if p_asset_type not in ('product', 'service') and p_origin is not null then
@@ -179,7 +179,7 @@ begin
 
   if not found then raise exception 'WORKSHOP_ASSET_NOT_FOUND'; end if;
   if v_before.status <> 'draft' then raise exception 'WORKSHOP_ASSET_NOT_DRAFT'; end if;
-  if v_before.asset_type in ('product', 'service') and p_origin not in ('uno', 'third_party') then
+  if v_before.asset_type in ('product', 'service') and (p_origin is null or p_origin not in ('uno', 'third_party')) then
     raise exception 'WORKSHOP_ASSET_ORIGIN_REQUIRED';
   end if;
   if v_before.asset_type not in ('product', 'service') and p_origin is not null then
