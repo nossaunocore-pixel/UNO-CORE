@@ -1,6 +1,8 @@
 # EOU-V37 — Glossário Oficial
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: estrutura inicial; glossário canônico ainda precisa ser preenchido e revisado
 - Relacionados: todos os volumes EOU, especialmente V03 MUE, V26 Identidade, V28 Entidades, V36 ADR
 
