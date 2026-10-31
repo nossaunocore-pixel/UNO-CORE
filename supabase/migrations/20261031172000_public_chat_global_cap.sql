@@ -14,7 +14,7 @@ alter table uno_private.public_chat_global_limits enable row level security;
 revoke all on table uno_private.public_chat_global_limits from public, anon, authenticated;
 grant all on table uno_private.public_chat_global_limits to service_role;
 
-create or replace function uno_private.consume_public_chat_quota_with_global_cap(
+create or replace function public.consume_public_chat_quota_with_global_cap(
   p_user_id uuid,
   p_global_limit integer
 )
@@ -91,9 +91,9 @@ begin
 end;
 $function$;
 
-revoke all on function uno_private.consume_public_chat_quota_with_global_cap(uuid, integer)
+revoke all on function public.consume_public_chat_quota_with_global_cap(uuid, integer)
   from public, anon, authenticated;
-grant execute on function uno_private.consume_public_chat_quota_with_global_cap(uuid, integer)
+grant execute on function public.consume_public_chat_quota_with_global_cap(uuid, integer)
   to service_role;
 
 commit;
