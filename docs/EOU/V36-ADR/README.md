@@ -45,3 +45,12 @@ Definir aprovadores por categoria, templates automatizados, política de revisã
 
 ## 10. Histórico
 0.2.0 — processo de decisão documentado; 2026-10-31.
+
+
+## ADRs transversais registrados em 31/10/2026
+
+- [ADR-EOU-001 — Fronteiras entre Identidade, Perfil e Entidades](ADR-EOU-001-fronteiras-identidade-perfil-entidades.md): proposta, não aprovada.
+- [ADR-EOU-002 — Precedência documental e autoridade por tipo de decisão](ADR-EOU-002-precedencia-documental.md): proposta, não aprovada.
+- [ADR-EOU-003 — Fronteiras entre Oficina, Operações, Missões, Fluxos e Cognição](ADR-EOU-003-fronteiras-missoes-fluxos-cognicao.md): proposta, não aprovada.
+
+A existência ou indexação de um ADR não significa ratificação. O estado só muda mediante decisão explícita e evidência registrada, conforme o processo deste volume.
