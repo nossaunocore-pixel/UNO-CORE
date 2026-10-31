@@ -102,6 +102,15 @@ A EOU está organizada em volumes independentes, cada um responsável por um dom
 
 - [Modelo Econômico e de Negócios Universal da UNO CORE](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md) — proposta transversal para seleção de soluções, classificação de custos, métricas, transparência e distribuição justa de receitas. Os pontos reservados ao fundador permanecem pendentes de ratificação.
 
+## Pacote Econômico, Jurídico e de Handoff
+
+- [MEU-UNO-001 — Modelo Econômico Universal](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md) — versão 0.3.0; documento-base transversal.
+- [Adendo — Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md) — prevalece sobre trechos conflitantes de versões anteriores.
+- [Regime Jurídico, Trabalhista, Tributário e Financeiro](REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md) — matriz preparatória, sujeita a pareceres profissionais.
+- [Registro de Decisões e Lacunas Econômicas](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md) — separa decisões expressas, hipóteses e pendências do fundador.
+- [Plano de Fechamento e Handoff Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md) — sequência de execução e prompt-base.
+- [Checklist de Prontidão Antigravity](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md) — critérios de verificação e gates.
+
 # Estrutura dos Volumes
 
 Cada volume da Engenharia Oficial possui documentação própria, histórico de versões, capítulos, anexos e diagramas.
