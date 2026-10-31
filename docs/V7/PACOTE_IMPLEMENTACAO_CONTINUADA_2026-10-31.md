@@ -53,7 +53,7 @@
 - Coordenação Geral: painel executivo, metas, indicadores, riscos e prioridades.
 - Jurídico: contratos, conformidade e obrigações.
 - Contábil e Financeiro: contabilidade, orçamento, receitas/despesas e conciliação.
-- Financeiro da Plataforma: gestão operacional Stripe, sem poderes irrestritos de movimentação.
+- Painel Contábil e Financeiro: contabilidade, orçamento, conciliação e gestão operacional Stripe em subárea própria, sem poderes irrestritos de movimentação.
 - Atendimento: níveis operador, especialista, supervisor e gestor geral, com escopo e escalonamento.
 - Produtos/serviços podem ser próprios UNO ou de terceiros; titular, fornecedor, prestador, vendedor, responsabilidade e termos precisam estar explícitos.
 - Instituições mantêm regras próprias. Oferta integrada pode ser descoberta na Vitrine; contratação/matrícula acontece em Serviços; após confirmação, aparece em Serviços Ativos.
