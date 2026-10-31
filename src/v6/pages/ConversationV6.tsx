@@ -186,7 +186,7 @@ export function ConversationV6({ onNavigate: _onNavigate }: { onNavigate: Naviga
         if (!sessionData.session || sessionData.session.user.is_anonymous !== true) {
           const { data, error } = await supabasePublic.auth.signInAnonymously();
           if (error) throw error;
-          sessionData = { session: data.session, user: data.user };
+          sessionData = { session: data.session };
         }
 
         if (!sessionData.session) {
