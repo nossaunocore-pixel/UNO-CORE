@@ -1,6 +1,8 @@
 # EOU-V26 — Identidade Digital
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; integração Firebase/Supabase ainda requer configuração e validação
 - Relacionados: V03 MUE, V13 Dados, V16 Segurança, V17 Governança, V27 Perfis, V28 Entidades, V36 ADR
 
