@@ -35,6 +35,10 @@ Documentar bairro piloto, objetivos, critérios de seleção, parceiros, serviç
 ## 7. Comunicação e marca
 Definir nome, marca, linguagem, promessas permitidas, canais oficiais, porta-vozes, acessibilidade, gestão de crise e revisão de conteúdo. Distinguir UNO CORE, entidades societárias e iniciativas futuras; não confundir nome de produto com nome jurídico da empresa.
 
+## 7.1. Carta Fundadora e mensagem institucional da NÓS S.A.
+
+A carta canônica encontra-se em [V06 — capítulo 051: Carta Fundadora da NÓS S.A.](../V06-CO/051-Carta-Fundadora-da-NOS-SA.md). A mensagem preparada para exibição fixa no espaço institucional encontra-se em [Carta de Apresentação do Fundador — NÓS S.A.](../V06-CO/CARTA-DE-APRESENTACAO-DO-FUNDADOR-NOS-SA-2026-10-31.md). A mensagem pública não substitui atos societários, documentos jurídicos ou a carta canônica.
+
 ## 8. Documentos institucionais
 Estatuto/contrato social, atos de fundação, organograma, políticas, relatórios, apresentações, cartas de parceria, atas, prestação de contas e relatórios de impacto devem ter autoria, versão, aprovação, vigência e repositório oficial.
 
