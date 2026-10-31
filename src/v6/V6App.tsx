@@ -25,6 +25,7 @@ import { ActiveServicesV7 } from './pages/ActiveServicesV7';
 import { HouseV7 } from './pages/HouseV7';
 import { EmploymentIncomeV7 } from './pages/EmploymentIncomeV7';
 import { WalletV7 } from './pages/WalletV7';
+import { PanelWorkspaceV7 } from './pages/PanelWorkspaceV7';
 import { AuthControlV7 } from './components/AuthControlV7';
 import { auth } from '../services/firebase';
 import type { V6View } from './types';
@@ -102,6 +103,11 @@ export default function V6App() {
           {view === 'casa' && <HouseV7 />}
           {view === 'emprego_renda' && <EmploymentIncomeV7 />}
           {view === 'carteira' && <WalletV7 />}
+          {view === 'painel_administrativo' && <PanelWorkspaceV7 panelId="administrative" onNavigate={setView} />}
+          {view === 'painel_coordenacao' && <PanelWorkspaceV7 panelId="general_coordination" onNavigate={setView} />}
+          {view === 'painel_juridico' && <PanelWorkspaceV7 panelId="legal" onNavigate={setView} />}
+          {view === 'painel_contabil_financeiro' && <PanelWorkspaceV7 panelId="accounting_finance" onNavigate={setView} />}
+          {view === 'painel_atendimento' && <PanelWorkspaceV7 panelId="support" onNavigate={setView} />}
           {view === 'biblioteca' && <KnowledgeLibraryV63 onNavigate={setView} />}
           {view === 'conteudos' && <ContentStudioV635 onNavigate={setView} />}
           {view === 'acervo' && <MediaLibraryV636 onNavigate={setView} />}
