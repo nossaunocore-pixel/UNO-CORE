@@ -990,3 +990,47 @@
   .v7-community-purpose i { width: 13px; }
   .v7-community-territory ol { grid-template-columns: 1fr; }
 }
+
+
+/* V7 — public directories and personal experience areas */
+.v6-topbar{gap:12px}
+.v6-nav{min-width:0;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}
+.v6-nav::-webkit-scrollbar{display:none}
+.v6-nav button{flex:0 0 auto;white-space:nowrap}
+.v7-square-links{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:12px auto 0}
+.v7-square-links button{display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border:1px solid rgba(121,224,255,.34);border-radius:999px;background:rgba(3,16,35,.74);color:#e7f8ff;font-size:.72rem;font-weight:750;backdrop-filter:blur(9px);cursor:pointer}
+.v7-square-links button:hover{border-color:#63e9ff;background:rgba(0,135,190,.28)}
+.v7-directory,.v7-personal-area{width:min(1180px,94vw);margin:0 auto;padding:clamp(28px,5vw,64px) 0 90px;color:#e9f6ff}
+.v7-directory-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:28px}
+.v7-directory-heading h1,.v7-personal-area h1{margin:0 0 10px;font-size:clamp(1.8rem,3vw,2.8rem);line-height:1.08}
+.v7-directory-heading p,.v7-personal-area>p{max-width:760px;color:#a9c2d4;line-height:1.65}
+.v7-directory-mark{display:inline-flex;align-items:center;gap:8px;flex:0 0 auto;padding:10px 13px;border:1px solid rgba(89,222,255,.25);border-radius:14px;background:rgba(5,29,53,.62);color:#b9efff;font-size:.78rem;font-weight:800}
+.v7-directory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px;margin:22px 0}
+.v7-directory-grid article{display:flex;flex-direction:column;align-items:flex-start;gap:9px;min-height:190px;padding:20px;border:1px solid rgba(103,203,238,.18);border-radius:18px;background:linear-gradient(145deg,rgba(8,33,59,.88),rgba(3,15,31,.94));box-shadow:0 12px 34px rgba(0,0,0,.16)}
+.v7-directory-grid article>span{color:#62dfff;font-size:.68rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+.v7-directory-grid article h2{margin:0;font-size:1.08rem}
+.v7-directory-grid article p{margin:0;color:#a9c2d4;line-height:1.55;font-size:.9rem}
+.v7-directory-grid article small{display:flex;align-items:center;gap:6px;color:#8eaec4;font-size:.76rem}
+.v7-directory-grid article strong{color:#dffaff;font-size:1rem}
+.v7-directory-grid article a{color:#67e5ff;font-weight:750;font-size:.82rem}
+.v7-directory-state{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:24px;border:1px dashed rgba(106,214,248,.3);border-radius:18px;background:rgba(4,23,43,.52);color:#a9c2d4}
+.v7-directory-state svg{width:24px;height:24px;color:#66e3ff}
+.v7-directory-state b{color:#effbff}
+.v7-directory-notice{display:flex;align-items:flex-start;gap:9px;margin-top:28px;padding:14px 16px;border:1px solid rgba(107,193,224,.16);border-radius:14px;background:rgba(4,20,38,.48);color:#9fb9cb;font-size:.78rem;line-height:1.55}
+.v7-directory-notice svg{flex:0 0 auto;color:#62dcf6}
+.v7-service-not-live{margin-top:5px;padding:5px 8px;border-radius:8px;background:rgba(255,190,90,.09);color:#ffd18b!important}
+.v7-personal-area>h1{margin-top:8px}
+.v7-personal-empty{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:28px 0;padding:26px;border:1px solid rgba(105,211,240,.2);border-radius:18px;background:linear-gradient(145deg,rgba(8,35,61,.82),rgba(3,16,32,.92));color:#a9c2d4;line-height:1.6}
+.v7-personal-empty svg{width:28px;height:28px;color:#62e2ff}
+.v7-personal-empty b{color:#f1fbff;font-size:1.02rem}
+.v7-personal-empty span{max-width:760px}
+.v7-personal-principles{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.v7-personal-principles span{display:inline-flex;align-items:center;gap:8px;padding:10px 13px;border:1px solid rgba(102,214,246,.2);border-radius:12px;background:rgba(5,27,49,.68);color:#c8e8f4;font-size:.82rem}
+.v7-personal-principles svg{width:17px;height:17px;color:#63e5ff}
+@media(max-width:720px){
+  .v7-directory,.v7-personal-area{width:calc(100% - 28px);padding:26px 0 100px}
+  .v7-directory-heading{flex-direction:column;gap:12px}
+  .v7-directory-grid{grid-template-columns:1fr}
+  .v7-square-links{gap:5px}
+  .v7-square-links button{font-size:.66rem;padding:6px 8px}
+}
