@@ -38,3 +38,9 @@ Definir termos por categoria, papel jurídico da plataforma em cada operação, 
 
 ## 11. Histórico
 0.2.0 — estrutura de marketplace alinhada ao catálogo público V7; 2026-10-31.
+
+
+## Relação com o Modelo Econômico Universal
+
+Cada oferta/contratação deve identificar vendedor/prestador, contratante, executor, instituição parceira, papel contratual da UNO e processador de pagamento. Em intermediação, o valor integral pago pelo cliente não é automaticamente receita da UNO; reconhecer apenas os valores que lhe pertencem segundo contrato e contabilidade. Custos, obrigações e resultado territorial seguem o MEU-UNO-001 e seu adendo. Não ativar checkout, split ou comissão real sem validação V25 e V39.
+
