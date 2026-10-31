@@ -250,3 +250,10 @@ A PNAD não disponibilizou parte das estatísticas de características gerais do
 A retrospectiva mais recente consultada do IBGE apresenta a taxa média anual de desocupação de 2022 em **9,6%** e a proxy de informalidade em **39,5%**. A divulgação original do ano indicava 9,3% e 39,6%. Manter os dois registros com seus respectivos vintages; para comparar 2020, 2021 e 2022 retrospectivamente, utilizar a mesma série revisada em todos os anos.
 
 Fonte: IBGE, PNAD Contínua, apresentação retrospectiva com série histórica até 2025 (consulta em 2026): https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
+
+
+## 21. Revisão retrospectiva de segurança pública — vintage 2024
+
+O Anuário Brasileiro de Segurança Pública 2024 apresenta **47.963 vítimas de MVI em 2022**, ante 47.452 na edição de 2023. A revisão é material e deve ser explicitada em qualquer comparação. MVI reúne homicídio doloso, latrocínio, lesão corporal seguida de morte e mortes decorrentes de intervenções policiais, conforme notas da publicação; não equivale ao total de homicídios do SIM.
+
+Fonte: FBSP, 18º Anuário Brasileiro de Segurança Pública 2024, Tabela 03: https://www.mpsp.mp.br/portal/page/portal/documentacao_e_divulgacao/doc_biblioteca/bibli_servicos_produtos/BibliotecaDigital/BibDigitalLivros/TodosOsLivros/Anuario-Brasileiro-de-Seguranca-Publica-2024.pdf
