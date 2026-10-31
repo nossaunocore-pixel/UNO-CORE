@@ -243,3 +243,10 @@ Fonte: https://educa.ibge.gov.br/jovens/conheca-o-brasil/populacao/22064-caracte
 
 A PNAD não disponibilizou parte das estatísticas de características gerais dos domicílios em 2020 e 2021, devido à redução da taxa de resposta e dificuldades de mensuração na primeira visita durante a pandemia. Não interpolar esses anos. Fonte: https://www.ibge.gov.br/estatisticas/sociais/populacao/17270-pnad-continua.html
 
+
+
+## 20. Revisão retrospectiva de séries — vintage consultado em 2026
+
+A retrospectiva mais recente consultada do IBGE apresenta a taxa média anual de desocupação de 2022 em **9,6%** e a proxy de informalidade em **39,5%**. A divulgação original do ano indicava 9,3% e 39,6%. Manter os dois registros com seus respectivos vintages; para comparar 2020, 2021 e 2022 retrospectivamente, utilizar a mesma série revisada em todos os anos.
+
+Fonte: IBGE, PNAD Contínua, apresentação retrospectiva com série histórica até 2025 (consulta em 2026): https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
