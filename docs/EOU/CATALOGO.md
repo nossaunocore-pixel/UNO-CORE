@@ -21,9 +21,9 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 | EOU-V01 | Constituição Técnica da UNO |
 | EOU-V02 | Arquitetura Oficial da UNO |
 | EOU-V03 | Modelo Universal de Entidades (MUE) |
-| EOU-V04 | EVA — Enciclopédia Visual Adaptativa |
+| EOU-V04 | [EVA — definição pendente](V04-EVA/DECISAO-PENDENTE-EVA.md) |
 | EOU-V05 | Oficina Mestre (OM) |
-| EOU-V06 | Centro de Operações (CO) |
+| EOU-V06 | [Centro de Operações (CO)](V06-CO/README.md) |
 | EOU-V07 | Central de Coordenação de Missões (CCM) |
 | EOU-V08 | Sistema Universal de Missões (OPS) |
 
@@ -139,7 +139,7 @@ Nenhuma decisão estrutural deverá existir sem documentação correspondente na
 A coleção EOU possui caráter evolutivo.
 
 Novas versões poderão ampliar os volumes existentes preservando sua compatibilidade histórica e arquitetural.
-\n\n## Aprofundamento técnico V09–V17 (31/10/2026)\n\nCada volume V09–V40 possui um arquivo ESPECIFICACAO-TECNICA.md complementar, revisão documental 0.3.0. Os documentos estão na branch `eou-v09-v17-deepening-2026-10-31` para revisão; a branch main permanece inalterada.\n
+\n\n## Aprofundamento técnico V09–V40 (31/10/2026)\n\nCada volume V09–V40 possui um arquivo ESPECIFICACAO-TECNICA.md complementar, revisão documental 0.3.0. Os documentos estão na branch `eou-v09-v17-deepening-2026-10-31` para revisão; a branch main permanece inalterada.\n
 
 ### Fronteira entre V26, V27 e V28
 
@@ -164,3 +164,9 @@ V39 organiza obrigações, documentos e avaliações jurídicas sob revisão pro
 ### Fronteira entre V18–V25
 
 V18 governa descoberta e contratação de ofertas; V19 trata coordenação informacional industrial, sem controle OT; V20 organiza recursos e necessidades comunitárias; V21 conecta aprendizagem; V22 limita-se a informação/encaminhamento sem atos clínicos; V23 trata informação habitacional sem presumir titularidade ou corretagem; V24 conecta trabalho e renda sem presumir vínculo; V25 governa ledger e pagamentos sob revisão jurídica/contábil. Esses domínios reutilizam identidade, entidades, fluxos e governança transversais.
+
+
+## Definições e nomenclaturas em harmonização — 31/10/2026
+
+- **V04 — EVA:** há divergência entre “Enciclopédia Visual Adaptativa” (catálogo anterior) e “Ecossistema de Valor e Aprendizagem” (README existente). Nenhuma expansão foi escolhida. Ver [registro de decisão pendente](V04-EVA/DECISAO-PENDENTE-EVA.md). A definição oficial depende de confirmação do fundador.
+- **V06 — Centro de Operações (CO):** nomenclatura confirmada pelo fundador. O README foi harmonizado e o texto anterior foi preservado em [histórico de Conhecimento Organizacional](V06-CO/HISTORICO-CONHECIMENTO-ORGANIZACIONAL.md). O escopo técnico atual ainda está em harmonização; capítulos legados não foram apagados nem automaticamente adotados.
