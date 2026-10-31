@@ -167,3 +167,29 @@ Consolidar custos recorrentes e de expansão, receitas próprias, financiamento 
 
 ## 15. Pendências e confiança
 Completar séries por causa de morte, mortalidade infantil/materna, pobreza, educação, habitação, saneamento, violência, produção física setorial e desigualdade territorial. A comparação de mortalidade deve considerar composição etária e causas específicas. Confiança alta nos dados revisados de PIB, IPCA, PNAD e Registro Civil citados; contrafactual UNO ainda sem estimativa quantitativa.
+
+
+## 16. Aprofundamento social, territorial e de infraestrutura — adendo de pesquisa
+
+### Pobreza e desigualdade regional
+Na série harmonizada pelas linhas do Banco Mundial atualizadas para PPC 2017, a pobreza foi de 31,6% e a extrema pobreza de 5,9% em 2022. Eram 67,8 milhões de pessoas pobres e 12,7 milhões em extrema pobreza. A distribuição era desigual: o Nordeste concentrava 43,5% da população pobre e 54,6% da população extremamente pobre, embora representasse 27% da população brasileira. Entre pessoas pretas ou pardas, a pobreza atingia 40,0%, contra 21,0% entre brancos; entre crianças de até 14 anos, 49,1%.
+Fonte: https://agenciagov.ebc.com.br/noticias/202312/pobreza-cai-para-31-6-da-populacao-em-2022-apos-alcancar-36-7-em-2021
+
+### Conectividade — cobertura potencial não é inclusão efetiva
+A internet estava presente em 91,5% dos domicílios (68,9 milhões), mas 6,4 milhões não utilizavam a rede. Entre os motivos estavam falta de habilidade de uso (32,1%), custo do serviço (28,8%) e ausência de necessidade percebida (25,6%). A diferença rural-urbana caiu, mas persistia. Logo, o alcance digital da UNO deve ser corrigido por acesso, habilidade, custo e disponibilidade de dispositivo; não basta usar a proporção nacional de domicílios conectados.
+Fonte: https://agenciagov.ebc.com.br/noticias/202311/em-2022-streaming-estava-presente-em-43-4-dos-domicilios-com-tv
+
+### Água e esgotamento sanitário
+Em 2022, 85,5% dos domicílios tinham rede geral como principal forma de abastecimento de água e 69,5% tinham acesso à rede geral de esgoto ou fossa séptica ligada à rede. Para acesso à rede de esgoto, a cobertura era de 36,6% no Norte, 44,4% no Nordeste e 85,5% no Sudeste. O dado evidencia que oportunidades e necessidades locais são diferentes; a UNO poderia mapear relatos, organizar evidências agregadas e encaminhar demandas, mas obras e serviços permanecem responsabilidade dos prestadores e do poder público.
+Fonte: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
+
+### Saúde materno-infantil
+O Relatório Anual de Gestão do Ministério da Saúde registra mortalidade na infância de 15,1 por mil em 2022 e mortalidade neonatal de 6,3 por mil (preliminar). A taxa de mortalidade na infância, portanto, não deve ser confundida com mortalidade infantil (menores de um ano) nem com mortalidade neonatal (primeiros 27 dias). A série de 2020–2022 deve preservar as definições e sinalizar a situação preliminar dos dados de 2021/2022.
+Fonte: https://bvsms.saude.gov.br/bvs/publicacoes/relatorio_anual_gestao_2022.pdf
+
+### Oportunidades de atuação hipotética
+- Mapear áreas com baixa cobertura de água/esgoto e registrar demandas coletivas verificáveis.
+- Direcionar pessoas a canais oficiais e prestadores, acompanhando protocolo e confirmação, sem prometer execução.
+- Apoiar inclusão digital com pontos assistidos e interface de baixo consumo de dados.
+- Medir distribuição de oportunidades, encaminhamentos e resoluções por território, preservando dados pessoais.
+
