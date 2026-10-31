@@ -562,7 +562,7 @@ Fonte: IBGE, Brasil em Números 2023, tabela 18.7, com dados do RREO 2020–2022
 1. Extrair do SIM uma única versão comparável de 2020, 2021 e 2022, com total de óbitos, causa básica, idade, sexo e UF; registrar a data de extração e distinguir preliminar/definitivo.
 2. Recalcular taxas de mortalidade específicas e padronizadas por idade, além de excesso de mortalidade por causa natural, sem atribuir automaticamente o excesso à COVID-19.
 3. Atualizar os quadros anuais de trabalho com a série retrospectiva do IBGE, mantendo em paralelo o vintage contemporâneo.
-4. Completar a série 2020–2022 de mortes violentas intencionais e mortes violentas por causa indeterminada com uma edição metodologicamente consistente do FBSP/Ipea; não misturar MVI, homicídio doloso e óbitos SIM.
+4. Usar a série nacional MVI 2020–2022 revisada pelo FBSP na edição 2024 (seção 22.5); completar desagregações por UF/município e a série de mortes violentas por causa indeterminada (MVCI), sem misturar MVI, homicídio doloso e óbitos SIM.
 5. Construir orçamento UNO bottom-up somente após explicitar unidade territorial, população atendida, equipe, volume de interações, tecnologia, suporte, conformidade e nível de serviço. Não atribuir custo zero a trabalho, infraestrutura ou operação.
 
 **Status:** avanço documental incorporado; mortalidade 2022 em vintage harmonizado, série municipal de segurança e orçamento operacional UNO permanecem como pendências explícitas, sem preencher lacunas por interpolação.
