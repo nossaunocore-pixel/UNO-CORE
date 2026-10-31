@@ -1,6 +1,8 @@
 # EOU-V31 — Fluxos
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; contratos transversais parciais
 - Relacionados: V05 Oficina Mestre, V06 Centro de Operações, V07 CCM, V08 OPS, V10 Agentes, V14 APIs, V17 Governança, V29 Projetos, V32 Automações
 
