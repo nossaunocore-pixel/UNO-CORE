@@ -20,7 +20,8 @@ export type V6View =
   | 'servicos'
   | 'servicos_ativos'
   | 'casa'
-  | 'emprego_renda';
+  | 'emprego_renda'
+  | 'carteira';
 
 export type NavigateV6 = (view: V6View) => void;
 
