@@ -24,6 +24,7 @@ import { ServicesV7 } from './pages/ServicesV7';
 import { ActiveServicesV7 } from './pages/ActiveServicesV7';
 import { HouseV7 } from './pages/HouseV7';
 import { EmploymentIncomeV7 } from './pages/EmploymentIncomeV7';
+import { WalletV7 } from './pages/WalletV7';
 import { AuthControlV7 } from './components/AuthControlV7';
 import { auth } from '../services/firebase';
 import type { V6View } from './types';
@@ -100,6 +101,7 @@ export default function V6App() {
           {view === 'servicos_ativos' && <ActiveServicesV7 />}
           {view === 'casa' && <HouseV7 />}
           {view === 'emprego_renda' && <EmploymentIncomeV7 />}
+          {view === 'carteira' && <WalletV7 />}
           {view === 'biblioteca' && <KnowledgeLibraryV63 onNavigate={setView} />}
           {view === 'conteudos' && <ContentStudioV635 onNavigate={setView} />}
           {view === 'acervo' && <MediaLibraryV636 onNavigate={setView} />}
