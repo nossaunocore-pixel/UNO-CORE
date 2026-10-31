@@ -21,7 +21,12 @@ export type V6View =
   | 'servicos_ativos'
   | 'casa'
   | 'emprego_renda'
-  | 'carteira';
+  | 'carteira'
+  | 'painel_administrativo'
+  | 'painel_coordenacao'
+  | 'painel_juridico'
+  | 'painel_contabil_financeiro'
+  | 'painel_atendimento';
 
 export type NavigateV6 = (view: V6View) => void;
 
