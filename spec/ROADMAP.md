@@ -109,3 +109,17 @@ O MVP só será declarado pronto quando as fases críticas de identidade, autori
 - [x] Criar template implementável de volume.
 - [ ] Confirmar nomenclatura/continuidade da série legada V01–V08.
 - [ ] Completar especificações dos volumes 09–40, preservando camadas evolutivas.
+
+
+## Fase 0C — Oficina e governança de painéis (31/10/2026)
+
+- [x] Diretório TypeScript dos painéis com acesso padrão negado.
+- [x] Shells dos painéis Administrativo, Coordenação Geral, Jurídico, Contábil/Financeiro e Atendimento.
+- [x] API de atribuição de escopos exclusiva do fundador; exige Google verificado e IDU do destinatário.
+- [x] API de verificação server-side de escopo; valida claims e registro ativo no Firestore.
+- [x] Oficina com criação, edição de rascunhos, versionamento, clone e envio para revisão.
+- [x] Snapshots imutáveis e eventos de auditoria para alterações da Oficina.
+- [ ] Configurar Firebase Admin/UID fundador para ativar provisionamento de escopos.
+- [ ] Aplicar migration de versionamento da Oficina em Supabase de teste.
+- [ ] Construir aprovação, evidência de testes, integração e ativação; manter publicação automática proibida.
+- [ ] Conectar cada painel a APIs/dados reais com autorização server-side e testes de escopo.
