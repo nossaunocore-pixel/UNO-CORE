@@ -27,7 +27,7 @@ function safeLimit(value = 30): number {
 export async function listPublicInstitutions(limit = 30): Promise<PublicInstitution[]> {
   const { data, error } = await getClient()
     .from('institutions')
-    .select('id,parent_id,slug,name,institution_type,summary,public_profile,published_at')
+    .select('id,parent_id,slug,name,institution_type,unit_type,summary,public_profile,published_at')
     .eq('status', 'published')
     .eq('visibility', 'public')
     .order('published_at', { ascending: false })
