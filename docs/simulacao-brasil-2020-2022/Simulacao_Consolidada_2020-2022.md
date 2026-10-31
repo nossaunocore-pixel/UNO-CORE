@@ -711,3 +711,16 @@ Não se deve afirmar que a UNO teria resolvido uma pauta apenas por permitir sua
 **Referências normativas e institucionais:** Constituição Federal de 1988, art. 5º, IV, XIV, XVI e XVII (https://www4.planalto.gov.br/legislacao/legis-federal/constituicao); Declaração Universal dos Direitos Humanos, arts. 19–21 (https://www.un.org/pt/node/212447); explicação da ONU Brasil sobre reunião pacífica e associação, inclusive em grupos online (https://brasil.un.org/pt-br/81866-artigo-20-liberdade-de-reuni%C3%A3o-e-associa%C3%A7%C3%A3o); iniciativas brasileiras de participação social, ouvidoria e consultas públicas (https://www.gov.br/governodigital/pt-br/participacao-social).
 
 **Status:** requisito institucional incorporado ao modelo de avaliação; desenho operacional, governança de conteúdo, proteção de dados, acessibilidade e eventual espaço físico ainda precisam de especificação e validação.
+
+
+## 24. Comparação integrada entre a arquitetura UNO e as necessidades do Brasil (2020–2022)
+
+A pesquisa histórica chega agora à comparação entre os problemas observados no Brasil e as capacidades previstas na Engenharia Oficial da UNO. A matriz completa foi organizada em documento próprio para preservar profundidade e facilitar futuras revisões:
+
+**[Abrir — Comparação Arquitetural: UNO CORE e as Necessidades do Brasil (2020–2022)](Comparacao_Arquitetura_UNO_vs_Brasil_2020-2022.md)**
+
+A comparação cobre pobreza, fome, trabalho, educação, conectividade, saúde, saneamento, segurança, economia local e participação social, relacionando cada dimensão aos volumes EOU, ao fluxo operacional esperado, aos limites externos e ao estado técnico documentado no V7.
+
+**Conclusão preliminar:** a arquitetura UNO tem correspondência conceitual com problemas de fragmentação de informação, descoberta de serviços, coordenação de oportunidades, participação e rastreabilidade. Isso não significa que a plataforma já execute todas essas capacidades, nem que software substitua renda, alimentos, profissionais, vagas, leitos, obras, orçamento ou autoridade pública. A comparação distingue arquitetura proposta, capacidade V7 demonstrada e resultado adicional que ainda precisaria ser medido.
+
+**Próxima etapa:** matriz de prontidão contrafactual por domínio, território e ano (2020, 2021 e 2022), seguida de cenários de adoção, capacidade dos parceiros, custos e avaliação de adicionalidade. Nenhum impacto nacional será quantificado sem parâmetros observáveis ou hipóteses explicitamente identificadas.
