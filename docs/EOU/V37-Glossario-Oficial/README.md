@@ -1,6 +1,6 @@
 # EOU-V37 — Glossário Oficial
 
-- Versão documental: 0.2.0 (README-base)
+- Versão documental: 0.3.0 (README-base)
 - Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
 - Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: estrutura inicial; glossário canônico ainda precisa ser preenchido e revisado
@@ -60,4 +60,5 @@ Proposta de termo → análise do volume responsável → verificação de colis
 Criar inventário completo, revisar todas as siglas, definir termos jurídicos e comerciais, adicionar equivalentes em inglês quando necessário e automatizar verificação de links/nomes.
 
 ## 9. Histórico
+0.3.0 — inclusão da forma institucional canônica NÓS S.A. e regra de distinção em relação ao UNO CORE; 2026-10-31.
 0.2.0 — vocabulário inicial e regras editoriais; 2026-10-31.
