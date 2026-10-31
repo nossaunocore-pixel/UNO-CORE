@@ -1,6 +1,8 @@
 # EOU-V33 — Motor Cognitivo
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; capacidades de chat parciais e sujeitas a limites
 - Relacionados: V04 EVA, V07 CCM, V09 Capacidades, V10 Agentes, V11 Ferramentas, V12 Provedores, V14 APIs, V16 Segurança, V31 Fluxos, V34 UNO CORE
 
