@@ -26,6 +26,17 @@ Propor termo com domínio responsável; verificar colisões; revisar impacto em 
 ## 5. Termos prioritários da UNO
 Priorizar UNO CORE, EOU, volume EOU versus versão do produto, Orquestrador Mestre, Oficina Mestre, Centro de Operações, IDU, MUE, agente, ferramenta, capacidade, entidade, perfil, usuário, parceiro, pioneiro, visitante, serviço, oferta, contratação, carteira, saldo, autorização, aprovação, ativação, publicação, Vitrine, Comunidade, Participação, Praça UNO, Chaveiro e Sinergia.
 
+## 5.1. Registro canônico — NÓS S.A.
+
+- Rótulo preferido: **NÓS S.A.**
+- Categoria: nome institucional/jurídico informado pelo fundador.
+- Definição de domínio: empresa e instituição de referência do ecossistema UNO, com identidade, administração e responsabilidades próprias; integra-se ao UNO CORE de maneira ampliada, sem absorver a autonomia das demais instituições.
+- Grafia obrigatória em texto editorial: `NÓS S.A.`.
+- Variantes proibidas em conteúdo institucional: `Nossa S.A.`, `NOS S.A.`, `NÓS SA`, `Nós SA` e formas equivalentes sem autorização.
+- Separação conceitual obrigatória: NÓS S.A. ≠ UNO CORE.
+- Regra de migração: preservar nomes técnicos, históricos e identificadores imutáveis quando necessários à compatibilidade; corrigir apenas rótulos e referências editoriais sem quebrar caminhos, IDs, integrações ou histórico.
+- Autoridade editorial: fundador; qualquer alteração futura da forma preferida exige decisão expressa e registro de versão.
+
 ## 6. Busca e consumo
 Disponibilizar consulta por termo, sigla, sinônimo, domínio e idioma. APIs retornam termo preferido, definição, status e variantes permitidas. Documentação e interfaces podem validar termos proibidos/ambíguos em CI. Não alterar identificadores técnicos estáveis por mudança de label.
 
