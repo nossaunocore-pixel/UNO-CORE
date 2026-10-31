@@ -258,3 +258,25 @@ A auditoria cruzada só poderá ser considerada encerrada quando:
 3. Inventário dos capítulos/artefatos legados em V06 e avaliação de destino.
 4. Aprofundamento dos capítulos completos V01–V08; até aqui a leitura de V01–V03 e V05/V07/V08 usou seus READMEs-base, com especificações complementares disponíveis para V09–V40.
 5. Definir o contrato de missão↔fluxo e ownership de eventos/estados antes de diagramas executáveis, schemas ou APIs.
+
+
+## 11. Inventário aprofundado de V04 e legado de V06 — 31/10/2026
+
+### AUD-15 — V06 contém 52 capítulos legados cujo domínio não corresponde ao Centro de Operações atual
+**Severidade: P1 | Volumes: V04, V06, V17, V28, V33, V39, V40**
+
+A listagem integral do diretório V06-CO identificou 52 capítulos numerados. Os capítulos 001–049 tratam predominantemente de estrutura e identidade organizacional, pessoas/equipes, autoridade, delegação, governança, inteligência, memória, aprendizagem, stewardship e curadoria. Os capítulos 050–052 tratam de Instituição Curadora, Carta Fundadora da NÓS S.A. e Declaração da Engenharia Oficial. O capítulo 001 denomina CO como “Catálogo Organizacional” e usa EVA como “Engenharia da Vida e da Inteligência”. Isso confirma que o legado contém mais de uma nomenclatura histórica e não deve ser apresentado como especificação atual do Centro de Operações.
+
+**Tratamento iniciado:** README atual de V06 esclarece que os 52 capítulos são legado; README anterior foi preservado; inventário integral criado em `V06-CO/INVENTARIO-LEGADO-52-CAPITULOS.md`. Nenhum capítulo foi movido, apagado ou adotado. Próximo passo é leitura individual e matriz de destino; capítulos 050–052 exigem validação de evidências formais em V39/V40.
+
+### AUD-16 — EVA possui pelo menos três expansões documentadas
+**Severidade: P1 | Volumes: V04, V06, V37**
+
+Além das duas divergências iniciais — “Enciclopédia Visual Adaptativa” no catálogo e “Ecossistema de Valor e Aprendizagem” no README de V04 — o capítulo V06-CO/001 usa “Engenharia da Vida e da Inteligência”. O diretório V04 contém 145 capítulos numerados, cujos títulos se concentram em aprendizagem, conhecimento, memória, assistentes, contexto, cognição, agentes e capacidades. Isso é evidência sobre a trajetória documental do volume, não autorização para escolher uma expansão. O registro `V04-EVA/DECISAO-PENDENTE-EVA.md` foi ampliado; a decisão permanece com o fundador.
+
+### Atualização de estado
+- V06 nomenclatura atual do README: harmonizada; legado de 52 capítulos: inventariado, destino ainda pendente.
+- V04 expansão EVA: não resolvida; três expansões documentadas.
+- V01–V03: fronteiras esclarecidas como propostas; ADR-EOU-002 ainda não aprovado.
+- V05–V08 × V31–V33: ADR-EOU-003 proposto, não aprovado.
+- ADR-EOU-001 continua proposta não aprovada.
