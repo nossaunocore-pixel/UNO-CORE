@@ -33,7 +33,10 @@ create table if not exists public.workshop_assets (
   constraint workshop_asset_slug_check check (length(trim(slug)) > 0),
   constraint workshop_asset_definition_size_check check (pg_column_size(definition) <= 65536),
   constraint workshop_asset_origin_scope_check
-    check (asset_type in ('product', 'service') or origin is null)
+    check (
+      (asset_type in ('product', 'service') and origin in ('uno', 'third_party'))
+      or (asset_type not in ('product', 'service') and origin is null)
+    )
 );
 
 create table if not exists public.workshop_asset_versions (
