@@ -156,4 +156,5 @@ Nenhuma decisão estrutural da Plataforma UNO deverá existir sem documentação
 - [Registro de Decisões e Lacunas Econômicas](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md).
 - [Plano de Fechamento e Handoff Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md).
 - [Checklist de Prontidão Antigravity](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md).
+- [Prompt de Execução Antigravity](PROMPT-ANTIGRAVITY-UNO-CORE-2026-10-31.md) — instrução independente para auditoria, implementação e entrega.
 
