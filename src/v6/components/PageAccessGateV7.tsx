@@ -13,7 +13,7 @@ type AccessState =
 
 // Public visitor navigation is Supabase-backed and does not require Firebase/Google.
 const PUBLIC_VIEWS: V6View[] = [
-  'praca', 'edificio', 'nos', 'comunidade', 'participacao', 'conversa'
+  'praca', 'edificio', 'instituicoes', 'nos', 'lazer', 'servicos', 'comunidade', 'participacao', 'conversa'
 ];
 
 const MASTER_VIEWS: V6View[] = [
