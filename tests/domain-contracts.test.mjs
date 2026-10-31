@@ -60,8 +60,10 @@ test('only confirmed active service activations count as active', () => {
 });
 
 test('all UNO panels default to deny and declare independent scopes', () => {
-  assert.equal(UNO_PANELS.length, 7);
+  assert.equal(UNO_PANELS.length, 6);
   assert.ok(UNO_PANELS.every((panel) => panel.defaultAccess === 'deny'));
+  assert.ok(UNO_PANELS.every((panel) => panel.subAreas.length > 0));
+  assert.ok(UNO_PANELS.find((panel) => panel.id === 'accounting_finance')?.subAreas.includes('Gestão operacional Stripe'));
   assert.equal(new Set(UNO_PANELS.map((panel) => panel.requiredScope)).size, UNO_PANELS.length);
 });
 
