@@ -197,3 +197,22 @@ Em 2021, o maior potencial operacional hipotético da UNO estaria em reduzir fri
 - Jovens que não estudam nem trabalham, frequência escolar e barreiras de acesso.
 - Encaminhamentos aceitos, atendimento confirmado e motivo de não resolução por território.
 
+
+## 17. Fechamento de caixa do exercício — quadro obrigatório
+
+| Componente de caixa UNO | 2021 (R$) | Tratamento |
+|---|---:|---|
+| Caixa inicial em 01/01/2021 | Saldo final de 2020 | Transportar sem reiniciar a série |
+| Receita própria recebida | A apurar | Apenas valores recebidos |
+| Doações recebidas | A apurar | Separar livres e vinculadas |
+| Contratos/patrocínios recebidos | A apurar | Apenas formalizados e recebidos |
+| Recursos de terceiros intermediados | Fora da receita | Conta de passagem, se houver |
+| Pessoal e encargos | A apurar | Operação e expansão |
+| Tecnologia, IA, dados e segurança | A apurar | Custos variáveis e fixos |
+| Implantação e operação territorial | A apurar | Novos territórios e manutenção |
+| Jurídico, privacidade, auditoria e avaliação | A apurar | Governança e conformidade |
+| Comunicação, aquisição e contingência | A apurar | Separar investimento de operação |
+| Caixa final em 31/12/2021 | A calcular | Caixa inicial + entradas recebidas − saídas pagas |
+
+**Conclusão financeira 2021:** o caixa final de 2020 deve ser o saldo inicial deste exercício. Não se presumem receitas, doações, contratos ou ganhos de escala sem evidência. Transferências públicas às famílias, gasto com vacinação e valor transacionado por parceiros não são receita UNO.
+
