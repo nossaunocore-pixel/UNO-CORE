@@ -266,3 +266,33 @@ Uma venda facilitada pela UNO não é automaticamente PIB adicional: pode substi
 
 ## 17. Limite da primeira versão
 A base histórica de 2020 está parcialmente preenchida e o escopo funcional está formalizado. Ainda não há amostra operacional real da UNO em 2020 (por ser contrafactual), taxa observada de adoção, custo unitário validado ou grupo de comparação. Portanto, qualquer estimativa numérica de impacto social, econômico ou de vidas potencialmente preservadas permanece suspensa até que esses parâmetros sejam justificados e submetidos à sensibilidade.
+
+
+## 18. Aprofundamento social e territorial — adendo de pesquisa
+
+### Pobreza em série harmonizada
+Para comparação longitudinal, utilizar a série recalculada com as linhas do Banco Mundial atualizadas para PPC 2017: em 2020, pobreza de 31,1% e extrema pobreza de 6,1%. Esses valores substituem, para comparações entre anos, a leitura anterior de 24,1%/5,7%, que usava os parâmetros anteriores. A diferença é metodológica, não uma mudança ocorrida dentro do próprio ano. Em 2020, o IBGE também estimou que, sem programas sociais, pobreza e extrema pobreza seriam substancialmente maiores; transferências públicas devem permanecer identificadas como política pública observada, não como resultado financeiro da UNO.
+Fonte complementar: https://agenciagov.ebc.com.br/noticias/202512/8-6-milhoes-de-pessoas-sairam-da-pobreza-entre-2023-e-2024
+
+### Educação, conectividade e barreiras
+O INEP registrou média de 279,4 dias sem aulas presenciais na educação básica em 2020; na rede pública, 287,5 dias. Em novembro, 10,8% dos estudantes de 6 a 17 anos estavam sem aulas presenciais e sem atividades escolares. A desigualdade de equipamento doméstico era relevante: antes da pandemia, apenas 50,4% dos alunos de 15 a 17 anos da rede pública tinham computador ou notebook em casa, contra 90,5% na rede privada com acesso simultâneo à internet e computador/notebook.
+Fonte: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/32418-sintese-de-indicadores-sociais-em-2020-sem-programas-sociais-32-1-da-populacao-do-pais-estariam-em-situacao-de-pobreza
+
+**Implicação contrafactual:** a UNO poderia mapear estudantes sem atividade, orientar famílias e conectar a iniciativas locais, mas não se deve atribuir recuperação de aprendizagem sem avaliação pedagógica e grupo de comparação. A falta de computador, conectividade, disponibilidade familiar e oferta educacional limita a conversão de informação em resultado.
+
+### Saúde materno-infantil
+O Ministério da Saúde registrou taxa de mortalidade na infância de 14,0 por mil em 2020 e taxa de mortalidade neonatal de 8,8 por mil nascidos vivos (dado fechado). Estudo do próprio Ministério apontou que, em 2020, 75,1% dos óbitos neonatais precoces eram classificados como evitáveis, sobretudo por atenção adequada à gestante e ao recém-nascido. A UNO poderia facilitar informação, localização de serviços e encaminhamento consentido, mas não substitui pré-natal, equipe clínica, transporte sanitário nem regulação do SUS.
+Fontes:
+- https://bvsms.saude.gov.br/bvs/publicacoes/relatorio_anual_gestao_2022.pdf
+- https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
+
+### Prioridades de recorte territorial
+Para 2020, a análise territorial deve cruzar vulnerabilidade de renda, interrupção escolar, conectividade, mortalidade evitável e capacidade local de serviços. A unidade inicial recomendada para mensuração é município/bairro, com dados agregados e sem inferir vulnerabilidade individual a partir de características sensíveis. Não extrapolar resultados de um território para o país sem ponderação populacional e desenho amostral.
+
+### O que a UNO poderia medir — sem alegar causalidade ainda
+- Famílias orientadas que confirmaram acesso a serviço educacional ou social.
+- Encaminhamentos de saúde aceitos e atendimentos confirmados, sem registrar diagnóstico clínico desnecessário.
+- Tempo entre identificação da necessidade, orientação e atendimento confirmado.
+- Barreiras não resolvidas por falta de vaga, transporte, conectividade ou documentação.
+- Distribuição territorial das demandas não atendidas, para subsidiar diálogo com instituições competentes.
+
