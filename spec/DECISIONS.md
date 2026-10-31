@@ -16,6 +16,7 @@
 | ADR-0010 | 2026-10-31 | Firebase + Supabase + IDU | Aprovado como direção arquitetural | Firebase para autenticação/identidade/memória interna; Supabase para dados de uso e produto; IDU como identificador UNO independente. Integração Third-Party Auth, RLS e provisionamento ainda precisam de prova. |
 | ADR-0011 | 2026-10-31 | Simulação e transparência pré-ativação | Aprovado | Operações financeiras/comerciais dependentes de formalização permanecem em teste/simulação; não cobrar nem repassar valores reais sem liberação. |
 | ADR-0012 | 2026-10-31 | Segurança e evidência antes de status “pronto” | Aprovado | UI/documentação não comprovam execução. Status “disponível e testado” exige build, testes e evidências. |
+| ADR-0013 | 2026-10-31 | Navegação pública de visitantes via Supabase | Aprovado como direção de produto | Visitantes navegam nas áreas públicas via Supabase sem Firebase/Google; dados pessoais, escrita e painéis continuam protegidos. Substitui apenas o escopo de rotas públicas do ADR-0007. |
 
 ## ADR-0007 — Google obrigatório para acesso interno
 
@@ -44,3 +45,12 @@
 ## ADR-0012 — Evidência
 
 **Decisão:** nenhuma capacidade recebe status “disponível e testado” somente por existir código, tela ou documentação. É necessária evidência reproduzível de build, testes e execução no ambiente declarado.
+
+
+## ADR-0013 — Navegação pública de visitantes via Supabase
+
+A experiência pública não depende de Firebase, Google ou IDU. A allowlist inicial inclui Praça, visualização pública de Instituições, Vitrine, leitura pública da Comunidade, Participação pública, Lazer/Eventos, catálogo público de Serviços e Conversa. A leitura pública usa cliente Supabase publishable/anon com RLS; não concede escrita.
+
+A Conversa pública usa sessão anônima Supabase e endpoint próprio com verificação server-side e cotas. Não cria Perfil UNO, IDU, adesão ou vínculo. Publicação, comentários, votos, contratação, serviços ativos, carteira, perfil pessoal e painéis exigem identidade e autorização apropriadas.
+
+Este ADR substitui somente a regra de ADR-0007 que limitava anonimato a landing e boas-vindas. Google permanece obrigatório para identidade pessoal e áreas protegidas. A liberação em produção depende de habilitar Anonymous Sign-Ins, CAPTCHA/Turnstile, retenção/limpeza, RLS revisada e testes. Especificação: `spec/ADR/ADR-0013-public-visitor-supabase-navigation.md`.
