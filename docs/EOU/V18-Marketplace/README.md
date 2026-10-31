@@ -6,6 +6,10 @@
 - Estado: rascunho técnico estruturado; catálogo público parcial no V7
 - Relacionados: V09 Capacidades, V12 Provedores, V15 Integrações, V19 Industrial, V21 Educação, V24 Empregabilidade, V25 Financeiro, V30 Eventos
 
+## Aprofundamento — contratos, CRM, ERP e conectores
+
+- [Motor Universal de Negociação, Contratos, CRM, ERP e Conectores — 31/10/2026](MOTOR-UNIVERSAL-DE-NEGOCIACAO-CONTRATOS-CRM-ERP-E-CONECTORES-2026-10-31.md) — proposta de arquitetura para negociações dinâmicas, contratos versionados, pedidos de marketplaces, gestão comercial/operacional e integração com contabilidade, assinatura e serviços públicos. Pendente de aprovação do fundador.
+
 ## 1. Finalidade
 Definir a descoberta, apresentação, comparação, oferta e contratação de produtos e serviços próprios da UNO e de terceiros, com clareza sobre quem oferece, quem vende, quem executa, quem recebe e quem responde.
 
