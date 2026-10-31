@@ -182,3 +182,9 @@ V18 governa descoberta e contratação de ofertas; V19 trata coordenação infor
 ## Auditoria dos fundamentos V01–V08
 
 O inventário estrutural dos oito volumes fundamentais, incluindo contagem de capítulos, maturidade e divergências de nomenclatura/escopo, está em [INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md](INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md). A primeira passagem identificou 522 capítulos numerados nos oito diretórios; nem todos foram lidos integralmente. O documento distingue inventário estrutural de auditoria semântica completa.
+
+
+## Modelo Econômico Transversal e Governança Financeira
+
+O modelo econômico transversal está documentado em [MEU-UNO-001](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md), versão 0.3.0, com prevalência do [Adendo de Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md). A matriz de enquadramento está em [RJTTF-UNO-001](REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md). Registro de decisões, lacunas e handoff: [RDL-ECON-UNO-001](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md), [Plano Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md) e [Checklist](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md).
+
