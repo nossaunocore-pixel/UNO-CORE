@@ -315,3 +315,19 @@ Para 2020, a análise territorial deve cruzar vulnerabilidade de renda, interrup
 
 **Conclusão financeira 2020:** não há base para declarar superávit, déficit ou necessidade de capital em reais enquanto não forem definidos equipe, remuneração, volume de usuários ativos, consumo tecnológico, territórios cobertos e fontes de financiamento. Auxílio Emergencial e demais despesas públicas não entram no caixa UNO.
 
+
+## 20. Distribuição de renda, desigualdade e interpretação do indicador educacional
+
+### Renda domiciliar e desigualdade
+Na PNAD Contínua 2020, o rendimento médio real domiciliar per capita caiu 4,3%, para R$ 1.349. O Gini do rendimento domiciliar per capita caiu de 0,544 em 2019 para 0,524 em 2020, mas o IBGE relaciona essa queda ao efeito redistributivo temporário dos benefícios emergenciais, especialmente o Auxílio Emergencial. Sem benefícios sociais, o exercício simulado do IBGE apontava Gini de 0,573 em 2020. O indicador observado, portanto, não deve ser interpretado como melhora estrutural do mercado de trabalho ou como efeito de uma plataforma.
+Fonte: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/32280-pnad-continua-2020-queda-na-ocupacao-eleva-participacao-das-transferencias-de-renda-no-rendimento-domiciliar
+
+O rendimento médio real de todas as fontes variou por região: Sudeste R$ 2.575 e Nordeste R$ 1.554. A massa de rendimento domiciliar per capita caiu 3,6% no país; apenas Norte (+3,6%) e Nordeste (+1,4%) tiveram crescimento, associado à maior presença de transferências emergenciais. A desigualdade de renda do trabalho e a desigualdade da renda domiciliar total devem permanecer como indicadores distintos.
+
+### Cuidado com taxas de aprovação escolar em 2020
+Dados do Censo Escolar compilados pelo Anuário Brasileiro da Educação Básica mostram que a taxa de aprovação dos anos iniciais subiu para 98,5% em 2020, enquanto reprovação e abandono caíram abruptamente. Esse movimento ocorreu em contexto de flexibilização de avaliação e progressão durante a pandemia e não pode ser lido como ganho de aprendizagem. A UNO deveria acompanhar frequência efetiva, participação nas atividades, acesso a equipamentos, avaliação de aprendizagem e retorno à escola, não apenas aprovação administrativa.
+Fonte: https://anuario.todospelaeducacao.org.br/2025/capitulo-2-ef-anos-iniciais.html
+
+### Implicação para a engenharia
+A contribuição testável da UNO seria identificar famílias com barreiras de renda, acesso digital ou continuidade escolar, facilitar orientação e encaminhamento e acompanhar a resposta do serviço. A plataforma não substitui transferências de renda, escola, professor, avaliação pedagógica nem política pública. Medir resolução e permanência, não só encaminhamentos.
+
