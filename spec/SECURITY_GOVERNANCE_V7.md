@@ -59,3 +59,24 @@ Não foi encontrado `firebase.json` nem `.firebaserc` na raiz da branch durante 
 - Administrador delegado não consegue promover outro administrador, salvo permissão explicitamente delegada pelo fundador.
 - Acesso delegado ao Painel Mestre só existe após concessão manual auditada pelo fundador e pode ser revogado.
 - Falha de autenticação/autorização resulta em negação por padrão.
+
+
+## 7. Camada pública de visitantes — ADR-0013
+
+A navegação pública da UNO é separada da identidade Firebase. As rotas públicas usam somente o cliente Supabase publishable/anon, com políticas RLS específicas para leitura de conteúdo publicado. Nenhum token Firebase, IDU ou service-role é necessário para ler conteúdo público.
+
+A allowlist pública inicial inclui Praça, Instituições (somente conteúdo público), Vitrine, Comunidade (leitura), Participação (consultas/resultados), Lazer/Eventos, catálogo público de Serviços e Conversa. Ações de escrita, comentários, votos, contratação, carteira, serviços ativos, Perfil, Casa, Emprego e Renda e painéis exigem identidade/autorização adequadas.
+
+A Conversa de visitante cria uma sessão anônima Supabase Auth. O endpoint `/api/public/chat` valida o JWT com Supabase Auth, exige `is_anonymous = true`, limita o conteúdo ao contexto público e aplica quota por usuário e limite global diário. O endpoint privado `/api/chat` exige Google verificado e IDU; não aceita mais sessões anônimas Firebase.
+
+### Condições antes da liberação pública
+
+- Habilitar Anonymous Sign-Ins no Supabase Auth.
+- Configurar CAPTCHA/Cloudflare Turnstile para mitigar criação abusiva de contas anônimas.
+- Definir e inserir `PUBLIC_CHAT_GLOBAL_DAILY_LIMIT` após aprovação do fundador; endpoint falha fechado se a variável estiver ausente.
+- Aplicar e validar as migrações versionadas, sem alterar banco diretamente.
+- Configurar RLS de leitura pública em cada tabela de conteúdo; não liberar SELECT genérico em tabelas pessoais.
+- Definir retenção/limpeza de usuários anônimos e dados de quota.
+- Testar rotas públicas, privadas, escrita, quotas, sessão inválida e tentativas de acessar dados internos.
+
+O código e as migrações preparados não significam que essas configurações estejam ativas no projeto Supabase. A regra de precedência está em `spec/ADR/ADR-0013-public-visitor-supabase-navigation.md`.
