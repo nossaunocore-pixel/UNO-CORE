@@ -19,6 +19,12 @@ export function isPanelScope(value: string): value is PanelScope {
 export async function requirePanelScope(request: Request, scope: PanelScope) {
   const { decoded } = await verifyFirebaseRequest(request);
 
+  if (decoded.firebase?.sign_in_provider !== 'google.com' ||
+      decoded.email_verified !== true ||
+      typeof decoded.uno_idu !== 'string' || !decoded.uno_idu.startsWith('idu_')) {
+    throw new Error('VERIFIED_UNO_IDENTITY_REQUIRED');
+  }
+
   const founderUid = process.env.UNO_FOUNDER_UID;
   if (founderUid && decoded.uid === founderUid && decoded.unoFounder === true) return decoded;
 
