@@ -25,6 +25,20 @@ Fundador, usuário comum, representante legal, administrador e porta-voz são pa
 ## 4. Identidade e estrutura
 Manter nome institucional, nome jurídico, marcas, produtos, entidades controladas, iniciativas e projetos separados. Organograma representa relações e responsabilidades vigentes, não cria poderes. Alterações societárias, sucessão, representação e uso de marca devem referenciar documentos V39.
 
+## 4.1. Identidade e relação institucional da NÓS S.A.
+
+A forma canônica obrigatória é **NÓS S.A.**. O nome da empresa não pode ser confundido com UNO CORE, nome do ecossistema/plataforma. A NÓS S.A. é uma instituição de referência com identidade, administração, responsabilidades e ambiente institucional próprios.
+
+A arquitetura deve registrar separadamente:
+- entidade jurídica e seus atos constitutivos/representação, validados no V39;
+- identidade institucional e marca;
+- vínculo de integração com UNO CORE;
+- componentes UNO habilitados para a NÓS S.A.;
+- escopos, finalidades, responsáveis, dados compartilhados, credenciais e revogações;
+- evidências de presença física e endereços, sem presumir formalização ou situação registral não comprovada.
+
+A NÓS S.A. poderá possuir o conjunto mais amplo de conexões institucionais com o UNO CORE, conforme sua função de referência. A amplitude de conexão não cria autoridade universal nem elimina segregação entre decisão e operação.
+
 ## 5. História, memória e proveniência
 Preservar fonte original, data, autor, estado de confirmação e correções. Memória consolidada aponta para fontes e distingue decisão do fundador, proposta técnica, hipótese e fato externo. Não reescrever documento histórico para parecer que a decisão sempre existiu. Registros de conversa não substituem atos assinados.
 
