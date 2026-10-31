@@ -507,3 +507,62 @@ Fontes:
 | Atenção Primária | Contagem eSF/eAP por competência | Alta para contagem administrativa, não efetividade | Cobertura e produção por município/mês |
 
 **Status:** pesquisa em andamento. Esta seção amplia a linha de base e delimita mecanismos possíveis; não encerra o estudo nem preenche impactos quantitativos sem dados de adoção, capacidade, atendimento confirmado e custos.
+
+
+## 22. Revisão retrospectiva de séries e capacidade fiscal — vintage consultado em 2026
+
+### 22.1 PNAD Contínua: série publicada à época versus retrospectiva
+
+A apresentação retrospectiva do IBGE consultada em 2026 apresenta os seguintes valores médios anuais:
+
+| Indicador | 2020 | 2021 | 2022 |
+|---|---:|---:|---:|
+| Desocupação — retrospectiva 2026 | 13,7% | 14,0% | 9,6% |
+| Informalidade (proxy) — retrospectiva 2026 | 37,7% | 39,6% | 39,5% |
+
+As divulgações contemporâneas originais usadas nas seções anuais apresentavam, respectivamente, desocupação de 13,8%, 13,2% e 9,3%, e informalidade de 38,3%, 40,1% e 39,6%. A diferença não deve ser apagada: as duas séries respondem a perguntas distintas. A original representa a informação divulgada no momento histórico; a retrospectiva incorpora revisão/harmonização posterior. Para estimar tendência e comparar anos, usar uma série única; para reconstruir decisões possíveis à época, usar o vintage então disponível.
+
+A taxa de informalidade é uma proxy construída com empregados privados e domésticos sem carteira, empregadores sem CNPJ, trabalhadores por conta própria sem CNPJ e trabalhadores familiares auxiliares. Não é sinônimo de ausência total de proteção, nem mede sozinha a qualidade do trabalho.
+
+Fonte: IBGE, PNAD Contínua, apresentação retrospectiva com série histórica até 2025, publicada em janeiro de 2026: https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
+
+### 22.2 Mortalidade geral: versionamento obrigatório do SIM
+
+O Ministério da Saúde registra que o SIM passa por qualificação e divulgação preliminar e definitiva. Em publicação do Saúde Brasil 2023, a tabela nacional apresenta 1.556.824 óbitos em 2020 e 1.832.649 em 2021. Publicação anterior do Saúde Brasil 2022 apresenta 1.823.586 para 2021. A diferença entre vintages demonstra que a contagem deve sempre trazer a fonte, a data de extração e o estágio de consolidação. Não usar uma contagem isolada como série definitiva sem verificar o arquivo de dados correspondente. O total de 2022 deverá ser extraído da mesma versão/base para manter comparabilidade.
+
+O estudo do Ministério da Saúde também mostra que a taxa bruta de mortalidade passou de 6,4 por mil habitantes em 2019 para 7,3 em 2020 e 8,6 em 2021. O aumento foi observado em todas as UFs; comparações territoriais exigem padronização por idade, pois a estrutura etária altera taxas brutas.
+
+Fontes:
+- Ministério da Saúde, Saúde Brasil 2023, análise de óbitos 2015–2021: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
+- Ministério da Saúde, Saúde Brasil 2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/anomalias-congenitas/saude-brasil-2022-analise-da-situacao-de-saude-e-uma-visao-integrada-sobre-os-fatores-de-risco-para-anomalias-congenitas/%40%40download/file/af_saude%20brasil_2022_analise_21mar23_isbn.pdf
+- Ministério da Saúde, metodologia e disponibilização do SIM: https://www.gov.br/saude/pt-br/acesso-a-informacao/sic/dados-em-transparencia-ativa/svsa/mortalidade
+- Portal de Dados Abertos do SUS — SIM: https://dadosabertos.saude.gov.br/dataset/sim
+
+### 22.3 Despesa federal liquidada por função: contexto de escala, não orçamento UNO
+
+O IBGE, em Brasil em Números 2023, reproduz dados do Relatório Resumido da Execução Orçamentária (RREO) para despesas liquidadas da União. Valores nominais em R$ milhões:
+
+| Função | 2020 | 2021 | 2022 |
+|---|---:|---:|---:|
+| Educação | 95.008 | 101.886 | 128.227 |
+| Saúde | 162.890 | 180.662 | 154.957 |
+| Saneamento | 890 | 481 | 763 |
+| Meio ambiente | 4.562 | 3.937 | 4.349 |
+| Assistência social | 423.572 | 168.632 | 198.334 |
+| Trabalho | 77.205 | 66.685 | 97.461 |
+
+**Limites de leitura:** são valores nominais da despesa liquidada da União, não gasto público consolidado de todos os entes, não valores reais corrigidos pela inflação e não medidas diretas de eficiência ou qualidade. A forte variação da assistência social em 2020–2021 deve ser lida no contexto de medidas emergenciais da pandemia e da classificação orçamentária. Não somar essas despesas ao PIB como produção adicional nem tratá-las como recursos disponíveis para a UNO.
+
+**Uso no contrafactual:** esta tabela serve para dimensionar a escala institucional e a magnitude dos sistemas públicos com os quais uma plataforma poderia facilitar acesso, informação e encaminhamento. A UNO não substitui ministérios, municípios, SUS, escolas, políticas de transferência ou orçamento público. O valor econômico atribuível à UNO precisa ser calculado separadamente por custo próprio, serviço efetivamente concluído e benefício incremental comprovado.
+
+Fonte: IBGE, Brasil em Números 2023, tabela 18.7, com dados do RREO 2020–2022/Tesouro Nacional: https://www.ibge.gov.br/biblioteca/visualizacao/periodicos/2/bn_2023_v31_art19.pdf
+
+### 22.4 Próxima etapa de validação quantitativa
+
+1. Extrair do SIM uma única versão comparável de 2020, 2021 e 2022, com total de óbitos, causa básica, idade, sexo e UF; registrar a data de extração e distinguir preliminar/definitivo.
+2. Recalcular taxas de mortalidade específicas e padronizadas por idade, além de excesso de mortalidade por causa natural, sem atribuir automaticamente o excesso à COVID-19.
+3. Atualizar os quadros anuais de trabalho com a série retrospectiva do IBGE, mantendo em paralelo o vintage contemporâneo.
+4. Completar a série 2020–2022 de mortes violentas intencionais e mortes violentas por causa indeterminada com uma edição metodologicamente consistente do FBSP/Ipea; não misturar MVI, homicídio doloso e óbitos SIM.
+5. Construir orçamento UNO bottom-up somente após explicitar unidade territorial, população atendida, equipe, volume de interações, tecnologia, suporte, conformidade e nível de serviço. Não atribuir custo zero a trabalho, infraestrutura ou operação.
+
+**Status:** avanço documental incorporado; mortalidade 2022 em vintage harmonizado, série municipal de segurança e orçamento operacional UNO permanecem como pendências explícitas, sem preencher lacunas por interpolação.
