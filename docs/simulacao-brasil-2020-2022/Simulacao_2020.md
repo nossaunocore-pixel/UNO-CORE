@@ -296,3 +296,22 @@ Para 2020, a análise territorial deve cruzar vulnerabilidade de renda, interrup
 - Barreiras não resolvidas por falta de vaga, transporte, conectividade ou documentação.
 - Distribuição territorial das demandas não atendidas, para subsidiar diálogo com instituições competentes.
 
+
+## 19. Fechamento de caixa do exercício — quadro obrigatório
+
+| Componente de caixa UNO | 2020 (R$) | Tratamento |
+|---|---:|---|
+| Caixa disponível em 01/01/2020 | A apurar | Capital inicial efetivamente disponível |
+| Receita própria recebida | A apurar | Apenas valores recebidos pela UNO |
+| Doações recebidas | A apurar | Separar doações livres e vinculadas |
+| Contratos/patrocínios recebidos | A apurar | Apenas contratos formalizados e recebidos |
+| Recursos de terceiros intermediados | Fora da receita | Registrar em conta de passagem, se houver |
+| Pessoal e encargos | A apurar | Equipe mínima e prestadores |
+| Tecnologia, IA, dados e segurança | A apurar | Consumo e contratos efetivos |
+| Implantação e operação territorial | A apurar | Formação, deslocamento, suporte e espaço |
+| Jurídico, privacidade, auditoria e avaliação | A apurar | Compliance e controles |
+| Comunicação, aquisição e contingência | A apurar | Identificar custos não recorrentes |
+| Caixa final em 31/12/2020 | A calcular | Caixa inicial + entradas recebidas − saídas pagas |
+
+**Conclusão financeira 2020:** não há base para declarar superávit, déficit ou necessidade de capital em reais enquanto não forem definidos equipe, remuneração, volume de usuários ativos, consumo tecnológico, territórios cobertos e fontes de financiamento. Auxílio Emergencial e demais despesas públicas não entram no caixa UNO.
+
