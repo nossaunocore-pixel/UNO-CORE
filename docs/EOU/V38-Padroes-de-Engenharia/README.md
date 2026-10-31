@@ -1,6 +1,8 @@
 # EOU-V38 — Padrões de Engenharia
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: padrões-base documentados; cobertura e conformidade precisam de auditoria
 - Relacionados: V01 Constituição, V02 Arquitetura, V13 Dados, V14 APIs, V16 Segurança, V35 Roadmap, V36 ADR
 
