@@ -1,6 +1,8 @@
 # EOU-V24 — Empregabilidade
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho de domínio; jornada profissional parcial/demonstrativa
 - Relacionados: V09 Capacidades, V18 Marketplace, V20 Infraestrutura Comunitária, V21 Educação, V25 Financeiro, V27 Perfis, V28 Entidades, V29 Projetos
 
