@@ -33,10 +33,10 @@ export function ServicesV7() {
     {items.length > 0 && <div className="v7-directory-grid">{items.map((item) => <article key={item.id}>
       <span>{item.origin === 'uno' ? 'Oferta própria UNO' : 'Oferta de terceiro'} · {item.status === 'available' ? 'Disponível para consulta' : 'Publicado'}</span>
       <h2>{item.title}</h2><p>{item.summary}</p>
-      <small>Prestador: {item.provider_entity_id}</small>
-      <small>Responsável: {item.responsible_entity_id}</small>
+      <small>Prestador: {item.provider_public_name}</small>
+      <small>Responsável: {item.responsible_public_name}</small>
       <strong>{formatPrice(item)}</strong>
-      {item.origin === 'third_party' && <small>Fornecedor externo: {item.external_provider_id}</small>}
+      
       <small className="v7-service-not-live">Informativo nesta versão · contratação ainda não habilitada</small>
     </article>)}</div>}
     <p className="v7-directory-notice"><ShieldCheck size={16}/> Ver uma oferta não significa contratá-la. A contratação, matrícula ou ativação só será confirmada após fluxo próprio, consentimento e retorno do prestador.</p>
