@@ -19,7 +19,8 @@ export function isPanelScope(value: string): value is PanelScope {
 export async function requirePanelScope(request: Request, scope: PanelScope) {
   const { decoded } = await verifyFirebaseRequest(request);
 
-  if (decoded.unoFounder === true) return decoded;
+  const founderUid = process.env.UNO_FOUNDER_UID;
+  if (founderUid && decoded.uid === founderUid && decoded.unoFounder === true) return decoded;
 
   const tokenScopes = Array.isArray(decoded.uno_scopes)
     ? decoded.uno_scopes.filter((value): value is string => typeof value === 'string')
