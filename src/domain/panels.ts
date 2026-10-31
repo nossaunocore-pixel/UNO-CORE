@@ -10,7 +10,6 @@ export type PanelId =
   | 'general_coordination'
   | 'legal'
   | 'accounting_finance'
-  | 'platform_finance'
   | 'support';
 
 export type SupportLevel =
@@ -27,6 +26,7 @@ export interface PanelDefinition {
   defaultAccess: 'deny';
   responsibleDomains: readonly string[];
   operationalRoles: readonly string[];
+  subAreas: readonly string[];
   sensitiveActionsRequireHumanApproval: boolean;
 }
 
@@ -39,6 +39,7 @@ export const UNO_PANELS: readonly PanelDefinition[] = [
     defaultAccess: 'deny',
     responsibleDomains: ['architecture', 'orchestration', 'governance', 'workshop'],
     operationalRoles: ['founder', 'master_delegate'],
+    subAreas: ['Orquestrador Mestre', 'Bibliotecas', 'Oficina', 'Políticas e aprovações'],
     sensitiveActionsRequireHumanApproval: true
   },
   {
@@ -49,6 +50,7 @@ export const UNO_PANELS: readonly PanelDefinition[] = [
     defaultAccess: 'deny',
     responsibleDomains: ['administration', 'records', 'internal_processes'],
     operationalRoles: ['administrative_manager', 'administrative_operator'],
+    subAreas: ['Rotinas administrativas', 'Cadastros operacionais', 'Documentos e processos'],
     sensitiveActionsRequireHumanApproval: true
   },
   {
@@ -59,6 +61,7 @@ export const UNO_PANELS: readonly PanelDefinition[] = [
     defaultAccess: 'deny',
     responsibleDomains: ['strategy', 'executive_metrics', 'coordination', 'risk_follow_up'],
     operationalRoles: ['general_coordinator', 'executive_delegate'],
+    subAreas: ['Metas e indicadores', 'Prioridades', 'Riscos e acompanhamento'],
     sensitiveActionsRequireHumanApproval: true
   },
   {
@@ -69,6 +72,7 @@ export const UNO_PANELS: readonly PanelDefinition[] = [
     defaultAccess: 'deny',
     responsibleDomains: ['contracts', 'compliance', 'legal_documents', 'legal_risk'],
     operationalRoles: ['legal_reviewer', 'legal_manager'],
+    subAreas: ['Contratos', 'Conformidade', 'Obrigações e riscos'],
     sensitiveActionsRequireHumanApproval: true
   },
   {
@@ -77,18 +81,12 @@ export const UNO_PANELS: readonly PanelDefinition[] = [
     purpose: 'Contabilidade, orçamento, receitas, despesas, conciliação e obrigações fiscais.',
     requiredScope: 'uno.panel.accounting_finance.access',
     defaultAccess: 'deny',
-    responsibleDomains: ['accounting', 'budget', 'bookkeeping', 'tax_reporting'],
-    operationalRoles: ['accounting_operator', 'finance_manager'],
-    sensitiveActionsRequireHumanApproval: true
-  },
-  {
-    id: 'platform_finance',
-    title: 'Painel Financeiro da Plataforma',
-    purpose: 'Administração operacional do Stripe e dos fluxos financeiros da plataforma.',
-    requiredScope: 'uno.panel.platform_finance.access',
-    defaultAccess: 'deny',
-    responsibleDomains: ['stripe_configuration', 'payments', 'refunds', 'reconciliation', 'payout_controls'],
-    operationalRoles: ['platform_finance_operator', 'platform_finance_manager'],
+    responsibleDomains: [
+      'accounting', 'budget', 'bookkeeping', 'tax_reporting',
+      'stripe_configuration', 'payments', 'refunds', 'reconciliation', 'payout_controls'
+    ],
+    operationalRoles: ['accounting_operator', 'platform_finance_operator', 'finance_manager'],
+    subAreas: ['Contabilidade', 'Orçamento e conciliação', 'Gestão operacional Stripe', 'Pagamentos, repasses e tarifas', 'Reembolsos e disputas'],
     sensitiveActionsRequireHumanApproval: true
   },
   {
@@ -104,6 +102,7 @@ export const UNO_PANELS: readonly PanelDefinition[] = [
       'support_supervisor',
       'support_general_manager'
     ],
+    subAreas: ['Atendimento inicial', 'Atendimento especializado', 'Supervisão', 'Gestão geral e escalonamento'],
     sensitiveActionsRequireHumanApproval: true
   }
 ] as const;
