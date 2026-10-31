@@ -6,6 +6,8 @@
 - Volumes relacionados:
 - Última revisão:
 
+> **Convenção de nomenclatura:** `V01` a `V40` identificam volumes da Engenharia Oficial (documentos/domínios de engenharia). `V5`, `V6`, `V7` etc. identificam versões/etapas do produto e de suas entregas. Não usar um identificador para representar o outro.
+
 ## 1. Finalidade e resultado esperado
 
 ## 2. Escopo e exclusões
