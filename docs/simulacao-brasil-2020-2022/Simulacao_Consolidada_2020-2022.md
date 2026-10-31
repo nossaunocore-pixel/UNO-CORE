@@ -724,3 +724,17 @@ A comparação cobre pobreza, fome, trabalho, educação, conectividade, saúde,
 **Conclusão preliminar:** a arquitetura UNO tem correspondência conceitual com problemas de fragmentação de informação, descoberta de serviços, coordenação de oportunidades, participação e rastreabilidade. Isso não significa que a plataforma já execute todas essas capacidades, nem que software substitua renda, alimentos, profissionais, vagas, leitos, obras, orçamento ou autoridade pública. A comparação distingue arquitetura proposta, capacidade V7 demonstrada e resultado adicional que ainda precisaria ser medido.
 
 **Próxima etapa:** matriz de prontidão contrafactual por domínio, território e ano (2020, 2021 e 2022), seguida de cenários de adoção, capacidade dos parceiros, custos e avaliação de adicionalidade. Nenhum impacto nacional será quantificado sem parâmetros observáveis ou hipóteses explicitamente identificadas.
+
+
+
+## 25. Matriz de prontidão contrafactual por domínio — etapa 2
+
+A etapa seguinte à comparação arquitetural foi registrada em documento próprio:
+
+**[Abrir — Matriz de Prontidão Contrafactual: Brasil 2020–2022 e UNO CORE](Matriz_Prontidao_Contrafactual_UNO_Brasil_2020-2022.md)**
+
+A matriz separa cobertura arquitetural EOU, estado V7 documentado, prontidão operacional comprovada, dependências externas e evidências necessárias. Adota escala de 0 a 4: inexistente, conceitual, demonstrável, operacional com parceiro e operacional validado. Quando não há evidência suficiente, utiliza ND — não demonstrado.
+
+**Resultado desta versão:** a arquitetura apresenta cobertura conceitual relevante em diversos domínios, mas a documentação consultada não comprova operação integral com parceiros em nenhum dos domínios avaliados. Interfaces, protótipos e fluxos parciais não são tratados como atendimento concluído. A matriz também diferencia a hipótese de engenharia disponível em 2020–2022 da adoção e capacidade efetivas que precisariam existir em cada território.
+
+**Próxima etapa:** territorialização da análise. Será necessário selecionar um território piloto por critérios documentados, obter dados municipais e de bairro, mapear serviços e parceiros, testar os fluxos V7 e levantar capacidade, custos e indicadores de resultado antes de calcular cenários quantitativos. Não serão atribuídos impactos nacionais sem parâmetros observáveis, hipóteses explícitas e desenho de avaliação.
