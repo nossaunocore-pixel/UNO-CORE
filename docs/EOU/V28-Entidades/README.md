@@ -1,6 +1,8 @@
 # EOU-V28 — Entidades
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; fronteira com V03 requer revisão editorial
 - Relacionados: V03 MUE, V09 Capacidades, V13 Dados, V17 Governança, V18 Marketplace, V20 Infraestrutura Comunitária, V26 Identidade, V27 Perfis
 
