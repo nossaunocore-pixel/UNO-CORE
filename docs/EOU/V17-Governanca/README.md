@@ -38,3 +38,9 @@ Formalizar matriz de alçadas por domínio, processo de nomeação/remoção de 
 
 ## 10. Histórico
 0.2.0 — estrutura alinhada aos painéis e controles V7; 2026-10-31.
+
+
+## Relação com o Modelo Econômico Universal
+
+A governança financeira transversal segue o MEU-UNO-001 e seu adendo. Alçadas, segregação de funções, aprovações humanas e trilhas de auditoria devem ser aplicadas a custos, contratos, pagamentos, apuração territorial e reservas. Os percentuais territoriais internos e a destinação dos outros 50% do lucro permanecem pendentes; nenhum agente pode inferi-los ou ativá-los. Ver [Adendo econômico](../ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md) e [Matriz jurídica/financeira](../REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md).
+
