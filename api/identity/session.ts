@@ -15,9 +15,10 @@ export default async function handler(request: Request): Promise<Response> {
 
   try {
     const { decoded, auth } = await verifyFirebaseRequest(request);
-    if (!decoded.email_verified && !decoded.phone_number) {
+    const googleProvider = decoded.firebase?.sign_in_provider === 'google.com';
+    if (!googleProvider || decoded.email_verified !== true) {
       return json({
-        error: 'Confirme seu e-mail antes de concluir a criação da identidade UNO.'
+        error: 'A identidade pessoal do MVP exige uma conta Google com e-mail verificado.'
       }, 403);
     }
 
