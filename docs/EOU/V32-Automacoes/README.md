@@ -1,6 +1,8 @@
 # EOU-V32 — Automações
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; automações de produção não declaradas habilitadas
 - Relacionados: V05 Oficina Mestre, V09 Capacidades, V10 Agentes, V11 Ferramentas, V14 APIs, V16 Segurança, V17 Governança, V31 Fluxos
 
