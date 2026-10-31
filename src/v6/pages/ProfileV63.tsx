@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, BookOpen, Briefcase, Eye, Heart, Home, LockKeyhole, ShieldCheck, Sparkles, UserRound, Users } from 'lucide-react';
+import { Award, BookOpen, Briefcase, Eye, Heart, Home, LockKeyhole, ShieldCheck, Sparkles, UserRound, Users, Wallet } from 'lucide-react';
 import type { NavigateV6 } from '../types';
 
 const profileAreas = [
@@ -8,7 +8,8 @@ const profileAreas = [
   { icon: BookOpen, title: 'Educação e trajetória', text: 'Formação, cursos, certificados e aprendizagem em andamento.', visibility: 'Você controla' },
   { icon: Users, title: 'Família e vínculos', text: 'Casa, responsáveis, dependentes e círculos autorizados.', visibility: 'Acesso autorizado · previsto' },
   { icon: Briefcase, title: 'Ofícios e renda', text: 'Disponibilidade, oportunidades e rede profissional.', visibility: 'Você controla' },
-  { icon: Home, title: 'Bens e recursos', text: 'Informações voluntárias para serviços e planejamento.', visibility: 'Privado · previsto' }
+  { icon: Home, title: 'Bens e recursos', text: 'Informações voluntárias para serviços e planejamento.', visibility: 'Privado · previsto' },
+  { icon: Wallet, title: 'Carteira e movimentações', text: 'Saldo disponível, pendente, bloqueado e histórico financeiro pessoal.', visibility: 'Privado · integração pendente' }
 ];
 
 export function ProfileV63({ onNavigate }: { onNavigate: NavigateV6 }) {
@@ -35,6 +36,7 @@ export function ProfileV63({ onNavigate }: { onNavigate: NavigateV6 }) {
     <div className="v63-profile-actions">
       <article><Heart/><div><b>Participação social</b><p>Propostas, debates, votações e contribuições comunitárias.</p><button onClick={() => onNavigate('participacao')}>Abrir participação</button></div></article>
       <article><Users/><div><b>Perfil social</b><p>Publicações, conexões e depoimentos com visibilidade escolhida.</p><button onClick={() => onNavigate('comunidade')}>Conhecer comunidade</button></div></article>
+      <article><Wallet/><div><b>Minha carteira</b><p>Valores pessoais e histórico, separados dos fundos de terceiros.</p><button onClick={() => onNavigate('carteira')}>Abrir carteira</button></div></article>
     </div>
   </section>;
 }
