@@ -566,3 +566,22 @@ Fonte: IBGE, Brasil em Números 2023, tabela 18.7, com dados do RREO 2020–2022
 5. Construir orçamento UNO bottom-up somente após explicitar unidade territorial, população atendida, equipe, volume de interações, tecnologia, suporte, conformidade e nível de serviço. Não atribuir custo zero a trabalho, infraestrutura ou operação.
 
 **Status:** avanço documental incorporado; mortalidade 2022 em vintage harmonizado, série municipal de segurança e orçamento operacional UNO permanecem como pendências explícitas, sem preencher lacunas por interpolação.
+
+
+### 22.5 Segurança pública: série MVI revisada pelo FBSP em 2024
+
+A edição de 2024 do Anuário Brasileiro de Segurança Pública atualizou a série histórica nacional de MVI:
+
+| Ano | MVI — série publicada na edição 2024 | MVI — edição contemporânea anterior |
+|---|---:|---:|
+| 2020 | 50.448 | 50.033 (Anuário 2021) |
+| 2021 | 48.286 | 48.288 (Anuário 2023) |
+| 2022 | 47.963 | 47.452 (Anuário 2023) |
+
+A série revisada indica queda de 2020 para 2021 (-4,3%) e nova queda de 2021 para 2022 (-0,7%). A comparação deve usar somente os valores da mesma edição. Os números anteriores permanecem documentados como vintages disponíveis nas respectivas épocas.
+
+A categoria MVI soma vítimas de homicídio doloso, latrocínio, lesão corporal seguida de morte e mortes decorrentes de intervenções policiais em serviço e fora de serviço, com particularidades de classificação por UF. Não confundir com homicídios do SIM, homicídios dolosos isolados, mortes violentas por causa indeterminada (MVCI) ou letalidade policial separadamente. O Anuário também registra diferenças na qualidade e cobertura dos dados estaduais; análises subnacionais devem incorporar essas ressalvas.
+
+Fonte: FBSP, 18º Anuário Brasileiro de Segurança Pública 2024, Tabela 03, série 2011–2023 e notas metodológicas: https://www.mpsp.mp.br/portal/page/portal/documentacao_e_divulgacao/doc_biblioteca/bibli_servicos_produtos/BibliotecaDigital/BibDigitalLivros/TodosOsLivros/Anuario-Brasileiro-de-Seguranca-Publica-2024.pdf
+
+**Atualização da pendência 22.4, item 4:** a série nacional comparável de MVI 2020–2022 foi localizada na edição 2024. Permanecem pendentes a extração e a validação das desagregações por UF e município, das taxas com denominadores populacionais consistentes e dos indicadores separados de violência contra mulheres, crianças e adolescentes, desaparecimentos, crimes patrimoniais e letalidade policial.
