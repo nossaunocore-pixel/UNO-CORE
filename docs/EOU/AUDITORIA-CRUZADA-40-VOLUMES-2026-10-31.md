@@ -312,3 +312,8 @@ Criado `INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md`, com contagem d
 ## 13. Verificação de CI e estado do PR — 31/10/2026
 
 Após a rodada de inventário V01–V08, o HEAD consultado do PR #2 é `e1428f5101b2f231f56b402f7949ca1d40b8796d`. A consulta de workflow runs para esse SHA retornou lista vazia. Portanto, CI da cabeça **não está confirmado**. PR #2 permanece Draft, com 82 arquivos alterados segundo a listagem atual. Não houve merge nem deploy.
+
+
+### Complemento de validação — status Vercel do SHA 5632215
+
+Na consulta de status do commit `5632215edb22b9db8b82cca1605107969b6d3278`, não foram retornados workflow runs de GitHub Actions. O status combinado apresentou contexto `Vercel` em estado `failure`, com destino identificando limite de criação/build diário do projeto (build rate limit / necessidade de upgrade). Isso não demonstra falha de testes de código; indica que a verificação/build Vercel não foi concluída por limite de uso. O CI da cabeça segue não aprovado e o Preview atualizado não está confirmado.
