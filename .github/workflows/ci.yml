@@ -1,0 +1,38 @@
+name: UNO CORE CI
+
+on:
+  push:
+    branches:
+      - main
+      - v7-foundation
+      - v7-implementation
+  pull_request:
+    branches:
+      - main
+      - v7-foundation
+      - v7-implementation
+
+permissions:
+  contents: read
+
+concurrency:
+  group: uno-core-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: TypeScript and Vite production build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
