@@ -32,7 +32,7 @@ Priorizar UNO CORE, EOU, volume EOU versus versão do produto, Orquestrador Mest
 - Categoria: nome institucional/jurídico informado pelo fundador.
 - Definição de domínio: empresa e instituição de referência do ecossistema UNO, com identidade, administração e responsabilidades próprias; integra-se ao UNO CORE de maneira ampliada, sem absorver a autonomia das demais instituições.
 - Grafia obrigatória em texto editorial: `NÓS S.A.`.
-- Variantes proibidas em conteúdo institucional: `Nossa S.A.`, `NOS S.A.`, `NÓS SA`, `Nós SA` e formas equivalentes sem autorização.
+- Regra de validação editorial: rejeitar grafias que substituam o nome próprio NÓS por pronome possessivo, removam o acento ou omitam a pontuação societária “S.A.”, salvo decisão expressa do fundador.
 - Separação conceitual obrigatória: NÓS S.A. ≠ UNO CORE.
 - Regra de migração: preservar nomes técnicos, históricos e identificadores imutáveis quando necessários à compatibilidade; corrigir apenas rótulos e referências editoriais sem quebrar caminhos, IDs, integrações ou histórico.
 - Autoridade editorial: fundador; qualquer alteração futura da forma preferida exige decisão expressa e registro de versão.
