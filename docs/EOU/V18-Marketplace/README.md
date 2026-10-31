@@ -1,17 +1,38 @@
 # EOU-V18 — Marketplace
 
-> Este volume documenta a arquitetura oficial do Marketplace da Plataforma UNO.
+- Versão documental: 0.2.0
+- Estado: rascunho técnico estruturado; catálogo público parcial no V7
+- Relacionados: V09 Capacidades, V12 Provedores, V15 Integrações, V19 Industrial, V21 Educação, V24 Empregabilidade, V25 Financeiro, V30 Eventos
 
----
+## 1. Finalidade
+Definir a descoberta, apresentação, comparação, oferta e contratação de produtos e serviços próprios da UNO e de terceiros, com clareza sobre quem oferece, quem vende, quem executa, quem recebe e quem responde.
 
-## Finalidade
+## 2. Escopo
+Inclui Vitrine, catálogo, ofertas, prestadores, instituições, preço, disponibilidade, condições, pedido, contratação, cancelamento, avaliação e pós-venda. Não substitui o ledger e a liquidação (V25), o catálogo de provedores (V12) ou o registro de eventos (V30).
 
-Definir os princípios, modelos e processos que regulam a oferta, descoberta, contratação e disponibilização de produtos, serviços e capacidades dentro do ecossistema UNO.
+## 3. Entidades principais
+Produto, serviço, oferta, fornecedor, prestador, instituição, catálogo, preço, disponibilidade, pedido, contratação, entrega, cancelamento, disputa, avaliação e comissão. Cada item deve identificar origem UNO/terceiro, titularidade, responsável legal/comercial, território, estado e versão dos termos.
 
-O Marketplace integra pessoas, organizações, agentes e provedores em um ambiente confiável e interoperável.
+## 4. Publicação e transparência
+Rascunho → validação → aprovado → publicado → pausado/retirado. Exibir identidade do fornecedor, descrição, preço e unidade, condições, prazo, restrições, política de cancelamento e canal de suporte. Conteúdo de terceiros não deve parecer oferta própria da UNO.
 
----
+## 5. Jornada comercial
+Descoberta → comparação → confirmação de condições → pedido/contrato → pagamento quando aplicável → execução/entrega → confirmação → suporte/disputa → avaliação. A contratação só pode ser considerada concluída com evidência do fluxo e confirmação de pagamento/execução aplicável.
 
-## Estado
+## 6. Responsabilidades e proteção
+Determinar se a UNO atua como intermediadora, marketplace, fornecedora ou prestadora em cada fluxo; não presumir papel jurídico único. Prever prevenção a fraude, transparência de taxas, proteção de dados, atendimento, reembolso e resolução de disputas. Exige revisão jurídica e consumerista.
 
-Em desenvolvimento.
+## 7. Integração financeira
+V25 define contas, ledger, tarifas, Stripe e conciliação. Nunca mostrar saldo ou pagamento como confirmado com base apenas em retorno do cliente. Webhooks precisam de assinatura, idempotência e reconciliação. Repasses e comissões dependem de contrato e configuração aprovados.
+
+## 8. Estado atual conhecido
+O V7 possui read model Supabase para catálogo público de produtos e serviços, com origem UNO/terceiro e leitura de itens publicados. A tela de Serviços/Vitrine não implementa por si só contratação, checkout ou fulfillment completo. Migrations preparadas ainda não foram aplicadas no Supabase hospedado.
+
+## 9. Testes e aceite
+Testar origem, fornecedor, preço, visibilidade, estoque/disponibilidade, publicação, consentimento, compra duplicada, pagamento pendente/falho, cancelamento, reembolso, disputa, comissão, fraude e RLS.
+
+## 10. Pendências
+Definir termos por categoria, papel jurídico da plataforma em cada operação, política de vendedores, onboarding/KYC quando aplicável, regras de comissão, devolução, chargeback, moderação e atendimento. Não ativar transações reais antes de validar V25 e obrigações legais.
+
+## 11. Histórico
+0.2.0 — estrutura de marketplace alinhada ao catálogo público V7; 2026-10-31.
