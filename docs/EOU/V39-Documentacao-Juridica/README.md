@@ -12,7 +12,11 @@ Organizar os documentos, obrigações, políticas e evidências jurídicas neces
 ## 2. Limite deste volume
 Este volume é uma estrutura de engenharia documental, não parecer jurídico, contrato pronto, garantia de conformidade ou substituto de advogado/contador. Textos normativos só podem ser publicados após revisão profissional e aprovação institucional.
 
-## 3. Inventário documental
+## 3. Identidade societária e NÓS S.A.
+
+A denominação institucional canônica definida pelo fundador é **NÓS S.A.**. O V39 deve manter os atos constitutivos, estatuto/contrato social aplicável, denominação registral, CNPJ quando constituído, sede, administradores, representantes, poderes, alterações societárias e evidências de registro. A nomenclatura institucional definida pelo fundador não substitui prova registral: documentos jurídicos e comunicações que afirmem situação legal específica devem corresponder aos atos vigentes e à consulta oficial pertinente.
+
+## 4. Inventário documental
 Mapear por entidade e operação: atos constitutivos, poderes de representação, termos de uso, política de privacidade, cookies, consentimentos, contratos com parceiros/fornecedores, contratos de prestação/intermediação, regras de marketplace, pagamentos, doações, eventos, propriedade intelectual, confidencialidade, atendimento, cancelamento, reembolso, disputas e acordos institucionais.
 
 ## 4. Matriz de obrigações
