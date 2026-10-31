@@ -123,3 +123,18 @@ Há catálogo documental de teste e chaves de teste em Preview/Development, mas 
 ## 10. Critério de conclusão
 
 Só marcar cada item como implementado, integrado, testado ou liberado depois de obter evidência correspondente. Preview READY não significa produção pública. Uma migration preparada não significa schema atualizado. Uma tela de painel não significa autorização server-side. O pacote de implementação deve continuar reversível e sem sobrescrever a V6.
+
+
+## 11. Expansão implementada após a primeira auditoria
+
+- Rotas e telas preparadas para Instituições, Lazer/Eventos, Serviços, Serviços Ativos, Casa, Emprego e Renda e Carteira.
+- Comunidade, Participação e Vitrine consultam repositórios públicos Supabase; Instituições, Lazer e Serviços possuem diretórios públicos dedicados.
+- Dados de catálogo exibem nomes públicos de prestadores/responsáveis, não IDs internos.
+- Painéis operacionais possuem rotas protegidas e shells de trabalho.
+- Painel Mestre ganhou diretório de painéis e interface de atribuição exclusiva do fundador.
+- APIs `/api/admin/panel-access` e `/api/identity/panel-access` verificam atribuições. O servidor exige Google verificado, IDU, escopo e registro ativo no Firestore; fundador é reconhecido somente quando UID corresponde a `UNO_FOUNDER_UID`.
+- O Stripe foi modelado como área operacional dentro do Painel Contábil e Financeiro, não como painel independente.
+- Testes nativos Node para contratos de domínio foram adicionados; CI executa testes e build.
+- Migration adicional de read models públicos: `20261031173000_public_content_read_models.sql`. O conjunto atual de migrations preparadas é de quatro arquivos (IDU, quota por usuário, limite global e conteúdo público).
+- As telas de Casa, Emprego e Renda, Carteira e Serviços Ativos são shells transparentes; não exibem saldos, vínculos, contratos ou serviços fictícios.
+- As rotas públicas estão preparadas para leitura Supabase; a migration de read models não foi aplicada, então ainda não há dados publicados no banco.
