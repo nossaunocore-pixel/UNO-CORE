@@ -101,6 +101,7 @@ drop policy if exists profiles_update_own on public.profiles;
 drop policy if exists user_roles_select_own on public.user_roles;
 
 drop policy if exists consent_documents_select_active_or_owned on public.consent_documents;
+drop policy if exists consent_documents_select_active on public.consent_documents;
 drop policy if exists consents_select_own on public.consents;
 drop policy if exists consents_insert_own_active_document on public.consents;
 drop policy if exists consents_revoke_own on public.consents;
@@ -131,17 +132,9 @@ create policy user_roles_select_own
   on public.user_roles for select to authenticated
   using (user_id = (select public.current_uno_idu()));
 
-create policy consent_documents_select_active_or_owned
+create policy consent_documents_select_active
   on public.consent_documents for select to authenticated
-  using (
-    active is true
-    or exists (
-      select 1
-      from public.consents c
-      where c.consent_document_id = consent_documents.id
-        and c.user_id = (select public.current_uno_idu())
-    )
-  );
+  using (active is true);
 
 create policy consents_select_own
   on public.consents for select to authenticated
