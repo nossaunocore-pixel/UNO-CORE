@@ -76,3 +76,10 @@ Toda documentação técnica deverá manter compatibilidade com as diretrizes aq
 # Próximos Capítulos
 
 Após a criação deste volume, serão desenvolvidos os capítulos que estabelecem os princípios permanentes da Engenharia Oficial da Plataforma UNO.
+
+
+## Pendência de precedência documental
+
+V01 declara que prevalece quando há conflito entre documentos técnicos. A forma de aplicar essa precedência a princípios normativos, conceitos universais, arquitetura e contratos especializados ainda precisa ser tipada. Foi registrada uma proposta não aprovada em [ADR-EOU-002 — Precedência documental e autoridade por tipo de decisão](../V36-ADR/ADR-EOU-002-precedencia-documental.md).
+
+Até ratificação expressa do fundador, esta proposta não altera a regra textual vigente deste volume. A Constituição não deve ser interpretada como substituta automática de modelos conceituais, schemas ou contratos de domínio que ela não especifique.
