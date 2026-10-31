@@ -202,3 +202,29 @@ Os quatro cadernos ainda não contêm orçamento bottom-up validado. Não há ba
 O período oferece um teste severo para a hipótese UNO: uma crise sanitária, perda de renda, desorganização de serviços, retomada desigual, inflação elevada e posterior recuperação do emprego. A hipótese mais defensável, ainda não quantificada, é que uma engenharia de orquestração poderia reduzir custos de informação, busca, coordenação e encaminhamento em redes locais. Não há evidência suficiente, nesta etapa, para afirmar quanto teria alterado PIB, mortalidade, pobreza ou desemprego no agregado nacional.
 
 A conclusão final dependerá de três provas: (a) escala de adoção factível; (b) resultados adicionais verificáveis em comparação com o que já ocorreu; (c) custo total e sustentabilidade. A simulação deverá considerar também falhas, exclusão digital, dados desatualizados, fraude, privacidade, capacidade insuficiente de parceiros e risco de concentração de poder.
+
+
+## 12. Definição do contrafactual: engenharia disponível versus adesão efetiva
+
+A hipótese não é “UNO instalada em todos os brasileiros”. A engenharia completa está operacional desde janeiro de 2020, mas alcance, confiança, ativação, retenção, cobertura territorial e cooperação de terceiros são variáveis. A simulação deve usar uma curva de adoção explícita e cenários por território, sem supor adesão universal.
+
+A arquitetura considerada inclui acesso por perfis (visitantes, usuários e parceiros), conversa orientadora e agente pessoal, localização de serviços e habilidades, agenda, rede comunitária e participação, conexão entre profissionais e demandas, oportunidades econômicas, ambiente institucional informativo e Orquestrador Mestre com permissões, supervisão humana e rastreabilidade. Não inclui autoridade governamental, acesso automático a bases sigilosas, concessão de benefícios públicos ou integração institucional sem acordo e base legal.
+
+A cadeia de valor a testar é: necessidade identificada → informação validada → orientação → oferta localizada → encaminhamento consentido → atendimento por responsável competente → confirmação → medição. Apenas atendimento confirmado conta como demanda resolvida. Cadastro, visualização e encaminhamento não contam como resultado final.
+
+## 13. Painel operacional necessário para calcular impacto
+| Variável | Definição | Uso |
+|---|---|---|
+| Alcance territorial | Pessoas que receberam informação da UNO | Denominador de alcance |
+| Ativação | Pessoas alcançadas que se tornam usuárias ativas | Adoção |
+| Retenção | Usuários ativos que permanecem ativos em período definido | Continuidade |
+| Demandas únicas | Necessidades deduplicadas e classificadas | Volume real de procura |
+| Encaminhamentos aceitos | Demandas direcionadas e aceitas pelo usuário/serviço | Conversão |
+| Resoluções confirmadas | Atendimento ou resultado confirmado | Impacto efetivo |
+| Tempo de resolução | Intervalo entre registro e confirmação | Eficiência |
+| Custo por resolução | Custo atribuível dividido por resoluções confirmadas | Eficiência financeira |
+| Renda incremental | Diferença atribuível entre renda observada e contrafactual | Impacto econômico |
+| Ações rastreáveis | Ações com histórico verificável e permissões adequadas | Governança |
+
+Os cenários conservador, intermediário e otimista serão calculados com parâmetros explícitos de alcance, ativação, retenção, demanda, capacidade de parceiros e taxa de resolução. Percentuais de adoção nacional não serão inventados. Resultados locais não serão extrapolados ao país sem justificativa estatística.
+
