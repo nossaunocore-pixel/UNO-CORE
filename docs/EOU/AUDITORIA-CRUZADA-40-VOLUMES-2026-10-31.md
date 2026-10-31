@@ -307,3 +307,8 @@ V03 possui 157 capítulos e contém temas de identidade, permissões, persistên
 ### Inventário estrutural consolidado
 
 Criado `INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md`, com contagem de 522 capítulos numerados, primeira leitura e plano de auditoria por lotes. V01 e V02 têm sete capítulos cada; V03 157; V04 145; V05 100; V06 52; V07 21; V08 33. Nem todos os 522 capítulos foram lidos integralmente.
+
+
+## 13. Verificação de CI e estado do PR — 31/10/2026
+
+Após a rodada de inventário V01–V08, o HEAD consultado do PR #2 é `e1428f5101b2f231f56b402f7949ca1d40b8796d`. A consulta de workflow runs para esse SHA retornou lista vazia. Portanto, CI da cabeça **não está confirmado**. PR #2 permanece Draft, com 82 arquivos alterados segundo a listagem atual. Não houve merge nem deploy.
