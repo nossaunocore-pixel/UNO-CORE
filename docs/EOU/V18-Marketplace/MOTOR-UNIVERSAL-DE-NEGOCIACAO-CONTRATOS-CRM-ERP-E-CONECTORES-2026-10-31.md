@@ -25,6 +25,20 @@ O objetivo não é construir de imediato um ERP completo nem substituir profissi
 7. **Automação com alçada:** automatizar tarefas determinísticas; submeter exceções, riscos e atos jurídicos/financeiros relevantes a pessoas autorizadas.
 8. **Portabilidade:** permitir exportação dos dados e documentos em formatos utilizáveis, respeitando direitos, contratos e retenção legal.
 
+## 2.1. Multi-instituição, autonomia e gatilhos de autoridade
+
+O UNO deve suportar ambientes administrativos separados por instituição, com seus próprios contratos, clientes, fornecedores, oportunidades, pedidos, financeiro, responsáveis e conexões. A separação lógica deve impedir acesso cruzado não autorizado e permitir colaboração por compartilhamento deliberado.
+
+A **NÓS S.A.** é a instituição de referência e poderá possuir o conjunto mais amplo de conexões com os componentes UNO. As demais instituições mantêm independência e recebem apenas conexões essenciais à integração harmônica. O Departamento de Sinergia coordena interoperabilidade e cooperação, sem assumir a autoridade decisória das instituições.
+
+Em cada operação, distinguir:
+- gatilho de decisão: quem aprova ou autoriza;
+- gatilho de operação: quem executa a ação aprovada;
+- responsabilidade jurídica: qual entidade responde pela relação;
+- supervisão e auditoria: quem acompanha e registra.
+
+A autorização de operação não concede autoridade de decisão. Nenhuma integração transfere automaticamente titularidade, representação legal, custódia, poderes financeiros ou responsabilidade profissional.
+
 ## 3. Domínios e motores integrados
 
 ### 3.1 CRM — relacionamento e oportunidades
