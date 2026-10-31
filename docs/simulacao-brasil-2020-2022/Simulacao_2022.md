@@ -193,3 +193,22 @@ Fonte: https://bvsms.saude.gov.br/bvs/publicacoes/relatorio_anual_gestao_2022.pd
 - Apoiar inclusão digital com pontos assistidos e interface de baixo consumo de dados.
 - Medir distribuição de oportunidades, encaminhamentos e resoluções por território, preservando dados pessoais.
 
+
+## 17. Fechamento de caixa do exercício — quadro obrigatório
+
+| Componente de caixa UNO | 2022 (R$) | Tratamento |
+|---|---:|---|
+| Caixa inicial em 01/01/2022 | Saldo final de 2021 | Transportar sem reiniciar a série |
+| Receita própria recebida | A apurar | Apenas valores recebidos |
+| Doações recebidas | A apurar | Separar livres e vinculadas |
+| Contratos/patrocínios recebidos | A apurar | Apenas formalizados e recebidos |
+| Recursos de terceiros intermediados | Fora da receita | Conta de passagem, se houver |
+| Pessoal e encargos | A apurar | Operação e expansão |
+| Tecnologia, IA, dados e segurança | A apurar | Custos variáveis e fixos |
+| Implantação e operação territorial | A apurar | Manutenção e expansão |
+| Jurídico, privacidade, auditoria e avaliação | A apurar | Governança e conformidade |
+| Comunicação, aquisição e contingência | A apurar | Separar investimento de operação |
+| Caixa final em 31/12/2022 | A calcular | Caixa inicial + entradas recebidas − saídas pagas |
+
+**Conclusão financeira 2022:** este saldo encerra o terceiro exercício e deve coincidir com o caixa final acumulado do consolidado. Até que existam parâmetros de equipe, escala, infraestrutura, tributos e financiamento, qualquer saldo numérico seria especulativo.
+
