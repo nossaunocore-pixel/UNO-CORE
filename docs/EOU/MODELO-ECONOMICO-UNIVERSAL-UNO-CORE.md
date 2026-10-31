@@ -1,6 +1,6 @@
 # Modelo Econômico e de Negócios Universal da UNO CORE
 **Identificador:** MEU-UNO-001  
-**Versão documental:** 0.1.0  
+**Versão documental:** 0.2.0  
 **Data:** 31/10/2026  
 **Estado:** Proposta estruturante — não ratificada pelo fundador  
 **Abrangência:** transversal aos universos, núcleos, instituições, serviços, marketplace e operações da UNO CORE
@@ -21,12 +21,14 @@ Este documento cria uma estrutura de decisão e prestação de contas. Não auto
 2. **Melhor prática disponível:** comparar alternativas existentes e adotar a que ofereça melhor equilíbrio entre utilidade, confiabilidade, segurança, acessibilidade, custo total e liberdade de evolução.
 3. **Preferência por custo zero:** quando duas opções atendem aos requisitos, preferir a gratuita, aberta ou já incluída na infraestrutura disponível.
 4. **Transparência econômica:** custos, taxas, comissões, retenções, subsídios, receitas e critérios de distribuição devem ser identificáveis e auditáveis.
-5. **Primazia de quem gera valor:** a pessoa ou equipe que efetivamente produz, executa, entrega ou viabiliza a receita deve receber a maior participação individual ou coletiva prevista para a execução.
+5. **Primazia da base e de quem gera valor:** a distribuição deve priorizar territórios e pessoas que concentram necessidades e execução. A hierarquia superior não deve representar privilégio remuneratório; sua remuneração tende a ser menor ou equalizada em relação à base, conforme responsabilidades reais.
 6. **Sustentabilidade sem exploração:** a plataforma precisa financiar infraestrutura, segurança, atendimento e evolução, mas não pode crescer transferindo desproporcionalmente o risco e o trabalho para profissionais e operadores.
 7. **Neutralidade de fornecedor:** evitar dependência desnecessária de um único provedor; manter portabilidade de dados, contratos e componentes sempre que tecnicamente viável.
 8. **Autorização humana proporcional:** compromissos financeiros, contratação de planos pagos, mudança de taxas e pagamentos seguem limites de alçada e aprovação humana.
 9. **Acesso inclusivo:** oferecer alternativas gratuitas ou subsidiadas quando viáveis, sem confundir gratuidade de acesso com gratuidade de trabalho profissional.
 10. **Rastreabilidade:** cada operação econômica deve poder ser explicada desde sua origem até sua liquidação e distribuição.
+11. **Pirâmide distributiva invertida:** recursos e capacidade econômica devem fluir prioritariamente para a base territorial e operacional. Posições hierarquicamente superiores não justificam, por si, remuneração maior; a remuneração deve refletir trabalho e responsabilidade efetivos.
+12. **Retenção responsável de excedentes:** valores não utilizados podem permanecer em reservas/caixas identificados para operações futuras, com finalidade, titularidade, regras de uso e prestação de contas.
 
 ## 3. Classificação obrigatória de capacidades e custos
 
@@ -88,7 +90,45 @@ A orientação recebida em 31/10/2026 é que **pelo menos 50% da receita relacio
 
 Esta diretriz é registrada como requisito de desenho do modelo. A base de cálculo, as exceções e a fórmula final ainda precisam de ratificação do fundador antes de se tornarem regra financeira executável.
 
-### 6.2 Princípio de atribuição
+### 6.2 Distribuição territorial e institucional — pirâmide invertida
+
+O fundador acrescentou uma segunda dimensão à distribuição: não basta repartir a receita entre quem executa e a estrutura da organização; é necessário devolver capacidade econômica aos territórios onde as necessidades se manifestam.
+
+Como **exemplo ilustrativo, ainda não aprovado como percentuais universais**, foi apresentado o seguinte rateio de uma arrecadação originada no bairro:
+
+| Destinação | Percentual ilustrativo |
+|---|---:|
+| Bairro de origem | 50% |
+| Cidade | 25% |
+| Diretoria | 10% |
+| Nação | 15% |
+| **Total** | **100%** |
+
+A lógica do exemplo é priorizar a base: o bairro retém a maior parcela porque é onde as necessidades concretas precisam ser atendidas; a cidade recebe recursos para articulação entre bairros; e as parcelas de abrangência diretiva e nacional sustentam responsabilidades de escala maior, dentro do universo, nicho ou setor correspondente.
+
+Os percentuais acima são uma referência conceitual fornecida pelo fundador, não uma tabela definitiva para todos os negócios, territórios ou universos. A aplicação deverá ser parametrizável e respeitar a natureza da receita, a origem territorial, as responsabilidades atendidas e as regras específicas de cada atividade.
+
+### 6.3 Hierarquia sem privilégio remuneratório
+
+A posição hierárquica superior não deve gerar remuneração superior automaticamente. A orientação do fundador é que a remuneração de quem ocupa níveis superiores seja reduzida ou equalizada em relação à base, em vez de crescer apenas por posição na pirâmide.
+
+A remuneração deve refletir contribuição, trabalho, responsabilidade e resultados efetivamente assumidos. A estrutura deve valorizar a base operacional e territorial, evitando concentração no topo. Os critérios quantitativos de equalização permanecem sujeitos à definição do fundador e à análise de cada tipo de atividade.
+
+### 6.4 Reservas para operações futuras
+
+Se, após as destinações e obrigações aprovadas, houver excedente não utilizado, ele poderá ser alocado em caixas ou reservas para operações futuras. Cada reserva deve ter finalidade, território/universo beneficiário, origem dos recursos, saldo, condições de uso, alçada de aprovação e prestação de contas. A reserva não deve ser confundida com lucro livre, receita distribuível ou saldo disponível para uso discricionário.
+
+### 6.5 Compatibilização das camadas de distribuição
+
+O modelo deverá distinguir e conciliar, sem dupla contagem:
+- a participação de quem efetivamente gera a receita (profissional, operador, criador ou equipe);
+- a distribuição territorial/institucional (bairro, cidade, diretoria, nação e outras escalas pertinentes);
+- os custos, tributos, taxas, reembolsos e obrigações aplicáveis;
+- os excedentes destinados a reservas identificadas.
+
+A ordem de cálculo e as bases de cada camada ainda precisam ser definidas. O exemplo territorial 50/25/10/15 não deve ser somado ou aplicado automaticamente ao piso de 50% destinado a quem gera a receita; é necessário estabelecer se as camadas incidem sobre bases sucessivas, fundos distintos ou outra arquitetura sem sobreposição.
+
+### 6.6 Princípio de atribuição
 
 A participação deve acompanhar contribuição efetiva, responsabilidade assumida, execução, entrega e resultado verificável. O simples nível hierárquico não deve, isoladamente, gerar direito automático a uma parcela maior.
 
@@ -104,7 +144,7 @@ A distribuição poderá reconhecer, quando aplicável:
 
 Cada parcela deve ter fundamento e critério de cálculo registrados. Não deve haver dupla remuneração da mesma contribuição sem previsão transparente.
 
-### 6.3 Modelo parametrizável
+### 6.7 Modelo parametrizável
 
 Cada produto, serviço ou operação deverá possuir uma ficha de distribuição com:
 - identificador da receita e da operação;
@@ -120,7 +160,7 @@ Cada produto, serviço ou operação deverá possuir uma ficha de distribuição
 
 **Não fixar percentuais das demais hierarquias por padrão universal.** A fórmula deve variar conforme a natureza da atividade e os papéis realmente envolvidos, respeitando o piso mínimo orientado pelo fundador depois de definida sua base de cálculo.
 
-### 6.4 Proteção contra distorções
+### 6.8 Proteção contra distorções
 
 - Não classificar como “custo” uma retenção arbitrária destinada a contornar a participação mínima de quem executou.
 - Não distribuir receita ainda não recebida como se estivesse liquidada.
@@ -132,9 +172,11 @@ Cada produto, serviço ou operação deverá possuir uma ficha de distribuição
 
 ## 7. Hierarquia institucional e hierarquia profissional
 
-A UNO deverá separar dois eixos relacionados, mas não equivalentes:
+A UNO deverá separar três dimensões relacionadas, mas não equivalentes:
 
 **Eixo institucional:** governança, direção, coordenação, supervisão e operação dos núcleos, universos e instituições.
+
+**Eixo territorial/institucional:** bairro, cidade, diretoria, nação e demais escalas de organização e reinvestimento, com prioridade distributiva para a base.
 
 **Eixo profissional:** papel exercido na atividade concreta, como criador, especialista, executor, operador, auxiliar, responsável técnico, atendimento, logística, coordenação de equipe ou prestador parceiro.
 
@@ -231,6 +273,10 @@ As questões abaixo não serão preenchidas por inferência ou por simples adoç
 4. **Tratamento de trabalho coletivo:** confirmar se o piso de 50% se aplica ao conjunto executor ou a cada profissional individualmente, e como repartir entre eles.
 5. **Exceções institucionais:** definir tratamento de doações vinculadas, subsídios, projetos comunitários, serviços públicos, atividades voluntárias e operações sem margem comercial.
 6. **Limites de alçada:** confirmar os limites financeiros e quem pode aprovar cada categoria de gasto, contratação e pagamento.
+7. **Rateio territorial:** confirmar se o exemplo bairro 50% / cidade 25% / diretoria 10% / nação 15% será adotado, ajustado ou usado apenas como referência, e em quais universos/atividades.
+8. **Conciliação entre camadas:** definir como o piso de participação de quem gera receita se combina com a distribuição territorial/institucional, sem dupla contagem.
+9. **Equalização hierárquica:** definir critérios e limites objetivos para reduzir ou equalizar remunerações em níveis hierárquicos superiores.
+10. **Reservas e caixas:** definir governança, limites, titularidade, usos permitidos e regras de liberação dos excedentes reservados para operações futuras.
 
 Até essas definições, o sistema pode documentar, comparar, simular e preparar os controles, mas não deve automatizar pagamentos ou publicar percentuais finais.
 
@@ -255,4 +301,4 @@ A propriedade detalhada de cada regra e entidade deverá ser refinada na matriz 
 
 Este documento consolida diretrizes expressas pelo fundador e propostas técnicas para operacionalizá-las. Os pontos da seção 13 permanecem pendentes de definição exclusiva do fundador. Adoção de fornecedor, preços, percentuais, políticas contratuais e execução financeira exigem validação específica.
 
-**Princípio orientador:** a UNO deve criar valor, revelar o custo de criá-lo e distribuir de forma justa o valor que as pessoas efetivamente produzem.
+**Princípio orientador:** a UNO deve criar valor, revelar o custo de criá-lo e distribuir de forma justa o valor que as pessoas efetivamente produzem, priorizando a base territorial e operacional. A hierarquia deve servir à base, não concentrar nela os benefícios.
