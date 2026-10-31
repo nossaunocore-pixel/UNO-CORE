@@ -1,6 +1,8 @@
 # EOU-V25 — Financeiro
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; Stripe em preparação/teste, sem operação financeira de produção validada
 - Relacionados: V13 Dados, V16 Segurança, V17 Governança, V18 Marketplace, V24 Empregabilidade, V26 Identidade, V27 Perfis, V36 ADR, V39 Jurídico
 
