@@ -11,9 +11,6 @@ type AccessState =
   | 'provisioning_required'
   | 'forbidden';
 
-const PUBLIC_VIEWS: V6View[] = [
-  'praca', 'edificio', 'nos', 'conversa', 'biblioteca', 'participacao', 'comunidade'
-];
 const MASTER_VIEWS: V6View[] = [
   'mestre', 'oficina', 'conteudos', 'acervo',
   'integracoes', 'agentes', 'auditoria'
@@ -26,16 +23,9 @@ export function PageAccessGateV7({
   view: V6View;
   children: React.ReactNode;
 }) {
-  const [state, setState] = useState<AccessState>(
-    PUBLIC_VIEWS.includes(view) ? 'allowed' : 'checking'
-  );
+  const [state, setState] = useState<AccessState>('checking');
 
   useEffect(() => {
-    if (PUBLIC_VIEWS.includes(view)) {
-      setState('allowed');
-      return;
-    }
-
     if (!auth) {
       setState('login_required');
       return;
@@ -43,7 +33,7 @@ export function PageAccessGateV7({
 
     let cancelled = false;
     const unsubscribe = onIdTokenChanged(auth, async (user) => {
-      if (!user) {
+      if (!user || user.isAnonymous) {
         if (!cancelled) setState('login_required');
         return;
       }
@@ -52,16 +42,13 @@ export function PageAccessGateV7({
 
       try {
         let tokenResult = await getIdTokenResult(user);
-        const verifiedContact = tokenResult.claims.email_verified === true ||
-          Boolean(tokenResult.claims.phone_number);
-
-        if (!verifiedContact) {
+        if (tokenResult.claims.email_verified !== true) {
           if (!cancelled) setState('verification_required');
           return;
         }
 
         if (typeof tokenResult.claims.uno_idu !== 'string' ||
-            !tokenResult.claims.uno_idu) {
+            !tokenResult.claims.uno_idu.trim()) {
           const response = await fetch('/api/identity/session', {
             method: 'POST',
             headers: { Authorization: `Bearer ${await user.getIdToken()}` }
@@ -79,7 +66,7 @@ export function PageAccessGateV7({
         }
 
         if (typeof tokenResult.claims.uno_idu !== 'string' ||
-            !tokenResult.claims.uno_idu) {
+            !tokenResult.claims.uno_idu.trim()) {
           if (!cancelled) setState('provisioning_required');
           return;
         }
@@ -107,9 +94,9 @@ export function PageAccessGateV7({
 
   const messages: Record<Exclude<AccessState, 'allowed'>, string> = {
     checking: 'Verificando sua identidade e as permissões desta área…',
-    login_required: 'Entre na sua conta para acessar este ambiente.',
-    verification_required: 'Confirme seu e-mail ou telefone antes de continuar.',
-    provisioning_required: 'Não foi possível provisionar sua Identidade UNO. O acesso permanece bloqueado até a configuração segura do serviço.',
+    login_required: 'Para conhecer os ambientes internos, entre com sua conta Google no botão Entrar.',
+    verification_required: 'A conta Google precisa apresentar um e-mail verificado antes de continuar.',
+    provisioning_required: 'Não foi possível validar ou provisionar sua Identidade UNO. O acesso permanece bloqueado até a configuração segura do serviço.',
     forbidden: 'Sua conta não possui autorização para esta área. O acesso mestre depende de concessão explícita e validada.'
   };
 
