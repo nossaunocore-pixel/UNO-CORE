@@ -1,10 +1,12 @@
-# ENGENHARIA OFICIAL DA PLATAFORMA UNO — ÍNDICE COMPLETO
+# SÉRIE DOCUMENTAL HISTÓRICA — ÍNDICE DOS 8 VOLUMES ORIGINAIS
 
-> **A LEI está aqui. Os 8 Volumes que definem tudo o que a Uno é, faz e promete.**
+> **Arquivo histórico preservado.** Esta série registra uma organização documental anterior da Engenharia Oficial. A coleção vigente de referência é a **EOU de 40 volumes**, cujo catálogo oficial está em [`docs/EOU/CATALOGO.md`](../../docs/EOU/CATALOGO.md).
+>
+> Os títulos abaixo são mantidos para preservar a integridade e a rastreabilidade dos documentos históricos. Eles não substituem a nomenclatura atual dos volumes da coleção de 40 volumes.
 
 ---
 
-## 📚 OS 8 VOLUMES DA ENGENHARIA OFICIAL
+## 📚 OS 8 VOLUMES DA SÉRIE HISTÓRICA
 
 ### 🏛️ **VOLUME 1 — CONSTITUIÇÃO TÉCNICA**
 **Arquivo:** `volume-01-constituicao-tecnica.md`
@@ -178,7 +180,7 @@ Todos os 8 Volumes compartilham estas garantias:
 
 ---
 
-**Data de conclusão da Engenharia Oficial:** 25 de Agosto de 2026  
+**Data registrada na série histórica:** 25 de Agosto de 2026  
 **Local:** Suzano — São Paulo — Brasil  
 **Propósito:** Servir ao bem comum  
 
