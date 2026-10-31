@@ -39,3 +39,9 @@ Testar matching explicável, requisito obrigatório, licença vencida, candidatu
 
 ## 9. Pendências
 Definir categorias do piloto, papel da UNO, onboarding de empresas, validação de capacidades, política de remuneração/comissão, fluxo de formalização e regras de disputa.
+
+
+## 12. Enquadramento do trabalho e custeio
+
+A jornada deve suportar modelos distintos sem presumir que toda oportunidade é emprego ou que toda contratação independente é válida. Registrar quem contrata, dirige, remunera, fiscaliza, executa e responde pelas obrigações. Folha, encargos patronais, pagamentos de prestadores e retenções são categorias separadas na apuração operacional. O rótulo de intermediação não afasta vínculo decorrente dos fatos. Ver RJTTF-UNO-001.
+
