@@ -1,6 +1,8 @@
 # EOU-V40 — Documentação Institucional
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: estrutura institucional inicial; atos oficiais dependem de aprovação do fundador e formalização
 - Relacionados: V01 Constituição, V17 Governança, V34 UNO CORE, V35 Roadmap, V36 ADR, V37 Glossário, V39 Jurídico
 
