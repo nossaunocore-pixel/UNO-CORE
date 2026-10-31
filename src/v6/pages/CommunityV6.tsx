@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowRight, BookHeart, HandHeart, HeartHandshake, MapPin, MessageCircle, ShieldCheck, Sprout, Users, Vote } from 'lucide-react';
 import type { NavigateV6 } from '../types';
+import { listPublicCommunityPosts } from '../../services/publicContent';
+import type { PublicCommunityPost } from '../../domain/publicContent';
 
 const socialPillars = [
   { icon: HeartHandshake, title: 'Escuta e acolhimento', text: 'Um espaço para a pessoa ser ouvida com respeito, organizar o que está vivendo e encontrar caminhos possíveis, sem julgamento ou promessa de solução automática.' },
@@ -12,6 +14,19 @@ const socialPillars = [
 ];
 
 export function CommunityV6({ onNavigate }: { onNavigate: NavigateV6 }) {
+  const [publicPosts, setPublicPosts] = useState<PublicCommunityPost[]>([]);
+  const [feedLoading, setFeedLoading] = useState(true);
+  const [feedUnavailable, setFeedUnavailable] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    listPublicCommunityPosts(20)
+      .then((posts) => { if (active) setPublicPosts(posts); })
+      .catch(() => { if (active) setFeedUnavailable(true); })
+      .finally(() => { if (active) setFeedLoading(false); });
+    return () => { active = false; };
+  }, []);
+
   return <section className="v62-community v7-community" aria-labelledby="community-title">
     <header>
       <div>
@@ -42,6 +57,19 @@ export function CommunityV6({ onNavigate }: { onNavigate: NavigateV6 }) {
     <section className="v7-community-actions">
       <article><Users/><div><h2>Participação social</h2><p>Conheça como ideias, consultas e decisões deverão ser organizadas.</p><button onClick={() => onNavigate('participacao')}>Conhecer participação <ArrowRight size={15}/></button></div></article>
       <article><ShieldCheck/><div><h2>Privacidade e segurança</h2><p>Informações pessoais, relatos sensíveis e vínculos privados não serão expostos por padrão.</p><small>Política de acesso e proteção em implementação</small></div></article>
+    </section>
+
+    <section className="v7-community-feed" aria-labelledby="community-feed-title">
+      <header><div><span className="v6-kicker">Transparência comunitária</span><h2 id="community-feed-title">O que está acontecendo</h2><p>Publicações públicas aprovadas, iniciativas e comunicados do território.</p></div><button onClick={() => onNavigate('lazer')}>Ver eventos e festivais <ArrowRight size={15}/></button></header>
+      {feedLoading && <p className="v7-community-feed-state">Consultando o feed público no Supabase…</p>}
+      {!feedLoading && feedUnavailable && <p className="v7-community-feed-state">O feed público ainda não está conectado. Esta página não inventa publicações, números ou resultados.</p>}
+      {!feedLoading && !feedUnavailable && publicPosts.length === 0 && <p className="v7-community-feed-state">Ainda não há publicações públicas aprovadas para exibição.</p>}
+      {publicPosts.length > 0 && <div className="v7-community-feed-grid">{publicPosts.map((post) => <article key={post.id}>
+        <span>{post.content_type} · {post.public_author_label}</span>
+        {post.title && <h3>{post.title}</h3>}
+        <p>{post.body}</p>
+        {post.published_at && <small>{new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(post.published_at))}</small>}
+      </article>)}</div>}
     </section>
 
     <p className="v7-community-notice"><ShieldCheck size={17}/> Esta página apresenta a proposta social da UNO. Não representa serviços públicos oficiais, não confirma projetos em execução e não exibe contagens, votações, doações ou resultados comunitários reais. Ações futuras dependerão de adesão voluntária, governança, segurança e validação das responsabilidades.</p>
