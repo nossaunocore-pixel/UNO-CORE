@@ -155,8 +155,8 @@ Os valores abaixo usam divulgações revisadas quando disponíveis. PIB de 2020�
 | Indústria, valor adicionado | -3,0% | +5,0% | +1,5% | IBGE, Contas Nacionais revisadas |
 | Serviços, valor adicionado | -3,7% | +4,8% | +4,3% | IBGE, Contas Nacionais revisadas |
 | IPCA | 4,52% | 10,06% | 5,79% | IBGE |
-| Desocupação média anual | 13,5% | 13,2% | 9,3% | IBGE, PNAD Contínua |
-| Informalidade média anual | 38,8% | 40,1% | 39,6% | IBGE, PNAD Contínua |
+| Desocupação média anual | 13,8% | 13,2% | 9,3% | IBGE, PNAD Contínua; 2020 atualizado em séries posteriores |
+| Informalidade média anual | 38,3% | 40,1% | 39,6% | IBGE, PNAD Contínua; série histórica posterior |
 | Nascimentos ocorridos | 2.678.992 | 2.635.854 | 2.542.298 | IBGE, Registro Civil |
 | Óbitos ocorridos | 1.510.068* | 1.786.347 | 1.504.763 | IBGE, Registro Civil; *2020 total com sexo/idade conhecidos, comparabilidade requer cautela |
 
