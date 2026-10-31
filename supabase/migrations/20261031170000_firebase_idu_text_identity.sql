@@ -82,6 +82,8 @@ as $function$
   select case
     when (select auth.jwt() ->> 'iss') = 'https://securetoken.google.com/uno-core-a9125'
      and (select auth.jwt() ->> 'role') = 'authenticated'
+     and (select auth.jwt() -> 'firebase' ->> 'sign_in_provider') = 'google.com'
+     and (select auth.jwt() ->> 'email_verified') = 'true'
      and left(coalesce((select auth.jwt() ->> 'uno_idu'), ''), 4) = 'idu_'
     then (select auth.jwt() ->> 'uno_idu')
     else null
