@@ -216,3 +216,18 @@ Em 2021, o maior potencial operacional hipotético da UNO estaria em reduzir fri
 
 **Conclusão financeira 2021:** o caixa final de 2020 deve ser o saldo inicial deste exercício. Não se presumem receitas, doações, contratos ou ganhos de escala sem evidência. Transferências públicas às famílias, gasto com vacinação e valor transacionado por parceiros não são receita UNO.
 
+
+## 18. Renda domiciliar, desigualdade e recuperação incompleta
+
+O rendimento médio mensal real domiciliar per capita caiu para R$ 1.353 em 2021, o menor nível da série iniciada em 2012 naquele momento. A massa de rendimento mensal real domiciliar per capita caiu 6,2% frente a 2020. O Gini domiciliar per capita subiu de 0,524 para 0,544; o Nordeste registrou Gini 0,556 e o Sul 0,462. O rendimento per capita caiu em todas as regiões, com recuos mais intensos no Nordeste (-12,5%) e no Norte (-9,8%). A queda foi especialmente forte entre os 20% mais pobres.
+Fonte: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34052-em-2021-rendimento-domiciliar-per-capita-cai-ao-menor-nivel-desde-2012
+
+A divulgação original do IBGE estimou pobreza em 29,4% e extrema pobreza em 8,4% pelas linhas então utilizadas; crianças menores de 14 anos tinham pobreza de 46,2%, e as proporções eram maiores entre pretos/pardos (37,7%) do que entre brancos (18,6%). Para comparação internacional longitudinal, usar a série posteriormente recalculada com linhas/PPC atualizadas, sem misturar percentuais de vintages diferentes.
+Fonte: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35687-em-2021-pobreza-tem-aumento-recorde-e-atinge-62-5-milhoes-de-pessoas-maior-nivel-desde-2012
+
+**Interpretação:** o crescimento real do PIB em 2021 coexistiu com perda de renda domiciliar real e aumento da desigualdade. A recuperação macroeconômica não foi sinônimo de recuperação imediata da renda das famílias. A UNO poderia reduzir custos de busca por oportunidades e orientar acesso a serviços, mas renda incremental só deve ser atribuída após comprovação e comparação com uma trajetória contrafactual.
+
+### Indicador de educação: aprovação não equivale a aprendizagem
+Nos anos iniciais do ensino fundamental, a aprovação administrativa foi de 97,6% em 2021, depois de 98,5% em 2020; nos anos finais, a aprovação foi de 95,7% em 2021. A série exige cautela porque regras excepcionais e recomposição de fluxo escolar durante a pandemia alteraram aprovação/reprovação. Complementar com aprendizagem, frequência, abandono, participação e retorno presencial.
+Fonte: https://anuario.todospelaeducacao.org.br/2025/capitulo-2-ef-anos-iniciais.html
+
