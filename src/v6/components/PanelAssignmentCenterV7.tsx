@@ -35,12 +35,13 @@ export function PanelAssignmentCenterV7() {
 
   async function submit(event: React.FormEvent) {
     event.preventDefault();
-    if (!auth?.currentUser || !targetUid.trim() || busy || !isFounder) return;
+    const currentUser = auth?.currentUser;
+    if (!currentUser || !targetUid.trim() || busy || !isFounder) return;
 
     setBusy(true);
     setMessage('');
     try {
-      const token = await auth.currentUser.getIdToken();
+      const token = await currentUser.getIdToken();
       const response = await fetch('/api/admin/panel-access', {
         method: 'POST',
         headers: {
