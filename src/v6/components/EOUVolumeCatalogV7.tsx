@@ -26,7 +26,7 @@ export function EOUVolumeCatalogV7() {
     return volume.nature === filter;
   }), [filter]);
 
-  const selected = EOU_VOLUMES.find((volume) => volume.id === selectedId) || EOU_VOLUMES[0];
+  const selected = EOU_VOLUMES.find((volume) => volume.id === selectedId) || EOU_VOLUMES[0]!;
   const decisionCount = EOU_VOLUMES.filter((volume) => volume.decisionRequired).length;
 
   return <section className="v7-eou-catalog" aria-labelledby="eou-catalog-title">
