@@ -1,6 +1,6 @@
 # EOU-V09 — Catálogo Universal de Capacidades
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado — requer revisão do domínio
 - Responsável: Orquestrador Mestre, com autorização humana para mudanças de governança
 - Relacionados: V03 MUE, V04 EVA, V10 Agentes, V11 Ferramentas, V17 Governança, V28 Entidades, V31 Fluxos
