@@ -112,7 +112,10 @@ export function PageAccessGateV7({
             '/api/identity/panel-access?scope=' + encodeURIComponent(requiredScope),
             { headers: { Authorization: 'Bearer ' + await user.getIdToken() } }
           );
-          setStatus(accessResponse.ok ? 'allowed' : 'forbidden');
+          if (accessResponse.ok) setStatus('allowed');
+          else if (accessResponse.status === 503) setStatus('provisioning_required');
+          else if (accessResponse.status === 401) setStatus('login_required');
+          else setStatus('forbidden');
           return;
         }
 
