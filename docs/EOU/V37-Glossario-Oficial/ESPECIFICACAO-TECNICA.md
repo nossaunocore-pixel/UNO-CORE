@@ -1,6 +1,6 @@
 # EOU-V37 — Especificação técnica do Glossário Oficial
 
-- Revisão documental: 0.3.0
+- Revisão documental: 0.4.0
 - Estado: proposta técnica; termos listados ainda exigem revisão e aprovação editorial
 - Dependências: todos os volumes, especialmente V03, V26, V28, V34, V36, V38
 
@@ -44,4 +44,5 @@ Disponibilizar consulta por termo, sigla, sinônimo, domínio e idioma. APIs ret
 Testar duplicidade de sigla, definição circular, sinônimo proibido, tradução conflitante, termo sem owner, link quebrado e divergência de label. Aceite exige inventário, owners, estados, processo de aprovação, busca e integração editorial/CI.
 
 ## 8. Pendências
+A regra terminológica canônica da NÓS S.A. foi definida pelo fundador em 31/10/2026; alterações futuras da forma preferida dependem de decisão expressa.
 Completar glossário V01–V40, aprovar definições sensíveis, nomear responsáveis por domínio, definir idiomas e automatizar detecção de inconsistências.
