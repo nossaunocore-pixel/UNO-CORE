@@ -26,9 +26,11 @@ export default async function handler(request: Request): Promise<Response> {
   const supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL;
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
   const googleApiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
+  const globalDailyLimit = Number(process.env.PUBLIC_CHAT_GLOBAL_DAILY_LIMIT);
 
-  if (!supabaseUrl || !serviceRoleKey || !googleApiKey) {
-    return json({ error: 'O atendimento público ainda não está configurado integralmente.' }, 503);
+  if (!supabaseUrl || !serviceRoleKey || !googleApiKey ||
+      !Number.isSafeInteger(globalDailyLimit) || globalDailyLimit < 1) {
+    return json({ error: 'O atendimento público ainda não está configurado integralmente ou aguarda o limite diário aprovado pela UNO.' }, 503);
   }
 
   const accessToken = getBearerToken(request);
@@ -76,7 +78,10 @@ export default async function handler(request: Request): Promise<Response> {
     // by service_role. It stores counters, not message text or raw IP addresses.
     const { data: allowed, error: quotaError } = await admin
       .schema('uno_private')
-      .rpc('consume_public_chat_quota', { p_user_id: user.id });
+      .rpc('consume_public_chat_quota_with_global_cap', {
+        p_user_id: user.id,
+        p_global_limit: globalDailyLimit
+      });
 
     if (quotaError) {
       console.error('[UNO /api/public/chat] Quota service unavailable:', quotaError.code || 'UNKNOWN');
