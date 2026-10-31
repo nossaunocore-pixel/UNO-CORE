@@ -37,6 +37,16 @@ Cada termo deve ter: forma preferida, definição, categoria, contexto, sinônim
 - **Chaveiro:** papel/componente restrito para gerenciamento autorizado de segredos.
 - **Sinergia:** coordenação de capacidades/motores especializados, sem eliminar governança.
 
+## 4.1. Nomenclatura institucional canônica — NÓS S.A.
+
+- **NÓS S.A.:** denominação institucional obrigatória da empresa e instituição de referência vinculada ao ecossistema UNO. A grafia oficial é exatamente **NÓS S.A.**, com acento agudo em NÓS e pontuação em S.A.
+- **Forma proibida para a denominação institucional:** “Nossa S.A.”, “NOS S.A.”, “Nós SA”, “NÓS SA” ou outras variantes sem aprovação expressa do fundador.
+- **UNO CORE:** ecossistema e camada de orquestração universal; não é sinônimo da pessoa jurídica NÓS S.A.
+- **Relação:** NÓS S.A. é uma instituição que utiliza e se integra ao UNO CORE. Sua integração ampliada não a torna proprietária de todas as instituições nem elimina a autonomia delas.
+- **Identificadores técnicos históricos:** nomes de usuário, organizações GitHub, slugs, caminhos e identificadores legados não devem ser alterados automaticamente quando contiverem grafias técnicas antigas. A correção aplica-se à denominação institucional exibida em conteúdo editorial, interfaces e documentos.
+
+A nomenclatura **NÓS S.A.** foi confirmada expressamente pelo fundador em 31/10/2026 e deve ser aplicada em novos documentos, interfaces e comunicações institucionais.
+
 ## 5. Termos que exigem cuidado
 “Agente”, “usuário”, “entidade”, “instituição”, “parceiro”, “pioneiro”, “visitante”, “serviço”, “oferta”, “contratação”, “carteira”, “saldo”, “aprovação”, “ativação” e “publicação” devem ter definições precisas por domínio. Não usar “saldo” para representar valor apenas estimado ou não liquidado.
 
