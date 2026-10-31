@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto';
 import { getSupabaseAdmin } from '../../server/supabaseAdmin';
 import { requirePanelScope } from '../../server/panelAuthorization';
 
@@ -50,6 +51,9 @@ function errorResponse(error: unknown) {
   if (message === 'FIREBASE_ADMIN_NOT_CONFIGURED' || message === 'FIREBASE_SERVICE_ACCOUNT_JSON_INVALID' || message === 'SUPABASE_ADMIN_NOT_CONFIGURED') {
     return json({ error: 'Serviços seguros ainda não configurados.' }, 503);
   }
+  if (message.includes('23505') || message.toLowerCase().includes('duplicate key')) {
+    return json({ error: 'Já existe um recurso com esse identificador. Escolha outro nome ou slug.' }, 409);
+  }
   console.error('[UNO workshop assets] Request failed:', message);
   return json({ error: 'Não foi possível processar o recurso da Oficina.' }, 500);
 }
@@ -100,7 +104,8 @@ export default async function handler(request: Request): Promise<Response> {
     }
 
     const slugInput = typeof payload.slug === 'string' ? slugify(payload.slug) : '';
-    const slug = slugInput || (slugify(name) + '-' + crypto.randomUUID().slice(0, 8));
+    const baseSlug = slugify(name) || 'asset';
+    const slug = slugInput || (baseSlug + '-' + randomUUID().slice(0, 8));
 
     const { data, error } = await admin.rpc('create_workshop_asset', {
       p_asset_type: assetType,
