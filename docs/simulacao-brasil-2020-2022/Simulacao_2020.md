@@ -331,3 +331,12 @@ Fonte: https://anuario.todospelaeducacao.org.br/2025/capitulo-2-ef-anos-iniciais
 ### Implicação para a engenharia
 A contribuição testável da UNO seria identificar famílias com barreiras de renda, acesso digital ou continuidade escolar, facilitar orientação e encaminhamento e acompanhar a resposta do serviço. A plataforma não substitui transferências de renda, escola, professor, avaliação pedagógica nem política pública. Medir resolução e permanência, não só encaminhamentos.
 
+
+
+## 21. Revisão retrospectiva de séries — vintage consultado em 2026
+
+A retrospectiva mais recente consultada do IBGE apresenta a taxa média anual de desocupação de 2020 em **13,7%** e a proxy de informalidade em **37,7%**. Esses valores diferem das divulgações originais utilizadas no fechamento contemporâneo do ano (13,8% e 38,3%, respectivamente). Não substituir silenciosamente a linha de base histórica: manter o valor publicado à época no quadro original e utilizar este adendo para análises retrospectivas harmonizadas.
+
+A série revisada também altera anos seguintes; portanto, a comparação 2020–2022 deve usar uma única versão da série em todas as observações, sem misturar vintages.
+
+Fonte: IBGE, PNAD Contínua, apresentação retrospectiva com série histórica até 2025 (consulta em 2026): https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
