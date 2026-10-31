@@ -1,6 +1,6 @@
 # EOU-V40 — Especificação técnica de Documentação Institucional
 
-- Revisão documental: 0.3.0
+- Revisão documental: 0.4.0
 - Estado: proposta técnica; atos oficiais dependem de autoridade, formalização e aprovação
 - Dependências: V01, V17, V34–V39
 
@@ -55,4 +55,5 @@ Publicar governança, critérios, uso de recursos, indicadores e resultados quan
 Testar autoridade de assinatura, delegação expirada, confusão entre nome jurídico e marca, afirmação sem evidência, relatório sem metodologia, parceiro não confirmado, dado pessoal, histórico editado e documento vencido. Aceite exige matriz de documentos, autoridades, aprovações, proveniência, revisão jurídica e canal oficial.
 
 ## 10. Pendências
+A nomenclatura NÓS S.A. e sua distinção institucional em relação ao UNO CORE foram definidas pelo fundador. A comprovação de atos societários, representação e situação registral permanece documental e juridicamente vinculada ao V39.
 Formalizar missão e atos; validar estrutura societária e nomes jurídicos; aprovar organograma e delegações; criar políticas institucionais; definir porta-vozes, marca, critérios do piloto, indicadores e relatório de impacto; validar documentos com V39 antes de publicação.
