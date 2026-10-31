@@ -77,7 +77,6 @@ export default async function handler(request: Request): Promise<Response> {
     // The quota function lives in a non-exposed schema and is executable only
     // by service_role. It stores counters, not message text or raw IP addresses.
     const { data: allowed, error: quotaError } = await admin
-      .schema('uno_private')
       .rpc('consume_public_chat_quota_with_global_cap', {
         p_user_id: user.id,
         p_global_limit: globalDailyLimit
