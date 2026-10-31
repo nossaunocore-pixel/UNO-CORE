@@ -13,7 +13,7 @@ export function PanelAssignmentCenterV7() {
 
   useEffect(() => {
     if (!auth) return;
-    return onAuthStateChanged(auth, async (user) => {
+    return onIdTokenChanged(auth, async (user) => {
       if (!user) {
         setIsFounder(false);
         return;
