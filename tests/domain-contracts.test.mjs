@@ -92,9 +92,10 @@ test('EOU registry contains exactly 40 uniquely numbered volumes', () => {
   assert.equal(new Set(EOU_VOLUMES.map((volume) => volume.id)).size, 40);
 });
 
-test('EOU registry preserves the V05/V06 naming conflicts for founder decision', () => {
-  const conflicts = getVolumesRequiringFounderDecision().map((volume) => volume.id);
-  assert.deepEqual(conflicts, ['V05', 'V06']);
+test('EOU registry uses confirmed V05/V06 names and preserves historical aliases', () => {
+  assert.deepEqual(getVolumesRequiringFounderDecision(), []);
+  assert.equal(EOU_VOLUMES.find((volume) => volume.id === 'V05')?.name, 'Oficina Mestre');
   assert.equal(EOU_VOLUMES.find((volume) => volume.id === 'V05')?.legacyName, 'Ordem de Missão');
+  assert.equal(EOU_VOLUMES.find((volume) => volume.id === 'V06')?.name, 'Centro de Operações');
   assert.equal(EOU_VOLUMES.find((volume) => volume.id === 'V06')?.legacyName, 'Conhecimento Organizacional');
 });
