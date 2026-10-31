@@ -103,7 +103,7 @@ as $function$
 declare
   v_asset public.workshop_assets%rowtype;
 begin
-  if p_actor_idu is null or p_actor_idu not like 'idu\_%' escape '\' then
+  if p_actor_idu is null or pg_catalog.left(p_actor_idu, 4) <> 'idu_' then
     raise exception 'WORKSHOP_ACTOR_IDU_INVALID';
   end if;
   if p_asset_type not in (
@@ -169,7 +169,7 @@ declare
   v_before public.workshop_assets%rowtype;
   v_asset public.workshop_assets%rowtype;
 begin
-  if p_actor_idu is null or p_actor_idu not like 'idu\_%' escape '\' then
+  if p_actor_idu is null or pg_catalog.left(p_actor_idu, 4) <> 'idu_' then
     raise exception 'WORKSHOP_ACTOR_IDU_INVALID';
   end if;
   select * into v_before
@@ -232,7 +232,7 @@ declare
   v_before public.workshop_assets%rowtype;
   v_asset public.workshop_assets%rowtype;
 begin
-  if p_actor_idu is null or p_actor_idu not like 'idu\_%' escape '\' then
+  if p_actor_idu is null or pg_catalog.left(p_actor_idu, 4) <> 'idu_' then
     raise exception 'WORKSHOP_ACTOR_IDU_INVALID';
   end if;
   select * into v_before
@@ -275,7 +275,7 @@ declare
   v_asset public.workshop_assets%rowtype;
   v_slug text;
 begin
-  if p_actor_idu is null or p_actor_idu not like 'idu\_%' escape '\' then
+  if p_actor_idu is null or pg_catalog.left(p_actor_idu, 4) <> 'idu_' then
     raise exception 'WORKSHOP_ACTOR_IDU_INVALID';
   end if;
   select * into v_source
