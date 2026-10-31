@@ -15,7 +15,9 @@ export default async function handler(request: Request): Promise<Response> {
     const { decoded, auth } = await verifyFirebaseRequest(request);
     const founderUid = process.env.UNO_FOUNDER_UID;
 
-    if (!founderUid || decoded.uid !== founderUid || decoded.unoFounder !== true) {
+    if (!founderUid || decoded.uid !== founderUid || decoded.unoFounder !== true ||
+        decoded.firebase?.sign_in_provider !== 'google.com' || decoded.email_verified !== true ||
+        typeof decoded.uno_idu !== 'string' || !decoded.uno_idu.startsWith('idu_')) {
       return json({ error: 'Somente o fundador configurado pode atribuir escopos de painel.' }, 403);
     }
 
