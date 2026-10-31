@@ -239,3 +239,22 @@ A auditoria cruzada só poderá ser considerada encerrada quando:
 - [ ] Aprovação final do fundador.
 
 **Conclusão:** a arquitetura tem uma boa base de separação de responsabilidades, mas há pendências P1 reais antes de consolidar a baseline. O documento é uma auditoria de coerência documental, não certificação de segurança, conformidade, completude ou prontidão operacional.
+
+
+## 10. Atualização de execução — continuação em 31/10/2026
+
+- V06: nomenclatura do README harmonizada com o nome oficial Centro de Operações; README anterior preservado integralmente como `V06-CO/HISTORICO-CONHECIMENTO-ORGANIZACIONAL.md`. Capítulos legados não foram apagados nem adotados automaticamente; inventário segue pendente.
+- V04: criado `V04-EVA/DECISAO-PENDENTE-EVA.md` com o conflito entre “Enciclopédia Visual Adaptativa” (catálogo) e “Ecossistema de Valor e Aprendizagem” (README). Nenhuma expansão foi escolhida; decisão do fundador pendente.
+- Catálogo: V04 e V06 agora apontam para seus registros/READMEs; referência de aprofundamento corrigida para V09–V40 e sequências literais de quebra de linha normalizadas.
+- V01–V03: documentadas fronteiras propostas; V01 registra que a precedência tipada está pendente, V02 explicita seu papel arquitetural e V03 distingue meta-modelo de identidade digital, perfil, taxonomia UNO, persistência e autorização.
+- Criados ADR-EOU-002 (precedência documental tipada) e ADR-EOU-003 (fronteiras Oficina/Operações/Missões/Fluxos/Cognição). Ambos permanecem **propostas não aprovadas**. ADR-EOU-001 também permanece proposta.
+- V05, V07 e V08 receberam referências de fronteira ao ADR-EOU-003; V06 já descreve o limite proposto e explicita que ainda depende de ratificação.
+- O índice V36-ADR foi atualizado com os três ADRs transversais.
+- Nenhum schema, migration, runtime, integração, ambiente externo ou produção foi alterado. A documentação não habilita autonomia, execução ou autoridade.
+
+### Pendências imediatas
+1. Decisão do fundador sobre a expansão e o escopo de V04.
+2. Revisão e aprovação (ou rejeição/alteração) dos ADRs 001, 002 e 003.
+3. Inventário dos capítulos/artefatos legados em V06 e avaliação de destino.
+4. Aprofundamento dos capítulos completos V01–V08; até aqui a leitura de V01–V03 e V05/V07/V08 usou seus READMEs-base, com especificações complementares disponíveis para V09–V40.
+5. Definir o contrato de missão↔fluxo e ownership de eventos/estados antes de diagramas executáveis, schemas ou APIs.
