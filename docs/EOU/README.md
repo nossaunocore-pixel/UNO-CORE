@@ -98,6 +98,12 @@ A EOU está organizada em volumes independentes, cada um responsável por um dom
 
 ---
 
+## NÓS S.A. — identidade e carta institucional
+
+- [Carta Fundadora canônica — EOU-V06, capítulo 051](./V06-CO/051-Carta-Fundadora-da-NOS-SA.md).
+- [Carta de Apresentação do Fundador — mensagem para o espaço institucional da NÓS S.A.](./V06-CO/CARTA-DE-APRESENTACAO-DO-FUNDADOR-NOS-SA-2026-10-31.md).
+- A nomenclatura institucional obrigatória é **NÓS S.A.**; ver V37 Glossário Oficial e V40 Documentação Institucional.
+
 ## Modelo Econômico Transversal
 
 - [Modelo Econômico e de Negócios Universal da UNO CORE](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md) — proposta transversal para seleção de soluções, classificação de custos, métricas, transparência e distribuição justa de receitas. Os pontos reservados ao fundador permanecem pendentes de ratificação.
