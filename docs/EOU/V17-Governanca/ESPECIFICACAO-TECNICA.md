@@ -1,6 +1,6 @@
 # EOU-V17 — Especificação técnica de Governança
 
-- Revisão documental: 0.3.0
+- Revisão documental: 0.4.0
 - Estado: proposta técnica para aprovação do fundador
 - Dependências: V01, V05–V08, V10, V13, V16, V26, V36, V39
 
@@ -48,6 +48,8 @@ Quando viável, separar solicitante, aprovador, executor e auditor. Exceção em
 Painéis são superfícies de trabalho, não autoridade autônoma. Permissão liga pessoa/entidade a escopos e limites. Painel Mestre não é concedido por papel genérico ou autodeclaração. Registrar concessões, recusas, aprovações, exceções, delegações, expirações e revogações. Revisar grants após mudança de função e periodicamente.
 
 ## 7. Testes e decisões do fundador
+
+Os princípios de separação entre gatilho de decisão e gatilho de operação, autonomia institucional e coordenação integradora pelo Departamento de Sinergia foram explicitamente confirmados pelo fundador em 31/10/2026. A matriz detalhada de alçadas e sua implementação continuam sujeitas a formalização por domínio.
 Testar fundador versus usuário comum; painel sem grant; grant expirado/revogado; escopo de outro território; autoelevação; subdelegação; autoaprovação; operação crítica sem confirmação; claims desatualizadas; revogação concorrente à execução.
 
 Fundador precisa ratificar matriz de alçadas, delegados e sucessão/contingência, autonomia de agentes, ações com dupla aprovação, exceções e periodicidade de revisão. Este texto não cria novos poderes nem substitui validação jurídica.
