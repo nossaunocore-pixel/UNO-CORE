@@ -33,10 +33,10 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 | Volume | Documento |
 |---------|-----------|
-| EOU-V09 | Catálogo Universal de Capacidades |
-| EOU-V10 | Catálogo Universal de Agentes |
-| EOU-V11 | Catálogo Universal de Ferramentas |
-| EOU-V12 | Catálogo Universal de Provedores |
+| EOU-V09 | [Catálogo Universal de Capacidades](V09-Catalogo-de-Capacidades/README.md) |
+| EOU-V10 | [Catálogo Universal de Agentes](V10-Catalogo-de-Agentes/README.md) |
+| EOU-V11 | [Catálogo Universal de Ferramentas](V11-Catalogo-de-Ferramentas/README.md) |
+| EOU-V12 | [Catálogo Universal de Provedores](V12-Catalogo-de-Provedores/README.md) |
 
 ---
 
@@ -44,11 +44,11 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 | Volume | Documento |
 |---------|-----------|
-| EOU-V13 | Banco de Dados Mestre |
-| EOU-V14 | APIs e Gateways |
-| EOU-V15 | Integrações |
-| EOU-V16 | Segurança e Auditoria |
-| EOU-V17 | Governança |
+| EOU-V13 | [Banco de Dados Mestre](V13-Banco-de-Dados-Mestre/README.md) |
+| EOU-V14 | [APIs e Gateways](V14-APIs-e-Gateways/README.md) |
+| EOU-V15 | [Integrações](V15-Integracoes/README.md) |
+| EOU-V16 | [Segurança e Auditoria](V16-Seguranca-e-Auditoria/README.md) |
+| EOU-V17 | [Governança](V17-Governanca/README.md) |
 
 ---
 
@@ -56,14 +56,14 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 | Volume | Documento |
 |---------|-----------|
-| EOU-V18 | Marketplace |
-| EOU-V19 | Industrial |
-| EOU-V20 | Infraestrutura Comunitária |
-| EOU-V21 | Educação e Capacitação |
-| EOU-V22 | Saúde |
-| EOU-V23 | Habitação |
-| EOU-V24 | Empregabilidade |
-| EOU-V25 | Financeiro |
+| EOU-V18 | [Marketplace](V18-Marketplace/README.md) |
+| EOU-V19 | [Industrial](V19-Industrial/README.md) |
+| EOU-V20 | [Infraestrutura Comunitária](V20-Infraestrutura-Comunitaria/README.md) |
+| EOU-V21 | [Educação e Capacitação](V21-Educacao-e-Capacitacao/README.md) |
+| EOU-V22 | [Saúde](V22-Saude/README.md) |
+| EOU-V23 | [Habitação](V23-Habitacao/README.md) |
+| EOU-V24 | [Empregabilidade](V24-Empregabilidade/README.md) |
+| EOU-V25 | [Financeiro](V25-Financeiro/README.md) |
 
 ---
 
@@ -71,13 +71,13 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 | Volume | Documento |
 |---------|-----------|
-| EOU-V26 | Identidade Digital |
-| EOU-V27 | Usuários e Perfis |
-| EOU-V28 | Entidades |
-| EOU-V29 | Projetos |
-| EOU-V30 | Eventos |
-| EOU-V31 | Fluxos |
-| EOU-V32 | Automações |
+| EOU-V26 | [Identidade Digital](V26-Identidade-Digital/README.md) |
+| EOU-V27 | [Usuários e Perfis](V27-Usuarios-e-Perfis/README.md) |
+| EOU-V28 | [Entidades](V28-Entidades/README.md) |
+| EOU-V29 | [Projetos](V29-Projetos/README.md) |
+| EOU-V30 | [Eventos](V30-Eventos/README.md) |
+| EOU-V31 | [Fluxos](V31-Fluxos/README.md) |
+| EOU-V32 | [Automações](V32-Automacoes/README.md) |
 
 ---
 
@@ -85,8 +85,8 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 | Volume | Documento |
 |---------|-----------|
-| EOU-V33 | Motor Cognitivo |
-| EOU-V34 | UNO CORE |
+| EOU-V33 | [Motor Cognitivo](V33-Motor-Cognitivo/README.md) |
+| EOU-V34 | [UNO CORE](V34-UNO-CORE/README.md) |
 
 ---
 
@@ -94,10 +94,10 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 | Volume | Documento |
 |---------|-----------|
-| EOU-V35 | Roadmap Oficial |
-| EOU-V36 | Registros de Decisões Arquiteturais (ADR) |
-| EOU-V37 | Glossário Oficial |
-| EOU-V38 | Padrões de Engenharia |
+| EOU-V35 | [Roadmap Oficial](V35-Roadmap-Oficial/README.md) |
+| EOU-V36 | [Registros de Decisões Arquiteturais (ADR)](V36-ADR/README.md) |
+| EOU-V37 | [Glossário Oficial](V37-Glossario-Oficial/README.md) |
+| EOU-V38 | [Padrões de Engenharia](V38-Padroes-de-Engenharia/README.md) |
 
 ---
 
@@ -105,21 +105,24 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 | Volume | Documento |
 |---------|-----------|
-| EOU-V39 | Documentação Jurídica |
-| EOU-V40 | Documentação Institucional |
+| EOU-V39 | [Documentação Jurídica](V39-Documentacao-Juridica/README.md) |
+| EOU-V40 | [Documentação Institucional](V40-Documentacao-Institucional/README.md) |
 
 ---
+
+# Estado documental da coleção
+
+> Em 31/10/2026, os volumes V09–V40 receberam expansão dos seus README.md para especificações técnicas iniciais (versão documental 0.2.0). Esses textos são bases estruturadas para revisão, decomposição em capítulos, diagramas, schemas, contratos e testes. Não representam aprovação final, implementação integral ou validação jurídica.
 
 # Organização da Coleção
 
 Cada volume da Engenharia Oficial possui estrutura própria, composta por:
 
-- README.md
-- Capítulos
-- Diagramas
-- Anexos
-- Referências
-- Histórico de evolução
+- README.md com especificação inicial estruturada
+- Capítulos especializados por domínio (a desenvolver)
+- Diagramas e modelos de dados
+- Anexos, contratos e referências
+- Histórico de evolução e decisões
 
 ---
 
