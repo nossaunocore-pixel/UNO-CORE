@@ -112,3 +112,60 @@ Apresentar receitas, custos e saldos do ano, além de acumulado 2020–2021. Nã
 
 ## 8. Fechamento e lições
 Registrar em que medida o segundo ano demonstra escala, resiliência, confiança e capacidade de execução. Identificar o que ainda não funciona e as condições para 2022.
+
+
+## 9. Linha histórica 2021 — marcos e contexto
+| Data/período | Acontecimento real | Relevância | Fonte |
+|---|---|---|---|
+| 17/01/2021 | Anvisa autoriza uso emergencial da CoronaVac e da Covishield; vacinação começa no país | Início da vacinação, com priorização e disponibilidade gradual | Anvisa |
+| 18/01/2021 | Início oficial da campanha nacional de vacinação contra COVID-19 | Novo eixo da resposta sanitária, dependente de oferta, logística e adesão | Ministério da Saúde |
+| 2021, ao longo do ano | Segunda onda/alta carga de COVID-19, com pressão sobre sistemas hospitalares; avanço progressivo da vacinação | Mortalidade, capacidade assistencial e desigualdade territorial permanecem centrais | Boletins epidemiológicos do Ministério da Saúde |
+| 2021, ao longo do ano | Retomada gradual de atividades presenciais e reabertura de segmentos econômicos | Recuperação desigual entre serviços presenciais, indústria, comércio e regiões | IBGE |
+| 11/01/2022 (divulgação) | IPCA de 2021 fecha em 10,06% | Inflação elevada no exercício, afetando especialmente custo de vida e renda real | IBGE |
+| 08/11/2023 (revisão) | IBGE revisa o crescimento do PIB de 2021 para 4,8% | Adotar a série revisada como referência comparável | IBGE |
+
+## 10. Brasil real — indicadores 2021 com fonte e vintage
+| Indicador | Resultado observado | Unidade / nota |
+|---|---:|---|
+| PIB real | +4,8% | Série revisada pelo IBGE em 2023; não usar a primeira estimativa de +4,6% como definitiva |
+| PIB nominal | R$ 9,0 trilhões | Valores correntes, série revisada |
+| PIB per capita | R$ 42.247,52 | Valores correntes |
+| Agropecuária / indústria / serviços | 0,0% / +5,0% / +4,8% | Valor adicionado, série revisada |
+| Consumo das famílias | +2,9% | Variação real |
+| Formação bruta de capital fixo | +12,9% | Variação real na série revisada |
+| IPCA | 10,06% | Inflação acumulada no ano |
+| Desocupação média anual | 13,2% | PNAD Contínua |
+| Informalidade média anual | 40,1% | PNAD Contínua; conceito população ocupada |
+| Nascimentos ocorridos em 2021 | 2.635.854 | Registro Civil, nascidos no ano e registrados até 1º trimestre de 2022 |
+| Óbitos ocorridos em 2021 | 1.786.347 | Registro Civil, ocorridos no ano e registrados até março de 2022 |
+| Pobreza / extrema pobreza | A extrair | Manter mesma linha de pobreza e fonte usada em 2020 |
+| Indústria física / comércio / serviços | A extrair | Não substituir Contas Nacionais por índices conjunturais sem explicar conceitos |
+
+Fontes-chave: IBGE Contas Nacionais revisadas; PNAD Contínua; IPCA; Estatísticas do Registro Civil 2021.
+
+## 11. Leitura do ano
+2021 foi um ano de recuperação macroeconômica e de persistência de forte pressão sanitária. O PIB cresceu 4,8% na série revisada, após a contração de 2020, com recuperação de indústria e serviços e agropecuária estável. A inflação de 10,06% e a permanência de desocupação elevada mostram que crescimento agregado não significou recomposição uniforme do poder de compra ou pleno retorno ao mercado de trabalho.
+
+O Registro Civil contabilizou 1.786.347 óbitos ocorridos em 2021, acima do patamar de 2020, e 2.635.854 nascimentos. Comparações de óbitos devem considerar o calendário da pandemia, vacinação, composição etária, atrasos de registro e bases distintas. A queda dos nascimentos continua tendência anterior à pandemia e não deve ser atribuída exclusivamente a ela.
+
+## 12. Contrafactual UNO — hipóteses testáveis em 2021
+- **Continuidade de apoio e orientação:** manter diretórios atualizados de vacinação, serviços de saúde, assistência social e canais públicos; medir alcance, tempo de localização e encaminhamentos confirmados.
+- **Reconexão econômica:** facilitar descoberta de trabalho, serviços e fornecedores locais durante reabertura; medir transações adicionais efetivamente concluídas e renda comprovada, sem atribuir à UNO toda recuperação do PIB.
+- **Retomada educacional:** mapear barreiras de acesso e conectar famílias a iniciativas de apoio; não presumir compensação de aprendizagem sem avaliação pedagógica.
+- **Coordenação territorial:** identificar demandas recorrentes e gargalos para informar gestores e organizações; a decisão e a prestação do serviço permanecem com as instituições competentes.
+
+Não atribuir à UNO a vacinação, as políticas de transferência de renda, a retomada macroeconômica ou a redução de mortalidade sem uma avaliação causal específica. A vacinação começou em janeiro de 2021 por decisão sanitária e logística pública; a UNO hipotética poderia apoiar informação e acesso, não produzir vacinas ou determinar prioridades clínicas.
+
+## 13. Fechamento financeiro 2021 — parâmetros
+O balanço deve incluir custo recorrente e expansão, custos de moderação e suporte, segurança e governança de dados, canais de atendimento e custos de integração. Receita própria, doações, contratos, recursos de terceiros intermediados e valor social estimado devem ser apresentados em categorias separadas. Valores públicos de auxílio e gasto sanitário não são caixa da UNO.
+
+## 14. Fontes consultadas
+1. IBGE — Contas Nacionais 2021, revisão para crescimento de 4,8%: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/38284-release-contas-nacionais
+2. IBGE — IPCA 2021, 10,06%: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/32724-ipca-sobe-0-73-em-dezembro-e-fecha-2021-em-10-06
+3. IBGE — PNAD Contínua, média anual de desocupação 13,2%: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/33037-pnad-continua-taxa-de-desocupacao-e-de-11-1-e-taxa-de-subutilizacao-de-24-3-no-trimestre-encerrado-em-dezembro
+4. IBGE — Registro Civil 2021: https://biblioteca.ibge.gov.br/visualizacao/periodicos/135/rc_2021_v48_informativo.pdf
+5. Anvisa — Linha do tempo da COVID-19 e autorização das vacinas: https://www.gov.br/anvisa/pt-br/comunicacao/campanhas/coronavirus/linha-do-tempo
+6. Ministério da Saúde — Boletins epidemiológicos COVID-19: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19
+
+## 15. Pendências e confiança
+Faltam extrair séries harmonizadas de óbitos por causa, nascimentos, pobreza, mortalidade infantil/materna, produção física setorial e indicadores de educação, violência, saneamento e conectividade. O cenário UNO segue qualitativo até definição de cobertura, adoção, capacidade de atendimento e orçamento. Confiança alta nos valores de PIB revisado, IPCA, desocupação e Registro Civil citados; impactos causais UNO ainda não quantificados.
