@@ -630,3 +630,10 @@ E pelo futuro que ajudamos a construir.
 Porque, acima de tudo...
 
 Nós somos NÓS.
+
+
+---
+
+## Mensagem de apresentação para o espaço institucional
+
+A versão preparada para leitura pública e fixação no espaço da NÓS S.A. está em [Carta de Apresentação do Fundador — NÓS S.A.](./CARTA-DE-APRESENTACAO-DO-FUNDADOR-NOS-SA-2026-10-31.md). Ela complementa esta Carta Fundadora canônica e não a substitui. A imagem original indicada pelo fundador como “Imagem 7: NÓS S.A. – Carta Fundadora” deverá acompanhar a apresentação após sua localização e associação ao repositório, sem recriação ou substituição.
