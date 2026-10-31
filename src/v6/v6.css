@@ -1153,3 +1153,13 @@
 .v7-workshop-safety svg{flex:0 0 auto;color:#67e4ff}
 @media(max-width:850px){.v7-workshop-layout{grid-template-columns:1fr}.v7-workshop-asset-list{max-height:260px}}
 @media(max-width:600px){.v7-workshop-studio{padding:14px}.v7-workshop-studio>header{flex-direction:column}.v7-workshop-form-grid{grid-template-columns:1fr}.v7-workshop-form-grid label.wide{grid-column:auto}}
+
+.v7-workshop-page{width:min(1240px,94vw);margin:0 auto;padding:28px 0 90px}
+.v7-workshop-page>header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.v7-workshop-page>header h1{margin:0 0 8px}
+.v7-workshop-page>header p{max-width:760px;color:#a9c2d4;line-height:1.6}
+.v7-workshop-footer{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:20px 0;color:#9cb6c7}
+.v7-workshop-footer p{display:flex;align-items:flex-start;gap:8px;max-width:780px;font-size:.78rem;line-height:1.5}
+.v7-workshop-footer p svg{flex:0 0 auto;color:#68e2fa}
+.v7-workshop-footer button{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid rgba(105,211,240,.22);border-radius:10px;background:rgba(5,28,48,.7);color:#cdefff;cursor:pointer}
+@media(max-width:720px){.v7-workshop-page{width:calc(100% - 24px)}.v7-workshop-page>header,.v7-workshop-footer{flex-direction:column;align-items:flex-start}}
