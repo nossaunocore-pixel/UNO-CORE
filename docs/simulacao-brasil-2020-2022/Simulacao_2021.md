@@ -231,3 +231,15 @@ Fonte: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-no
 Nos anos iniciais do ensino fundamental, a aprovação administrativa foi de 97,6% em 2021, depois de 98,5% em 2020; nos anos finais, a aprovação foi de 95,7% em 2021. A série exige cautela porque regras excepcionais e recomposição de fluxo escolar durante a pandemia alteraram aprovação/reprovação. Complementar com aprendizagem, frequência, abandono, participação e retorno presencial.
 Fonte: https://anuario.todospelaeducacao.org.br/2025/capitulo-2-ef-anos-iniciais.html
 
+
+
+## 19. Revisão retrospectiva de séries — vintage consultado em 2026
+
+A retrospectiva mais recente consultada do IBGE apresenta a taxa média anual de desocupação de 2021 em **14,0%** e a proxy de informalidade em **39,6%**. As divulgações originais utilizadas no fechamento contemporâneo indicavam 13,2% e 40,1%, respectivamente. A diferença é material, sobretudo para a leitura da recuperação do mercado de trabalho. Preservar os valores originais no registro histórico e usar os revisados apenas em uma série retrospectiva harmonizada.
+
+A contagem de óbitos do SIM também depende da versão da base. O Saúde Brasil 2023 registra 1.832.649 óbitos em 2021, enquanto publicação anterior do Saúde Brasil 2022 apresenta 1.823.586 para o mesmo ano. Não tratar a diferença como erro simples nem combinar contagens sem registrar extração, data e critérios de consolidação.
+
+Fontes:
+- IBGE, PNAD Contínua — retrospectiva até 2025: https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
+- Ministério da Saúde, Saúde Brasil 2023: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
+- Ministério da Saúde, Saúde Brasil 2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/anomalias-congenitas/saude-brasil-2022-analise-da-situacao-de-saude-e-uma-visao-integrada-sobre-os-fatores-de-risco-para-anomalias-congenitas/%40%40download/file/af_saude%20brasil_2022_analise_21mar23_isbn.pdf
