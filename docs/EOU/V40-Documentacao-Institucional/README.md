@@ -1,6 +1,6 @@
 # EOU-V40 — Documentação Institucional
 
-- Versão documental: 0.2.0 (README-base)
+- Versão documental: 0.3.0 (README-base)
 - Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
 - Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: estrutura institucional inicial; atos oficiais dependem de aprovação do fundador e formalização
@@ -49,4 +49,5 @@ Publicar objetivos, critérios, resultados e limitações, protegendo dados pess
 Formalizar missão institucional, estrutura societária e de governança, atos, políticas, identidade visual, porta-vozes, critérios do piloto e indicadores. Validar documentos legais no V39 antes de publicação.
 
 ## 11. Histórico
+0.3.0 — identificação explícita da NÓS S.A. como instituição de referência, distinção UNO CORE/NÓS S.A. e referências às cartas institucionais; 2026-10-31.
 0.2.0 — estrutura institucional inicial consolidada; 2026-10-31.
