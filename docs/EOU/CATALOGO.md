@@ -112,7 +112,7 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 # Estado documental da coleção
 
-> Em 31/10/2026, os volumes V09–V40 receberam expansão dos seus README.md para especificações técnicas iniciais (versão documental 0.2.0). Esses textos são bases estruturadas para revisão, decomposição em capítulos, diagramas, schemas, contratos e testes. Não representam aprovação final, implementação integral ou validação jurídica.
+> Em 31/10/2026, os volumes V09–V40 receberam especificações iniciais 0.2.0. Os volumes V09–V17 agora possuem um segundo artefato de aprofundamento técnico 0.3.0, em branch de revisão, com contratos de domínio, modelos lógicos, fluxos, controles, testes e decisões abertas. A nova camada não substitui os README iniciais nem representa aprovação final ou implementação integral.
 
 # Organização da Coleção
 
@@ -139,3 +139,4 @@ Nenhuma decisão estrutural deverá existir sem documentação correspondente na
 A coleção EOU possui caráter evolutivo.
 
 Novas versões poderão ampliar os volumes existentes preservando sua compatibilidade histórica e arquitetural.
+\n\n## Aprofundamento técnico V09–V17 (31/10/2026)\n\nCada volume V09–V17 possui um arquivo ESPECIFICACAO-TECNICA.md complementar, revisão documental 0.3.0. Os documentos estão na branch `eou-v09-v17-deepening-2026-10-31` para revisão; a branch main permanece inalterada.\n
