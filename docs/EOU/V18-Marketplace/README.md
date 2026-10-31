@@ -1,6 +1,8 @@
 # EOU-V18 — Marketplace
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado; catálogo público parcial no V7
 - Relacionados: V09 Capacidades, V12 Provedores, V15 Integrações, V19 Industrial, V21 Educação, V24 Empregabilidade, V25 Financeiro, V30 Eventos
 
