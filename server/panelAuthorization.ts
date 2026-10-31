@@ -1,18 +1,8 @@
 import { getAdminServices, verifyFirebaseRequest } from './firebaseAdmin';
-
-export const PANEL_SCOPES = [
-  'uno.panel.master.access',
-  'uno.panel.administrative.access',
-  'uno.panel.general_coordination.access',
-  'uno.panel.legal.access',
-  'uno.panel.accounting_finance.access',
-  'uno.panel.support.access'
-] as const;
-
-export type PanelScope = typeof PANEL_SCOPES[number];
+import { PANEL_SCOPE_KEYS, type PanelScope } from '../src/domain/panels';
 
 export function isPanelScope(value: string): value is PanelScope {
-  return (PANEL_SCOPES as readonly string[]).includes(value);
+  return (PANEL_SCOPE_KEYS as readonly string[]).includes(value);
 }
 
 /** Verifies signed claims and the active Firestore assignment on the server. */
