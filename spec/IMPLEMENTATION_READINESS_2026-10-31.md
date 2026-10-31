@@ -67,7 +67,9 @@ Projeto UNO CORE: ativo e saudável, região `us-east-1`.
 ### Migrações preparadas, não aplicadas
 1. `supabase/migrations/20261031170000_firebase_idu_text_identity.sql` — troca referências de propriedade UUID por IDU textual, atualiza RLS e restringe escrita por coluna. Contém preflight que aborta se tabelas afetadas não estiverem vazias.
 2. `supabase/migrations/20261031171000_public_chat_rate_limits.sql` — schema privado e quota por usuário anônimo.
-3. `supabase/migrations/20261031172000_public_chat_global_cap.sql` — limite global diário configurável e fail-closed.
+3. `supabase/migrations/20261031172000_public_chat_global_cap.sql` — limite global diário configurável e fail-closed; RPC público executável somente por service_role.
+4. `supabase/migrations/20261031173000_public_content_read_models.sql` — read models públicos para instituições, catálogo, comunidade, eventos e participação, com SELECT limitado a conteúdo publicado e escrita restrita ao backend.
+5. `supabase/migrations/20261031174000_workshop_asset_versioning.sql` — assets privados da Oficina, snapshots imutáveis, auditoria e RPCs de criação/edição/clone/submissão.
 
 **Não aplicar** até confirmar o Firebase Project ID `uno-core-a9125`, integração Third-Party Auth, estado das tabelas e teste de RLS. As migrations são artefatos de preparação, não prova de compatibilidade validada.
 
@@ -106,10 +108,10 @@ Há catálogo documental de teste e chaves de teste em Preview/Development, mas 
 - Completar especificações-base dos volumes sem inventar decisões.
 - Expandir testes automatizados e validação de build/Preview.
 - Completar contratos de domínio de painéis, produtos, serviços e áreas de experiência.
-- Preparar tabelas públicas com RLS, após fechar o modelo de dados e os critérios de publicação.
-- Implementar persistência e contratos backend para Comunidade, Participação, Eventos, Vitrine e Serviços.
-- Completar a Oficina com versionamento, diff, revisão, aprovação, rollback e trilha de auditoria.
-- Implementar RBAC/escopos no servidor para cada painel; as definições de UI não bastam.
+- Aplicar e testar as migrations de read models públicos em Supabase de teste; inserir conteúdo aprovado por backend.
+- Conectar os fluxos de publicação/moderação para Comunidade, Participação, Eventos, Vitrine e Serviços.
+- Completar a Oficina com diff visual, aprovação, evidência de testes, rollback e ativação controlada; drafts/versionamento/auditoria já estão preparados.
+- Conectar cada painel a APIs operacionais específicas; escopos de acesso já são verificados no servidor, mas os dados/ações dos painéis ainda não estão integrados.
 
 ## 9. Bloqueios que dependem do fundador ou de configuração de conta
 
@@ -134,8 +136,8 @@ Só marcar cada item como implementado, integrado, testado ou liberado depois de
 - Painel Mestre ganhou diretório de painéis e interface de atribuição exclusiva do fundador.
 - APIs `/api/admin/panel-access` e `/api/identity/panel-access` verificam atribuições. O servidor exige Google verificado, IDU, escopo e registro ativo no Firestore; fundador é reconhecido somente quando UID corresponde a `UNO_FOUNDER_UID`.
 - O Stripe foi modelado como área operacional dentro do Painel Contábil e Financeiro, não como painel independente.
-- Testes nativos Node para contratos de domínio foram adicionados; CI executa testes e build.
-- Migration adicional de read models públicos: `20261031173000_public_content_read_models.sql`. O conjunto atual de migrations preparadas é de quatro arquivos (IDU, quota por usuário, limite global e conteúdo público).
+- Testes nativos Node para contratos de domínio foram adicionados; CI executa testes e build, com sincronização do lockfile na branch V7.
+- Migrations adicionais de read models públicos e Oficina: `20261031173000_public_content_read_models.sql` e `20261031174000_workshop_asset_versioning.sql`. O conjunto atual é de cinco migrations (IDU, quota por usuário, limite global, conteúdo público e Oficina).
 - As telas de Casa, Emprego e Renda, Carteira e Serviços Ativos são shells transparentes; não exibem saldos, vínculos, contratos ou serviços fictícios.
 - As rotas públicas estão preparadas para leitura Supabase; a migration de read models não foi aplicada, então ainda não há dados publicados no banco.
 
