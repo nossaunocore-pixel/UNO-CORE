@@ -38,3 +38,9 @@ Contratar/reunir assessoria jurídica, definir estrutura societária e papéis, 
 
 ## 11. Histórico
 0.2.0 — matriz jurídica inicial estruturada; 2026-10-31.
+
+
+## Relação com o Modelo Econômico Universal
+
+A documentação jurídica deve enquadrar cada fluxo concreto antes de sua ativação: emprego, prestação PF/PJ, terceirização, venda direta, marketplace, intermediação, doação, projeto subsidiado e pagamentos. A matriz RJTTF-UNO-001 é preparatória e não constitui parecer. A destinação territorial de 50% do lucro e a futura estruturação societária exigem revisão jurídica e contábil; a inauguração não autoriza automaticamente oferta pública de ações. Ver [Adendo MEU-UNO-001](../ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md).
+
