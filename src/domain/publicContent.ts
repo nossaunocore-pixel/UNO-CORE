@@ -6,6 +6,7 @@ export interface PublicInstitution {
   slug: string;
   name: string;
   institution_type: string;
+  unit_type: 'independent' | 'matrix' | 'branch' | 'unit';
   summary: string;
   public_profile: Record<string, unknown>;
   published_at: string;
