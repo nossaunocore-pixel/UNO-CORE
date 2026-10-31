@@ -38,3 +38,9 @@ Definir escopo do piloto, categorias profissionais, verificação, modelo de int
 
 ## 11. Histórico
 0.2.0 — domínio profissional e de renda estruturado; 2026-10-31.
+
+
+## Relação com o Modelo Econômico e Regime de Trabalho
+
+O domínio deve diferenciar emprego direto, prestação independente PF/PJ, terceirização e intermediação. O nome do contrato não prevalece sobre a realidade da prestação. Salários, encargos e obrigações do empregador entram na apuração operacional conforme enquadramento; retenções tributárias devem ser classificadas segundo responsável e hipótese legal. Ver [RJTTF-UNO-001](../REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md) e [Adendo MEU-UNO-001](../ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md).
+
