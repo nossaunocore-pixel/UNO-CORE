@@ -1,6 +1,6 @@
 # EOU-V11 — Catálogo Universal de Ferramentas
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado
 - Relacionados: V09 Capacidades, V10 Agentes, V12 Provedores, V14 APIs, V15 Integrações, V16 Segurança, V17 Governança, V32 Automações
 
