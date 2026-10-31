@@ -142,3 +142,63 @@ Responder, com evidência e limites:
 
 ## 10. Status do documento
 Este arquivo é o caderno-mestre de consolidação. Os campos marcados como pendentes exigem pesquisa histórica, validação de fontes e modelagem antes de qualquer conclusão quantitativa. Nenhum resultado contrafactual foi antecipado ou fabricado.
+
+## 5. Linha de base consolidada — principais indicadores observados
+Os valores abaixo usam divulgações revisadas quando disponíveis. PIB de 2020–2022 segue a revisão do Sistema de Contas Nacionais; emprego segue PNAD Contínua; óbitos/nascimentos seguem Registro Civil. Não misturar conceitos ou vintages.
+
+| Indicador | 2020 | 2021 | 2022 | Fonte / observação |
+|---|---:|---:|---:|---|
+| PIB real | -3,3% | +4,8% | +3,0% | IBGE, série revisada |
+| PIB nominal | R$ 7,6 tri | R$ 9,0 tri | R$ 10,1 tri | IBGE, valores correntes, série revisada |
+| PIB per capita nominal | R$ 35.935,74 | R$ 42.247,52 | R$ 47.802,02 | IBGE |
+| Agropecuária, valor adicionado | +4,2% | 0,0% | -1,1% | IBGE, Contas Nacionais revisadas |
+| Indústria, valor adicionado | -3,0% | +5,0% | +1,5% | IBGE, Contas Nacionais revisadas |
+| Serviços, valor adicionado | -3,7% | +4,8% | +4,3% | IBGE, Contas Nacionais revisadas |
+| IPCA | 4,52% | 10,06% | 5,79% | IBGE |
+| Desocupação média anual | 13,5% | 13,2% | 9,3% | IBGE, PNAD Contínua |
+| Informalidade média anual | 38,8% | 40,1% | 39,6% | IBGE, PNAD Contínua |
+| Nascimentos ocorridos | 2.678.992 | 2.635.854 | 2.542.298 | IBGE, Registro Civil |
+| Óbitos ocorridos | 1.510.068* | 1.786.347 | 1.504.763 | IBGE, Registro Civil; *2020 total com sexo/idade conhecidos, comparabilidade requer cautela |
+
+## 6. Leitura do ciclo de três anos
+O período contém três fases distintas: (1) choque sanitário e econômico de 2020; (2) recuperação com continuidade da pandemia e inflação muito elevada em 2021; (3) expansão econômica e forte recomposição da ocupação em 2022, ainda com informalidade e perda de rendimento médio real.
+
+O PIB real, na série revisada, caiu 3,3% em 2020, cresceu 4,8% em 2021 e 3,0% em 2022. A soma simples das taxas anuais não é a variação acumulada; o cálculo correto é composto: (1-0,033) × (1+0,048) × (1+0,030) - 1. A recuperação agregada não demonstra que famílias, setores ou territórios recuperaram perdas na mesma proporção.
+
+A inflação foi mais intensa em 2021 (10,06%) e desacelerou em 2022 (5,79%). A desocupação média recuou de 13,5% em 2020 para 9,3% em 2022, mas a informalidade permaneceu próxima de 40%. O Registro Civil indica mortalidade excepcionalmente elevada em 2021, seguida de recuo em 2022; a atribuição causal exige análise de causas, idade, vacinação, excesso de mortalidade e qualidade dos registros.
+
+## 7. Separação de causalidade — matriz obrigatória
+| Resultado observado | Explicações históricas concorrentes | Possível contribuição UNO a testar |
+|---|---|---|
+| Recuperação do PIB em 2021–2022 | Reabertura, política fiscal e monetária, demanda externa, preços de commodities, investimento, normalização de atividades | Redução de fricções e custo de busca para agentes alcançados; não atribuir crescimento agregado sem escala e método |
+| Queda da desocupação em 2022 | Retomada de atividades, ciclo econômico, políticas públicas e mudanças setoriais | Conexões adicionais entre trabalhadores e demanda; comprovar colocação, renda e duração |
+| Queda de óbitos em 2022 frente a 2021 | Vacinação, evolução epidemiológica, imunidade, variantes, sazonalidade e composição etária | Informação e encaminhamento que possam melhorar acesso; não atribuir variação nacional de mortalidade sem desenho epidemiológico |
+| Mudança em pobreza e renda | Auxílio, emprego, inflação, composição domiciliar, transferências e ciclo econômico | Melhor acesso a serviços/oportunidades; medir renda líquida adicional e benefício efetivamente recebido |
+| Variação setorial | Choques de oferta/demanda, restrições, preços relativos, comércio exterior e clima | Melhor conexão territorial e utilização de capacidade; estimar apenas efeitos marginais |
+
+## 8. Protocolo para o contrafactual quantitativo
+Para cada resultado projetado:
+1. Definir população elegível e território de implantação.
+2. Estimar adesão e uso ativo por ano, com curva de crescimento e abandono.
+3. Medir cobertura real dos serviços e parceiros disponíveis.
+4. Estimar taxa de encaminhamento concluído e taxa de resolução confirmada.
+5. Comparar com grupo/território de referência quando possível; considerar diferenças prévias.
+6. Estimar impacto incremental, intervalo de confiança ou faixa de incerteza.
+7. Testar cenários e sensibilidade.
+8. Só então extrapolar; não projetar automaticamente um resultado local para o PIB nacional.
+
+## 9. Fechamento consolidado — status financeiro
+Os quatro cadernos ainda não contêm orçamento bottom-up validado. Não há base para declarar saldo positivo, retorno financeiro ou economia efetiva. A próxima versão deve construir um orçamento por capacidade operacional (equipe, tecnologia, suporte, segurança, moderação, implantação territorial, comunicação, jurídico/compliance e avaliação), com custos unitários e quantidades justificadas. Benefícios sociais devem ser relatados separadamente de caixa.
+
+## 10. Fontes principais da consolidação
+- IBGE — Contas Nacionais 2020: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35349-com-servicos-afetados-pela-pandemia-pib-de-2020-cai-3-3
+- IBGE — Contas Nacionais 2021: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/38284-release-contas-nacionais
+- IBGE — Contas Nacionais 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/41763-pib-cresce-3-0-e-totaliza-r-10-trilhoes-em-2022
+- IBGE — PNAD 2022 e séries de trabalho: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36336-pnad-continua-em-2022-taxa-media-anual-de-desocupacao-foi-de-9-3-enquanto-de-taxa-de-subutilizacao-foi-de-20-8
+- IBGE — Registro Civil: https://educa.ibge.gov.br/jovens/materias-especiais/22357-especial-registro-civil.html
+- IBGE — IPCA 2020, 2021 e 2022: releases anuais listados nos cadernos correspondentes.
+
+## 11. Conclusão provisória do estudo
+O período oferece um teste severo para a hipótese UNO: uma crise sanitária, perda de renda, desorganização de serviços, retomada desigual, inflação elevada e posterior recuperação do emprego. A hipótese mais defensável, ainda não quantificada, é que uma engenharia de orquestração poderia reduzir custos de informação, busca, coordenação e encaminhamento em redes locais. Não há evidência suficiente, nesta etapa, para afirmar quanto teria alterado PIB, mortalidade, pobreza ou desemprego no agregado nacional.
+
+A conclusão final dependerá de três provas: (a) escala de adoção factível; (b) resultados adicionais verificáveis em comparação com o que já ocorreu; (c) custo total e sustentabilidade. A simulação deverá considerar também falhas, exclusão digital, dados desatualizados, fraude, privacidade, capacidade insuficiente de parceiros e risco de concentração de poder.
