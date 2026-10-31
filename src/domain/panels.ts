@@ -4,6 +4,17 @@
  * who can enter or perform each operation.
  */
 
+export const PANEL_SCOPE_KEYS = [
+  'uno.panel.master.access',
+  'uno.panel.administrative.access',
+  'uno.panel.general_coordination.access',
+  'uno.panel.legal.access',
+  'uno.panel.accounting_finance.access',
+  'uno.panel.support.access'
+] as const;
+
+export type PanelScope = typeof PANEL_SCOPE_KEYS[number];
+
 export type PanelId =
   | 'master'
   | 'administrative'
@@ -22,7 +33,7 @@ export interface PanelDefinition {
   id: PanelId;
   title: string;
   purpose: string;
-  requiredScope: string;
+  requiredScope: PanelScope;
   defaultAccess: 'deny';
   responsibleDomains: readonly string[];
   operationalRoles: readonly string[];
