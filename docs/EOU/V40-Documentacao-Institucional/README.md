@@ -12,6 +12,14 @@ Organizar a identidade, propósito, história, estrutura, compromissos, governan
 ## 2. Identidade e missão
 A UNO CORE é concebida como camada de orquestração universal que conecta informação, acesso e oportunidades. Sua proposta é contribuir para que pessoas sejam ouvidas, compreendidas, direcionadas e nutridas; conectar pessoas de um território para identificar necessidades e recursos e apoiar melhor gestão local por dados e participação.
 
+## 2.1. NÓS S.A. — instituição de referência
+
+**NÓS S.A.** é a denominação institucional canônica da empresa e instituição de referência do ecossistema UNO. A grafia deve ser preservada exatamente assim em documentos e comunicações institucionais.
+
+A NÓS S.A. possui identidade, administração, responsabilidades e ambiente institucional próprios. Sua presença física e sua estrutura organizacional são parte da concepção institucional definida pelo fundador; atos constitutivos, representação legal, endereço, poderes e situação registral devem ser comprovados e mantidos no V39 antes de qualquer afirmação jurídica pública específica.
+
+A NÓS S.A. terá integração ampliada com os componentes UNO por ser a instituição de referência e a entidade com maior necessidade de conexões institucionais. Isso não significa propriedade do UNO CORE, poder irrestrito sobre a plataforma ou autoridade automática sobre outras instituições.
+
 ## 3. Princípios institucionais
 Integridade, segurança, rastreabilidade, autorização humana, inclusão, dignidade, transparência, responsabilidade, participação e evolução baseada em evidências. Nenhum princípio deve ser comunicado como certificação ou resultado já alcançado sem comprovação.
 
