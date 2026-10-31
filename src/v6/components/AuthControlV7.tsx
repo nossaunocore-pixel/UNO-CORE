@@ -1,10 +1,7 @@
-import React, { FormEvent, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
-  createUserWithEmailAndPassword,
   GoogleAuthProvider,
   onAuthStateChanged,
-  sendEmailVerification,
-  signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
   type User
@@ -14,9 +11,6 @@ import { auth, firebaseConfigurationReady } from '../../services/firebase';
 export function AuthControlV7() {
   const [user, setUser] = useState<User | null>(null);
   const [open, setOpen] = useState(false);
-  const [mode, setMode] = useState<'signin' | 'signup'>('signin');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState('');
   const [error, setError] = useState('');
@@ -28,45 +22,16 @@ export function AuthControlV7() {
 
   const accountUser = user?.isAnonymous ? null : user;
 
-  async function submitEmail(event: FormEvent) {
-    event.preventDefault();
-    if (!auth || busy) return;
-    setBusy(true);
-    setError('');
-    setNotice('');
-    try {
-      if (mode === 'signup') {
-        const credential = await createUserWithEmailAndPassword(auth, email.trim(), password);
-        await sendEmailVerification(credential.user);
-        await signOut(auth);
-        setNotice('Conta criada. Enviamos um link de confirmação para seu e-mail. Confirme-o antes de entrar.');
-        setMode('signin');
-      } else {
-        const credential = await signInWithEmailAndPassword(auth, email.trim(), password);
-        if (!credential.user.emailVerified) {
-          await sendEmailVerification(credential.user);
-          await signOut(auth);
-          setNotice('Seu e-mail ainda não foi confirmado. Enviamos um novo link de confirmação.');
-        } else {
-          setNotice('Sessão autenticada. A identidade UNO será validada ao acessar serviços protegidos.');
-          setOpen(false);
-        }
-      }
-    } catch (caught) {
-      setError(caught instanceof Error ? caught.message : 'Não foi possível autenticar.');
-    } finally {
-      setBusy(false);
-    }
-  }
-
   async function signInGoogle() {
-    if (!auth || busy) return;
+    if (!auth || busy || !firebaseConfigurationReady) return;
     setBusy(true);
     setError('');
     setNotice('');
     try {
-      await signInWithPopup(auth, new GoogleAuthProvider());
-      setOpen(false);
+      const provider = new GoogleAuthProvider();
+      provider.setCustomParameters({ prompt: 'select_account' });
+      await signInWithPopup(auth, provider);
+      setNotice('Conta Google autenticada. Estamos validando sua Identidade UNO para liberar os ambientes internos.');
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : 'Não foi possível entrar com Google.');
     } finally {
@@ -76,8 +41,13 @@ export function AuthControlV7() {
 
   async function leaveAccount() {
     if (!auth) return;
-    await signOut(auth);
-    setNotice('Você saiu da sua conta.');
+    try {
+      await signOut(auth);
+      setNotice('Você saiu da sua conta.');
+      setOpen(false);
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : 'Não foi possível encerrar a sessão.');
+    }
   }
 
   return (
@@ -85,8 +55,8 @@ export function AuthControlV7() {
       <button
         type="button"
         className="v6-account-trigger"
-        onClick={() => setOpen(true)}
-        aria-label={accountUser ? 'Abrir opções da conta' : 'Entrar ou criar conta'}
+        onClick={() => { setOpen(true); setError(''); }}
+        aria-label={accountUser ? 'Abrir opções da conta' : 'Entrar com Google'}
       >
         {accountUser ? (accountUser.displayName || accountUser.email || 'Minha conta') : 'Entrar'}
       </button>
@@ -116,7 +86,7 @@ export function AuthControlV7() {
               <div>
                 <small style={{ color: '#67e8f9' }}>IDENTIDADE UNO</small>
                 <h2 id="uno-auth-title" style={{ margin: '6px 0 0', fontSize: 22 }}>
-                  {accountUser ? 'Sua conta' : mode === 'signin' ? 'Entrar na UNO' : 'Criar conta'}
+                  {accountUser ? 'Sua conta' : 'Conheça o UNO'}
                 </h2>
               </div>
               <button type="button" onClick={() => setOpen(false)} aria-label="Fechar" style={{ padding: 8 }}>✕</button>
@@ -130,53 +100,34 @@ export function AuthControlV7() {
 
             {accountUser ? (
               <div style={{ marginTop: 20 }}>
-                <p>{accountUser.email || accountUser.phoneNumber || 'Conta autenticada'}</p>
+                <p>{accountUser.displayName || accountUser.email || 'Conta Google autenticada'}</p>
                 <p style={{ color: '#94a3b8', fontSize: 13 }}>
-                  {accountUser.emailVerified ? 'E-mail confirmado' : 'E-mail aguardando confirmação'}
+                  {accountUser.emailVerified ? 'E-mail Google verificado' : 'Aguardando verificação da conta'}
                 </p>
                 <button type="button" onClick={leaveAccount} style={{ marginTop: 12, padding: '10px 14px' }}>
                   Sair da conta
                 </button>
               </div>
             ) : (
-              <>
-                <form onSubmit={submitEmail} style={{ display: 'grid', gap: 12, marginTop: 20 }}>
-                  <label style={{ display: 'grid', gap: 6 }}>
-                    <span style={{ fontSize: 13 }}>E-mail</span>
-                    <input
-                      type="email" required autoComplete="email" value={email}
-                      onChange={(event) => setEmail(event.target.value)}
-                      style={{ padding: 12, borderRadius: 10, color: '#0f172a' }}
-                    />
-                  </label>
-                  <label style={{ display: 'grid', gap: 6 }}>
-                    <span style={{ fontSize: 13 }}>Senha</span>
-                    <input
-                      type="password" required minLength={8}
-                      autoComplete={mode === 'signin' ? 'current-password' : 'new-password'}
-                      value={password} onChange={(event) => setPassword(event.target.value)}
-                      style={{ padding: 12, borderRadius: 10, color: '#0f172a' }}
-                    />
-                  </label>
-                  <button type="submit" disabled={busy || !firebaseConfigurationReady} style={{ padding: 12, borderRadius: 10 }}>
-                    {busy ? 'Aguarde…' : mode === 'signin' ? 'Entrar com e-mail' : 'Criar conta'}
-                  </button>
-                </form>
-                <button type="button" onClick={signInGoogle} disabled={busy || !firebaseConfigurationReady}
-                  style={{ width: '100%', padding: 12, marginTop: 10, borderRadius: 10 }}>
-                  Continuar com Google
+              <div style={{ marginTop: 20 }}>
+                <p style={{ color: '#cbd5e1', lineHeight: 1.6 }}>
+                  Entre com sua conta Google para acessar os ambientes internos. A autenticação é gratuita e não representa adesão a um plano.
+                </p>
+                <button
+                  type="button"
+                  onClick={signInGoogle}
+                  disabled={busy || !firebaseConfigurationReady}
+                  style={{ width: '100%', padding: 12, marginTop: 12, borderRadius: 10 }}
+                >
+                  {busy ? 'Conectando…' : 'Continuar com Google'}
                 </button>
-                <button type="button" onClick={() => { setMode(mode === 'signin' ? 'signup' : 'signin'); setError(''); setNotice(''); }}
-                  style={{ marginTop: 14, color: '#67e8f9' }}>
-                  {mode === 'signin' ? 'Ainda não tem conta? Criar conta' : 'Já tem conta? Entrar'}
-                </button>
-              </>
+              </div>
             )}
 
             {notice && <p role="status" style={{ color: '#86efac', marginTop: 14 }}>{notice}</p>}
             {error && <p role="alert" style={{ color: '#fca5a5', marginTop: 14 }}>{error}</p>}
             <p style={{ color: '#94a3b8', fontSize: 12, lineHeight: 1.5, marginTop: 18 }}>
-              O acesso a dados e funções protegidas depende de validação no servidor. A aparência deste componente é provisória e aguarda a referência visual oficial.
+              A conta permite vincular sua Identidade UNO e suas interações. O uso de capacidades pagas, externas ou restritas depende de adesão, autorização e disponibilidade. Consulte os controles de privacidade da plataforma.
             </p>
           </section>
         </div>
