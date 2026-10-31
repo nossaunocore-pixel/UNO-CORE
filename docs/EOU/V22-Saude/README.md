@@ -1,6 +1,8 @@
 # EOU-V22 — Saúde
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho de domínio; não constitui serviço médico habilitado
 - Relacionados: V13 Dados, V16 Segurança, V18 Marketplace, V20 Infraestrutura Comunitária, V23 Habitação, V24 Empregabilidade, V27 Perfis, V39 Jurídico
 
