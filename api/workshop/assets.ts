@@ -25,7 +25,7 @@ function validateDefinition(value: unknown): value is Record<string, unknown> {
   if (serialized.length > 60000) return false;
 
   const blockedKey = /(secret|token|password|private.?key|api.?key|service.?role|authorization|credential)/i;
-  const forbiddenValue = /(sk-(live|test|proj)-[A-Za-z0-9_-]{12,}|whsec_[A-Za-z0-9]{12,}|-----BEGIN (RSA |EC )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{20,})/;
+  const forbiddenValue = /(sk_(live|test)_[A-Za-z0-9]{12,}|sk-(live|test|proj)-[A-Za-z0-9_-]{12,}|rk_(live|test)_[A-Za-z0-9]{12,}|whsec_[A-Za-z0-9]{12,}|AIza[0-9A-Za-z_-]{20,}|xox[baprs]-[A-Za-z0-9-]{16,}|gh[pousr]_[A-Za-z0-9]{20,}|-----BEGIN (RSA |EC )?PRIVATE KEY-----)/;
 
   const inspect = (node: unknown): boolean => {
     if (Array.isArray(node)) return node.every(inspect);
