@@ -1,6 +1,6 @@
 # EOU-V10 — Catálogo Universal de Agentes
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado — requer revisão
 - Relacionados: V03 MUE, V04 EVA, V05 Oficina Mestre, V07 CCM, V09 Capacidades, V11 Ferramentas, V12 Provedores, V16 Segurança, V17 Governança, V33 Motor Cognitivo
 
