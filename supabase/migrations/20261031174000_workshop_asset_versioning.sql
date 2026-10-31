@@ -85,6 +85,34 @@ grant all on public.workshop_assets, public.workshop_asset_versions, public.work
   to service_role;
 
 
+
+create or replace function public.prevent_workshop_append_only_mutation()
+returns trigger
+language plpgsql
+set search_path = ''
+as $function$
+begin
+  raise exception 'WORKSHOP_APPEND_ONLY_RECORD';
+end;
+$function$;
+
+revoke all on function public.prevent_workshop_append_only_mutation()
+  from public, anon, authenticated;
+grant execute on function public.prevent_workshop_append_only_mutation()
+  to service_role;
+
+drop trigger if exists workshop_asset_versions_append_only
+  on public.workshop_asset_versions;
+create trigger workshop_asset_versions_append_only
+  before update or delete on public.workshop_asset_versions
+  for each row execute function public.prevent_workshop_append_only_mutation();
+
+drop trigger if exists workshop_audit_events_append_only
+  on public.workshop_audit_events;
+create trigger workshop_audit_events_append_only
+  before update or delete on public.workshop_audit_events
+  for each row execute function public.prevent_workshop_append_only_mutation();
+
 create or replace function public.create_workshop_asset(
   p_asset_type text,
   p_origin text,
