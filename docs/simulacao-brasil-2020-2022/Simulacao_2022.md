@@ -232,3 +232,14 @@ Fonte: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agenc
 Nos anos iniciais, a aprovação caiu para 96,0% em 2022, após 98,5% em 2020 e 97,6% em 2021. Nos anos finais, a aprovação foi 92,1% em 2022, após 97,8% em 2020 e 95,7% em 2021. A elevação de reprovação em 2022 pode refletir retorno a critérios mais regulares de avaliação, além de dificuldades de aprendizagem acumuladas. Aprovação e abandono não substituem avaliação de aprendizagem.
 Fonte: https://anuario.todospelaeducacao.org.br/2025/capitulo-2-ef-anos-iniciais.html
 
+
+## 19. Precisão dos indicadores de saneamento
+
+Para a PNAD Contínua 2022, os percentuais de domicílios com rede geral de esgoto ou fossa ligada à rede geral foram: Brasil 69,5%; Norte 31,1%; Nordeste 50,1%; Sudeste 89,1%; Sul 69,8%; Centro-Oeste 61,2%. Em áreas urbanas, Norte 38,0% e Sudeste 93,9%. Esta é a série domiciliar da PNAD, não a proporção de pessoas do Censo.
+Fonte: https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102004_informativo.pdf
+
+Pelo Censo 2022, 82,9% da população vivia em domicílios cuja principal fonte de água era a rede geral; 62,5% tinha coleta de esgoto e 75,7% tinha esgotamento por rede ou fossa séptica. São conceitos e denominadores diferentes, portanto devem aparecer em linhas separadas.
+Fonte: https://educa.ibge.gov.br/jovens/conheca-o-brasil/populacao/22064-caracteristicas-dos-domicilios-censo-2022.html
+
+A PNAD não disponibilizou parte das estatísticas de características gerais dos domicílios em 2020 e 2021, devido à redução da taxa de resposta e dificuldades de mensuração na primeira visita durante a pandemia. Não interpolar esses anos. Fonte: https://www.ibge.gov.br/estatisticas/sociais/populacao/17270-pnad-continua.html
+
