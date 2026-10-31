@@ -259,7 +259,7 @@ Fontes:
 - https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
 
 ### Saneamento e desigualdade de infraestrutura
-Em 2022, 85,5% dos domicílios tinham rede geral como principal forma de abastecimento de água e 69,5% tinham acesso à rede geral de esgoto ou fossa séptica ligada à rede. A cobertura de rede de esgoto era 36,6% no Norte, 44,4% no Nordeste e 85,5% no Sudeste. O indicador permite identificar desigualdade estrutural, mas não autoriza atribuir à UNO a construção ou ampliação de infraestrutura.
+Em 2022, 85,5% dos domicílios tinham rede geral como principal forma de abastecimento de água e 69,5% tinham acesso à rede geral de esgoto ou fossa séptica ligada à rede. A cobertura domiciliar por rede geral ou fossa ligada à rede geral era 31,1% no Norte, 50,1% no Nordeste e 89,1% no Sudeste (PNAD Contínua 2022). O indicador permite identificar desigualdade estrutural, mas não autoriza atribuir à UNO a construção ou ampliação de infraestrutura.
 Fonte: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
 
 ## 15. Modelo explícito de adoção — estrutura de cenários sem percentuais inventados
@@ -393,3 +393,19 @@ A hipótese mais testável neste eixo não é “a UNO teria reduzido o Gini nac
 
 Para testar qualquer efeito distributivo, medir renda antes/depois, composição familiar, transferências, situação de trabalho e grupo de comparação, com proteção de dados e auditoria independente. Não usar dados sensíveis para ranquear ou restringir acesso.
 
+
+## 19. Correção metodológica e aprofundamento do saneamento
+
+### Correção de percentuais regionais
+A redação anterior que atribuía 36,6% ao Norte, 44,4% ao Nordeste e 85,5% ao Sudeste não correspondia à tabela da PNAD Contínua 2022 utilizada. Os valores corretos para domicílios com rede geral de esgoto ou fossa séptica ligada à rede geral são: Brasil 69,5%; Norte 31,1%; Nordeste 50,1%; Sudeste 89,1%; Sul 69,8%; Centro-Oeste 61,2%. Em áreas urbanas, a diferença ia de 38,0% no Norte a 93,9% no Sudeste.
+Fonte: IBGE, PNAD Contínua — Características gerais dos domicílios e dos moradores 2022: https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102004_informativo.pdf
+
+O Censo Demográfico 2022 mede outra unidade e outro conceito: 82,9% da população morava em domicílios cuja principal fonte era rede geral de distribuição de água; 62,5% da população tinha coleta de esgoto; 75,7% tinha esgotamento por rede ou fossa séptica. Esses indicadores populacionais do Censo não devem ser misturados aos percentuais de domicílios da PNAD.
+Fonte: https://educa.ibge.gov.br/jovens/conheca-o-brasil/populacao/22064-caracteristicas-dos-domicilios-censo-2022.html
+
+### Lacuna de dados domiciliares em 2020 e 2021
+O IBGE não disponibilizou algumas estatísticas da PNAD Contínua sobre características gerais dos domicílios para 2020 e 2021, devido à redução da taxa de resposta e dificuldades de mensuração dos módulos coletados exclusivamente na primeira visita. Assim, não preencher esses anos com interpolação ou estimativa não oficial. Para água, esgoto, bens domiciliares e lixo, a comparação principal deste bloco começa em 2019 e retoma em 2022, com quebra explicitada.
+Fonte: https://www.ibge.gov.br/estatisticas/sociais/populacao/17270-pnad-continua.html
+
+### Como a UNO poderia atuar neste eixo
+A UNO poderia registrar necessidades territoriais com consentimento, agrupar evidências sem expor moradores, localizar prestadores e canais oficiais, encaminhar solicitações e acompanhar protocolos e respostas. A plataforma não executa obra, não regula concessionária e não substitui orçamento, fiscalização ou planejamento de saneamento. Indicadores de resultado devem distinguir: reclamação registrada, protocolo aberto, vistoria realizada, serviço prestado e solução confirmada.
