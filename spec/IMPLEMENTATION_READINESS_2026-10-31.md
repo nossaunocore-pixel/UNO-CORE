@@ -154,3 +154,11 @@ Só marcar cada item como implementado, integrado, testado ou liberado depois de
 - Migração adicional: `20261031174000_workshop_asset_versioning.sql`, com tabelas privadas por RLS e RPCs executáveis somente por service_role.
 - Aprovação final, codificação automática, integração, evidência de testes e ativação ainda não estão liberadas. A Oficina não publica nem ativa recursos automaticamente.
 - Total de migrations preparadas nesta branch: cinco; nenhuma foi aplicada ao projeto hospedado.
+
+
+## 13. Catálogo EOU na Oficina
+
+- `src/domain/volumes.ts` registra os 40 volumes em formato máquina-legível, com natureza estrutural/evolutiva/dependente de operação, estado documental, domínios de implementação e fonte.
+- `EOUVolumeCatalogV7` apresenta os 40 volumes na Oficina com filtros e detalhe.
+- V05 e V06 permanecem explicitamente bloqueados para decisão de nomenclatura do fundador; nenhuma renomeação automática foi feita.
+- O catálogo é inventário e roteador de implementação, não equivale a 40 especificações técnicas completas.
