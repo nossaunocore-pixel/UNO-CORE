@@ -351,3 +351,45 @@ Além dos indicadores macroeconômicos e ODS existentes, propor um painel comple
 
 Cada indicador deve ter definição, denominador, fonte, periodicidade, responsável, desagregação permitida, risco de viés e regra de auditoria. O painel complementa — não substitui — ODS, IBGE, SIM/Sinasc, PNAD, registros administrativos e indicadores oficiais.
 
+
+## 18. Distribuição de renda, desigualdade e cautelas estatísticas adicionais
+
+### Gini domiciliar per capita — série observada
+| Ano | Gini com benefícios sociais | Gini simulado sem benefícios sociais |
+|---|---:|---:|
+| 2020 | 0,524 | 0,573 |
+| 2021 | 0,544 | 0,568 |
+| 2022 | 0,518 | 0,548 |
+
+Fonte: IBGE, PNAD Contínua 2012–2022, gráfico sobre Gini com e sem benefícios sociais: https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
+
+A queda do Gini em 2020 foi fortemente influenciada pelas transferências emergenciais; o aumento em 2021 coincidiu com redução do auxílio e perda de renda real; em 2022, o índice caiu com recuperação do mercado de trabalho e fortalecimento de programas sociais. O exercício sem benefícios não é um cenário causal perfeito, mas uma simulação contábil distributiva do IBGE; não equivale a estimar o efeito de uma intervenção UNO.
+
+### Renda real e diferenças regionais
+- 2020: rendimento médio real domiciliar per capita de R$ 1.349; Sudeste R$ 2.575 e Nordeste R$ 1.554. Apenas Norte e Nordeste tiveram aumento da massa de rendimento domiciliar per capita frente a 2019, em contexto de transferências emergenciais.
+- 2021: rendimento domiciliar per capita real de R$ 1.353; massa real caiu 6,2%; Nordeste R$ 843; Gini regional 0,556 no Nordeste e 0,462 no Sul.
+- 2022: rendimento nominal domiciliar per capita nacional de R$ 1.625; Maranhão R$ 814 e Distrito Federal R$ 2.913; Nordeste R$ 1.023 e Centro-Oeste R$ 1.909.
+
+**Quebra de comparabilidade:** 2020–2022 utilizaram a quinta visita da PNAD para o cálculo do rendimento domiciliar per capita, devido à perda de aproveitamento da primeira visita durante a pandemia. A partir de 2023, o IBGE retornou à primeira visita. Valores nominais de 2022 não devem ser comparados diretamente com valores reais de 2020/2021 sem deflator, conceito e visita compatíveis.
+
+### Educação: o efeito de aprovação automática e critérios excepcionais
+As taxas de aprovação subiram durante o período de pandemia e recuaram em 2022, o que alerta contra usar aprovação como sinônimo de aprendizagem:
+| Etapa | 2020 | 2021 | 2022 |
+|---|---:|---:|---:|
+| Anos iniciais — aprovação | 98,5% | 97,6% | 96,0% |
+| Anos finais — aprovação | 97,8% | 95,7% | 92,1% |
+
+Fonte: Microdados do Censo Escolar compilados pelo Anuário Brasileiro da Educação Básica: https://anuario.todospelaeducacao.org.br/2025/capitulo-2-ef-anos-iniciais.html e https://anuario.todospelaeducacao.org.br/2025/capitulo-3-ef-anos-finais.html
+
+O indicador deve ser combinado com frequência, participação, abandono, avaliação de aprendizagem e retorno presencial. Uma plataforma pode localizar estudantes com barreiras e conectar apoio, mas não deve alegar recuperação de aprendizagem sem avaliação independente.
+
+### Implicação para o contrafactual UNO
+A hipótese mais testável neste eixo não é “a UNO teria reduzido o Gini nacional”. É que, em territórios com adesão e parceiros, a UNO poderia:
+- reduzir o tempo e o custo de localizar oportunidades de trabalho, serviços e formação;
+- melhorar a conclusão de encaminhamentos para serviços existentes;
+- detectar demanda sem oferta e dar visibilidade a gargalos territoriais;
+- apoiar acompanhamento comunitário e retorno escolar;
+- medir a renda adicional líquida e persistente, descontando substituição de vendas, transferências públicas e tendências econômicas gerais.
+
+Para testar qualquer efeito distributivo, medir renda antes/depois, composição familiar, transferências, situação de trabalho e grupo de comparação, com proteção de dados e auditoria independente. Não usar dados sensíveis para ranquear ou restringir acesso.
+
