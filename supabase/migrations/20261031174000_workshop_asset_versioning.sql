@@ -321,7 +321,7 @@ begin
     updated_by_idu, requires_human_approval
   ) values (
     v_source.asset_type, v_source.origin, v_slug,
-    v_source.name || ' — revisão', v_source.description, 'draft', 1,
+    v_source.name || ' — revisão', v_source.description, 'draft', v_source.version + 1,
     v_source.definition, 'Cópia de trabalho criada a partir da versão ' || v_source.version,
     v_source.id, p_actor_idu, p_actor_idu, true
   )
