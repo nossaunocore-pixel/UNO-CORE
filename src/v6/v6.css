@@ -1163,3 +1163,12 @@
 .v7-workshop-footer p svg{flex:0 0 auto;color:#68e2fa}
 .v7-workshop-footer button{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid rgba(105,211,240,.22);border-radius:10px;background:rgba(5,28,48,.7);color:#cdefff;cursor:pointer}
 @media(max-width:720px){.v7-workshop-page{width:calc(100% - 24px)}.v7-workshop-page>header,.v7-workshop-footer{flex-direction:column;align-items:flex-start}}
+
+.v7-workshop-version-history{margin-top:18px;padding:14px;border:1px solid rgba(102,208,239,.15);border-radius:12px;background:rgba(3,18,33,.65)}
+.v7-workshop-version-history h3{margin:0 0 10px;font-size:.9rem}
+.v7-workshop-version-history>p{color:#8faabd;font-size:.76rem}
+.v7-workshop-version-history article{display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:center;gap:10px;padding:9px 0;border-top:1px solid rgba(102,208,239,.1)}
+.v7-workshop-version-history article b{color:#69e3ff;font-size:.78rem}
+.v7-workshop-version-history article span{color:#c5dce8;font-size:.76rem}
+.v7-workshop-version-history article small{color:#8daabd;font-size:.68rem}
+@media(max-width:600px){.v7-workshop-version-history article{grid-template-columns:42px 1fr}.v7-workshop-version-history article small{grid-column:2}}
