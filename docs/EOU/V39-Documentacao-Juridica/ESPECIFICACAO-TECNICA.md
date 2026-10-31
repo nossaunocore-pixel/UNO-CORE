@@ -45,3 +45,9 @@ Testar consistência entre promessa, interface, contrato e operação; documento
 
 ## 10. Pendências
 Mapear operações efetivas do MVP; definir assessoria jurídica; validar estrutura societária e papéis; elaborar documentos finais; avaliar LGPD/CDC/trabalho/financeiro/propriedade intelectual e requisitos setoriais; estabelecer calendário e responsável por atualização normativa.
+
+
+## 12. Ciclo societário posterior à operação
+
+A fase inicial da UNO é de construção, inauguração e operação; não inclui por si só comercialização de ações. A eventual fase societária posterior exige decisão expressa, escolha de tipo societário, estruturação dos direitos, avaliação, documentação e análise regulatória. Sociedade limitada e sociedade anônima não são intercambiáveis: quotas e ações possuem regimes distintos. Inauguração ou reconhecimento institucional não autoriza automaticamente oferta pública. Ver adendo do MEU-UNO-001.
+
