@@ -1,6 +1,8 @@
 # EOU-V34 — UNO CORE
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: arquitetura integradora em evolução; V7 em implementação
 - Relacionados: todos os volumes EOU; especialmente V01, V02, V05, V06, V07, V08, V13, V16, V17, V33
 
