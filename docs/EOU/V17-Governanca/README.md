@@ -21,6 +21,21 @@ Adotar RBAC para papéis e ABAC para atributos como entidade, território, titul
 ## 4. Delegação e alçadas
 Toda delegação registra concedente, destinatário, escopo, finalidade, início, expiração, limites, possibilidade de subdelegar e mecanismo de revogação. Delegação não transfere autoridade institucional ilimitada. Atribuições devem ser revisadas e expiradas quando necessário.
 
+## 4.1. Autoridade institucional e integração multi-institucional
+
+Cada instituição participante mantém identidade, administração, responsabilidades e autonomia próprias. A entrada no ecossistema UNO não transforma uma instituição em departamento da NÓS S.A. nem transfere automaticamente seus poderes, dados ou decisões.
+
+A **NÓS S.A.** é a instituição de referência e poderá possuir integração ampliada com os componentes UNO, conforme necessidade e autorização. As demais instituições recebem somente conexões essenciais e justificadas para interoperabilidade e cooperação.
+
+O **Departamento de Sinergia** coordena a identificação de necessidades de integração, padrões de interoperabilidade, fluxos de cooperação e acompanhamento das conexões. Não recebe, por essa função, poder automático para decidir em nome das instituições ou ampliar permissões.
+
+### Gatilho de decisão e gatilho de operação
+
+- **Gatilho de decisão:** competência para aprovar, autorizar, deliberar, definir regras, assumir compromissos ou alterar políticas dentro de uma alçada.
+- **Gatilho de operação:** permissão para executar uma ação específica, já autorizada, dentro de escopo, finalidade, limite, prazo e condições registrados.
+
+A concessão de capacidade operacional não concede poder decisório. A autoridade para decidir não implica, por si só, autorização para executar qualquer operação. Toda delegação deve indicar separadamente ambos os gatilhos, quando aplicáveis, além de concedente, destinatário, entidade, recurso, finalidade, limites, evidência, vigência e revogação.
+
 ## 5. Aprovação humana
 Ações de alto impacto — dinheiro, identidade, dados sensíveis, publicação institucional, contratação, exclusão, concessão de acesso, alteração de políticas e ativação de agentes — exigem aprovador humano competente, evidência, confirmação e trilha auditável.
 
