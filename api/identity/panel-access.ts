@@ -23,6 +23,7 @@ export default async function handler(request: Request): Promise<Response> {
   } catch (error) {
     const message = error instanceof Error ? error.message : 'UNKNOWN_ERROR';
     if (message === 'AUTHORIZATION_REQUIRED') return json({ error: 'Autenticação necessária.' }, 401);
+    if (message === 'VERIFIED_UNO_IDENTITY_REQUIRED') return json({ error: 'Acesso exige Google verificado e IDU ativo.' }, 403);
     if (message === 'PANEL_SCOPE_REQUIRED' || message === 'PANEL_ASSIGNMENT_INACTIVE') {
       return json({ allowed: false, error: 'Este escopo não foi atribuído ou está inativo.' }, 403);
     }
