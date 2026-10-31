@@ -23,6 +23,8 @@
   - `20261031170000_firebase_idu_text_identity.sql`
   - `20261031171000_public_chat_rate_limits.sql`
   - `20261031172000_public_chat_global_cap.sql`
+  - `20261031173000_public_content_read_models.sql`
+  - `20261031174000_workshop_asset_versioning.sql`
 - ADR-0013 e matriz de acesso atualizadas.
 - Mapa dos 40 volumes e template implementável criados.
 
@@ -38,7 +40,7 @@
    - `SUPABASE_SERVICE_ROLE_KEY` — já existe server-side; nunca usar prefixo `VITE_`.
 5. No Supabase de teste, confirmar projeto Firebase `uno-core-a9125` e configurar Third-Party Auth antes de aplicar a migration de IDU.
 6. Habilitar Anonymous Sign-Ins e CAPTCHA/Turnstile no Supabase Auth. Definir retenção e limpeza de contas anônimas.
-7. Revisar as três migrations em ambiente de teste, conferir preflight/zero rows, aplicar uma por vez e testar RLS com visitante anônimo, usuário Google e tentativa de acesso cruzado. Não aplicar no projeto de produção sem aprovação.
+7. Revisar as cinco migrations em ambiente de teste, conferir preflight/zero rows, aplicar uma por vez e testar RLS com visitante anônimo, usuário Google, Oficina e tentativa de acesso cruzado. Não aplicar no projeto de produção sem aprovação.
 8. Criar tabelas públicas com SELECT estritamente limitado a conteúdo publicado para Comunidade, Instituições, Eventos, Participação, Vitrine e Serviços. Escrita deve ser backend-only ou identidade autorizada.
 9. Implementar persistência e APIs dos ambientes, sem confundir Vitrine (descoberta), Serviços (contratável) e Serviços Ativos (contratado/aderido/matriculado/habilitado).
 10. Implementar autorização server-side dos painéis; os diretórios TypeScript são metadados, não concessões de acesso.
