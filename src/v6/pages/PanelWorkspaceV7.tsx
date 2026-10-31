@@ -27,6 +27,6 @@ export function PanelWorkspaceV7({
       <LockKeyhole/>
       <div><b>Área estrutural preparada; operações ainda não liberadas.</b><p>Os contratos e limites deste painel estão definidos. Dados operacionais, filas, documentos, movimentações e ações serão conectados depois que as APIs, fontes de verdade, trilhas de auditoria e permissões específicas forem testadas.</p></div>
     </div>
-    <footer><small>Escopo requerido: {panel.requiredScope} · acesso padrão: negado · ações sensíveis exigem autorização humana.</small><button onClick={() => onNavigate('mestre')}><ArrowLeft size={15}/> Voltar ao Painel Mestre</button></footer>
+    <footer><small>Escopo requerido: {panel.requiredScope} · acesso padrão: negado · ações sensíveis exigem autorização humana.</small><button onClick={() => onNavigate('praca')}><ArrowLeft size={15}/> Voltar à Praça UNO</button></footer>
   </section>;
 }
