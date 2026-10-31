@@ -17,20 +17,26 @@ Se um dia deixar de servir — extinguir-se-á com alegria.
 
 ---
 
-## 📚 A ENGENHARIA OFICIAL — 8 VOLUMES
+## 📚 ENGENHARIA OFICIAL — COLEÇÃO VIGENTE DE 40 VOLUMES
 
-| Volume | Título | Propósito |
+A coleção vigente de referência é a **EOU de 40 volumes**. Consulte o [Catálogo oficial da Engenharia (V01–V40)](docs/EOU/CATALOGO.md) para a nomenclatura e a organização atuais.
+
+A tabela abaixo aponta para a **série documental histórica de oito volumes**, preservada para consulta e rastreabilidade. Seus títulos históricos não substituem os nomes atuais da coleção de 40 volumes.
+
+| Volume histórico | Título histórico | Propósito |
 |--------|--------|-----------|
 | 📘 **1** | [Constituição Técnica](EOU/volumes/volume-01-constituicao-tecnica.md) | Princípios fundamentais e garantias |
 | 📘 **2** | [Arquitetura Oficial](EOU/volumes/volume-02-arquitetura-oficial.md) | Estrutura, camadas e funcionamento |
 | 📘 **3** | [Modelo Universal de Entidades (MUE)](EOU/volumes/volume-03-mue-entidades.md) | Tudo é relação — pessoas, comunidades, lugares |
 | 📘 **4** | [Ecossistema de Valor e Aprendizagem (EVA)](EOU/volumes/volume-04-eva-valor-aprendizagem.md) | Valor vai muito além do dinheiro |
-| 📘 **5** | [Ordem de Missão (OM)](EOU/volumes/volume-05-ordem-missao.md) | O propósito que guia tudo |
-| 📘 **6** | [Conhecimento Organizacional](EOU/volumes/volume-06-conhecimento-organizacional.md) | A memória que não se perde |
+| 📘 **5 histórico** | [Ordem de Missão (OM)](EOU/volumes/volume-05-ordem-missao.md) | Referência histórica; o EOU-V05 atual é Oficina Mestre |
+| 📘 **6 histórico** | [Conhecimento Organizacional](EOU/volumes/volume-06-conhecimento-organizacional.md) | Referência histórica; o EOU-V06 atual é Centro de Operações |
 | 📘 **7** | [Ciclo de Confiança e Manutenção (CCM)](EOU/volumes/volume-07-ccm-confianca-manutencao.md) | Transparência, cuidado e prestação de contas |
 | 📘 **8** | [Operações, Princípios e Soberania (OPS)](EOU/volumes/volume-08-ops-operacoes-soberania.md) | O povo é a autoridade suprema |
 
-> **[📖 Índice Completo dos 8 Volumes](EOU/volumes/INDEX.md)** — Guia de navegação, garantias universais e como a Lei opera.
+> **[📖 Índice da série histórica de 8 volumes](EOU/volumes/INDEX.md)** — Documentos preservados para consulta.
+>
+> **Nomenclatura vigente:** EOU-V05 — Oficina Mestre; EOU-V06 — Centro de Operações. Os nomes “Ordem de Missão” e “Conhecimento Organizacional” são referências históricas da série anterior.
 
 ---
 
@@ -91,7 +97,7 @@ A Uno é **aberta, pública e de todos**. Qualquer pessoa pode:
 ```
 UNO-CORE/
 ├── EOU/                          # Engenharia Oficial da Uno
-│   └── volumes/                  # Os 8 Volumes (Lei da Uno)
+│   └── volumes/                  # Série documental histórica de 8 volumes
 │       ├── INDEX.md              # Índice completo
 │       ├── volume-01-constituicao-tecnica.md
 │       ├── volume-02-arquitetura-oficial.md
