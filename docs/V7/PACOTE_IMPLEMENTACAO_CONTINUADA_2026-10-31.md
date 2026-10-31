@@ -76,3 +76,15 @@
 - `spec/VOLUME_SPEC_TEMPLATE.md`
 - `spec/ADR/ADR-0013-public-visitor-supabase-navigation.md`
 - `spec/ROADMAP.md`
+
+
+## 6. Rotas e painéis acrescentados
+
+- Rotas públicas com leitura Supabase: Instituições, Vitrine, Lazer/Eventos, Serviços, Comunidade e Participação pública.
+- Rotas pessoais protegidas: Casa, Emprego e Renda, Carteira e Serviços Ativos.
+- Painéis: Administrativo, Coordenação Geral, Jurídico, Contábil e Financeiro (com área Stripe) e Atendimento.
+- O Painel Mestre lista os painéis e apresenta a interface de atribuição de escopos somente ao fundador.
+- `/api/admin/panel-access` atribui/revoga escopos depois de confirmar UID fundador, Google verificado e IDU do destinatário.
+- `/api/identity/panel-access` valida escopo no token e registro ativo no Firestore antes de liberar uma rota.
+- Shells dos painéis são somente estruturais. Não possuem operações de dinheiro, dados jurídicos, filas reais ou ações administrativas até APIs específicas e testes.
+- `supabase/migrations/20261031173000_public_content_read_models.sql` cria read models públicos para Instituições, Catálogo, Comunidade, Eventos e Participação, com SELECT público apenas de conteúdo publicado e escrita restrita ao backend. Não aplicada.
