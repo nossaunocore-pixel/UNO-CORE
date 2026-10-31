@@ -21,6 +21,14 @@ const MASTER_VIEWS: V6View[] = [
   'integracoes', 'agentes', 'auditoria'
 ];
 
+const PANEL_SCOPE_BY_VIEW: Partial<Record<V6View, string>> = {
+  painel_administrativo: 'uno.panel.administrative.access',
+  painel_coordenacao: 'uno.panel.general_coordination.access',
+  painel_juridico: 'uno.panel.legal.access',
+  painel_contabil_financeiro: 'uno.panel.accounting_finance.access',
+  painel_atendimento: 'uno.panel.support.access'
+};
+
 export function PageAccessGateV7({
   view,
   children
@@ -89,10 +97,15 @@ export function PageAccessGateV7({
           return;
         }
 
-        if (MASTER_VIEWS.includes(view)) {
-          const hasMasterAccess = tokenResult.claims.unoFounder === true ||
-            tokenResult.claims.unoMaster === true;
-          if (!cancelled) setState(hasMasterAccess ? 'allowed' : 'forbidden');
+        const requiredScope = PANEL_SCOPE_BY_VIEW[view] ||
+          (MASTER_VIEWS.includes(view) ? 'uno.panel.master.access' : null);
+
+        if (requiredScope) {
+          const accessResponse = await fetch(
+            '/api/identity/panel-access?scope=' + encodeURIComponent(requiredScope),
+            { headers: { Authorization: 'Bearer ' + await user.getIdToken() } }
+          );
+          if (!cancelled) setState(accessResponse.ok ? 'allowed' : 'forbidden');
           return;
         }
 
