@@ -149,7 +149,7 @@ Só marcar cada item como implementado, integrado, testado ou liberado depois de
 - Produtos e serviços exigem origem explícita: UNO/próprio ou terceiro.
 - Cada edição de rascunho gera nova versão imutável e evento de auditoria.
 - Recursos fora de rascunho não podem ser sobrescritos; é necessário criar cópia de trabalho.
-- Segredos e credenciais são rejeitados na definição; usar referências a segredos armazenados no servidor.
+- Campos com nomes de segredo e formatos conhecidos de credenciais são bloqueados por validação básica; isso não substitui scanner/DLP. Nunca inserir segredos; usar referências guardadas no servidor.
 - APIs protegidas por escopo do Painel Mestre, Google verificado, IDU e atribuição ativa no Firestore.
 - Migração adicional: `20261031174000_workshop_asset_versioning.sql`, com tabelas privadas por RLS e RPCs executáveis somente por service_role.
 - Aprovação final, codificação automática, integração, evidência de testes e ativação ainda não estão liberadas. A Oficina não publica nem ativa recursos automaticamente.
