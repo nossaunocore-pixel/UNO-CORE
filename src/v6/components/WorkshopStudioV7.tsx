@@ -30,7 +30,6 @@ interface WorkshopAssetVersion {
   id: string;
   version: number;
   change_summary: string;
-  changed_by_idu: string;
   created_at: string;
 }
 
