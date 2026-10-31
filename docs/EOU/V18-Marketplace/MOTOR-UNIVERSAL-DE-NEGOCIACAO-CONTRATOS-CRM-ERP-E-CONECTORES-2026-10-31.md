@@ -1,7 +1,7 @@
 # Motor Universal de Negociação, Contratos, CRM, ERP e Conectores — UNO CORE
 
 - **Identificador:** V18-ADR-PROP-UNO-002
-- **Versão:** 0.1.0
+- **Versão:** 0.2.0
 - **Data:** 31/10/2026
 - **Estado:** proposta de arquitetura para revisão do fundador; não aprovada como implementação
 - **Volumes relacionados:** V11 Ferramentas, V12 Provedores, V13 Dados, V14 APIs, V15 Integrações, V16 Segurança, V17 Governança, V18 Marketplace, V24 Empregabilidade, V25 Financeiro, V31 Fluxos, V32 Automações, V33 Motor Cognitivo e V39 Documentação Jurídica
@@ -309,5 +309,7 @@ Produzir inventário de entidades, eventos, endpoints internos, conectores, sche
 - Catálogo de APIs governamentais: https://www.gov.br/conecta/catalogo/apis
 
 ## 16. Histórico
+
+- 0.2.0 — inclusão de autonomia multi-institucional, ambientes administrativos por entidade, distinção entre gatilhos de decisão/operação e integração coordenada pela Sinergia; 31/10/2026.
 
 - 0.1.0 — proposta inicial de arquitetura de negociação, contratos, CRM/ERP e conectores; pesquisa pública realizada em 31/10/2026.
