@@ -280,3 +280,30 @@ Além das duas divergências iniciais — “Enciclopédia Visual Adaptativa” 
 - V01–V03: fronteiras esclarecidas como propostas; ADR-EOU-002 ainda não aprovado.
 - V05–V08 × V31–V33: ADR-EOU-003 proposto, não aprovado.
 - ADR-EOU-001 continua proposta não aprovada.
+
+
+## 12. Inventário dos fundamentos V01–V08 — 31/10/2026
+
+### AUD-17 — V05 atual e legado Orquestrador Mestre compartilham OM, mas não o mesmo escopo
+**Severidade: P1 | Volumes: V05, V06, V07, V08, V16, V17, V31–V34**
+
+O nome atual de V05 é Oficina Mestre, confirmado pelo fundador. Porém, os 100 capítulos no diretório V05-OM foram escritos para um volume anterior Orquestrador Mestre: o capítulo 001 define o OM como núcleo operacional que recebe intenções, valida autoridades, planeja e coordena execuções; o capítulo 100 trata da transição para UNO CORE. Isso cria colisão de sigla e escopo. Foi criado INVENTARIO-LEGADO-100-CAPITULOS.md e o README atual aponta para ele. Nenhum capítulo foi movido ou apagado. A Oficina Mestre atual ainda precisa de especificação própria mais completa.
+
+### AUD-18 — V08 OPS tem divergência de escopo entre nome e capítulos
+**Severidade: P1 | Volumes: V07, V08, V31, V32, V33, V36**
+
+O catálogo/README chamam V08 de “Sistema Universal de Missões”, mas o capítulo 001 define OPS como “Capacidade Operacional Sistêmica”; os 33 capítulos descrevem operação contínua, serviços, saúde, observabilidade, incidentes, mudanças, recuperação, automação e garantias. O próprio texto distingue CCM/V07 (o que precisa acontecer) de OPS/V08 (o que precisa continuar funcionando). Foi criado DECISAO-PENDENTE-ESCOPO-OPS.md e o README passou a apontar para ele. Nenhum nome foi alterado e nenhum capítulo foi movido.
+
+### AUD-19 — V07 contém desenhos institucionais que não são prova de cargos ou poderes
+**Severidade: P1 | Volumes: V07, V17, V39, V40**
+
+O capítulo “Sala do Cérebro” descreve composição com 24 diretores e CEO, e os capítulos de Painéis Mestres descrevem interfaces operacionais. Essas descrições devem permanecer conceituais até validação da matriz de alçadas V17 e evidências formais V39/V40. O README de V07 agora esclarece que descrições conceituais não concedem grants nem instituem cargos/poderes.
+
+### AUD-20 — V03 e V04 são extensos e se sobrepõem a domínios especializados
+**Severidade: P1 | Volumes: V03, V04, V13, V16, V17, V26–V28, V33**
+
+V03 possui 157 capítulos e contém temas de identidade, permissões, persistência e governança; V04 possui 145 capítulos e cobre aprendizagem, memória, agentes, capacidades, cognição e curadoria. Há sobreposição semântica com volumes especializados e com V33. ADR-EOU-001/002 e a decisão pendente EVA são pré-requisitos para congelar ownership ou schemas. A leitura integral dos 302 capítulos ainda está pendente; a primeira passagem foi estrutural e por amostras.
+
+### Inventário estrutural consolidado
+
+Criado `INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md`, com contagem de 522 capítulos numerados, primeira leitura e plano de auditoria por lotes. V01 e V02 têm sete capítulos cada; V03 157; V04 145; V05 100; V06 52; V07 21; V08 33. Nem todos os 522 capítulos foram lidos integralmente.
