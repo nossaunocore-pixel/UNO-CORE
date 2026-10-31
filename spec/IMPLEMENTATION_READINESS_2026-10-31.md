@@ -19,10 +19,8 @@ A aplicação ainda monta `V6App`; a integração integral dos módulos e a pers
 - EOU-V01 a V08 têm documentação extensa, capítulos e material histórico.
 - EOU-V09 a V40 têm, no inventário atual, essencialmente README de finalidade e estado “Em desenvolvimento”; ainda não são especificações completas implementáveis.
 - `EOU/volumes/INDEX.md` descreve uma coleção legada de 8 volumes e declara uma data de conclusão, enquanto `docs/EOU/CATALOGO.md` descreve a coleção expandida de 40.
-- Há conflitos de nomenclatura que não devem ser resolvidos por suposição:
-  - V05/OM: o índice legado chama “Ordem de Missão”; o catálogo expandido chama “Oficina Mestre”. O mesmo acrônimo OM está sendo usado para conceitos distintos.
-  - V06: o índice legado chama “Conhecimento Organizacional”; o catálogo expandido usa V06-CO, “Centro de Operações”. Não há arquivo `EOU/volumes/volume-06-...` correspondente na série legada.
-  - V03 (MUE) e V28 (Entidades) precisam de fronteira documental explícita para evitar duplicação.
+- A nomenclatura oficial da coleção EOU de 40 volumes foi confirmada pelo fundador em 31/10/2026: **V05 — Oficina Mestre** e **V06 — Centro de Operações**. “Ordem de Missão” e “Conhecimento Organizacional” são preservados exclusivamente como referências históricas da série documental anterior de oito volumes. A documentação atual deve ser harmonizada ao catálogo de 40 volumes; não alterar código, IDs, diretórios ou estrutura já preparada apenas para recuperar os títulos históricos.
+- V03 (MUE) e V28 (Entidades) ainda precisam de fronteira documental explícita para evitar duplicação.
 - O mapa de implementação e as pendências estão em `spec/EOU_40_VOLUMES_IMPLEMENTATION_MAP.md`.
 
 ## 3. Código V7 observado
@@ -115,7 +113,7 @@ Há catálogo documental de teste e chaves de teste em Preview/Development, mas 
 
 ## 9. Bloqueios que dependem do fundador ou de configuração de conta
 
-1. **EOU V05/V06:** confirmar nomenclatura e relação entre a série legada de 8 volumes e a coleção atual de 40.
+1. **EOU V05/V06 — resolvido:** nomenclatura oficial confirmada pelo fundador: V05 — Oficina Mestre; V06 — Centro de Operações. Harmonizar a documentação atual ao catálogo de 40 volumes e preservar os títulos antigos apenas como referências históricas.
 2. **Orçamento público de IA:** escolher `PUBLIC_CHAT_GLOBAL_DAILY_LIMIT` (máximo global de respostas públicas por dia). O endpoint permanece desabilitado se vazio.
 3. **Supabase Auth:** habilitar Anonymous Sign-Ins e CAPTCHA/Turnstile no Dashboard; revisar retenção/limpeza de usuários anônimos.
 4. **Firebase:** disponibilizar/configurar service account e confirmar UID da conta fundadora, sem enviar segredos pelo chat.
@@ -160,5 +158,5 @@ Só marcar cada item como implementado, integrado, testado ou liberado depois de
 
 - `src/domain/volumes.ts` registra os 40 volumes em formato máquina-legível, com natureza estrutural/evolutiva/dependente de operação, estado documental, domínios de implementação e fonte.
 - `EOUVolumeCatalogV7` apresenta os 40 volumes na Oficina com filtros e detalhe.
-- V05 e V06 permanecem explicitamente bloqueados para decisão de nomenclatura do fundador; nenhuma renomeação automática foi feita.
+- V05 — Oficina Mestre e V06 — Centro de Operações estão confirmados pelo fundador. A pendência de nomenclatura foi encerrada; resta harmonizar os documentos e referências legadas, sem alterar o código.
 - O catálogo é inventário e roteador de implementação, não equivale a 40 especificações técnicas completas.
