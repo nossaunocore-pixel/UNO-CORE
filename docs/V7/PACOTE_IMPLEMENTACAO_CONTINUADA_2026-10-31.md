@@ -66,7 +66,7 @@
 ## 4. Decisões/ações que pertencem ao fundador
 
 - Definir `PUBLIC_CHAT_GLOBAL_DAILY_LIMIT` (máximo global de respostas públicas por dia).
-- Confirmar nomenclatura e continuidade dos volumes legados V05/V06 versus catálogo expandido de 40.
+- Nomenclatura dos volumes resolvida em 31/10/2026: V05 — Oficina Mestre; V06 — Centro de Operações. Harmonizar documentação ao catálogo de 40 volumes; títulos antigos são referências históricas.
 - Fornecer/confirmar com segurança o UID Firebase do fundador e autorizar a inclusão do secret service account.
 - Autorizar aplicação de migrations no ambiente correspondente e, futuramente, publicação/produção.
 - Configurações de conta que exigem proprietário: Anonymous Sign-Ins, CAPTCHA/Turnstile, proteções de autenticação e produção Vercel.
@@ -109,5 +109,5 @@
 
 - `src/domain/volumes.ts` fornece registro máquina-legível dos 40 volumes.
 - `EOUVolumeCatalogV7` permite navegar, filtrar e inspecionar a classificação documental e os domínios de implementação.
-- V05/V06 ficam em estado de conflito de nomenclatura, aguardando decisão do fundador.
+- V05 — Oficina Mestre e V06 — Centro de Operações são os nomes oficiais confirmados pelo fundador. “Ordem de Missão” e “Conhecimento Organizacional” ficam preservados como referências históricas da documentação anterior, sem alterar código ou estrutura.
 - O registro não afirma que os 40 volumes estejam integralmente especificados ou implementados.
