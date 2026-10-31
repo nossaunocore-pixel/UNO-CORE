@@ -213,3 +213,56 @@ O INEP antecipou a data de referência do Censo Escolar 2020 para 11 de março, 
 **Contrafactual UNO:** mecanismos qualitativos preliminares; sem estimativa de impacto nacional ainda.  
 **Fechamento de caixa:** estrutura definida; valores pendentes de orçamento operacional e premissas de escala.  
 **Confiança:** alta para os indicadores IBGE citados e suas definições; moderada/pendente para harmonização de óbitos por COVID-19; baixa/pendente para efeitos contrafactuais ainda não modelados.
+
+
+## 15. Engenharia UNO considerada no contrafactual — escopo funcional de referência
+
+Para evitar que a simulação reduza a UNO a um aplicativo de anúncios ou a um canal de atendimento, a hipótese operacional considera a engenharia como camada de orquestração universal de informação, acesso e oportunidades, com governança, autorização humana, rastreabilidade e limites de permissão.
+
+### Camadas funcionais incluídas
+- **Acesso e perfis:** visitante, usuário aderido e parceiro, com permissões proporcionais ao papel; acesso público limitado e dados pessoais protegidos.
+- **Conhecimento e direcionamento:** conversa orientadora, agente pessoal, localização de serviços, habilidades, oportunidades e agenda.
+- **Rede territorial:** comunicação comunitária, publicação e circulação de informação, participação, propostas e acompanhamento de demandas.
+- **Conexão econômica:** aproximação entre pessoas, profissionais, prestadores, comércio, organizações e demandas; registro de oportunidades e resultados.
+- **Governança:** Orquestrador Mestre, permissões delimitadas para agentes, APIs e módulos, supervisão humana, registros auditáveis e separação de funções.
+- **Ambiente institucional:** espaço de articulação e informação pública/comunitária, sem substituir órgãos, competências legais ou canais oficiais.
+
+### Hipóteses de funcionamento em 2020
+A engenharia é considerada tecnicamente pronta e disponível desde 01/01/2020, conforme o experimento solicitado. Isso não significa que a população inteira conheça a UNO, confie nela, tenha conectividade, conclua cadastro ou consiga obter atendimento. A curva de adoção, cobertura territorial e capacidade dos parceiros será modelada separadamente.
+
+A simulação não atribui à UNO poderes de decisão pública, acesso irrestrito a cadastros governamentais, dados de saúde individuais ou integração com sistemas sem acordo e base legal. A informação de saúde deve ser pública, agregada ou fornecida voluntariamente com salvaguardas e finalidade legítima.
+
+### Cadeia causal padrão
+**Necessidade identificada → informação validada → pessoa orientada → oferta/serviço localizado → consentimento e encaminhamento → atendimento pelo responsável competente → confirmação do resultado → medição e melhoria.**
+
+Apenas o último estágio confirmado será contado como demanda resolvida. Visualização, clique, cadastro ou encaminhamento não equivalem a benefício realizado.
+
+## 16. Modelo de mensuração operacional e econômica — versão 1
+
+Para cada território e mês, registrar variáveis separadas:
+- População residente e população elegível (fonte IBGE).
+- Pessoas alcançadas pela comunicação.
+- Pessoas cadastradas e usuários ativos.
+- Demandas registradas e demandas únicas (deduplicadas).
+- Demandas com encaminhamento aceito.
+- Demandas efetivamente atendidas, com confirmação.
+- Tempo mediano entre registro, encaminhamento e resolução.
+- Oportunidades de trabalho publicadas, candidaturas, contratações confirmadas e renda líquida comprovada.
+- Negócios/organizações ativos, clientes adicionais e vendas incrementais verificadas.
+- Custos diretos e indiretos por território e por demanda resolvida.
+
+Fórmulas iniciais:
+- **Taxa de ativação** = usuários ativos / pessoas alcançadas.
+- **Taxa de encaminhamento concluído** = encaminhamentos aceitos / demandas elegíveis.
+- **Taxa de resolução confirmada** = demandas resolvidas e confirmadas / demandas elegíveis.
+- **Custo por resolução** = custo operacional atribuível / demandas resolvidas confirmadas.
+- **Renda incremental validada** = renda observada após conexão menos renda contrafactual estimada, somente quando houver método de comparação adequado.
+
+### Cenários de adoção
+Construir cenários conservador, intermediário e otimista por meio de parâmetros explícitos (alcance, ativação, retenção, demanda por usuário, capacidade de parceiros e taxa de resolução). Não fixar percentuais nacionais sem evidência. A análise deve apresentar primeiro resultados por território piloto e só depois testar extrapolação nacional.
+
+### Regra contra dupla contagem econômica
+Uma venda facilitada pela UNO não é automaticamente PIB adicional: pode substituir outra venda, deslocar um concorrente ou apenas migrar de canal. Contar como impacto adicional somente a parcela demonstravelmente nova, descontando custos, substituição, deslocamento e efeitos que já ocorreriam. Salário, transferência pública, doação e valor transacionado não são receita UNO.
+
+## 17. Limite da primeira versão
+A base histórica de 2020 está parcialmente preenchida e o escopo funcional está formalizado. Ainda não há amostra operacional real da UNO em 2020 (por ser contrafactual), taxa observada de adoção, custo unitário validado ou grupo de comparação. Portanto, qualquer estimativa numérica de impacto social, econômico ou de vidas potencialmente preservadas permanece suspensa até que esses parâmetros sejam justificados e submetidos à sensibilidade.
