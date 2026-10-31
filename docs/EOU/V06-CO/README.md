@@ -42,6 +42,10 @@ Os demais capítulos e artefatos legados do diretório não foram apagados nem r
 **Nomenclatura confirmada; escopo técnico em harmonização.** Este documento não certifica completude nem implementação operacional.
 
 
+## Carta de apresentação institucional
+
+A mensagem preparada para leitura pública e fixação no espaço da NÓS S.A. está em [Carta de Apresentação do Fundador — NÓS S.A.](./CARTA-DE-APRESENTACAO-DO-FUNDADOR-NOS-SA-2026-10-31.md). Ela complementa, sem substituir, a carta canônica do [capítulo 051](./051-Carta-Fundadora-da-NOS-SA.md).
+
 ## Inventário do legado
 
 O diretório contém 52 capítulos numerados herdados da concepção anterior de CO. O capítulo 001 descreve CO como “Catálogo Organizacional”; o README anterior usava “Conhecimento Organizacional”. Esses capítulos não devem ser interpretados como especificação vigente do Centro de Operações apenas por permanecerem neste diretório. Consulte o [Inventário do legado documental de V06](./INVENTARIO-LEGADO-52-CAPITULOS.md). Nenhum dos 52 capítulos foi apagado, movido ou automaticamente incorporado ao escopo atual.
