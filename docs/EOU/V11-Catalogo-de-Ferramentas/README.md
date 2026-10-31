@@ -4,6 +4,10 @@
 - Estado: rascunho técnico estruturado
 - Relacionados: V09 Capacidades, V10 Agentes, V12 Provedores, V14 APIs, V15 Integrações, V16 Segurança, V17 Governança, V32 Automações
 
+## Inventário de ferramentas e integrações
+
+- [Inventário Inicial de Ferramentas e Integrações — 31/10/2026](INVENTARIO-INICIAL-FERRAMENTAS-E-INTEGRACOES-2026-10-31.md) — pesquisa preliminar de candidatos, capacidades, estados de prontidão, credenciais lógicas, separação de ambientes e instruções ao Antigravity. Não representa aprovação ou ativação.
+
 ## 1. Finalidade
 Padronizar o registro e o uso de ferramentas internas e externas por pessoas, agentes, fluxos e módulos UNO. Ferramenta é um recurso invocável; sua presença no catálogo não autoriza uso.
 
