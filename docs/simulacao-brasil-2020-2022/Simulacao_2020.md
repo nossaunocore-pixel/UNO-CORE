@@ -80,8 +80,8 @@ Preencher valores observados, unidade, comparação anual, fonte, data de extra�
 | PIB real e variação anual | -3,3% (série revisada em 2022) | % | IBGE, Contas Nacionais; não usar o -4,1% da primeira divulgação como valor final |
 | PIB per capita | R$ 35.935,74 (correntes; variação real -4,8% na divulgação revisada) | R$ / % | IBGE, Contas Nacionais 2022 |
 | IPCA | 4,52% | % | IBGE, IPCA 2020 |
-| Desocupação média | 13,5% | % | IBGE, PNAD Contínua |
-| Informalidade | 38,8% da população ocupada | % | IBGE, Síntese de Indicadores Sociais 2021 |
+| Desocupação média | 13,8% (série anual revisada em divulgações posteriores; a divulgação inicial de 2021 reportou 13,5%) | % | IBGE, PNAD Contínua; usar série revisada para comparação longitudinal |
+| Informalidade | 38,3% da população ocupada (série histórica apresentada pelo IBGE em 2023) | % | IBGE, PNAD Contínua; a SIS 2021 publicou 38,8% com vintage anterior |
 | Rendimento real habitual médio | R$ 2.543 (média anual da PNAD Contínua) | R$ | IBGE, PNAD Contínua; série e conceito devem ser mantidos constantes |
 | Nascimentos | Registros caíram 4,7% ante 2019; total absoluto a extrair do SINASC/Registro Civil | pessoas / % | IBGE, Registro Civil 2020; não confundir bases |
 | Óbitos totais | 1.513.575 registros (Registro Civil; série com sexo/idade conhecidos: 1.510.068) | registros | IBGE, Registro Civil 2020; diferente do SIM |
