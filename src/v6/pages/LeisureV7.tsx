@@ -37,7 +37,7 @@ export function LeisureV7() {
       <h2>{item.title}</h2><p>{item.summary}</p>
       <small><CalendarDays size={14}/> {formatEventDate(item.starts_at)}</small>
       {item.venue_name && <small><MapPin size={14}/> {item.venue_name}</small>}
-      {item.registration_mode !== 'informational' && <small><Ticket size={14}/> Inscrição/ingresso: {item.registration_mode.replaceAll('_', ' ')}</small>}
+      {item.registration_mode !== 'informational' && <small><Ticket size={14}/> Inscrição/ingresso: {item.registration_mode.split('_').join(' ')}</small>}
       {item.registration_url && <a href={item.registration_url} target="_blank" rel="noreferrer">Ver inscrição externa</a>}
     </article>)}</div>}
     <p className="v7-directory-notice"><ShieldCheck size={16}/> Lazer organiza experiências e eventos. Serviços contratáveis ficam em Serviços; a presença de um evento não confirma parceria nem responsabilidade da UNO pelo organizador.</p>
