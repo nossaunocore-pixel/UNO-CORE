@@ -212,3 +212,23 @@ Fonte: https://bvsms.saude.gov.br/bvs/publicacoes/relatorio_anual_gestao_2022.pd
 
 **Conclusão financeira 2022:** este saldo encerra o terceiro exercício e deve coincidir com o caixa final acumulado do consolidado. Até que existam parâmetros de equipe, escala, infraestrutura, tributos e financiamento, qualquer saldo numérico seria especulativo.
 
+
+## 18. Renda regional, desigualdade e normalização dos indicadores escolares
+
+### Rendimento domiciliar regional
+O rendimento nominal mensal domiciliar per capita nacional foi R$ 1.625 em 2022. A diferença entre unidades da federação era ampla: R$ 814 no Maranhão e R$ 2.913 no Distrito Federal. Em outra tabela regional do IBGE, o Nordeste registrou R$ 1.023 e o Norte R$ 1.107, enquanto o Centro-Oeste chegou a R$ 1.909. São valores nominais; não comparar diretamente com anos anteriores sem deflacionamento e sem conferir a mudança de visita da PNAD usada na estimativa.
+Fontes:
+- https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36320-ibge-divulga-rendimento-domiciliar-per-capita-2022-para-brasil-e-unidades-da-federacao
+- https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37023-ibge-divulga-o-rendimento-domiciliar-per-capita-e-o-coeficiente-de-desequilibrio-regional-de-2022
+
+O Gini do rendimento domiciliar per capita foi 0,518 em 2022, menor valor da série histórica iniciada em 2012 até então. O próprio IBGE mostra que, sem benefícios de programas sociais, o Gini teria sido 0,548. Em 2020, os valores eram 0,524 com benefícios e 0,573 sem; em 2021, 0,544 e 0,568, respectivamente. A transferência pública é componente decisivo na leitura da desigualdade e não pode ser atribuída à UNO.
+Fonte: https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
+
+### Nota de comparabilidade da PNAD
+Em 2020 e 2021, a pandemia reduziu o aproveitamento das entrevistas domiciliares. Para calcular rendimento domiciliar per capita de 2020–2022, o IBGE adotou a quinta visita ao domicílio, em vez da primeira visita usual, que voltou a ser usada a partir de 2023. A quebra precisa ser documentada antes de construir tendências.
+Fonte: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45942-ibge-divulga-rendimento-domiciliar-per-capita-2025-para-brasil-e-unidades-da-federacao
+
+### Fluxo escolar
+Nos anos iniciais, a aprovação caiu para 96,0% em 2022, após 98,5% em 2020 e 97,6% em 2021. Nos anos finais, a aprovação foi 92,1% em 2022, após 97,8% em 2020 e 95,7% em 2021. A elevação de reprovação em 2022 pode refletir retorno a critérios mais regulares de avaliação, além de dificuldades de aprendizagem acumuladas. Aprovação e abandono não substituem avaliação de aprendizagem.
+Fonte: https://anuario.todospelaeducacao.org.br/2025/capitulo-2-ef-anos-iniciais.html
+
