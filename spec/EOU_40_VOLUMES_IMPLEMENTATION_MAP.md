@@ -12,7 +12,7 @@
 - **README-base:** existe finalidade/escopo, mas ainda não especificação implementável.
 - **Parcial/código:** há contratos ou código relacionados, mas falta integração/teste.
 - **Demonstrativo:** UI existe, sem backend/persistência comprovados.
-- **Conflito:** nomenclatura ou fronteira precisa de decisão.
+- **Histórico reconciliado:** a nomenclatura oficial atual foi confirmada pelo fundador; nomes anteriores permanecem apenas como referências históricas.
 - **Não iniciado:** não foi localizada implementação dedicada.
 
 ## Mapa volume por volume
@@ -23,8 +23,8 @@
 | V02 | Arquitetura Oficial | `docs/EOU/V02-Arquitetura-Oficial`; `spec/ARCHITECTURE.md`; `core/kernel` | Documentado/parcial; contratos de módulos, eventos, dados e confiança. |
 | V03 | MUE | `docs/EOU/V03-MUE`; `src/modules/EntidadesView.tsx` | Documentado/demonstrativo; consolidar entidade, relações, ciclo de vida e IDU. |
 | V04 | EVA | `docs/EOU/V04-EVA`; `core/capabilities`, `core/memory`, `core/brain` | Documentado/parcial; modelo de valor, aprendizagem e evidências operacionais. |
-| V05 | Oficina Mestre (catálogo 40) | `docs/EOU/V05-OM`; `src/v6/pages/WorkshopV6.tsx`, `src/v6/components/WorkshopStudioV7.tsx`, `api/workshop/*` | Conflito com V05 legado “Ordem de Missão”; delimitar Oficina, ciclo de criação e aprovação. |
-| V06 | Centro de Operações (catálogo 40) | `docs/EOU/V06-CO`; `src/modules/CentroView.tsx` | Conflito com V06 legado “Conhecimento Organizacional”; confirmar nomenclatura e continuidade da série de 8. |
+| V05 | Oficina Mestre | `docs/EOU/V05-OM`; `src/v6/pages/WorkshopV6.tsx`, `src/v6/components/WorkshopStudioV7.tsx`, `api/workshop/*` | Nomenclatura oficial confirmada; “Ordem de Missão” é referência histórica da série documental anterior. Delimitar Oficina, ciclo de criação e aprovação. |
+| V06 | Centro de Operações | `docs/EOU/V06-CO`; `src/modules/CentroView.tsx` | Nomenclatura oficial confirmada; “Conhecimento Organizacional” é referência histórica da série documental anterior. Manter o domínio operacional do Centro de Operações. |
 | V07 | CCM | `docs/EOU/V07-CCM`; `core/agents`, `core/engine`, `core/governance` | Documentado/parcial; missões, agentes, delegação, supervisão e autorização humana. |
 | V08 | OPS | `docs/EOU/V08-OPS`; `core/engine`, `core/governance` | Documentado/parcial; operações, estados, observabilidade, incidentes e reversão. |
 | V09 | Catálogo Universal de Capacidades | `docs/EOU/V09-Catalogo-de-Capacidades/README.md`; `core/capabilities`, `src/modules/CapacidadesView.tsx` | README-base/parcial; schema de capacidade, custo, limites, dependências e estados. |
@@ -66,7 +66,7 @@
 - **V18 x V12/V15:** V18 define oferta, descoberta e contratação; V12 define provedores; V15 define conectores e integração técnica.
 - **V25 x V18:** V25 define ledger, contas, tarifas e liquidação; V18 descreve experiência de compra/contratação.
 - **V30 x V18:** V30 define eventos e festivais em Lazer; V18 define produtos e serviços contratáveis. Ingresso pode ser um item de oferta, mas o evento continua sendo entidade do V30.
-- **V05/V06:** não consolidar numeração ou renomear até decisão do fundador; preservar a série legada e o catálogo expandido sem sobrescrever arquivos.
+- **V05/V06 — nomenclatura harmonizada:** por decisão do fundador em 31/10/2026, a coleção EOU de 40 volumes mantém V05 — Oficina Mestre e V06 — Centro de Operações. “Ordem de Missão” e “Conhecimento Organizacional” permanecem apenas como nomes históricos encontrados na documentação legada de oito volumes. Não renomear código, IDs estáveis, diretórios ou estrutura já preparada para reproduzir a nomenclatura antiga. Harmonizar títulos, índices, mapas e referências documentais com o catálogo oficial de 40 volumes. Preservar os documentos históricos sem apagá-los nem reescrever seu conteúdo substantivo.
 
 ## Estrutura-base obrigatória de cada volume
 
@@ -81,7 +81,7 @@ Usar `spec/VOLUME_SPEC_TEMPLATE.md`. Cada volume precisa declarar finalidade, es
 5. V20, V22, V23, V29, V31–V34: domínios e motor cognitivo/UNO CORE.
 6. V35–V40: roadmap, ADR, glossário, padrões, jurídico e institucional como camadas de controle contínuo.
 
-Esta ordem é de dependência técnica; não altera a numeração nem aprova os conflitos V05/V06.
+Esta ordem é de dependência técnica; não altera a numeração. A nomenclatura V05/V06 está harmonizada conforme decisão do fundador.
 
 
 ## Registro de código transversal
