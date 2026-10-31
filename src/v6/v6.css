@@ -1048,3 +1048,13 @@
 .v7-community-feed-grid p{color:#c0d4e1;line-height:1.55;white-space:pre-wrap}
 .v7-community-feed-grid small{color:#8daec3}
 @media(max-width:720px){.v7-community-feed{width:calc(100% - 24px);padding:16px}.v7-community-feed>header{flex-direction:column}.v7-community-feed>header button{white-space:normal}}
+
+.v7-participation-public{margin:26px 0;padding:22px;border:1px solid rgba(102,214,246,.2);border-radius:18px;background:rgba(4,24,44,.72)}
+.v7-participation-public>header h2{margin:0 0 8px;font-size:1.35rem}
+.v7-participation-public>header p,.v7-participation-public>p{color:#a9c2d4;line-height:1.55}
+.v7-participation-public-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin-top:16px}
+.v7-participation-public-grid article{padding:16px;border:1px solid rgba(103,211,242,.16);border-radius:14px;background:rgba(7,31,54,.8)}
+.v7-participation-public-grid article>span{color:#65dfff;font-size:.68rem;font-weight:850;text-transform:uppercase}
+.v7-participation-public-grid h3{margin:8px 0}
+.v7-participation-public-grid p{color:#bfd3e0;line-height:1.5}
+.v7-participation-public-grid small{color:#9cb8ca}
