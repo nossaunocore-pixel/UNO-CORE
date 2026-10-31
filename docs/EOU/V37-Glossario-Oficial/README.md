@@ -1,17 +1,51 @@
 # EOU-V37 — Glossário Oficial
 
-> Este volume documenta o Glossário Oficial da Plataforma UNO.
+- Versão documental: 0.2.0
+- Estado: estrutura inicial; glossário canônico ainda precisa ser preenchido e revisado
+- Relacionados: todos os volumes EOU, especialmente V03 MUE, V26 Identidade, V28 Entidades, V36 ADR
 
----
+## 1. Finalidade
+Estabelecer vocabulário comum para documentos, código, interfaces, agentes, equipes e parceiros, reduzindo ambiguidades e preservando o significado oficial de conceitos e siglas.
 
-## Finalidade
+## 2. Registro terminológico
+Cada termo deve ter: forma preferida, definição, categoria, contexto, sinônimos permitidos, termos proibidos/ambíguos, sigla, origem, volume responsável, exemplos, estado, responsável e data de revisão.
 
-Definir a terminologia oficial utilizada na Engenharia da UNO, garantindo consistência conceitual entre documentos, sistemas, equipes e agentes inteligentes.
+## 3. Regras
+- Um conceito canônico deve ter um termo preferido.
+- Sinônimos históricos podem ser preservados, mas devem apontar para o termo vigente.
+- Siglas não devem ser reutilizadas para conceitos distintos.
+- Termos de interface podem ser mais simples que termos técnicos, desde que mapeados.
+- Traduções devem manter significado e contexto.
+- Mudanças terminológicas relevantes exigem atualização de documentação, código e ADR quando afetarem contratos.
 
-O Glossário Oficial constitui a referência linguística da plataforma.
+## 4. Termos canônicos já identificados
+- **UNO CORE:** camada de orquestração universal e ecossistema institucional/tecnológico.
+- **EOU:** Engenharia Oficial UNO; coleção de 40 volumes de engenharia.
+- **Volume EOU:** documento/domínio numerado V01–V40.
+- **Versão do produto:** etapa de evolução/entrega, como V5, V6, V7.
+- **Orquestrador Mestre:** camada de coordenação e governança de agentes, APIs e módulos, sujeita a autorização humana.
+- **Oficina Mestre:** ambiente de criação, edição, versionamento e revisão de artefatos.
+- **Centro de Operações:** domínio de acompanhamento e operação.
+- **IDU:** identificador digital universal da pessoa no UNO, separado do UID do provedor.
+- **MUE:** Moderador Universal de Entidades; definição detalhada vinculada ao V03.
+- **Vitrine:** ambiente de descoberta/apresentação comercial.
+- **Comunidade:** ambiente social e informacional do território.
+- **Participação:** ambiente de propostas, consultas e mecanismos participativos.
+- **Praça UNO:** ambiente institucional e de acesso comunitário.
+- **Chaveiro:** papel/componente restrito para gerenciamento autorizado de segredos.
+- **Sinergia:** coordenação de capacidades/motores especializados, sem eliminar governança.
 
----
+## 5. Termos que exigem cuidado
+“Agente”, “usuário”, “entidade”, “instituição”, “parceiro”, “pioneiro”, “visitante”, “serviço”, “oferta”, “contratação”, “carteira”, “saldo”, “aprovação”, “ativação” e “publicação” devem ter definições precisas por domínio. Não usar “saldo” para representar valor apenas estimado ou não liquidado.
 
-## Estado
+## 6. Convenção de identificadores
+V01–V40 identificam volumes EOU. V5/V6/V7 identificam versões do produto. IDs técnicos estáveis não devem ser alterados por mudança de nome de exibição.
 
-Em desenvolvimento.
+## 7. Processo editorial
+Proposta de termo → análise do volume responsável → verificação de colisões → aprovação → atualização de referências → registro de histórico. Manter aliases para busca sem confundir nome oficial.
+
+## 8. Pendências
+Criar inventário completo, revisar todas as siglas, definir termos jurídicos e comerciais, adicionar equivalentes em inglês quando necessário e automatizar verificação de links/nomes.
+
+## 9. Histórico
+0.2.0 — vocabulário inicial e regras editoriais; 2026-10-31.
