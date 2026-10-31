@@ -32,7 +32,7 @@ export function InstitutionsV7() {
     {!loading && unavailable && <div className="v7-directory-state"><ShieldCheck/><b>Diretório público ainda não publicado.</b><span>A estrutura de consulta está preparada; nenhuma instituição real é inventada ou presumida.</span></div>}
     {!loading && !unavailable && items.length === 0 && <div className="v7-directory-state"><GraduationCap/><b>Nenhuma instituição publicada ainda.</b><span>Quando houver registros aprovados e públicos, eles aparecerão aqui.</span></div>}
     {items.length > 0 && <div className="v7-directory-grid">{items.map((item) => <article key={item.id}>
-      <span>{item.institution_type}</span><h2>{item.name}</h2><p>{item.summary || 'Perfil público sem descrição adicional.'}</p>
+      <span>{item.institution_type} · {item.unit_type === 'matrix' ? 'Matriz' : item.unit_type === 'branch' ? 'Filial' : item.unit_type === 'unit' ? 'Unidade' : 'Independente'}</span><h2>{item.name}</h2><p>{item.summary || 'Perfil público sem descrição adicional.'}</p>
       {item.parent_id && <small>Unidade vinculada a uma instituição matriz</small>}
     </article>)}</div>}
     <p className="v7-directory-notice"><ShieldCheck size={16}/> A listagem mostra somente dados publicados como públicos. Informações internas, documentos, vínculos e regras privadas permanecem protegidos.</p>
