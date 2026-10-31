@@ -1,6 +1,8 @@
 # EOU-V19 — Industrial
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: arquitetura de domínio inicial; não implementado como operação industrial
 - Relacionados: V09 Capacidades, V12 Provedores, V15 Integrações, V18 Marketplace, V20 Infraestrutura Comunitária, V24 Empregabilidade, V29 Projetos, V31 Fluxos
 
