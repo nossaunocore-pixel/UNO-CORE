@@ -88,3 +88,16 @@
 - `/api/identity/panel-access` valida escopo no token e registro ativo no Firestore antes de liberar uma rota.
 - Shells dos painéis são somente estruturais. Não possuem operações de dinheiro, dados jurídicos, filas reais ou ações administrativas até APIs específicas e testes.
 - `supabase/migrations/20261031173000_public_content_read_models.sql` cria read models públicos para Instituições, Catálogo, Comunidade, Eventos e Participação, com SELECT público apenas de conteúdo publicado e escrita restrita ao backend. Não aplicada.
+
+
+## 7. Oficina funcional — rascunhos e versionamento
+
+- `WorkshopStudioV7` substitui os controles demonstrativos inertes por um editor real de rascunhos.
+- Criar/editar/clone/submit: `api/workshop/assets.ts` e `api/workshop/asset.ts`.
+- Serviço server-side: `server/supabaseAdmin.ts`.
+- Autorização: `requirePanelScope(..., 'uno.panel.master.access')`.
+- Persistência: `workshop_assets`, `workshop_asset_versions`, `workshop_audit_events`.
+- RPCs transacionais: create, update, submit for review e clone.
+- A edição só ocorre em status draft. Itens em revisão/aprovados/ativos devem gerar nova cópia de trabalho.
+- Não existe endpoint de aprovação/ativação nesta etapa. Não implementar publicação automática nem permitir que a Oficina altere produção sem fluxo de teste, evidência e autorização humana.
+- Migration: `supabase/migrations/20261031174000_workshop_asset_versioning.sql`, não aplicada.
