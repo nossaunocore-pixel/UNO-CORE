@@ -47,5 +47,7 @@ jobs:
           fi
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Domain contract tests
+        run: npm test
       - name: Build
         run: npm run build
