@@ -409,3 +409,27 @@ Fonte: https://www.ibge.gov.br/estatisticas/sociais/populacao/17270-pnad-continu
 
 ### Como a UNO poderia atuar neste eixo
 A UNO poderia registrar necessidades territoriais com consentimento, agrupar evidências sem expor moradores, localizar prestadores e canais oficiais, encaminhar solicitações e acompanhar protocolos e respostas. A plataforma não executa obra, não regula concessionária e não substitui orçamento, fiscalização ou planejamento de saneamento. Indicadores de resultado devem distinguir: reclamação registrada, protocolo aberto, vistoria realizada, serviço prestado e solução confirmada.
+
+
+## 20. Estrutura econômica setorial — dimensão e limites da oportunidade UNO
+
+### Participação nominal no valor adicionado bruto
+| Ano | Agropecuária | Indústria | Serviços |
+|---|---:|---:|---:|
+| 2020 | 6,59% | 22,51% | 70,90% |
+| 2021 | 7,66% | 25,85% | 66,49% |
+| 2022 | 5,77% | 26,33% | 67,02% |
+
+Fonte: Ministério da Agricultura, Estatísticas e Dados Básicos de Economia Agrícola, tabela de PIB a preços correntes baseada nas Contas Nacionais do IBGE: https://www.gov.br/agricultura/pt-br/assuntos/politica-agricola/todas-publicacoes-de-politica-agricola/estatisticas-e-dados-basicos-de-economia-agricola/EDBAbril2025.pdf
+
+**Nota conceitual:** os percentuais acima são participações nominais no valor adicionado a preços correntes. Não significam que a produção real da indústria tenha crescido mais que a dos serviços, nem permitem inferir produtividade ou renda distribuída. Para desempenho real, usar as taxas de volume das Contas Nacionais já registradas nos capítulos anuais.
+
+### Implicações para a simulação
+- **Serviços:** maior parcela do valor adicionado; amplo campo potencial para descoberta de prestadores, agenda, contratação, reputação, encaminhamento e organização de demanda. A UNO deve medir negócios adicionais e serviços efetivamente concluídos, descontando substituição entre concorrentes.
+- **Indústria:** oportunidades de conexão entre fornecedores, qualificação, manutenção, logística e serviços empresariais, mas a intermediação digital não elimina restrições de capital, energia, crédito, escala ou capacidade produtiva.
+- **Agropecuária:** conexão territorial entre produtores, assistência técnica, transporte, armazenagem, cooperativas e compradores; sazonalidade, distância e infraestrutura são limites materiais.
+- **Setor público e terceiro setor:** serviços essenciais e políticas sociais não são mercado capturável pela UNO. O valor está em orientar acesso, organizar participação e tornar gargalos visíveis, respeitando competências e contratos públicos.
+
+### Regra de mensuração setorial
+Classificar cada resultado por atividade econômica, território, tipo de ator e estágio da cadeia (contato, proposta, contrato, entrega, pagamento, recorrência). Contar como resultado econômico adicional apenas a parcela líquida comprovada que não teria ocorrido sem a intervenção, sem somar o valor bruto da venda ao PIB como se fosse criação integral de valor.
+
