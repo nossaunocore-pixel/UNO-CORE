@@ -39,3 +39,9 @@ Testar oferta expirada, vendedor suspenso, snapshot de preço, pedido duplicado,
 
 ## 9. Pendências
 Definir categorias do MVP, papel jurídico por fluxo, elegibilidade de terceiros, onboarding, KYC quando aplicável, comissões, prazos, devoluções, chargeback, reputação, moderação e atendimento.
+
+
+## 12. Receita própria versus valores de terceiros
+
+Para cada oferta, pedido e liquidação, o sistema identifica o vendedor/prestador e o titular dos valores. O valor total pago pelo comprador não é automaticamente receita da UNO quando a plataforma intermedeia uma operação. Registrar comissão/receita própria UNO separadamente dos valores a repassar. A apuração territorial deve seguir a natureza jurídica/contábil do fluxo e a regra transversal de 50% do lucro local, nunca o faturamento bruto indiscriminado.
+
