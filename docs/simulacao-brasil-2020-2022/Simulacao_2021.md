@@ -169,3 +169,31 @@ O balanço deve incluir custo recorrente e expansão, custos de moderação e su
 
 ## 15. Pendências e confiança
 Faltam extrair séries harmonizadas de óbitos por causa, nascimentos, pobreza, mortalidade infantil/materna, produção física setorial e indicadores de educação, violência, saneamento e conectividade. O cenário UNO segue qualitativo até definição de cobertura, adoção, capacidade de atendimento e orçamento. Confiança alta nos valores de PIB revisado, IPCA, desocupação e Registro Civil citados; impactos causais UNO ainda não quantificados.
+
+
+## 16. Aprofundamento social e territorial — adendo de pesquisa
+
+### Pobreza e desigualdade
+A série harmonizada com as linhas internacionais atualizadas para PPC 2017 aponta pobreza de 36,8% e extrema pobreza de 9,0% em 2021. O IBGE registrou 62,5 milhões de pessoas abaixo da linha de pobreza então utilizada em sua divulgação de 2021, com forte concentração regional: Nordeste (48,7%) e Norte (44,9%) tinham as maiores proporções; entre crianças menores de 14 anos, a pobreza alcançou 46,2%. A divulgação original utilizava parâmetros anteriores do Banco Mundial; para comparação com 2022, preferir a série recalculada com PPC 2017 e explicitar a revisão metodológica.
+Fontes:
+- https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35687-em-2021-pobreza-tem-aumento-recorde-e-atinge-62-5-milhoes-de-pessoas-maior-nivel-desde-2012
+- https://agenciagov.ebc.com.br/noticias/202512/8-6-milhoes-de-pessoas-sairam-da-pobreza-entre-2023-e-2024
+
+### Conectividade e acesso digital
+Em 2021, 90,0% dos domicílios tinham internet; nas áreas rurais, 74,7%, contra 92,3% nas urbanas. O celular era usado em 99,5% dos domicílios conectados, enquanto computador era dispositivo principal em apenas 42,2%. Portanto, um serviço UNO digital poderia ter ampla cobertura potencial, mas não cobertura universal, e precisaria de interface móvel leve, acessibilidade, atendimento assistido e alternativas presenciais/comunitárias.
+Fonte: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34954-internet-ja-e-acessivel-em-90-0-dos-domicilios-do-pais-em-2021
+
+### Saúde materno-infantil
+O Relatório Anual de Gestão do Ministério da Saúde registra mortalidade na infância de 14,6 por mil em 2021 e mortalidade neonatal de 6,2 por mil (dado preliminar no relatório). A comparação com 2020 deve respeitar a revisão/fechamento posterior das bases. O indicador não mede efeito possível da UNO; serve como referência de necessidade e de contexto do sistema de saúde.
+Fonte: https://bvsms.saude.gov.br/bvs/publicacoes/relatorio_anual_gestao_2022.pdf
+
+### Leitura de impacto potencial
+Em 2021, o maior potencial operacional hipotético da UNO estaria em reduzir fricção de acesso e busca: informar onde procurar vacinação, assistência, educação e oportunidades econômicas; apoiar famílias sem conectividade adequada por parceiros locais; organizar demandas coletivas e tornar gargalos visíveis. Não atribuir à plataforma a vacinação, a transferência de renda, a expansão de oferta pública ou a queda/aumento de mortalidade. O atendimento final depende da capacidade e decisão das instituições responsáveis.
+
+### Indicadores territoriais prioritários
+- Pobreza e extrema pobreza por região, estado e município, sempre com linha e PPC declaradas.
+- Acesso à internet urbano/rural e dispositivo disponível.
+- Mortalidade infantil/neonatal e cobertura de atenção primária, com qualidade e defasagem dos registros.
+- Jovens que não estudam nem trabalham, frequência escolar e barreiras de acesso.
+- Encaminhamentos aceitos, atendimento confirmado e motivo de não resolução por território.
+
