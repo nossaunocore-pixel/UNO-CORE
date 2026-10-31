@@ -180,7 +180,7 @@ A internet estava presente em 91,5% dos domicílios (68,9 milhões), mas 6,4 mil
 Fonte: https://agenciagov.ebc.com.br/noticias/202311/em-2022-streaming-estava-presente-em-43-4-dos-domicilios-com-tv
 
 ### Água e esgotamento sanitário
-Em 2022, 85,5% dos domicílios tinham rede geral como principal forma de abastecimento de água e 69,5% tinham acesso à rede geral de esgoto ou fossa séptica ligada à rede. Para acesso à rede de esgoto, a cobertura era de 36,6% no Norte, 44,4% no Nordeste e 85,5% no Sudeste. O dado evidencia que oportunidades e necessidades locais são diferentes; a UNO poderia mapear relatos, organizar evidências agregadas e encaminhar demandas, mas obras e serviços permanecem responsabilidade dos prestadores e do poder público.
+Em 2022, 85,5% dos domicílios tinham rede geral como principal forma de abastecimento de água e 69,5% tinham acesso à rede geral de esgoto ou fossa séptica ligada à rede. Para domicílios com rede geral de esgoto ou fossa ligada à rede geral, a cobertura era de 31,1% no Norte, 50,1% no Nordeste e 89,1% no Sudeste. O dado evidencia que oportunidades e necessidades locais são diferentes; a UNO poderia mapear relatos, organizar evidências agregadas e encaminhar demandas, mas obras e serviços permanecem responsabilidade dos prestadores e do poder público.
 Fonte: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
 
 ### Saúde materno-infantil
