@@ -103,3 +103,11 @@
 - A edição só ocorre em status draft. Itens em revisão/aprovados/ativos devem gerar nova cópia de trabalho.
 - Não existe endpoint de aprovação/ativação nesta etapa. Não implementar publicação automática nem permitir que a Oficina altere produção sem fluxo de teste, evidência e autorização humana.
 - Migration: `supabase/migrations/20261031174000_workshop_asset_versioning.sql`, não aplicada.
+
+
+## 8. Catálogo dos 40 volumes na Oficina
+
+- `src/domain/volumes.ts` fornece registro máquina-legível dos 40 volumes.
+- `EOUVolumeCatalogV7` permite navegar, filtrar e inspecionar a classificação documental e os domínios de implementação.
+- V05/V06 ficam em estado de conflito de nomenclatura, aguardando decisão do fundador.
+- O registro não afirma que os 40 volumes estejam integralmente especificados ou implementados.
