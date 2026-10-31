@@ -1,6 +1,6 @@
 # EOU-V17 — Governança
 
-- Versão documental: 0.2.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
+- Versão documental: 0.3.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado; regras finais exigem aprovação do fundador
 - Relacionados: V01 Constituição, V05 Oficina Mestre, V06 Centro de Operações, V07 CCM, V08 OPS, V10 Agentes, V16 Segurança, V26 Identidade, V36 ADR
 
@@ -52,6 +52,7 @@ Testar acesso negado, escopo insuficiente, atribuição expirada, revogação, s
 Formalizar matriz de alçadas por domínio, processo de nomeação/remoção de gestores, sucessão e contingência do fundador, política de exceção e revisão periódica. Requer validação jurídica e institucional.
 
 ## 10. Histórico
+0.3.0 — distinção expressa entre gatilho de decisão e gatilho de operação; autonomia institucional e papel integrador do Departamento de Sinergia; 2026-10-31.
 0.2.0 — estrutura alinhada aos painéis e controles V7; 2026-10-31.
 
 
