@@ -82,13 +82,12 @@ export function WorkshopStudioV7() {
     const user = auth?.currentUser;
     if (!user) throw new Error('Entre com sua conta Google para usar a Oficina.');
     const token = await user.getIdToken();
+    const headers = new Headers(init?.headers);
+    headers.set('Authorization', 'Bearer ' + token);
+    if (init?.body) headers.set('Content-Type', 'application/json');
     const response = await fetch(url, {
       ...init,
-      headers: {
-        ...(init?.headers || {}),
-        Authorization: 'Bearer ' + token,
-        ...(init?.body ? { 'Content-Type': 'application/json' } : {})
-      }
+      headers
     });
     const data = await response.json().catch(() => ({})) as {
       error?: string;
