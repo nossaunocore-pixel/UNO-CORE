@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getIdTokenResult, onIdTokenChanged } from 'firebase/auth';
-import { Home, MessageCircle, Network, UserRound, Store, Landmark, Shield, Wrench } from 'lucide-react';
+import { Home, MessageCircle, Network, UserRound, Store, Landmark, Shield, Wrench, Building2, CalendarDays, Briefcase, ClipboardCheck } from 'lucide-react';
 import { CommunityV6 } from './pages/CommunityV6';
 import { ConversationV6 } from './pages/ConversationV6';
 import { MasterPanelGateV7 } from './components/MasterPanelGateV7';
@@ -18,6 +18,12 @@ import { IntegrationsCenterV637 } from './pages/IntegrationsCenterV637';
 import { AgentsCenterV638 } from './pages/AgentsCenterV638';
 import { AuditCenterV639 } from './pages/AuditCenterV639';
 import { WorkshopV6 } from './pages/WorkshopV6';
+import { InstitutionsV7 } from './pages/InstitutionsV7';
+import { LeisureV7 } from './pages/LeisureV7';
+import { ServicesV7 } from './pages/ServicesV7';
+import { ActiveServicesV7 } from './pages/ActiveServicesV7';
+import { HouseV7 } from './pages/HouseV7';
+import { EmploymentIncomeV7 } from './pages/EmploymentIncomeV7';
 import { AuthControlV7 } from './components/AuthControlV7';
 import { auth } from '../services/firebase';
 import type { V6View } from './types';
@@ -25,10 +31,16 @@ import './v6.css';
 
 const navigation: Array<{ id: V6View; label: string; icon: React.ElementType }> = [
   { id: 'praca', label: 'Praça UNO', icon: Home },
-  { id: 'edificio', label: 'Institucional', icon: Landmark },
+  { id: 'edificio', label: 'UNO Institucional', icon: Landmark },
+  { id: 'instituicoes', label: 'Instituições', icon: Building2 },
   { id: 'nos', label: 'Vitrine', icon: Store },
+  { id: 'lazer', label: 'Lazer', icon: CalendarDays },
+  { id: 'servicos', label: 'Serviços', icon: Briefcase },
   { id: 'conversa', label: 'Conversa', icon: MessageCircle },
   { id: 'usuario', label: 'Meu Ambiente', icon: UserRound },
+  { id: 'casa', label: 'Casa', icon: Home },
+  { id: 'emprego_renda', label: 'Emprego e Renda', icon: Briefcase },
+  { id: 'servicos_ativos', label: 'Serviços Ativos', icon: ClipboardCheck },
   { id: 'comunidade', label: 'Comunidade', icon: Network },
   { id: 'mestre', label: 'Painel Mestre', icon: Shield },
   { id: 'oficina', label: 'Oficina', icon: Wrench }
@@ -82,6 +94,12 @@ export default function V6App() {
         <PageAccessGateV7 view={view}>
           {view === 'praca' && <PublicSquareV6 onNavigate={setView} />}
           {view === 'edificio' && <UnoBuildingV63 onNavigate={setView} />}
+          {view === 'instituicoes' && <InstitutionsV7 />}
+          {view === 'lazer' && <LeisureV7 />}
+          {view === 'servicos' && <ServicesV7 />}
+          {view === 'servicos_ativos' && <ActiveServicesV7 />}
+          {view === 'casa' && <HouseV7 />}
+          {view === 'emprego_renda' && <EmploymentIncomeV7 />}
           {view === 'biblioteca' && <KnowledgeLibraryV63 onNavigate={setView} />}
           {view === 'conteudos' && <ContentStudioV635 onNavigate={setView} />}
           {view === 'acervo' && <MediaLibraryV636 onNavigate={setView} />}
