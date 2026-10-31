@@ -38,6 +38,14 @@ export function PageAccessGateV7({
         return;
       }
 
+      const authenticatedWithGoogle = user.providerData.some(
+        (provider) => provider.providerId === 'google.com'
+      );
+      if (!authenticatedWithGoogle) {
+        if (!cancelled) setState('login_required');
+        return;
+      }
+
       if (!cancelled) setState('checking');
 
       try {
@@ -94,7 +102,7 @@ export function PageAccessGateV7({
 
   const messages: Record<Exclude<AccessState, 'allowed'>, string> = {
     checking: 'Verificando sua identidade e as permissões desta área…',
-    login_required: 'Para conhecer os ambientes internos, entre com sua conta Google no botão Entrar.',
+    login_required: 'Para conhecer os ambientes internos, entre com uma conta Google pelo botão Entrar.',
     verification_required: 'A conta Google precisa apresentar um e-mail verificado antes de continuar.',
     provisioning_required: 'Não foi possível validar ou provisionar sua Identidade UNO. O acesso permanece bloqueado até a configuração segura do serviço.',
     forbidden: 'Sua conta não possui autorização para esta área. O acesso mestre depende de concessão explícita e validada.'
