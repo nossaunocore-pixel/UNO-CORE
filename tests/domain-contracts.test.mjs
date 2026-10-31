@@ -76,3 +76,24 @@ test('experience registry contains the founder-defined areas', () => {
     assert.ok(ids.includes(id), `Missing experience area: ${id}`);
   }
 });
+
+import {
+  EOU_VOLUMES,
+  getVolumesRequiringFounderDecision
+} from '../src/domain/volumes.ts';
+
+test('EOU registry contains exactly 40 uniquely numbered volumes', () => {
+  assert.equal(EOU_VOLUMES.length, 40);
+  assert.deepEqual(
+    EOU_VOLUMES.map((volume) => volume.number),
+    Array.from({ length: 40 }, (_, index) => index + 1)
+  );
+  assert.equal(new Set(EOU_VOLUMES.map((volume) => volume.id)).size, 40);
+});
+
+test('EOU registry preserves the V05/V06 naming conflicts for founder decision', () => {
+  const conflicts = getVolumesRequiringFounderDecision().map((volume) => volume.id);
+  assert.deepEqual(conflicts, ['V05', 'V06']);
+  assert.equal(EOU_VOLUMES.find((volume) => volume.id === 'V05')?.legacyName, 'Ordem de Missão');
+  assert.equal(EOU_VOLUMES.find((volume) => volume.id === 'V06')?.legacyName, 'Conhecimento Organizacional');
+});
