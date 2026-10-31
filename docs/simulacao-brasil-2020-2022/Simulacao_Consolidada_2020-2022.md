@@ -433,3 +433,77 @@ Fonte: Ministério da Agricultura, Estatísticas e Dados Básicos de Economia Ag
 ### Regra de mensuração setorial
 Classificar cada resultado por atividade econômica, território, tipo de ator e estágio da cadeia (contato, proposta, contrato, entrega, pagamento, recorrência). Contar como resultado econômico adicional apenas a parcela líquida comprovada que não teria ocorrido sem a intervenção, sem somar o valor bruto da venda ao PIB como se fosse criação integral de valor.
 
+
+
+## 21. Aprofundamento documental — saúde, trabalho e segurança
+
+Os dados abaixo descrevem o Brasil real. Não representam efeitos atribuíveis à UNO.
+
+### 21.1 Mortalidade materna e pandemia
+
+A razão de mortalidade materna (RMM) foi de 57,9 óbitos por 100 mil nascidos vivos em 2019, 74,7 em 2020, 117,4 em 2021 e 57,7 em 2022, segundo série SIM/SINASC publicada pelo IBGE. O Ministério da Saúde identificou associação com COVID-19 em 18% dos óbitos maternos de 2020 e 43% em 2021. As doenças infecciosas e parasitárias maternas — grupo que inclui COVID-19 — passaram de 45 óbitos em 2019 para 1.510 em 2021. A série requer atenção às revisões e ao caráter preliminar de parte dos dados.
+
+**Hipótese UNO a testar:** orientação confiável, localização de pré-natal/maternidades, lembretes e acompanhamento de encaminhamentos poderiam reduzir barreiras de acesso entre pessoas alcançadas. Não substituem avaliação clínica, profissionais, transporte ou leitos. Para estimar efeito, cruzar cobertura, comparecimento, risco, capacidade local e territórios comparáveis. Não converter a diferença nacional da RMM em “óbitos evitados pela UNO”.
+
+Fontes:
+- IBGE, Estatísticas de Gênero: https://biblioteca.ibge.gov.br/visualizacao/livros/liv102066_informativo.pdf
+- Ministério da Saúde, Saúde Brasil 2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/anomalias-congenitas/saude-brasil-2022-analise-da-situacao-de-saude-e-uma-visao-integrada-sobre-os-fatores-de-risco-para-anomalias-congenitas/%40%40download/file
+- Ministério da Saúde, Saúde Brasil 2023: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/analise-de-situacao-de-saude/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras-versao-preliminar/%40%40download/file
+
+### 21.2 Mortalidade geral e excesso de mortalidade
+
+O SIM é a fonte oficial para causas de morte, idade, sexo, residência e ocorrência. Os dados são divulgados em etapas preliminar e definitiva; cada extração futura deverá registrar a data e o status de consolidação. Para avaliar a pandemia, não basta contar óbitos com menção de COVID-19: é necessário examinar excesso de mortalidade por causas naturais, idade, sexo e território, separando efeitos diretos da infecção de efeitos indiretos como sobrecarga assistencial, interrupção de tratamentos e adiamento da procura por atendimento.
+
+O painel do Ministério da Saúde/CONASS define excesso como diferença entre óbitos observados e esperados e alerta que nem todo excesso representa morte diretamente causada pelo SARS-CoV-2.
+
+Fontes:
+- SIM — Dados Abertos SUS: https://dadosabertos.saude.gov.br/dataset/sim
+- Ministério da Saúde — Dados sobre Mortalidade: https://www.gov.br/saude/pt-br/acesso-a-informacao/sic/dados-em-transparencia-ativa/svsa/mortalidade
+- Painel de excesso de mortalidade 2020–2022: https://bvsms.saude.gov.br/painel-de-analise-do-excesso-de-mortalidade-por-causas-naturais-no-brasil-2020-2022/
+
+### 21.3 Trabalho e subutilização
+
+A taxa média anual de desocupação foi de 13,8% em 2020, 13,2% em 2021 e 9,3% em 2022. A subutilização foi de 28,2%, 27,2% e 20,8%, respectivamente. Em 2022 ainda havia 24,1 milhões de pessoas subutilizadas e 4,3 milhões desalentadas; o nível médio de ocupação foi 56,6%, abaixo dos 58,1% de 2013 e 2014. A informalidade permaneceu em 39,6% em 2022.
+
+Em 2021, 12,7 milhões de jovens de 15 a 29 anos (25,8% do grupo) não estudavam nem estavam ocupados; a subutilização alcançou 28,5%. A conexão com vagas, isoladamente, não resolve barreiras de qualificação, cuidado familiar, transporte, documentação, saúde, discriminação ou falta de postos adequados.
+
+**Hipótese UNO a testar:** acompanhar o funil competência validada → oportunidade compatível → candidatura → entrevista → contratação → formalização → renda líquida → permanência em 3/6/12 meses. Distinguir emprego adicional de troca de empregador, formalização de atividade existente e mera intermediação. Cadastro e encaminhamento não equivalem a emprego criado.
+
+Fontes:
+- IBGE, PNAD Contínua 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36336-pnad-continua-em-2022-taxa-media-anual-de-desocupacao-foi-de-9-3-enquanto-de-taxa-de-subutilizacao-foi-de-20-8
+- IBGE, jovens fora de estudo e ocupação em 2021: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35686-em-2021-pais-tinha-12-7-milhoes-de-jovens-que-nao-estudavam-nem-estavam-ocupados
+- IBGE, desigualdades de emprego por cor ou raça: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35467-pessoas-pretas-e-pardas-continuam-com-menor-acesso-a-emprego-educacao-seguranca-e-saneamento
+
+### 21.4 Segurança pública
+
+O Anuário Brasileiro de Segurança Pública 2023 registrou 48.288 mortes violentas intencionais (MVI) em 2021 e 47.452 em 2022, com taxas de 23,9 e 23,4 por 100 mil habitantes. A variação nacional foi de -2,2%, com diferenças relevantes entre estados. MVI é uma categoria construída a partir de registros das secretarias de segurança; não deve ser confundida ou somada com óbitos do SIM ou com homicídios dolosos isoladamente. O MJSP alerta que os dados do Sinesp dependem do nível de alimentação e consolidação estadual na data da extração.
+
+**Hipótese UNO a testar:** facilitar acesso a informação, redes de apoio, canais de proteção e órgãos competentes, sem atuar como polícia ou sistema de previsão criminal. Proteger vítimas e denunciantes; não publicar mapas que exponham pessoas ou locais sensíveis. Avaliar acesso, tempo de resposta e proteção, não apenas redução de ocorrências registradas.
+
+Fontes:
+- FBSP, Anuário 2023: https://publicacoes.forumseguranca.org.br/bitstreams/b8f1896e-8bd9-4809-a9ee-85b82245dcf2/download
+- MJSP, Dados Nacionais de Segurança Pública: https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica
+- Acervo e metodologia dos Anuários: https://forumseguranca.org.br/publicacoes/anuario-brasileiro-de-seguranca-publica/?locale=pt_BR
+
+### 21.5 Atenção Primária à Saúde: capacidade instalada
+
+A análise do TCU baseada no e-Gestor APS registra 39.104 equipes de Saúde da Família (eSF) em janeiro de 2020, 45.305 em janeiro de 2021, 47.278 em janeiro de 2022 e 48.796 em janeiro de 2023. Somadas equipes de Atenção Primária de 20h e 30h, o total eSF+eAP passou de 40.208 em janeiro de 2020 para 51.113 em janeiro de 2022. Número de equipes não equivale automaticamente a cobertura efetiva, disponibilidade de profissionais, qualidade, consultas ou capacidade ociosa.
+
+**Regra de modelagem:** cruzar por território e mês cobertura potencial, população adscrita, equipes ativas, profissionais, unidades, horários, produção, filas e serviços. Não presumir integração com sistemas de saúde. Dados pessoais de saúde exigem base legal, minimização e controles reforçados.
+
+Fontes:
+- TCU, análise de equipes APS 2020–2023: https://pesquisa.apps.tcu.gov.br/documento/acordao-completo/pec/%2520%2520/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/10
+- Ministério da Saúde, Cobertura da Atenção Primária: https://relatorioaps.saude.gov.br/cobertura/pns
+
+### 21.6 Quadro de confiança e pendências
+
+| Tema | Linha de base localizada | Confiança | Próxima validação |
+|---|---|---|---|
+| Mortalidade materna | RMM 74,7 (2020), 117,4 (2021), 57,7 (2022) | Alta para série publicada; conferir vintage | Desagregar por UF, causa, idade e pré-natal |
+| Excesso de mortalidade | SIM e painel CONASS/MS | Alta para metodologia | Extrair série semanal por idade, sexo e UF |
+| Subutilização | 28,2% (2020), 27,2% (2021), 20,8% (2022) | Alta para PNAD publicada | Harmonizar vintages e detalhar grupos/UF |
+| Jovens fora de estudo e ocupação | 12,7 milhões; 25,8% em 2021 | Alta para publicação IBGE | Cruzar gênero, território e renda |
+| MVI | 48.288 (2021), 47.452 (2022) | Alta para Anuário 2023; sujeito a revisão | Construir série comparável 2020–2022 e municipal |
+| Atenção Primária | Contagem eSF/eAP por competência | Alta para contagem administrativa, não efetividade | Cobertura e produção por município/mês |
+
+**Status:** pesquisa em andamento. Esta seção amplia a linha de base e delimita mecanismos possíveis; não encerra o estudo nem preenche impactos quantitativos sem dados de adoção, capacidade, atendimento confirmado e custos.
