@@ -7,6 +7,20 @@
 ## 1. Contrato de autoridade
 Governança define quem pode propor, avaliar, aprovar, executar, supervisionar, auditar, suspender e revogar. Orquestrador Mestre coordena e aplica políticas, mas não cria autoridade para si nem substitui aprovação humana.
 
+## 1.1. Separação entre gatilho de decisão e gatilho de operação
+
+O modelo de autorização deve distinguir:
+- `decision_grant`: competência para aprovar, deliberar, autorizar, alterar política ou assumir compromisso em uma alçada definida;
+- `operation_grant`: capacidade de executar uma ação previamente autorizada, sob escopo, finalidade, limites, prazo e condições explícitos.
+
+Nenhum `operation_grant` implica `decision_grant`. Uma pessoa/agente que executa não pode presumir autorização para decidir. Uma decisão aprovada não autoriza automaticamente execução por qualquer ator. A política deve identificar quem decide, quem executa, quem supervisiona e quem audita.
+
+## 1.2. Instituições autônomas e Sinergia
+
+Cada instituição mantém identidade, administração, dados, responsabilidades e alçadas próprias. A NÓS S.A. é a instituição de referência, com integração ampliada conforme necessidade e autorização, sem poder automático sobre outras instituições. As demais instituições conectam-se aos componentes UNO estritamente necessários à integração harmônica.
+
+O Departamento de Sinergia identifica, propõe e acompanha conexões, padrões e cooperação. Não pode aprovar em nome das instituições, alterar seus grants ou ampliar escopos sem autoridade expressa. Cada conexão deve registrar finalidade, dados, titulares, entidades, escopo, responsável, vigência, custos, evidências e revogação.
+
 ## 2. Princípios institucionais já definidos
 Painel Mestre reservado ao fundador e pessoas explicitamente designadas. Fundador também atua como usuário comum em contexto separado. Painéis funcionais: Administrativo, Coordenação Geral, Jurídico, Contábil e Financeiro e Atendimento. Stripe é subárea do Painel Contábil e Financeiro. Oficina Mestre cria/versiona rascunhos; aprovação e ativação são etapas distintas. Acesso padrão negado; delegações explícitas, rastreáveis e revogáveis.
 
