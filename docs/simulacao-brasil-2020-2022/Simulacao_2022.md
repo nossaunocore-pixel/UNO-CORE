@@ -111,3 +111,59 @@ Apresentar o resultado anual e o acumulado de três exercícios, com custos de m
 
 ## 8. Fechamento do terceiro exercício
 Avaliar o que a UNO demonstrou, o que não demonstrou, quais resultados dependem de políticas públicas ou terceiros, e se a engenharia se mostra sustentável, replicável e útil em diferentes territórios.
+
+
+## 9. Linha histórica 2022 — marcos e contexto
+| Data/período | Acontecimento real | Relevância | Fonte |
+|---|---|---|---|
+| 2022, primeiro semestre | Continuidade da vacinação e transição da fase mais aguda da emergência sanitária, com circulação do SARS-CoV-2 ainda presente | Saúde pública e sequelas da pandemia permanecem relevantes | Ministério da Saúde / OMS |
+| 2022, ao longo do ano | Recuperação da ocupação e retomada de atividades presenciais, com inflação e perda de rendimento real como desafios | Recuperação do mercado de trabalho não elimina informalidade, subutilização ou desigualdade | IBGE |
+| 02/03/2023 (divulgação inicial) | IBGE divulga crescimento de 2,9% do PIB em 2022 | Referência inicial posteriormente revisada | IBGE |
+| 06/11/2024 (revisão) | IBGE revisa o crescimento do PIB de 2022 para 3,0% e PIB nominal para R$ 10,1 trilhões | Adotar a série revisada para a comparação consolidada | IBGE |
+| 02/10/2022 e 30/10/2022 | Primeiro e segundo turnos das eleições gerais | Marco político-institucional do ano; a UNO não participa do exercício de autoridade eleitoral | TSE |
+
+## 10. Brasil real — indicadores 2022 com fonte e vintage
+| Indicador | Resultado observado | Unidade / nota |
+|---|---:|---|
+| PIB real | +3,0% | Série revisada pelo IBGE em novembro de 2024; primeira divulgação apontou +2,9% |
+| PIB nominal | R$ 10,1 trilhões | Valores correntes, série revisada |
+| PIB per capita | R$ 47.802,02 | Valores correntes, série revisada |
+| Agropecuária / indústria / serviços | -1,1% / +1,5% / +4,3% | Valor adicionado, série revisada |
+| Consumo das famílias | +4,1% | Variação real, série revisada |
+| Formação bruta de capital fixo | +1,1% | Variação real, série revisada |
+| IPCA | 5,79% | Inflação acumulada no ano |
+| Desocupação média anual | 9,3% | PNAD Contínua |
+| Subutilização média anual | 20,8% | PNAD Contínua |
+| Informalidade média anual | 39,6% | PNAD Contínua |
+| Rendimento real habitual médio | R$ 2.715 | Média anual; queda real de 1,0% ante 2021, segundo PNAD Contínua |
+| Nascimentos ocorridos em 2022 | 2.542.298 | Registro Civil, nascidos no ano e registrados até o 1º trimestre de 2023 |
+| Óbitos ocorridos em 2022 | 1.504.763 | Registro Civil, ocorridos em 2022 e registrados até março de 2023 |
+| Pobreza / extrema pobreza | A extrair | Mesma metodologia e linha de pobreza dos anos anteriores |
+| Indústria física / comércio / serviços | A extrair | Usar índices conjunturais com seus próprios conceitos |
+
+## 11. Leitura do ano
+Na série revisada, 2022 apresentou crescimento real do PIB de 3,0%, com serviços +4,3%, indústria +1,5% e agropecuária -1,1%. A recuperação do emprego foi expressiva: desocupação média de 9,3%, mas subutilização ainda em 20,8% e informalidade em 39,6%. O rendimento real habitual médio caiu 1,0% em relação a 2021, mostrando que a melhora da ocupação não significou melhora equivalente do rendimento médio.
+
+O Registro Civil apontou 1.504.763 óbitos ocorridos em 2022 e 2.542.298 nascimentos. O número de óbitos foi menor que em 2021; o IBGE relaciona a queda, entre outros fatores, à redução das mortes por coronavírus e à ampliação do esquema vacinal. Não se deve interpretar a diferença anual inteira como efeito de uma única causa.
+
+## 12. Contrafactual UNO — hipóteses testáveis em 2022
+- **Escala territorial:** verificar se processos testados nos dois primeiros anos poderiam ser replicados com qualidade em mais territórios sem degradar governança e atendimento.
+- **Emprego e formalização:** avaliar conexão de competências, serviços e demanda com acompanhamento de conclusão, renda e formalização efetivas.
+- **Produtividade de pequenos negócios:** medir redução de custo de busca, ampliação de clientes e melhor aproveitamento de capacidade, descontando deslocamento de vendas que ocorreriam de qualquer modo.
+- **Gestão social baseada em evidências:** converter participação e dados territoriais em diagnósticos compartilháveis, respeitando consentimento, privacidade e competência legal de cada instituição.
+- **Sustentabilidade:** verificar se receitas próprias e financiamento recorrente cobririam operação, suporte, segurança e expansão.
+
+O aumento do PIB, a queda da desocupação e a redução dos óbitos são resultados históricos observados, não efeitos atribuíveis à UNO. O contrafactual deve estimar somente a parcela plausível de contribuição adicional da engenharia, em escala compatível com sua cobertura.
+
+## 13. Fechamento financeiro 2022 — encerramento do terceiro exercício
+Consolidar custos recorrentes e de expansão, receitas próprias, financiamento e doações, recursos intermediados e economias comprovadas. Calcular saldo anual e acumulado 2020–2022. A sustentabilidade deve ser testada com receitas menores, custos maiores, crescimento mais lento e cenários de cooperação institucional reduzida.
+
+## 14. Fontes consultadas
+1. IBGE — Contas Nacionais 2022, revisão para crescimento de 3,0%: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/41763-pib-cresce-3-0-e-totaliza-r-10-trilhoes-em-2022
+2. IBGE — IPCA 2022, 5,79%: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36047-ipca-vai-a-0-62-em-dezembro-e-fecha-2022-em-5-79
+3. IBGE — PNAD Contínua 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36336-pnad-continua-em-2022-taxa-media-anual-de-desocupacao-foi-de-9-3-enquanto-de-taxa-de-subutilizacao-foi-de-20-8
+4. IBGE — Registro Civil, nascimentos e óbitos 2022: https://educa.ibge.gov.br/jovens/materias-especiais/22357-especial-registro-civil.html
+5. TSE — Estatísticas e calendário eleitoral: https://www.tse.jus.br/eleicoes/eleicoes-2022
+
+## 15. Pendências e confiança
+Completar séries por causa de morte, mortalidade infantil/materna, pobreza, educação, habitação, saneamento, violência, produção física setorial e desigualdade territorial. A comparação de mortalidade deve considerar composição etária e causas específicas. Confiança alta nos dados revisados de PIB, IPCA, PNAD e Registro Civil citados; contrafactual UNO ainda sem estimativa quantitativa.
