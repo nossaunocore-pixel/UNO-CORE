@@ -26,6 +26,14 @@ interface WorkshopAssetDetail extends WorkshopAssetSummary {
   definition: Record<string, unknown>;
 }
 
+interface WorkshopAssetVersion {
+  id: string;
+  version: number;
+  change_summary: string;
+  changed_by_idu: string;
+  created_at: string;
+}
+
 const ASSET_TYPES: Array<{ value: AssetType; label: string }> = [
   { value: 'agent', label: 'Agente' },
   { value: 'tool', label: 'Ferramenta' },
@@ -59,6 +67,7 @@ function statusLabel(status: string) {
 export function WorkshopStudioV7() {
   const [assets, setAssets] = useState<WorkshopAssetSummary[]>([]);
   const [selected, setSelected] = useState<WorkshopAssetDetail | null>(null);
+  const [versions, setVersions] = useState<WorkshopAssetVersion[]>([]);
   const [assetType, setAssetType] = useState<AssetType>('agent');
   const [origin, setOrigin] = useState<'uno' | 'third_party'>('uno');
   const [name, setName] = useState('');
@@ -85,6 +94,7 @@ export function WorkshopStudioV7() {
       error?: string;
       assets?: WorkshopAssetSummary[];
       asset?: WorkshopAssetDetail;
+      versions?: WorkshopAssetVersion[];
     };
     if (!response.ok) throw new Error(data.error || 'A operação da Oficina falhou.');
     return data;
@@ -109,6 +119,7 @@ export function WorkshopStudioV7() {
 
   function resetForm() {
     setSelected(null);
+    setVersions([]);
     setAssetType('agent');
     setOrigin('uno');
     setName('');
@@ -125,6 +136,7 @@ export function WorkshopStudioV7() {
       const asset = data.asset;
       if (!asset) throw new Error('Recurso não encontrado.');
       setSelected(asset);
+      setVersions(data.versions || []);
       setAssetType(asset.asset_type);
       setOrigin(asset.origin || 'uno');
       setName(asset.name);
@@ -167,11 +179,11 @@ export function WorkshopStudioV7() {
             body: JSON.stringify(body)
           });
 
+      await loadAssets();
       if (data.asset) {
-        setSelected(data.asset);
+        await selectAsset(data.asset.id);
         setMessage('Rascunho salvo. Versão ' + data.asset.version + '.');
       }
-      await loadAssets();
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Não foi possível salvar o rascunho.');
     } finally {
@@ -187,19 +199,11 @@ export function WorkshopStudioV7() {
         '/api/workshop/asset?id=' + encodeURIComponent(selected.id) + '&action=' + action,
         { method: 'POST' }
       );
-      if (data.asset) {
-        setSelected(data.asset);
-        setAssetType(data.asset.asset_type);
-        setOrigin(data.asset.origin || 'uno');
-        setName(data.asset.name);
-        setDescription(data.asset.description);
-        setChangeSummary(data.asset.change_summary || '');
-        setDefinitionText(JSON.stringify(data.asset.definition || {}, null, 2));
-      }
+      await loadAssets();
+      if (data.asset) await selectAsset(data.asset.id);
       setMessage(action === 'submit'
         ? 'Rascunho enviado para revisão humana. Nenhuma ativação foi realizada.'
         : 'Nova cópia de trabalho criada. O original foi preservado.');
-      await loadAssets();
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'A ação não foi concluída.');
     } finally {
@@ -239,6 +243,7 @@ export function WorkshopStudioV7() {
           {selected && selected.status !== 'draft' && <button type="button" onClick={() => void runAction('clone')} disabled={busy}><Copy size={15}/> Criar nova versão</button>}
         </div>
         <p className="v7-workshop-message" role="status">{message}</p>
+        {selected && <section className="v7-workshop-version-history"><h3>Histórico de versões</h3>{versions.length === 0 ? <p>Nenhuma versão registrada.</p> : versions.map((version) => <article key={version.id}><b>v{version.version}</b><span>{version.change_summary || 'Alteração registrada'}</span><small>{new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' }).format(new Date(version.created_at))}</small></article>)}</section>}
       </main>
     </div>
     <p className="v7-workshop-safety"><ShieldCheck size={16}/> Tudo começa como rascunho. Aprovação, codificação, testes e ativação são estados separados e exigem alçadas próprias. Nunca cole senhas, tokens ou chaves; use apenas referências a segredos guardados no servidor.</p>
