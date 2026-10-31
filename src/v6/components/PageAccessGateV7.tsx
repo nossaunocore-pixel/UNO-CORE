@@ -11,6 +11,11 @@ type AccessState =
   | 'provisioning_required'
   | 'forbidden';
 
+// Public visitor navigation is Supabase-backed and does not require Firebase/Google.
+const PUBLIC_VIEWS: V6View[] = [
+  'praca', 'edificio', 'nos', 'comunidade', 'participacao', 'conversa'
+];
+
 const MASTER_VIEWS: V6View[] = [
   'mestre', 'oficina', 'conteudos', 'acervo',
   'integracoes', 'agentes', 'auditoria'
@@ -26,6 +31,11 @@ export function PageAccessGateV7({
   const [state, setState] = useState<AccessState>('checking');
 
   useEffect(() => {
+    if (PUBLIC_VIEWS.includes(view)) {
+      setState('allowed');
+      return;
+    }
+
     if (!auth) {
       setState('login_required');
       return;
@@ -98,7 +108,7 @@ export function PageAccessGateV7({
     };
   }, [view]);
 
-  if (state === 'allowed') return <>{children}</>;
+  if (PUBLIC_VIEWS.includes(view) || state === 'allowed') return <>{children}</>;
 
   const messages: Record<Exclude<AccessState, 'allowed'>, string> = {
     checking: 'Verificando sua identidade e as permissões desta área…',
