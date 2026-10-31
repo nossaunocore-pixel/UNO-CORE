@@ -1,6 +1,8 @@
 # EOU-V39 — Documentação Jurídica
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: estrutura de requisitos; revisão por profissionais habilitados obrigatória
 - Relacionados: V13 Dados, V16 Segurança, V17 Governança, V18 Marketplace, V21 Educação, V22 Saúde, V23 Habitação, V24 Empregabilidade, V25 Financeiro, V30 Eventos, V40 Institucional
 
