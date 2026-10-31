@@ -5,7 +5,7 @@ import {
   getCatalogPublicationIssues,
   isServiceActivationActive
 } from '../src/domain/catalog.ts';
-import { UNO_PANELS } from '../src/domain/panels.ts';
+import { UNO_PANELS, PANEL_SCOPE_KEYS } from '../src/domain/panels.ts';
 import { UNO_EXPERIENCE_AREAS } from '../src/domain/experiences.ts';
 
 test('catalog transitions allow review and prevent restoring archived records', () => {
@@ -64,6 +64,7 @@ test('all UNO panels default to deny and declare independent scopes', () => {
   assert.ok(UNO_PANELS.every((panel) => panel.defaultAccess === 'deny'));
   assert.ok(UNO_PANELS.every((panel) => panel.subAreas.length > 0));
   assert.ok(UNO_PANELS.find((panel) => panel.id === 'accounting_finance')?.subAreas.includes('Gestão operacional Stripe'));
+  assert.deepEqual(UNO_PANELS.map((panel) => panel.requiredScope), [...PANEL_SCOPE_KEYS]);
   assert.equal(new Set(UNO_PANELS.map((panel) => panel.requiredScope)).size, UNO_PANELS.length);
 });
 
