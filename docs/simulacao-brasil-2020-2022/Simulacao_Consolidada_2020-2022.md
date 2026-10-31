@@ -228,3 +228,126 @@ A cadeia de valor a testar é: necessidade identificada → informação validad
 
 Os cenários conservador, intermediário e otimista serão calculados com parâmetros explícitos de alcance, ativação, retenção, demanda, capacidade de parceiros e taxa de resolução. Percentuais de adoção nacional não serão inventados. Resultados locais não serão extrapolados ao país sem justificativa estatística.
 
+
+## 14. Séries sociais e territoriais harmonizadas — adendo de pesquisa
+
+### Pobreza: série comparável e quebra metodológica
+A atualização das linhas internacionais do Banco Mundial em 2022 mudou os parâmetros de PPC utilizados no monitoramento do ODS 1. Para evitar comparar percentuais incompatíveis, adotar a série recalculada com PPC 2017: pobreza de 31,1% (2020), 36,8% (2021) e 31,6% (2022); extrema pobreza de 6,1%, 9,0% e 5,9%, respectivamente. Essa série não deve ser misturada aos percentuais divulgados originalmente com as linhas anteriores. O movimento permanece: piora em 2021 e melhora em 2022, mas sem retorno automático ao nível pré-pandemia em todos os grupos.
+Fonte: https://agenciagov.ebc.com.br/noticias/202512/8-6-milhoes-de-pessoas-sairam-da-pobreza-entre-2023-e-2024
+
+Em 2022, a desigualdade territorial era expressiva: o Nordeste reunia 27% da população brasileira, mas concentrava 43,5% da população pobre e 54,6% da extremamente pobre. Pessoas pretas ou pardas tinham incidência de pobreza de 40,0%, contra 21,0% entre brancos; crianças até 14 anos, 49,1%. Esses recortes devem orientar a estratificação da análise, nunca a concessão automatizada de benefícios ou decisões individuais pela UNO.
+Fonte: https://agenciagov.ebc.com.br/noticias/202312/pobreza-cai-para-31-6-da-populacao-em-2022-apos-alcancar-36-7-em-2021
+
+### Conectividade e inclusão digital
+- 2021: internet em 90,0% dos domicílios; 74,7% na área rural e 92,3% na urbana.
+- 2022: internet em 91,5% dos domicílios (68,9 milhões), mas 6,4 milhões permaneciam desconectados.
+- Em 2022, motivos para não usar internet: nenhum morador sabia usar (32,1%); custo do serviço (28,8%); falta de necessidade percebida (25,6%).
+Fontes:
+- https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34954-internet-ja-e-acessivel-em-90-0-dos-domicilios-do-pais-em-2021
+- https://agenciagov.ebc.com.br/noticias/202311/em-2022-streaming-estava-presente-em-43-4-dos-domicilios-com-tv
+
+**Regra de modelagem:** domicílios conectados não equivalem a pessoas alcançáveis, ativas ou capazes de completar tarefas digitais. Aplicar fatores separados para dispositivo, habilidade, custo, acessibilidade, confiança e atendimento assistido. A UNO deve manter alternativas comunitárias e presenciais.
+
+### Educação
+Em 2020, a educação básica acumulou média de 279,4 dias sem aulas presenciais; 10,8% dos estudantes de 6 a 17 anos estavam sem aula presencial e sem atividade escolar em novembro. A desigualdade de acesso a computador era marcante antes da pandemia. Para 2020–2021, o IBGE informa limitações na coleta ampliada de educação pela PNAD Contínua durante a pandemia; não preencher lacunas com estimativas não comparáveis. Indicadores de frequência, abandono, aprendizagem e recomposição devem ser tratados separadamente.
+Fonte: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/32418-sintese-de-indicadores-sociais-em-2020-sem-programas-sociais-32-1-da-populacao-do-pais-estariam-em-situacao-de-pobreza
+
+### Saúde materno-infantil
+O Relatório Anual de Gestão do Ministério da Saúde apresenta taxa de mortalidade na infância de 14,0 por mil em 2020, 14,6 em 2021 e 15,1 em 2022. A taxa neonatal foi 8,8 por mil em 2020 (fechada), 6,2 em 2021 (preliminar) e 6,3 em 2022 (preliminar). São indicadores distintos e os anos preliminares podem sofrer revisão. Estudo do Ministério da Saúde indica que 75,1% dos óbitos neonatais precoces em 2020 eram classificados como evitáveis, principalmente por atenção adequada à gestante e ao recém-nascido.
+Fontes:
+- https://bvsms.saude.gov.br/bvs/publicacoes/relatorio_anual_gestao_2022.pdf
+- https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
+
+### Saneamento e desigualdade de infraestrutura
+Em 2022, 85,5% dos domicílios tinham rede geral como principal forma de abastecimento de água e 69,5% tinham acesso à rede geral de esgoto ou fossa séptica ligada à rede. A cobertura de rede de esgoto era 36,6% no Norte, 44,4% no Nordeste e 85,5% no Sudeste. O indicador permite identificar desigualdade estrutural, mas não autoriza atribuir à UNO a construção ou ampliação de infraestrutura.
+Fonte: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
+
+## 15. Modelo explícito de adoção — estrutura de cenários sem percentuais inventados
+
+A simulação passa a separar disponibilidade tecnológica de adoção social. Para cada território e ano, o cálculo deverá usar:
+1. população elegível;
+2. alcance efetivo (pessoas que receberam informação);
+3. ativação (pessoas que concluíram primeira ação útil);
+4. retenção (usuários que retornaram em janela definida);
+5. demanda única por usuário ativo;
+6. proporção de demandas elegíveis para encaminhamento;
+7. capacidade real dos parceiros;
+8. proporção de atendimentos confirmados;
+9. adicionalidade e atribuição causal.
+
+Fórmulas:
+- Alcançados = população elegível × alcance.
+- Ativos = alcançados × ativação.
+- Demandas únicas = ativos × demanda média, após deduplicação.
+- Encaminhamentos aceitos = demandas elegíveis × taxa de aceite.
+- Resoluções confirmadas = mínimo entre encaminhamentos aceitos × taxa de comparecimento/conclusão e capacidade de atendimento disponível.
+- Custo por resolução = custo operacional atribuível / resoluções confirmadas.
+
+**Cenário conservador:** implantação territorial lenta, baixo reconhecimento/confiança inicial, retenção limitada, parceiros escassos e maior proporção de encaminhamentos sem vaga ou sem conclusão.
+
+**Cenário intermediário:** expansão gradual por territórios, canais comunitários de apoio, retenção compatível com utilidade recorrente e rede de parceiros com capacidade monitorada.
+
+**Cenário otimista:** expansão mais rápida, confiança e retenção superiores, parceiros suficientes e processos bem integrados, ainda limitados por capacidade física, conectividade e consentimento.
+
+Os cenários não recebem percentuais nacionais arbitrários. Cada parâmetro deve ser preenchido com observação de piloto, estudo de referência ou faixa explicitamente identificada como hipótese. Apresentar análise de sensibilidade e intervalos, não um único número de impacto. A capacidade do parceiro é teto físico: a plataforma não cria vagas, profissionais, leitos ou orçamento público.
+
+## 16. Modelo financeiro bottom-up e fechamento de caixa
+
+### Custos a orçar
+- Pessoas: produto, engenharia, dados, operação, implantação territorial, atendimento, moderação, segurança, jurídico/compliance e avaliação.
+- Tecnologia: hospedagem, banco de dados, armazenamento, tráfego, IA/APIs, mensageria, autenticação, observabilidade, backups e segurança.
+- Operação territorial: formação, deslocamento, espaço físico, conectividade assistida, materiais, suporte e relacionamento com parceiros.
+- Governança: auditoria, proteção de dados, resposta a incidentes, revisão humana, acessibilidade e canais de denúncia.
+- Expansão: comunicação, aquisição, onboarding, treinamento, implantação e acompanhamento de novos territórios.
+- Contingência: incidentes, inflação de custos, inadimplência e atrasos de financiamento.
+
+### Receitas e recursos — manter separados
+1. Receita própria efetivamente recebida (assinaturas, comissões ou serviços).
+2. Doações recebidas, identificadas por finalidade e restrição.
+3. Contratos e patrocínios reconhecidos conforme competência e recebimento.
+4. Recursos de terceiros apenas intermediados (não são receita UNO).
+5. Transferências públicas pagas diretamente às famílias (não são receita nem caixa UNO).
+6. Benefício social estimado (não é receita financeira).
+
+### Equações de caixa
+- Caixa inicial + entradas efetivamente recebidas − saídas efetivamente pagas = caixa final.
+- Resultado operacional por competência = receitas próprias reconhecidas − custos/despesas do período.
+- Necessidade de financiamento = máximo entre zero e (despesas previstas + reserva mínima − caixa inicial − entradas contratadas com alta probabilidade).
+- Custo por resolução = custo operacional atribuível / atendimentos confirmados.
+- Ponto de equilíbrio = custos fixos / margem de contribuição por unidade de receita, quando houver modelo comercial mensurável.
+
+### Quadro anual obrigatório
+| Linha | 2020 | 2021 | 2022 | Regra |
+|---|---:|---:|---:|---|
+| Caixa inicial | A apurar | Saldo final 2020 | Saldo final 2021 | Saldo de abertura |
+| Receita própria recebida | A apurar | A apurar | A apurar | Apenas caixa recebido |
+| Doações recebidas | A apurar | A apurar | A apurar | Separadas por restrição |
+| Contratos recebidos | A apurar | A apurar | A apurar | Não contar proposta |
+| Custos de pessoal | A apurar | A apurar | A apurar | Custo total empregador/contratado |
+| Tecnologia e segurança | A apurar | A apurar | A apurar | Faturas/uso efetivo |
+| Operação territorial | A apurar | A apurar | A apurar | Por território ativo |
+| Jurídico, auditoria e avaliação | A apurar | A apurar | A apurar | Custos identificáveis |
+| Comunicação e expansão | A apurar | A apurar | A apurar | Separar aquisição de operação |
+| Contingência e tributos | A apurar | A apurar | A apurar | Conforme regime e risco |
+| Caixa final | A calcular | A calcular | A calcular | Caixa inicial + entradas − saídas |
+
+**Estado do fechamento:** ainda não há dados de salários, contratos, arquitetura de produção, consumo de APIs, escala de suporte, regime tributário ou receitas efetivamente realizadas para uma UNO contrafactual em 2020–2022. Portanto, os fechamentos permanecem “a apurar”; inserir valores monetários sem esses parâmetros seria fabricar orçamento. O próximo cálculo deve usar equipe mínima por função, custo mensal por pessoa, infraestrutura por usuário ativo, custo de suporte por demanda, custo de implantação por território e contingência explícita.
+
+## 17. Indicadores novos recomendados para a avaliação UNO
+
+Além dos indicadores macroeconômicos e ODS existentes, propor um painel complementar, sem apresentá-lo como indicador oficial da ONU:
+- Taxa de resolução confirmada de necessidades essenciais.
+- Tempo mediano entre necessidade e atendimento.
+- Percentual de encaminhamentos recusados por falta de capacidade.
+- Custo por resolução confirmada, desagregado por tipo de demanda e território.
+- Índice de continuidade do cuidado/serviço após encaminhamento.
+- Taxa de informação desatualizada ou encaminhamento inválido.
+- Diferença de resolução entre grupos territoriais e socioeconômicos, com proteção de dados.
+- Renda adicional líquida verificada e retenção da renda após 3/6/12 meses.
+- Empregos/contratações formalizados e mantidos, distinguindo intermediação de criação líquida.
+- Participação comunitária que resulta em resposta institucional documentada.
+- Confiança, reclamações, incidentes, correções e decisões humanas auditáveis.
+- Pegada de exclusão digital: pessoas elegíveis que não conseguem usar a plataforma e motivo.
+
+Cada indicador deve ter definição, denominador, fonte, periodicidade, responsável, desagregação permitida, risco de viés e regra de auditoria. O painel complementa — não substitui — ODS, IBGE, SIM/Sinasc, PNAD, registros administrativos e indicadores oficiais.
+
