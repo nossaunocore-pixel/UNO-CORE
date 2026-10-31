@@ -1,11 +1,13 @@
 # Modelo Econômico e de Negócios Universal da UNO CORE
 **Identificador:** MEU-UNO-001  
-**Versão documental:** 0.2.0  
+**Versão documental:** 0.3.0  
 **Data:** 31/10/2026  
-**Estado:** Proposta estruturante — não ratificada pelo fundador  
+**Estado:** Documento-base em revisão; aplicar obrigatoriamente o Adendo ADENDO-MEU-UNO-001-01, que prevalece em caso de conflito  
 **Abrangência:** transversal aos universos, núcleos, instituições, serviços, marketplace e operações da UNO CORE
 
 ---
+
+> **NOTA DE PRECEDÊNCIA — 31/10/2026:** Este documento foi atualizado para versão 0.3.0. As seções antigas sobre base e rateio da distribuição, percentuais territoriais e participação de quem gera receita devem ser lidas em conjunto com o [Adendo de Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md). Em caso de divergência, o adendo prevalece. A regra vigente é: custos e obrigações operacionais primeiro; apuração do lucro local depois; 50% do lucro para a dimensão territorial bairro/cidade/estado/país, com percentuais internos ainda pendentes. Não aplicar 50% ao faturamento bruto. Os outros 50% do lucro não têm destinação definida.
 
 ## 1. Finalidade
 
@@ -302,3 +304,19 @@ A propriedade detalhada de cada regra e entidade deverá ser refinada na matriz 
 Este documento consolida diretrizes expressas pelo fundador e propostas técnicas para operacionalizá-las. Os pontos da seção 13 permanecem pendentes de definição exclusiva do fundador. Adoção de fornecedor, preços, percentuais, políticas contratuais e execução financeira exigem validação específica.
 
 **Princípio orientador:** a UNO deve criar valor, revelar o custo de criá-lo e distribuir de forma justa o valor que as pessoas efetivamente produzem, priorizando a base territorial e operacional. A hierarquia deve servir à base, não concentrar nela os benefícios.
+
+
+---
+
+## 16. Precedência das decisões econômicas posteriores
+
+A versão 0.3.0 incorpora o esclarecimento do fundador registrado em 31/10/2026. As regras anteriores das seções 6, 7, 12 e 13 que conflitem com o adendo não devem ser implementadas como fórmulas vigentes.
+
+Documentos normativos complementares:
+- [Adendo MEU-UNO-001 — Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md)
+- [Regime Jurídico, Trabalhista, Tributário e Financeiro](REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md)
+- [Registro de Decisões e Lacunas Econômicas](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md)
+- [Plano de Fechamento e Handoff Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md)
+- [Checklist de Prontidão Antigravity](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md)
+
+O modelo também distingue a fase operacional inicial da futura estruturação societária. Não existe autorização, nesta especificação, para comercialização de ações, oferta pública, distribuição de dividendos, custódia de recursos de terceiros ou movimentação financeira real.
