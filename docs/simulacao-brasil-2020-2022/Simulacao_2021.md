@@ -243,3 +243,10 @@ Fontes:
 - IBGE, PNAD Contínua — retrospectiva até 2025: https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
 - Ministério da Saúde, Saúde Brasil 2023: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/saude-brasil-2023-analise-da-situacao-de-saude-com-enfoque-nas-criancas-brasileiras
 - Ministério da Saúde, Saúde Brasil 2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/anomalias-congenitas/saude-brasil-2022-analise-da-situacao-de-saude-e-uma-visao-integrada-sobre-os-fatores-de-risco-para-anomalias-congenitas/%40%40download/file/af_saude%20brasil_2022_analise_21mar23_isbn.pdf
+
+
+## 20. Revisão retrospectiva de segurança pública — vintage 2024
+
+O Anuário Brasileiro de Segurança Pública 2024 apresenta **48.286 vítimas de MVI em 2021**, ante 48.288 na edição de 2023. A diferença é pequena, mas deve ser preservada como revisão de série. MVI reúne homicídio doloso, latrocínio, lesão corporal seguida de morte e mortes decorrentes de intervenções policiais, conforme notas da publicação; não equivale ao total de homicídios do SIM.
+
+Fonte: FBSP, 18º Anuário Brasileiro de Segurança Pública 2024, Tabela 03: https://www.mpsp.mp.br/portal/page/portal/documentacao_e_divulgacao/doc_biblioteca/bibli_servicos_produtos/BibliotecaDigital/BibDigitalLivros/TodosOsLivros/Anuario-Brasileiro-de-Seguranca-Publica-2024.pdf
