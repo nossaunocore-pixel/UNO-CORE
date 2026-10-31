@@ -7,7 +7,10 @@ import {
   Radio,
   Sparkles,
   UserRound,
-  Users
+  Users,
+  Building2,
+  CalendarDays,
+  Briefcase
 } from 'lucide-react';
 import { presentationTour } from '../content/presentationTour';
 import { ModuleInfoDialogV63 } from '../components/ModuleInfoDialogV63';
@@ -55,6 +58,11 @@ export function PublicSquareV6({ onNavigate }: { onNavigate: NavigateV6 }) {
         <span>Praça UNO</span>
         <h1 id="square-title">Três caminhos. Um propósito: melhorar a vida real.</h1>
         <p>Conheça a proposta social, a rede comercial e a estrutura institucional da UNO. A conversa está aberta a visitantes.</p>
+        <div className="v7-square-links" aria-label="Mais ambientes públicos">
+          <button onClick={() => onNavigate('instituicoes')}><Building2 size={14}/> Instituições</button>
+          <button onClick={() => onNavigate('lazer')}><CalendarDays size={14}/> Lazer e eventos</button>
+          <button onClick={() => onNavigate('servicos')}><Briefcase size={14}/> Serviços</button>
+        </div>
       </header>
 
       <div className="v6-city-map" aria-label="Ambientes públicos da Praça UNO">
