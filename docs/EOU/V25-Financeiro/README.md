@@ -45,3 +45,9 @@ Definir modelo legal/contábil, contas e titularidades, ledger, moedas, limites,
 
 ## 12. Histórico
 0.2.0 — arquitetura financeira inicial consolidada; 2026-10-31.
+
+
+## Relação com o Modelo Econômico Universal
+
+O ledger e os relatórios devem separar receita própria, valores de terceiros, custos/despesas, tributos, retenções, lucro apurado, destinação territorial e recursos vinculados. A regra territorial de 50% incide sobre lucro local apurado após custos e obrigações, não sobre faturamento bruto. As quatro esferas são bairro, cidade, estado e país; percentuais internos não estão definidos. Os outros 50% do lucro também permanecem sem destinação definida. Até ratificação e validação profissional, esses cálculos são apenas simulações e não podem iniciar pagamentos, saques, custódia ou split. Ver [Adendo MEU-UNO-001](../ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md) e [RJTTF-UNO-001](../REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md).
+
