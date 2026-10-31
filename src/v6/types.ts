@@ -14,7 +14,13 @@ export type V6View =
   | 'comunidade'
   | 'nos'
   | 'mestre'
-  | 'oficina';
+  | 'oficina'
+  | 'instituicoes'
+  | 'lazer'
+  | 'servicos'
+  | 'servicos_ativos'
+  | 'casa'
+  | 'emprego_renda';
 
 export type NavigateV6 = (view: V6View) => void;
 
