@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { onAuthStateChanged, type User } from 'firebase/auth';
-import { Briefcase, CheckCircle2, FileCheck, Home, LockKeyhole, MessageCircle, ShieldCheck, Users, Vote, ClipboardCheck, Wrench } from 'lucide-react';
+import { Briefcase, CheckCircle2, FileCheck, Home, LockKeyhole, MessageCircle, ShieldCheck, Users, Vote, ClipboardCheck, Wrench, Wallet } from 'lucide-react';
 import { auth } from '../../services/firebase';
 import type { NavigateV6 } from '../types';
 
@@ -24,6 +24,7 @@ export function UserSquareV6({ onNavigate }: { onNavigate: NavigateV6 }) {
       <button onClick={() => onNavigate('servicos')}><Briefcase/><span><b>Serviços disponíveis</b><strong>Catálogo em preparação</strong><small>Serão exibidos serviços efetivamente liberados para sua região e perfil.</small></span></button>
       <button onClick={() => onNavigate('emprego_renda')}><Wrench/><span><b>Emprego e Renda</b><strong>Perfil profissional em preparação</strong><small>Ofícios, habilidades, oportunidades, serviços e negócios.</small></span></button>
       <button onClick={() => onNavigate('servicos_ativos')}><ClipboardCheck/><span><b>Meus Serviços Ativos</b><strong>Ativações confirmadas</strong><small>Cursos, matrículas e serviços efetivamente habilitados.</small></span></button>
+      <button onClick={() => onNavigate('carteira')}><Wallet/><span><b>Minha Carteira</b><strong>Ledger ainda não conectado</strong><small>Saldo, recebimentos, pagamentos e histórico, sem simular valores reais.</small></span></button>
       <button><LockKeyhole/><span><b>Documentos e consentimentos</b><strong>Central de privacidade em preparação</strong><small>Histórico, permissões e solicitações de titulares ainda serão conectados.</small></span></button>
       <button><CheckCircle2/><span><b>Adesão</b><strong>Condição não configurada</strong><small>Não há plano ou cobrança ativa afirmada por esta tela.</small></span></button>
       <button onClick={() => onNavigate('comunidade')}><Users/><span><b>Comunidade UNO</b><strong>Seu perfil social</strong><small>Conexões, grupos e publicações conforme permissões.</small></span></button>
