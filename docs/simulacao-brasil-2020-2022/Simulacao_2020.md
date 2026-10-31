@@ -340,3 +340,10 @@ A retrospectiva mais recente consultada do IBGE apresenta a taxa média anual de
 A série revisada também altera anos seguintes; portanto, a comparação 2020–2022 deve usar uma única versão da série em todas as observações, sem misturar vintages.
 
 Fonte: IBGE, PNAD Contínua, apresentação retrospectiva com série histórica até 2025 (consulta em 2026): https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
+
+
+## 22. Revisão retrospectiva de segurança pública — vintage 2024
+
+O Anuário Brasileiro de Segurança Pública 2024 revisou a série histórica de Mortes Violentas Intencionais (MVI) e apresenta **50.448 vítimas em 2020**. A edição contemporânea de 2021 havia publicado 50.033. Para a reconstrução do cenário, preservar o número disponível à época e registrar 50.448 como retrospectiva revisada. MVI reúne homicídio doloso, latrocínio, lesão corporal seguida de morte e mortes decorrentes de intervenções policiais, conforme as notas da publicação; não equivale ao total de homicídios do SIM.
+
+Fonte: FBSP, 18º Anuário Brasileiro de Segurança Pública 2024, Tabela 03: https://www.mpsp.mp.br/portal/page/portal/documentacao_e_divulgacao/doc_biblioteca/bibli_servicos_produtos/BibliotecaDigital/BibDigitalLivros/TodosOsLivros/Anuario-Brasileiro-de-Seguranca-Publica-2024.pdf
