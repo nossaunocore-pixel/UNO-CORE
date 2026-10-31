@@ -75,3 +75,14 @@ As variáveis de ambiente devem ser configuradas localmente com base no `.env.ex
 ## Estado de entrega
 
 A documentação e parte dos controles de frontend foram atualizados. A jornada pública landing/boas-vindas, o provisionamento server-side do IDU, a validação completa de claims, RLS, capacidades, checkout/webhooks, testes automatizados, build e validação Vercel ainda precisam de implementação ou evidência. Não considerar esta branch homologada para produção.
+
+
+## V7 — pacote atual de implementação (31/10/2026)
+
+- [Pacote de continuidade para Antigravity](docs/V7/PACOTE_IMPLEMENTACAO_CONTINUADA_2026-10-31.md)
+- [Auditoria de prontidão e bloqueios](spec/IMPLEMENTATION_READINESS_2026-10-31.md)
+- [Mapa dos 40 volumes EOU para implementação](spec/EOU_40_VOLUMES_IMPLEMENTATION_MAP.md)
+- [Template de especificação implementável de volume](spec/VOLUME_SPEC_TEMPLATE.md)
+- [ADR-0013 — navegação pública de visitantes via Supabase](spec/ADR/ADR-0013-public-visitor-supabase-navigation.md)
+
+O pacote está em Preview/Teste. Migrações Supabase estão preparadas, não aplicadas. Nenhuma promoção para produção foi realizada.
