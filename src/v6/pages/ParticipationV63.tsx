@@ -36,7 +36,7 @@ export function ParticipationV63({ onNavigate }: { onNavigate: NavigateV6 }) {
       {!loading && unavailable && <p>As pautas públicas ainda não estão conectadas. Nenhuma consulta ou votação fictícia será exibida.</p>}
       {!loading && !unavailable && publicItems.length === 0 && <p>Ainda não há consultas ou resultados públicos publicados.</p>}
       {publicItems.length > 0 && <div className="v7-participation-public-grid">{publicItems.map((item) => <article key={item.id}>
-        <span>{item.kind} · {item.status.replaceAll('_', ' ')}</span><h3>{item.title}</h3><p>{item.summary || item.public_description}</p>
+        <span>{item.kind} · {item.status.split('_').join(' ')}</span><h3>{item.title}</h3><p>{item.summary || item.public_description}</p>
         <small>{item.status === 'results_published' ? 'Resultado público publicado' : 'Ação de participação sujeita a identidade e elegibilidade'}</small>
       </article>)}</div>}
     </section>
