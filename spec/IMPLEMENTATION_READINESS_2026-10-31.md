@@ -138,3 +138,17 @@ Só marcar cada item como implementado, integrado, testado ou liberado depois de
 - Migration adicional de read models públicos: `20261031173000_public_content_read_models.sql`. O conjunto atual de migrations preparadas é de quatro arquivos (IDU, quota por usuário, limite global e conteúdo público).
 - As telas de Casa, Emprego e Renda, Carteira e Serviços Ativos são shells transparentes; não exibem saldos, vínculos, contratos ou serviços fictícios.
 - As rotas públicas estão preparadas para leitura Supabase; a migration de read models não foi aplicada, então ainda não há dados publicados no banco.
+
+
+## 12. Oficina — criação e evolução de recursos
+
+- Interface real de Oficina adicionada: criar, selecionar, editar, modificar, melhorar, ampliar, clonar e enviar rascunhos para revisão.
+- Tipos aceitos: agente, ferramenta, API, módulo, automação, produto, serviço, integração, painel, volume, fluxo e outro.
+- Produtos e serviços exigem origem explícita: UNO/próprio ou terceiro.
+- Cada edição de rascunho gera nova versão imutável e evento de auditoria.
+- Recursos fora de rascunho não podem ser sobrescritos; é necessário criar cópia de trabalho.
+- Segredos e credenciais são rejeitados na definição; usar referências a segredos armazenados no servidor.
+- APIs protegidas por escopo do Painel Mestre, Google verificado, IDU e atribuição ativa no Firestore.
+- Migração adicional: `20261031174000_workshop_asset_versioning.sql`, com tabelas privadas por RLS e RPCs executáveis somente por service_role.
+- Aprovação final, codificação automática, integração, evidência de testes e ativação ainda não estão liberadas. A Oficina não publica nem ativa recursos automaticamente.
+- Total de migrations preparadas nesta branch: cinco; nenhuma foi aplicada ao projeto hospedado.
