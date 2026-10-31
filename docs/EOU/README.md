@@ -146,3 +146,14 @@ Toda alteração relevante deverá seguir o fluxo oficial da engenharia:
 A Engenharia Oficial precede a implementação.
 
 Nenhuma decisão estrutural da Plataforma UNO deverá existir sem documentação correspondente.
+
+
+## Pacote Econômico, Jurídico e de Handoff
+
+- [MEU-UNO-001 — Modelo Econômico Universal](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md) — versão 0.3.0.
+- [Adendo — Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md) — prevalece sobre trechos conflitantes.
+- [Regime Jurídico, Trabalhista, Tributário e Financeiro](REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md) — matriz preparatória, não parecer.
+- [Registro de Decisões e Lacunas Econômicas](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md).
+- [Plano de Fechamento e Handoff Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md).
+- [Checklist de Prontidão Antigravity](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md).
+
