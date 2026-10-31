@@ -29,20 +29,24 @@ A Plataforma UNO busca ampliar dignidade, acesso à informação, participação
 ## 3. Acesso à plataforma
 
 ### 3.1 Camada pública
-Somente a landing page institucional e a tela/experiência de boas-vindas podem ser vistas sem autenticação. O botão/convite “Conheça o UNO” inicia o fluxo de autenticação Google.
+A camada pública inclui landing e boas-vindas, Praça, visualização pública de Instituições, Vitrine, leitura pública da Comunidade, consultas/resultados públicos de Participação, Lazer/Eventos, catálogo público de Serviços e Conversa. A navegação pública usa Supabase com chave publishable/anon e RLS; não depende de Firebase, Google ou IDU. A leitura pública não concede escrita, voto, contratação, acesso a dados pessoais ou entrada em painéis.
 
-### 3.2 Visitante autenticado
+### 3.2 Visitante anônimo
+A pessoa pode conhecer os ambientes públicos sem conta Google. A Conversa pública cria sessão anônima no Supabase Auth, sem Perfil UNO, IDU, adesão ou vínculo institucional. O endpoint público aceita somente JWT anônimo Supabase, responde apenas sobre informações públicas e aplica cotas por usuário e limite global diário aprovado. Anonymous Sign-Ins, CAPTCHA/Turnstile, retenção/limpeza e limites devem ser configurados antes da liberação pública.
+
+### 3.3 Visitante autenticado
 A autenticação Google é obrigatória para entrar nos ambientes internos, mas não equivale a adesão paga, contratação ou autorização para capacidades restritas. Após autenticação, a pessoa recebe ou provisiona uma Identidade UNO (IDU) vinculada à conta, mediante serviço seguro no servidor.
 
 Visitantes autenticados podem usar capacidades internas classificadas como gratuitas, desde que não dependam de APIs pagas, tokens externos, integrações com terceiros, contratação ou autorização especial. Exemplos previstos: perfil básico, navegação pelos universos, conversa em modo interno gratuito quando disponível, publicações, comentários, mensagens entre usuários, propostas e participação interna. Cada função só pode ser liberada quando efetivamente implementada e protegida.
 
-### 3.3 Aderidos e parceiros
+### 3.4 Aderidos e parceiros
 A adesão ativa os serviços e direitos correspondentes ao plano, contrato, qualificação e estado de liberação. Parceiros podem receber permissões operacionais adicionais por vínculo e escopo. A adesão não concede automaticamente acesso administrativo ou institucional.
 
-### 3.4 Autenticação
-- Google é o único método de autenticação permitido para entrar na plataforma no MVP.
-- E-mail/senha e outros métodos não podem permanecer como rotas alternativas de acesso.
-- A landing page e boas-vindas são exceções públicas; todas as rotas internas exigem sessão autenticada, identidade provisionada e autorização no servidor.
+### 3.5 Autenticação
+- Google é o único método de autenticação pessoal permitido para áreas privadas no MVP.
+- E-mail/senha e outros métodos não podem permanecer como rotas alternativas de identidade pessoal.
+- A allowlist pública é acessível sem Firebase/Google; a Conversa pública usa sessão anônima Supabase separada.
+- Perfil, Casa, Emprego e Renda, carteira, Serviços Ativos, ações de escrita e todas as rotas protegidas exigem sessão Google, IDU provisionado e autorização no servidor.
 - Claims administrativos devem ser atribuídas por mecanismo confiável server-side; nunca confiar em dados editáveis pelo cliente.
 - Painel Mestre exige claim explícita `unoFounder` ou `unoMaster`, validada também no backend.
 - A sessão Google não substitui consentimento, contrato ou autorização para tratar dados específicos.
@@ -76,6 +80,8 @@ Estados visuais de referência: verde claro para disponível e testado; vermelho
 - **Supabase:** dados de produto e uso, navegação, conteúdo e arquivos voltados ao usuário, protegidos por RLS e políticas de propriedade/escopo.
 - **IDU:** identificador universal da pessoa na UNO, separado dos identificadores técnicos de provedores e bases. Deve ser provisionado no servidor e vinculado de forma verificável à identidade autenticada.
 - O JWT Firebase só pode ser usado no Supabase após configuração e validação do mecanismo Third-Party Auth no projeto.
+- O cliente Supabase público é independente e nunca recebe service-role ou token Firebase; as tabelas públicas oferecem somente leitura de conteúdo publicado.
+- A sessão anônima Supabase da Conversa não é IDU, não concede acesso às tabelas pessoais e não pode ser convertida silenciosamente em perfil UNO.
 - Nunca expor service-role, service account, chaves secretas ou credenciais administrativas no navegador.
 - RLS em todas as tabelas expostas; políticas de ownership/escopo, não apenas a condição genérica de usuário autenticado.
 - Não usar metadados editáveis pelo usuário como autorização.
@@ -91,7 +97,7 @@ O Painel Mestre fica restrito ao fundador ou a pessoas explicitamente delegadas.
 
 ## 8. Escopo funcional do MVP
 
-O MVP deve validar uma experiência coerente e real: autenticação Google, identidade/IDU, perfil, navegação pelos universos, Conversa em modos claramente classificados, Vitrine, Comunidade, Participação, publicações e interações internas, catálogo de serviços/capacidades, painéis conforme permissões, transparência e auditoria básica.
+O MVP deve validar uma experiência coerente e real: camada pública Supabase para visitantes, Conversa pública com sessão anônima limitada, autenticação Google para identidade pessoal, IDU, perfil, navegação privada, Vitrine, Comunidade, Participação, publicações e interações internas, catálogo de produtos/serviços próprios e externos, Serviços Ativos, painéis conforme permissões, transparência e auditoria básica.
 
 Funções dependentes de API, tokens, pagamentos, órgãos externos, serviços regulados ou qualificações devem permanecer bloqueadas, simuladas ou aguardando integração até que requisitos técnicos, comerciais, jurídicos e de segurança sejam atendidos.
 
@@ -108,7 +114,7 @@ Nenhuma cobrança real, carteira sacável, repasse, comissão financeira ou serv
 
 ## 10. Segurança, testes e critérios de aceite
 
-Cada rota interna deve negar acesso sem autenticação. Cada operação de dados deve validar sessão, IDU, propriedade, escopo e autorização no servidor/banco. Testar: visitante anônimo, Google autenticado sem IDU, visitante com IDU, aderido, parceiro, usuário sem permissão e fundador/delegado.
+Cada rota interna deve negar acesso sem autenticação. Cada operação de dados deve validar sessão, IDU, propriedade, escopo e autorização no servidor/banco. Testar: visitante anônimo nas rotas públicas, visitante anônimo bloqueado em rotas privadas, Conversa com JWT Supabase inválido, Google autenticado sem IDU, visitante com IDU, aderido, parceiro, usuário sem permissão e fundador/delegado.
 
 Build, testes automatizados, testes de RLS, revisão de segredos e validação em Preview devem ser concluídos antes de declarar uma versão pronta. Produção exige validação explícita e monitoramento.
 
@@ -121,3 +127,8 @@ Build, testes automatizados, testes de RLS, revisão de segredos e validação e
 
 ---
 **Nota de estado:** esta especificação consolida decisões e requisitos. Não declara que funcionalidades, integrações, testes, regularização jurídica ou implantação estejam concluídos.
+
+
+## 12. Precedência de navegação pública — ADR-0013
+
+A regra atual de acesso público é a allowlist descrita na seção 3.1 e no ADR-0013. A regra anterior de ADR-0007 que limitava anonimato à landing e boas-vindas foi substituída somente quanto às rotas públicas. Google continua obrigatório para identidade pessoal e ambientes protegidos. A Conversa pública usa Supabase Auth anônimo, limite global diário configurado pelo fundador e conteúdo público exclusivamente.
