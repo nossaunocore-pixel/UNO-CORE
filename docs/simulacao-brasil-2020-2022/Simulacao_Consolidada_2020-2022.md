@@ -585,3 +585,74 @@ A categoria MVI soma vítimas de homicídio doloso, latrocínio, lesão corporal
 Fonte: FBSP, 18º Anuário Brasileiro de Segurança Pública 2024, Tabela 03, série 2011–2023 e notas metodológicas: https://www.mpsp.mp.br/portal/page/portal/documentacao_e_divulgacao/doc_biblioteca/bibli_servicos_produtos/BibliotecaDigital/BibDigitalLivros/TodosOsLivros/Anuario-Brasileiro-de-Seguranca-Publica-2024.pdf
 
 **Atualização da pendência 22.4, item 4:** a série nacional comparável de MVI 2020–2022 foi localizada na edição 2024. Permanecem pendentes a extração e a validação das desagregações por UF e município, das taxas com denominadores populacionais consistentes e dos indicadores separados de violência contra mulheres, crianças e adolescentes, desaparecimentos, crimes patrimoniais e letalidade policial.
+
+
+## 22. Aprofundamento documental — segurança alimentar, emprego formal e dinâmica empresarial
+
+### 22.1 Segurança alimentar: fome como resultado multidimensional
+
+O I VIGISAN, com coleta em 2020, estimou que 44,8% dos domicílios estavam em segurança alimentar e 9,0% em insegurança alimentar grave. O II VIGISAN, cuja coleta ocorreu entre novembro de 2021 e abril de 2022, estimou 41,3% em segurança alimentar e 15,5% em insegurança alimentar grave — aproximadamente 33,1 milhões de pessoas. No recorte regional do II VIGISAN, as formas moderada ou grave atingiam 45,2% da população do Norte e 38,4% do Nordeste.
+
+**Ressalva metodológica decisiva:** os dois inquéritos da Rede PENSSAN não são uma série oficial anual perfeitamente comparável. A amostragem, a cobertura e a versão reduzida da EBIA devem ser consideradas. O dado do II VIGISAN se refere ao período de coleta que atravessa 2021 e 2022, não a um retrato pontual de todo o ano civil de 2022. Não misturar diretamente com POF 2017–2018 nem com PNAD Contínua/EBIA do IBGE em 2023 e 2024, que usam desenho e período próprios.
+
+**Hipótese UNO a testar:** conectar famílias, cozinhas comunitárias, bancos de alimentos, agricultura familiar, mercados, serviços socioassistenciais e doadores pode reduzir fricção e tempo entre identificação e acesso. Mas a plataforma não produz alimentos, não substitui renda, política de abastecimento, assistência social ou logística. O indicador central deve ser a necessidade alimentar atendida e confirmada, com regularidade, qualidade e adequação, não número de doações anunciadas ou visualizações.
+
+Indicadores operacionais propostos:
+- domicílios com necessidade alimentar identificada e consentida;
+- encaminhamentos aceitos por equipamento/organização;
+- cestas/refeições efetivamente entregues e confirmadas;
+- tempo entre identificação e atendimento;
+- recorrência da necessidade em 30/90 dias;
+- distância, custo logístico e capacidade disponível;
+- proporção de demandas não atendidas por falta de oferta.
+
+Fontes:
+- Rede PENSSAN / Governo Federal, dados do I VIGISAN 2020: https://www.gov.br/mds/pt-br/caisan/monitoramento-da-san/SeguranaAlimentareNutricional.Adisponibilidadeeoacessoaalimentossaudveiseocombatepobrezarural.pdf
+- Rede PENSSAN / Governo Federal, II VIGISAN 2021–2022 e recortes regionais: https://www.mds.gov.br/webarquivos/MDS/2_Acoes_e_Programas/Promocao_da_Alimentacao_Adequada_e_Saudavel/Seguranca_Alimentar_e_Nutricional_no_Suas/Seguranca_Alimentar_e_Nutricional_no_Sistema_Unico_de_Assistencia_social/Arquivos/Manual_Instrutivo.pdf
+- MDS, quadro histórico de segurança alimentar 2004–2023 e nota sobre diferenças entre pesquisas: https://www.gov.br/mds/pt-br/acoes-e-programas/brasil-sem-fome/balanco/2024/apresentacao_balanco_pt.pdf
+- Painel MDS/EBIA, metodologia e dados IBGE 2023–2024: https://paineis.mds.gov.br/public/extensions/BSF/ebia.html
+
+### 22.2 Emprego formal: RAIS e Novo CAGED não são intercambiáveis
+
+A RAIS é um registro administrativo anual do estoque de vínculos formais; o Novo CAGED acompanha admissões e desligamentos em fluxo mensal. Não se deve somar saldos do CAGED ao estoque da RAIS nem interpretar um saldo anual como número de pessoas distintas empregadas: uma pessoa pode ter mais de um vínculo e ocorrer múltiplas movimentações no ano.
+
+A Nota Técnica da RAIS 2022 registra uma diferença expressiva entre a variação do estoque RAIS 2021–2022 e o saldo do Novo CAGED no mesmo ano. O estoque divulgado para 2021 foi 48.728.871 vínculos; a variação entre os estoques anuais foi de aproximadamente 4,06 milhões, enquanto o saldo celetista do Novo CAGED foi cerca de 2,01 milhões. O próprio MTE investiga a diferença metodológica e de cobertura, inclusive a incorporação de informações do eSocial e a natureza de estoque versus fluxo. Portanto, não usar o crescimento bruto da RAIS 2022 como criação líquida de empregos sem explicar essa divergência.
+
+**Como a UNO deve medir trabalho:** registrar IDU pseudonimizado, vínculo, empregador, ocupação, horas, remuneração líquida, data de início e fim, formalização e permanência; distinguir pessoa, posto, vínculo e evento de movimentação. Comparar com RAIS/eSocial/CAGED apenas com conceitos alinhados e consentimento/base legal. O impacto atribuível deve considerar adicionalidade, substituição, deslocamento de outros trabalhadores, sazonalidade e sobrevivência do vínculo.
+
+Fonte:
+- Ministério do Trabalho e Emprego, Nota Técnica RAIS 2022: https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/estatisticas-trabalho/rais/rais-2022/nota-tecnica-rais-2022.pdf
+
+### 22.3 Dinâmica empresarial: aberturas não significam sobrevivência ou prosperidade
+
+Segundo o IBGE, em 2020 entraram no mercado 826,4 mil empresas e saíram 634,4 mil, gerando saldo de 192,0 mil. A taxa de sobrevivência das empresas ativas em 2019 foi 83,1% em 2020. O saldo de ocupados assalariados nas empresas entrantes foi positivo em 204,9 mil, abaixo dos 595,5 mil de 2019. O IBGE também registrou maior proporção de mulheres assalariadas nas empresas que saíram (44,1%) do que nas entrantes (40,5%).
+
+Para 2022, a edição da Demografia das Empresas divulgou 405,6 mil nascimentos de empresas empregadoras. Contudo, o IBGE alterou o escopo populacional para empresas empregadoras (ao menos um assalariado), o conceito de reentrada e o critério de alto crescimento. Por isso, esse número não deve ser comparado diretamente ao total de entradas de 2020, que tinha universo diferente. A publicação de 2022 acompanha também a sobrevivência de empresas nascidas em 2017: 37,3% das empresas empregadoras desse grupo permaneciam sobreviventes em 2022.
+
+**Hipótese UNO a testar:** vitrine, reputação, catálogo de competências, contratação local, agenda e encaminhamento comercial podem reduzir custo de descoberta e ampliar acesso a clientes, mas não garantem sobrevivência. Medir vendas incrementais líquidas, margem, clientes novos, recorrência, inadimplência, tempo até primeira venda, formalização e sobrevivência em 12/24/36 meses. Separar microempreendedor individual, empresa sem empregados e empresa empregadora; evitar confundir abertura de CNPJ com negócio economicamente sustentável.
+
+Fontes:
+- IBGE, Demografia das Empresas 2020: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35262-apesar-da-pandemia-saldo-de-empresas-no-mercado-permanece-positivo-em-2020
+- IBGE, Demografia das Empresas e Estatísticas de Empreendedorismo 2022 — conceitos e quebra metodológica: https://www.ibge.gov.br/estatisticas/economicas/servicos/22649-demografia-das-empresas-e-estatisticas-de-empreendedorismo.html
+- Mapa de Empresas — estatísticas administrativas de aberturas e baixas, com atualização mensal: https://www.gov.br/pt-br/servicos/obter-dados-estatisticos-no-mapa-de-empresa
+
+### 22.4 Consequências para o modelo causal e financeiro
+
+Os dados desta seção reforçam três limites de atribuição:
+
+1. **Segurança alimentar:** contabilizar alimentos/refeições entregues e necessidade resolvida; não converter valor de doação em PIB ou receita UNO.
+2. **Emprego:** contabilizar vínculos e pessoas com identificadores distintos; não somar estoque RAIS, fluxo CAGED e encaminhamentos UNO.
+3. **Empresas:** contabilizar negócios ativos, sobrevivência, vendas e margem incremental; não tratar abertura de cadastro/CNPJ ou volume bruto transacionado como valor econômico adicional.
+
+O caixa da UNO deve continuar separado do valor social mobilizado: doações recebidas por organizações parceiras, salários pagos por empregadores, vendas entre usuários, transferências públicas e recursos intermediados não são receita própria da plataforma, salvo a taxa/receita contratual efetivamente reconhecida e documentada.
+
+### 22.5 Pendências de pesquisa
+
+| Tema | Evidência já incorporada | Próxima extração necessária |
+|---|---|---|
+| Fome | VIGISAN 2020 e II VIGISAN 2021–2022 | Microdados/recortes por UF e urbano-rural; harmonização com EBIA IBGE |
+| Emprego formal | Nota técnica MTE sobre divergência RAIS/CAGED | Estoques por UF/setor/sexo/idade e fluxos mensais consistentes |
+| Empresas | Demografia IBGE 2020 e mudança metodológica em 2022 | Tabelas completas de nascimento, morte, sobrevivência e emprego por porte/setor/UF |
+| UNO — resultados | Funis e métricas definidos | Dados observados de piloto: alcance, ativação, demanda, oferta, atendimento confirmado, custo e retenção |
+
+**Status:** aprofundamento em andamento. Os achados acima não autorizam estimativa nacional de vidas salvas, empregos criados ou empresas preservadas pela UNO. Esses efeitos só poderão ser quantificados depois de definir escala territorial, adoção realista, capacidade de atendimento, adicionalidade e grupo de comparação.
