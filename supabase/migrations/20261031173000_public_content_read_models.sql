@@ -10,6 +10,8 @@ create table if not exists public.institutions (
   slug text not null unique,
   name text not null,
   institution_type text not null,
+  unit_type text not null default 'independent'
+    check (unit_type in ('independent', 'matrix', 'branch', 'unit')),
   summary text not null default '',
   public_profile jsonb not null default '{}'::jsonb,
   status text not null default 'draft'
@@ -22,7 +24,12 @@ create table if not exists public.institutions (
   constraint institutions_public_profile_size_check
     check (pg_column_size(public_profile) <= 16384),
   constraint institutions_name_not_blank_check check (length(trim(name)) > 0),
-  constraint institutions_slug_not_blank_check check (length(trim(slug)) > 0)
+  constraint institutions_slug_not_blank_check check (length(trim(slug)) > 0),
+  constraint institutions_parent_structure_check
+    check (
+      (unit_type in ('branch', 'unit') and parent_id is not null)
+      or (unit_type in ('independent', 'matrix') and parent_id is null)
+    )
 );
 
 create table if not exists public.catalog_items (
