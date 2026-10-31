@@ -45,3 +45,9 @@ Testar valor/moeda, precisão, idempotência, assinatura, replay, eventos fora d
 
 ## 10. Aceite e pendências
 Aceite exige parecer jurídico/contábil sobre modelo, titularidades, ledger auditável, reconciliação, webhooks, antifraude, permissões, relatórios, política de reembolso e testes. Pendências: modelo legal/contábil, arquitetura de ledger, titularidade de contas, Connect, tarifas, comissões, doações, saques, limites, impostos, KYC/AML, reservas e operação de disputas.
+
+
+## 12. Regra econômica territorial — precedência 31/10/2026
+
+O reconhecimento contábil deve separar receita própria, valores de terceiros, custos/despesas, tributos, retenções e demais obrigações. Somente depois da apuração do lucro local poderá ser calculada a parcela territorial de 50%. Essa parcela será gerida nas esferas bairro, cidade, estado e país. Percentuais entre esferas permanecem indefinidos; os outros 50% do lucro também não possuem destinação definida. Não usar faturamento bruto como base. Até aprovação e validação profissional, qualquer cálculo é apenas simulação, sem payout, split ou lançamento financeiro real. Ver o adendo transversal ADENDO-MEU-UNO-001-01.
+
