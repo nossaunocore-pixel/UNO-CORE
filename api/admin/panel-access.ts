@@ -40,12 +40,21 @@ export default async function handler(request: Request): Promise<Response> {
     const scopes = [...new Set(payload.scopes as string[])];
     const { firestore } = getAdminServices();
     const target = await auth.getUser(targetUid);
+    const targetHasGoogle = target.emailVerified && target.providerData.some((provider) => provider.providerId === 'google.com');
+    if (!targetHasGoogle) {
+      return json({ error: 'A pessoa precisa ter entrado com Google e verificado o e-mail antes de receber escopos.' }, 409);
+    }
+
+    const identityLink = await firestore.collection('uno_identity_links').doc(targetUid).get();
+    if (!identityLink.exists || typeof identityLink.get('idu') !== 'string') {
+      return json({ error: 'A pessoa ainda não possui Identidade UNO provisionada.' }, 409);
+    }
+
     const assignmentRef = firestore.collection('uno_panel_assignments').doc(targetUid);
     const now = new Date().toISOString();
 
     await assignmentRef.set({
       targetUid,
-      targetEmail: target.email || null,
       scopes,
       status: 'pending',
       assignedByUid: decoded.uid,
