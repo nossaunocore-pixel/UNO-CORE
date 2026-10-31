@@ -18,12 +18,10 @@ export interface PublicCatalogItem {
   origin: 'uno' | 'third_party';
   title: string;
   summary: string;
-  responsible_entity_id: string;
-  provider_entity_id: string;
-  seller_entity_id: string | null;
-  external_provider_id: string | null;
-  terms_version: string | null;
-  category_id: string | null;
+  responsible_public_name: string;
+  provider_public_name: string;
+  seller_public_name: string | null;
+  category_label: string | null;
   institution_id: string | null;
   price_amount: number | null;
   currency: string | null;
@@ -51,7 +49,7 @@ export interface PublicEvent {
   summary: string;
   description: string;
   event_type: string;
-  organizer_entity_id: string;
+  organizer_public_name: string;
   starts_at: string;
   ends_at: string | null;
   venue_name: string | null;
