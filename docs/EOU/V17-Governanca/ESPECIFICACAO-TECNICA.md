@@ -37,3 +37,9 @@ Painéis são superfícies de trabalho, não autoridade autônoma. Permissão li
 Testar fundador versus usuário comum; painel sem grant; grant expirado/revogado; escopo de outro território; autoelevação; subdelegação; autoaprovação; operação crítica sem confirmação; claims desatualizadas; revogação concorrente à execução.
 
 Fundador precisa ratificar matriz de alçadas, delegados e sucessão/contingência, autonomia de agentes, ações com dupla aprovação, exceções e periodicidade de revisão. Este texto não cria novos poderes nem substitui validação jurídica.
+
+
+## 12. Governança das decisões econômicas
+
+Decisões sobre classificação de receita, dedutibilidade gerencial, rateios, percentuais territoriais, reservas, pagamentos e destinação de resultados exigem autoridade e evidência versionadas. O Orquestrador Mestre pode validar consistência e bloquear execução, mas não preencher lacunas reservadas ao fundador. A parcela territorial de 50% do lucro local não se converte em distribuição individual aos moradores nem em direito acionário. Ver MEU-UNO-001 e seu adendo.
+
