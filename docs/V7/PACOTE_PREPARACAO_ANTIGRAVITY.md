@@ -137,3 +137,7 @@ Cada item deve receber um estado verificável: não iniciado, em código, integr
 ## CONTINUAR DESTE DOCUMENTO
 
 Retomar a implementação pela branch v7-implementation, preservar a produção e o PR Draft. Primeiro consolidar os modelos e contratos de dados; em seguida implementar por domínio, executar build/testes e entregar ao Antigravity apenas tarefas de console, segredos, provisionamento Firebase e testes reais de OAuth/Google que dependam do ambiente externo.
+
+## Nota de precedência — revisão técnica de 2026-11-01
+
+Este pacote contém instruções e inventários de etapas anteriores. As referências antigas a sessão anônima Firebase em `ConversationV6`/`api/chat.ts` foram superadas: a Conversa de visitante usa Supabase Anonymous Auth e endpoint público separado; a rota privada usa Google verificado + IDU. A autenticação pessoal do MVP é Google, sem alternativa Email/Password. A navegação pública não depende de Firebase. Para o limite entre V7 e V8, não implementar ativação/contratação de serviços no MVP; prevalece `docs/V7/FRONTEIRA_MVP_V7_V8.md`.
