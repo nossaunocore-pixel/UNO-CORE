@@ -24,6 +24,7 @@ Em 2022, a vacinação e a adaptação social alteraram o cenário da pandemia, 
 | Dimensão | Indicador histórico | Leitura e cautela |
 |---|---|---|
 | PIB | +3,0% em 2022 | Crescimento agregado; não indica distribuição territorial ou por renda. |
+| Desenvolvimento humano | IDH 0,780 (série PNUD, atualização estatística 2025) | Recuperação frente a 2021 e valor superior ao de 2019 na série revisada; não elimina desigualdades. |
 | Serviços | +4,3% | Principal contribuição setorial entre os três grandes setores citados. |
 | Indústria | +1,5% | Crescimento menor que Serviços. |
 | Agropecuária | -1,1% | Resultado agregado negativo, apesar de diferenças por cadeia e região. |
@@ -122,6 +123,7 @@ Uma avaliação futura deverá usar dados de operação da própria UNO, linha d
 - Rede PENSSAN, VIGISAN II: https://redepenssan.org.br/olheparaafome/
 - Ministério das Cidades, Panorama do Saneamento / SNIS 2022: https://www.gov.br/cidades/pt-br/assuntos/saneamento/comite-interministerial-de-saneamento-basico-cisb/arquivos/ResultadosdaAgendaRegulatria20222024daANA.pdf
 - Ministério da Saúde, Boletins Epidemiológicos COVID-19: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19
+- PNUD, Human Development Indices: A statistical update 2025 — tabela de tendências do IDH: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Trends_Table.pdf
 
 ## Conclusão do Ano 3
 
