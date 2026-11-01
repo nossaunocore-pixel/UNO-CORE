@@ -103,3 +103,17 @@ Especializações deverão ocorrer preferencialmente nos demais volumes da Engen
 > *"Toda grande engenharia nasce da compreensão."*
 >
 > **Engenharia Oficial da Plataforma UNO**
+
+
+## Fronteira com os volumes de identidade, dados e entidades
+
+Para fins de harmonização, está proposta — ainda sem ratificação — a seguinte divisão:
+
+- V03 define o meta-modelo conceitual universal: entidade, identidade conceitual, atributo, relação, evento e ciclo de vida.
+- V26 especializa identidade digital da pessoa, IDU e vínculos com provedores/autenticadores.
+- V27 especializa conta de uso, perfil, preferências, consentimentos e participação.
+- V28 aplica a taxonomia de entidades UNO, titularidade, representação, hierarquia e verificação.
+- V13 define persistência física, ownership, fontes de verdade, retenção e migrações.
+- V17 governa grants e autorização; conceitos de identidade ou entidade não concedem acesso automaticamente.
+
+O MUE não é banco de dados, cadastro de usuários, sistema de autenticação, motor de autorização ou catálogo físico de tipos UNO. A fronteira detalhada está no [ADR-EOU-001](../V36-ADR/ADR-EOU-001-fronteiras-identidade-perfil-entidades.md), que permanece como proposta. A precedência entre V01, V02, V03 e os volumes especializados está em [ADR-EOU-002](../V36-ADR/ADR-EOU-002-precedencia-documental.md), também não aprovado.

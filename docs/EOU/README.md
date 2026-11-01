@@ -98,6 +98,25 @@ A EOU está organizada em volumes independentes, cada um responsável por um dom
 
 ---
 
+## NÓS S.A. — identidade e carta institucional
+
+- [Carta Fundadora canônica — EOU-V06, capítulo 051](./V06-CO/051-Carta-Fundadora-da-NOS-SA.md).
+- [Carta de Apresentação do Fundador — mensagem para o espaço institucional da NÓS S.A.](./V06-CO/CARTA-DE-APRESENTACAO-DO-FUNDADOR-NOS-SA-2026-10-31.md).
+- A nomenclatura institucional obrigatória é **NÓS S.A.**; ver V37 Glossário Oficial e V40 Documentação Institucional.
+
+## Modelo Econômico Transversal
+
+- [Modelo Econômico e de Negócios Universal da UNO CORE](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md) — proposta transversal para seleção de soluções, classificação de custos, métricas, transparência e distribuição justa de receitas. Os pontos reservados ao fundador permanecem pendentes de ratificação.
+
+## Pacote Econômico, Jurídico e de Handoff
+
+- [MEU-UNO-001 — Modelo Econômico Universal](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md) — versão 0.3.0; documento-base transversal.
+- [Adendo — Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md) — prevalece sobre trechos conflitantes de versões anteriores.
+- [Regime Jurídico, Trabalhista, Tributário e Financeiro](REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md) — matriz preparatória, sujeita a pareceres profissionais.
+- [Registro de Decisões e Lacunas Econômicas](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md) — separa decisões expressas, hipóteses e pendências do fundador.
+- [Plano de Fechamento e Handoff Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md) — sequência de execução e prompt-base.
+- [Checklist de Prontidão Antigravity](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md) — critérios de verificação e gates.
+
 # Estrutura dos Volumes
 
 Cada volume da Engenharia Oficial possui documentação própria, histórico de versões, capítulos, anexos e diagramas.
@@ -133,3 +152,20 @@ Toda alteração relevante deverá seguir o fluxo oficial da engenharia:
 A Engenharia Oficial precede a implementação.
 
 Nenhuma decisão estrutural da Plataforma UNO deverá existir sem documentação correspondente.
+
+
+## Pacote Econômico, Jurídico e de Handoff
+
+- [MEU-UNO-001 — Modelo Econômico Universal](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md) — versão 0.3.0.
+- [Adendo — Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md) — prevalece sobre trechos conflitantes.
+- [Regime Jurídico, Trabalhista, Tributário e Financeiro](REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md) — matriz preparatória, não parecer.
+- [Registro de Decisões e Lacunas Econômicas](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md).
+- [Plano de Fechamento e Handoff Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md).
+- [Checklist de Prontidão Antigravity](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md).
+- [Prompt de Execução Antigravity](PROMPT-ANTIGRAVITY-UNO-CORE-2026-10-31.md) — instrução independente para auditoria, implementação e entrega.
+
+
+
+## Simulação histórica contrafactual — Brasil 2020–2022
+
+O estudo histórico em três anos e sua síntese estão organizados em [docs/simulacao](../simulacao/README.md). Os documentos separam fatos históricos, mecanismos plausíveis, hipóteses contrafactuais e resultados comprovados. O estudo **não altera o escopo do MVP V7 nem antecipa fases posteriores**; serve como material analítico e referência para avaliação futura.

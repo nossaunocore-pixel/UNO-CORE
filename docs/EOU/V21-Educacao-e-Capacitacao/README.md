@@ -1,6 +1,8 @@
 # EOU-V21 — Educação e Capacitação
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico de domínio; operação educacional não habilitada
 - Relacionados: V09 Capacidades, V18 Marketplace, V20 Infraestrutura Comunitária, V24 Empregabilidade, V27 Perfis, V28 Entidades, V30 Eventos
 

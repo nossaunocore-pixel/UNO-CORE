@@ -1,6 +1,6 @@
 # EOU-V15 — Integrações
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado
 - Relacionados: V11 Ferramentas, V12 Provedores, V13 Dados, V14 APIs, V16 Segurança, V18 Marketplace, V25 Financeiro
 

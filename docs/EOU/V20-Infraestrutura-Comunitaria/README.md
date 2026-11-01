@@ -1,6 +1,8 @@
 # EOU-V20 — Infraestrutura Comunitária
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; leitura pública parcial prevista no V7
 - Relacionados: V03 MUE, V13 Dados, V16 Segurança, V18 Marketplace, V21 Educação, V22 Saúde, V23 Habitação, V24 Empregabilidade, V29 Projetos
 

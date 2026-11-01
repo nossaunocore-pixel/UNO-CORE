@@ -1,6 +1,8 @@
 # EOU-V27 — Usuários e Perfis
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; telas e contratos parciais
 - Relacionados: V13 Dados, V16 Segurança, V17 Governança, V21 Educação, V24 Empregabilidade, V25 Financeiro, V26 Identidade, V28 Entidades
 

@@ -1,6 +1,8 @@
 # EOU-V35 — Roadmap Oficial
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: estrutura inicial; marcos dependem de critérios verificáveis
 - Relacionados: V17 Governança, V29 Projetos, V31 Fluxos, V34 UNO CORE, V36 ADR, V38 Padrões
 

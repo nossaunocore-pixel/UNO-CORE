@@ -1,96 +1,51 @@
-# EOU-V06 — Conhecimento Organizacional
+# EOU-V06 — Centro de Operações (CO)
 
-> Este volume estabelece a Arquitetura Cognitiva e Institucional da Engenharia Oficial.
-
----
+**Nomenclatura oficial confirmada pelo fundador em 31/10/2026.**
 
 ## Finalidade
 
-Estabelecer os fundamentos que permitem às organizações desenvolver inteligência, consciência, propósito, Governança e capacidade evolutiva.
+O Centro de Operações é o domínio destinado à observação, acompanhamento e administração operacional das atividades autorizadas da UNO CORE. Sua função é oferecer visibilidade operacional e apoiar a coordenação responsável, respeitando as permissões, alçadas e trilhas de auditoria definidas pela governança.
 
-Ao longo deste volume são apresentados os princípios que sustentam a Engenharia Oficial como disciplina organizacional e a Plataforma UNO como sua principal materialização tecnológica.
+## Fronteira de responsabilidade
 
-Seu objetivo consiste em permitir que organizações deixem de operar apenas como estruturas administrativas e passem a atuar como sistemas vivos, capazes de aprender continuamente, preservar conhecimento e evoluir de forma consciente.
+Esta definição é uma **proposta de harmonização documental derivada da auditoria cruzada**, ainda sujeita à validação arquitetural do fundador.
 
----
+Como fronteira proposta:
 
-## Visão Geral
+- O Centro de Operações observa e administra operações já autorizadas; não cria autoridade institucional por si próprio.
+- A Oficina Mestre (V05) prepara, cria, modifica, testa e versiona artefatos; não substitui o acompanhamento operacional.
+- A Central de Coordenação de Missões (V07) coordena missões, responsáveis e recursos.
+- O Sistema Universal de Missões (V08) define o ciclo e os registros das missões.
+- Fluxos (V31), Automações (V32) e Motor Cognitivo (V33) mantêm seus próprios contratos e não transferem autoridade ao Centro de Operações.
+- Toda ação sensível depende de autorização server-side, alçada válida e registro auditável, conforme os contratos que vierem a ser ratificados em V16 e V17.
 
-O Conhecimento Organizacional representa a base intelectual sobre a qual toda a Engenharia Oficial é construída.
+## O que este volume não declara
 
-Este volume organiza progressivamente os fundamentos que permitem compreender:
+Este README não afirma que painéis, telemetria, controles, integrações ou operações descritas em documentos históricos estejam implementados ou ativos. Também não concede permissões, não formaliza delegações e não substitui atos institucionais ou análise jurídica.
 
-- como organizações aprendem;
-- como desenvolvem inteligência coletiva;
-- como preservam conhecimento;
-- como exercem Governança;
-- como fortalecem propósito;
-- como evoluem através do Stewardship;
-- como realizam Curadoria institucional;
-- como garantem continuidade entre gerações.
+## Preservação do conteúdo anterior
 
-A jornada culmina no surgimento da Instituição Curadora, na Carta Fundadora da NÓS S.A. e na Declaração da Engenharia Oficial.
+O README anterior de V06 foi preservado integralmente em [HISTORICO-CONHECIMENTO-ORGANIZACIONAL.md](./HISTORICO-CONHECIMENTO-ORGANIZACIONAL.md). Seu conteúdo permanece como registro histórico da série documental anterior e não deve ser interpretado automaticamente como escopo vigente do Centro de Operações.
 
----
+Os demais capítulos e artefatos legados do diretório não foram apagados nem reclassificados nesta alteração. Precisam de inventário e avaliação individual antes de eventual migração, arquivamento ou adoção.
 
-## Estrutura do Volume
+## Pendências
 
-A arquitetura deste volume desenvolve-se em uma sequência lógica de maturidade organizacional.
-
-### Fundamentos Organizacionais
-
-Os primeiros capítulos estabelecem os princípios que sustentam o conhecimento organizacional e definem sua importância para organizações orientadas por propósito.
-
----
-
-### Arquitetura Cognitiva
-
-Na sequência são apresentados os mecanismos pelos quais organizações percebem, aprendem, compreendem e transformam conhecimento em inteligência organizacional.
-
----
-
-### Arquitetura Institucional
-
-Os capítulos seguintes introduzem Governança, Valor Público, Stewardship, Curadoria e Continuidade Institucional.
-
-Esses elementos estabelecem os fundamentos necessários para que organizações preservem sua identidade enquanto evoluem.
-
----
-
-### Instituição Curadora
-
-O volume conclui com a formalização da Instituição Curadora como responsável por exercer Stewardship sobre a Engenharia Oficial e sobre a Plataforma UNO.
-
-Nesse contexto surge oficialmente a NÓS S.A., reconhecida como a primeira Instituição Curadora formalmente constituída para assumir essa responsabilidade.
-
-A sequência é concluída pela Declaração da Engenharia Oficial, que estabelece sua natureza permanente, sua independência institucional e seu compromisso com as futuras gerações.
-
----
-
-## Resultado Esperado
-
-Ao concluir este volume, o leitor compreenderá que organizações extraordinárias não surgem apenas da adoção de tecnologias.
-
-Elas surgem da capacidade de preservar conhecimento, desenvolver inteligência coletiva, fortalecer pessoas, integrar Inteligências Artificiais com responsabilidade e evoluir continuamente sem perder sua identidade.
-
-Compreenderá igualmente que a Engenharia Oficial representa o fundamento dessa evolução, a Plataforma UNO sua principal infraestrutura tecnológica e a NÓS S.A. sua primeira Instituição Curadora.
-
----
-
-## Continuidade
-
-Os volumes seguintes utilizam os fundamentos estabelecidos neste volume para construir as capacidades operacionais da Plataforma UNO.
-
-A Arquitetura Cognitiva e Institucional aqui estabelecida torna-se a base permanente para toda evolução futura do ecossistema.
-
----
+- Inventariar todos os capítulos e artefatos existentes no diretório V06.
+- Classificar cada item como vigente, histórico, duplicado, obsoleto ou dependente de decisão.
+- Harmonizar os capítulos com a fronteira V05–V08 e com V16/V17/V31–V33.
+- Definir indicadores, estados operacionais, perfis de acesso, eventos auditáveis e critérios de aceite.
+- Submeter a fronteira proposta à aprovação do fundador.
 
 ## Estado
 
-Em desenvolvimento contínuo.
+**Nomenclatura confirmada; escopo técnico em harmonização.** Este documento não certifica completude nem implementação operacional.
 
-A Engenharia Oficial reconhece que conhecimento representa um patrimônio vivo.
 
-Sua evolução jamais será concluída.
+## Carta de apresentação institucional
 
-Cada geração receberá a responsabilidade de fortalecê-la e transmiti-la ampliada às gerações seguintes.
+A mensagem preparada para leitura pública e fixação no espaço da NÓS S.A. está em [Carta de Apresentação do Fundador — NÓS S.A.](./CARTA-DE-APRESENTACAO-DO-FUNDADOR-NOS-SA-2026-10-31.md). Ela complementa, sem substituir, a carta canônica do [capítulo 051](./051-Carta-Fundadora-da-NOS-SA.md).
+
+## Inventário do legado
+
+O diretório contém 52 capítulos numerados herdados da concepção anterior de CO. O capítulo 001 descreve CO como “Catálogo Organizacional”; o README anterior usava “Conhecimento Organizacional”. Esses capítulos não devem ser interpretados como especificação vigente do Centro de Operações apenas por permanecerem neste diretório. Consulte o [Inventário do legado documental de V06](./INVENTARIO-LEGADO-52-CAPITULOS.md). Nenhum dos 52 capítulos foi apagado, movido ou automaticamente incorporado ao escopo atual.

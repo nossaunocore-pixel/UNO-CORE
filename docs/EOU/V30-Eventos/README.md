@@ -1,6 +1,8 @@
 # EOU-V30 — Eventos
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico; apresentação pública parcial em Lazer
 - Relacionados: V13 Dados, V15 Integrações, V18 Marketplace, V20 Infraestrutura Comunitária, V21 Educação, V25 Financeiro, V28 Entidades, V31 Fluxos
 

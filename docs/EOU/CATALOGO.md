@@ -21,11 +21,11 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 | EOU-V01 | Constituição Técnica da UNO |
 | EOU-V02 | Arquitetura Oficial da UNO |
 | EOU-V03 | Modelo Universal de Entidades (MUE) |
-| EOU-V04 | EVA — Enciclopédia Visual Adaptativa |
-| EOU-V05 | Oficina Mestre (OM) |
-| EOU-V06 | Centro de Operações (CO) |
+| EOU-V04 | [EVA — definição pendente](V04-EVA/DECISAO-PENDENTE-EVA.md) |
+| EOU-V05 | [Oficina Mestre (OM)](V05-OM/README.md) |
+| EOU-V06 | [Centro de Operações (CO)](V06-CO/README.md) — [inventário do legado](V06-CO/INVENTARIO-LEGADO-52-CAPITULOS.md) |
 | EOU-V07 | Central de Coordenação de Missões (CCM) |
-| EOU-V08 | Sistema Universal de Missões (OPS) |
+| EOU-V08 | [Sistema Universal de Missões (OPS) — escopo pendente](V08-OPS/DECISAO-PENDENTE-ESCOPO-OPS.md) |
 
 ---
 
@@ -112,7 +112,7 @@ Cada volume representa um domínio específico da engenharia e pode evoluir inde
 
 # Estado documental da coleção
 
-> Em 31/10/2026, os volumes V09–V40 receberam expansão dos seus README.md para especificações técnicas iniciais (versão documental 0.2.0). Esses textos são bases estruturadas para revisão, decomposição em capítulos, diagramas, schemas, contratos e testes. Não representam aprovação final, implementação integral ou validação jurídica.
+> Em 31/10/2026, os volumes V09–V40 receberam especificações iniciais 0.2.0. Os volumes V09–V40 agora possuem artefatos complementares de aprofundamento técnico 0.3.0, em branch de revisão, com contratos de domínio, modelos lógicos, fluxos, controles, testes e decisões abertas. A nova camada não substitui os README iniciais nem representa aprovação final ou implementação integral.
 
 # Organização da Coleção
 
@@ -139,3 +139,68 @@ Nenhuma decisão estrutural deverá existir sem documentação correspondente na
 A coleção EOU possui caráter evolutivo.
 
 Novas versões poderão ampliar os volumes existentes preservando sua compatibilidade histórica e arquitetural.
+
+
+## Aprofundamento técnico V09–V40 (31/10/2026)
+
+Cada volume V09–V40 possui um arquivo ESPECIFICACAO-TECNICA.md complementar, revisão documental 0.3.0. Os documentos estão na branch `eou-v09-v17-deepening-2026-10-31` para revisão; a branch main permanece inalterada.
+
+
+### Fronteira entre V26, V27 e V28
+
+V26 trata identidade e autenticação; V27 trata a experiência/conta do usuário, perfil, preferências e participação; V28 trata entidades de domínio, tipos, titularidade, representação e relações. O IDU identifica a pessoa no ecossistema, mas não substitui UID do provedor, perfil, entidade ou autorização. Esta separação é proposta técnica a validar por ADR.
+
+### Fronteira entre V29–V32
+
+V29 governa o ciclo de projetos e prestação de contas; V30 governa eventos, edições, inscrições e acesso; V31 define processos e máquinas de estado; V32 define gatilhos e agenda para iniciar fluxos. V31 não é scheduler, e V32 não é autorização nem substitui os fluxos de domínio.
+
+### Fronteira entre V33 e V34
+
+V33 define raciocínio, roteamento cognitivo, contexto, avaliação e uso controlado de ferramentas. V34 integra a arquitetura completa da UNO CORE, suas camadas, governança, rollout e maturidade. V33 é subsistema; V34 é visão integradora e não substitui os contratos dos demais volumes.
+
+### Fronteira entre V35–V38
+
+V35 organiza prioridades e marcos; V36 registra decisões arquiteturais e seu estado; V37 governa o vocabulário; V38 estabelece padrões verificáveis de engenharia. Roadmap não substitui decisão, glossário não altera contratos por si só e padrão só é considerado cumprido com evidência.
+
+### Fronteira entre V39 e V40
+
+V39 organiza obrigações, documentos e avaliações jurídicas sob revisão profissional. V40 organiza identidade, atos, governança, história, programas e comunicação institucional. V40 não substitui atos jurídicos; V39 não define sozinho a missão ou a autoridade institucional.
+
+### Fronteira entre V18–V25
+
+V18 governa descoberta e contratação de ofertas; V19 trata coordenação informacional industrial, sem controle OT; V20 organiza recursos e necessidades comunitárias; V21 conecta aprendizagem; V22 limita-se a informação/encaminhamento sem atos clínicos; V23 trata informação habitacional sem presumir titularidade ou corretagem; V24 conecta trabalho e renda sem presumir vínculo; V25 governa ledger e pagamentos sob revisão jurídica/contábil. Esses domínios reutilizam identidade, entidades, fluxos e governança transversais.
+
+
+## Definições e nomenclaturas em harmonização — 31/10/2026
+
+- **V04 — EVA:** há divergência entre “Enciclopédia Visual Adaptativa” (catálogo anterior) e “Ecossistema de Valor e Aprendizagem” (README existente). Nenhuma expansão foi escolhida. Ver [registro de decisão pendente](V04-EVA/DECISAO-PENDENTE-EVA.md). A definição oficial depende de confirmação do fundador.
+- **V06 — Centro de Operações (CO):** nomenclatura confirmada pelo fundador. O README foi harmonizado e o texto anterior foi preservado em [histórico de Conhecimento Organizacional](V06-CO/HISTORICO-CONHECIMENTO-ORGANIZACIONAL.md). O escopo técnico atual ainda está em harmonização; capítulos legados não foram apagados nem automaticamente adotados.
+
+
+### Legados estruturais identificados em V05–V08
+
+- V05: 100 capítulos do antigo Orquestrador Mestre; inventário em `V05-OM/INVENTARIO-LEGADO-100-CAPITULOS.md`. O V05 atual é Oficina Mestre.
+- V06: 52 capítulos do antigo domínio organizacional; inventário em `V06-CO/INVENTARIO-LEGADO-52-CAPITULOS.md`. O V06 atual é Centro de Operações.
+- V08: nome atual “Sistema Universal de Missões” diverge do conteúdo OPS de operações sistêmicas; decisão pendente em `V08-OPS/DECISAO-PENDENTE-ESCOPO-OPS.md`.
+
+
+## Auditoria dos fundamentos V01–V08
+
+O inventário estrutural dos oito volumes fundamentais, incluindo contagem de capítulos, maturidade e divergências de nomenclatura/escopo, está em [INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md](INVENTARIO-ESTRUTURAL-FUNDAMENTOS-V01-V08-2026-10-31.md). A primeira passagem identificou 522 capítulos numerados nos oito diretórios; nem todos foram lidos integralmente. O documento distingue inventário estrutural de auditoria semântica completa.
+
+
+## Modelo Econômico Transversal e Governança Financeira
+
+O modelo econômico transversal está documentado em [MEU-UNO-001](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md), versão 0.3.0, com prevalência do [Adendo de Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md). A matriz de enquadramento está em [RJTTF-UNO-001](REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md). Registro de decisões, lacunas e handoff: [RDL-ECON-UNO-001](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md), [Plano Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md) e [Checklist](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md).
+
+
+
+## Simulação histórica contrafactual — Brasil 2020–2022
+
+- [Índice da simulação](../simulacao/README.md)
+- [2020 — Ano 1](../simulacao/SIMULACAO-2020-ANO-1.md)
+- [2021 — Ano 2](../simulacao/SIMULACAO-2021-ANO-2.md)
+- [2022 — Ano 3](../simulacao/SIMULACAO-2022-ANO-3.md)
+- [Síntese consolidada](../simulacao/SIMULACAO-CONSOLIDADA-2020-2022.md)
+
+O estudo é contrafactual e não modifica o escopo aprovado do MVP V7 ou a sequência do roadmap.

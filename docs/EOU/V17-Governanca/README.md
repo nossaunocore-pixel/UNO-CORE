@@ -1,6 +1,6 @@
 # EOU-V17 — Governança
 
-- Versão documental: 0.2.0
+- Versão documental: 0.3.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado; regras finais exigem aprovação do fundador
 - Relacionados: V01 Constituição, V05 Oficina Mestre, V06 Centro de Operações, V07 CCM, V08 OPS, V10 Agentes, V16 Segurança, V26 Identidade, V36 ADR
 
@@ -21,6 +21,21 @@ Adotar RBAC para papéis e ABAC para atributos como entidade, território, titul
 ## 4. Delegação e alçadas
 Toda delegação registra concedente, destinatário, escopo, finalidade, início, expiração, limites, possibilidade de subdelegar e mecanismo de revogação. Delegação não transfere autoridade institucional ilimitada. Atribuições devem ser revisadas e expiradas quando necessário.
 
+## 4.1. Autoridade institucional e integração multi-institucional
+
+Cada instituição participante mantém identidade, administração, responsabilidades e autonomia próprias. A entrada no ecossistema UNO não transforma uma instituição em departamento da NÓS S.A. nem transfere automaticamente seus poderes, dados ou decisões.
+
+A **NÓS S.A.** é a instituição de referência e poderá possuir integração ampliada com os componentes UNO, conforme necessidade e autorização. As demais instituições recebem somente conexões essenciais e justificadas para interoperabilidade e cooperação.
+
+O **Departamento de Sinergia** coordena a identificação de necessidades de integração, padrões de interoperabilidade, fluxos de cooperação e acompanhamento das conexões. Não recebe, por essa função, poder automático para decidir em nome das instituições ou ampliar permissões.
+
+### Gatilho de decisão e gatilho de operação
+
+- **Gatilho de decisão:** competência para aprovar, autorizar, deliberar, definir regras, assumir compromissos ou alterar políticas dentro de uma alçada.
+- **Gatilho de operação:** permissão para executar uma ação específica, já autorizada, dentro de escopo, finalidade, limite, prazo e condições registrados.
+
+A concessão de capacidade operacional não concede poder decisório. A autoridade para decidir não implica, por si só, autorização para executar qualquer operação. Toda delegação deve indicar separadamente ambos os gatilhos, quando aplicáveis, além de concedente, destinatário, entidade, recurso, finalidade, limites, evidência, vigência e revogação.
+
 ## 5. Aprovação humana
 Ações de alto impacto — dinheiro, identidade, dados sensíveis, publicação institucional, contratação, exclusão, concessão de acesso, alteração de políticas e ativação de agentes — exigem aprovador humano competente, evidência, confirmação e trilha auditável.
 
@@ -37,4 +52,11 @@ Testar acesso negado, escopo insuficiente, atribuição expirada, revogação, s
 Formalizar matriz de alçadas por domínio, processo de nomeação/remoção de gestores, sucessão e contingência do fundador, política de exceção e revisão periódica. Requer validação jurídica e institucional.
 
 ## 10. Histórico
+0.3.0 — distinção expressa entre gatilho de decisão e gatilho de operação; autonomia institucional e papel integrador do Departamento de Sinergia; 2026-10-31.
 0.2.0 — estrutura alinhada aos painéis e controles V7; 2026-10-31.
+
+
+## Relação com o Modelo Econômico Universal
+
+A governança financeira transversal segue o MEU-UNO-001 e seu adendo. Alçadas, segregação de funções, aprovações humanas e trilhas de auditoria devem ser aplicadas a custos, contratos, pagamentos, apuração territorial e reservas. Os percentuais territoriais internos e a destinação dos outros 50% do lucro permanecem pendentes; nenhum agente pode inferi-los ou ativá-los. Ver [Adendo econômico](../ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md) e [Matriz jurídica/financeira](../REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md).
+

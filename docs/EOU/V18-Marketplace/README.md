@@ -1,8 +1,14 @@
 # EOU-V18 — Marketplace
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado; catálogo público parcial no V7
 - Relacionados: V09 Capacidades, V12 Provedores, V15 Integrações, V19 Industrial, V21 Educação, V24 Empregabilidade, V25 Financeiro, V30 Eventos
+
+## Aprofundamento — contratos, CRM, ERP e conectores
+
+- [Motor Universal de Negociação, Contratos, CRM, ERP e Conectores — 31/10/2026](MOTOR-UNIVERSAL-DE-NEGOCIACAO-CONTRATOS-CRM-ERP-E-CONECTORES-2026-10-31.md) — proposta de arquitetura para negociações dinâmicas, contratos versionados, pedidos de marketplaces, gestão comercial/operacional e integração com contabilidade, assinatura e serviços públicos. Pendente de aprovação do fundador.
 
 ## 1. Finalidade
 Definir a descoberta, apresentação, comparação, oferta e contratação de produtos e serviços próprios da UNO e de terceiros, com clareza sobre quem oferece, quem vende, quem executa, quem recebe e quem responde.
@@ -36,3 +42,9 @@ Definir termos por categoria, papel jurídico da plataforma em cada operação, 
 
 ## 11. Histórico
 0.2.0 — estrutura de marketplace alinhada ao catálogo público V7; 2026-10-31.
+
+
+## Relação com o Modelo Econômico Universal
+
+Cada oferta/contratação deve identificar vendedor/prestador, contratante, executor, instituição parceira, papel contratual da UNO e processador de pagamento. Em intermediação, o valor integral pago pelo cliente não é automaticamente receita da UNO; reconhecer apenas os valores que lhe pertencem segundo contrato e contabilidade. Custos, obrigações e resultado territorial seguem o MEU-UNO-001 e seu adendo. Não ativar checkout, split ou comissão real sem validação V25 e V39.
+

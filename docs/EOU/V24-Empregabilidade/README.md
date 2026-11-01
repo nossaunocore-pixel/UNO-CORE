@@ -1,6 +1,8 @@
 # EOU-V24 — Empregabilidade
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)
+- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)
+- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho de domínio; jornada profissional parcial/demonstrativa
 - Relacionados: V09 Capacidades, V18 Marketplace, V20 Infraestrutura Comunitária, V21 Educação, V25 Financeiro, V27 Perfis, V28 Entidades, V29 Projetos
 
@@ -36,3 +38,9 @@ Definir escopo do piloto, categorias profissionais, verificação, modelo de int
 
 ## 11. Histórico
 0.2.0 — domínio profissional e de renda estruturado; 2026-10-31.
+
+
+## Relação com o Modelo Econômico e Regime de Trabalho
+
+O domínio deve diferenciar emprego direto, prestação independente PF/PJ, terceirização e intermediação. O nome do contrato não prevalece sobre a realidade da prestação. Salários, encargos e obrigações do empregador entram na apuração operacional conforme enquadramento; retenções tributárias devem ser classificadas segundo responsável e hipótese legal. Ver [RJTTF-UNO-001](../REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md) e [Adendo MEU-UNO-001](../ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md).
+

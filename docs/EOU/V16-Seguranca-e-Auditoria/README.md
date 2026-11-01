@@ -1,6 +1,6 @@
 # EOU-V16 — Segurança e Auditoria
 
-- Versão documental: 0.2.0
+- Versão documental: 0.2.0 (README-base)\n- Aprofundamento complementar: [Especificação técnica 0.3.0](ESPECIFICACAO-TECNICA.md)\n- Estado do aprofundamento: proposta técnica em branch de revisão; pendente de aprovação
 - Estado: rascunho técnico estruturado; revisão de segurança necessária
 - Relacionados: V01 Constituição, V02 Arquitetura, V13 Dados, V14 APIs, V15 Integrações, V17 Governança, V26 Identidade, V36 ADR, V39 Jurídico
 
