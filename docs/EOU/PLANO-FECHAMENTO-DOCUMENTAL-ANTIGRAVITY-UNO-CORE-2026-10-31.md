@@ -1,8 +1,8 @@
 # Plano de Fechamento Documental e Handoff Antigravity — UNO CORE
 
 **Identificador:** PFDA-UNO-001  
-**Versão:** 0.1.0  
-**Data:** 31/10/2026  
+**Versão:** 0.2.0  
+**Data:** 01/11/2026  
 **Estado:** Baseline documental consolidada; instrução de handoff para execução incremental por fase  
 **Branch:** eou-v09-v17-deepening-2026-10-31
 
