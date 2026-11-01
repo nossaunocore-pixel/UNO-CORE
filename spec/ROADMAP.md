@@ -123,3 +123,9 @@ O MVP só será declarado pronto quando as fases críticas de identidade, autori
 - [ ] Aplicar migration de versionamento da Oficina em Supabase de teste.
 - [ ] Construir aprovação, evidência de testes, integração e ativação; manter publicação automática proibida.
 - [ ] Conectar cada painel a APIs/dados reais com autorização server-side e testes de escopo.
+
+## Fronteira de entrega — V7 MVP e V8
+
+O fechamento da V7 deve priorizar o núcleo essencial descrito em `docs/V7/FRONTEIRA_MVP_V7_V8.md`. A V7 apresenta os serviços e permite descoberta informativa; não ativa contratação, reservas, matrículas, pedidos, pagamentos ou serviços operacionais. A expansão e ativação dos serviços pertencem ao V8, sujeitas a backlog, validação e autorização próprias.
+
+A apresentação dos 18 universos é requisito do MVP, mas a lista oficial completa não está presente no registro `squareModules` (10 itens) nem em `UNO_EXPERIENCE_AREAS` (10 áreas). Recuperar a fonte oficial antes de fechar esse critério.
