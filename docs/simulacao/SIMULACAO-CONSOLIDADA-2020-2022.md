@@ -130,12 +130,12 @@ O princípio permanece: a transformação do todo começa pela unidade. O valor 
 2. IBGE — rendimento domiciliar per capita 2021: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34052-em-2021-rendimento-domiciliar-per-capita-cai-ao-menor-nivel-desde-2012
 3. IBGE — PNAD Contínua, mercado de trabalho 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36336-pnad-continua-em-2022-taxa-media-anual-de-desocupacao-foi-de-9-3-enquanto-de-taxa-de-subutilizacao-foi-de-20-8
 4. IBGE — apresentação retrospectiva da PNAD Contínua, janeiro de 2026 (série histórica de informalidade): https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
-4. IBGE — rendimento domiciliar per capita 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36320-ibge-divulga-rendimento-domiciliar-per-capita-2022-para-brasil-e-unidades-da-federacao
-5. IBGE — Síntese de Indicadores Sociais 2023: https://nada.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
-6. INEP — Censo Escolar 2020: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
-7. Ministério da Saúde — Boletim Epidemiológico Especial COVID-19 nº 144, SE 50/2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2022/boletim-epidemiologico-no-144-boletim-coe-coronavirus
-8. Rede PENSSAN — II VIGISAN: https://redepenssan.org.br/olheparaafome/
-9. Ministério das Cidades — SNIS 2022: https://www.gov.br/cidades/pt-br/assuntos/saneamento/comite-interministerial-de-saneamento-basico-cisb/arquivos/ResultadosdaAgendaRegulatria20222024daANA.pdf
+5. IBGE — rendimento domiciliar per capita 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36320-ibge-divulga-rendimento-domiciliar-per-capita-2022-para-brasil-e-unidades-da-federacao
+6. IBGE — Síntese de Indicadores Sociais 2023: https://nada.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
+7. INEP — Censo Escolar 2020: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
+8. Ministério da Saúde — Boletim Epidemiológico Especial COVID-19 nº 144, SE 50/2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2022/boletim-epidemiologico-no-144-boletim-coe-coronavirus
+9. Rede PENSSAN — II VIGISAN: https://redepenssan.org.br/olheparaafome/
+10. Ministério das Cidades — SNIS 2022: https://www.gov.br/cidades/pt-br/assuntos/saneamento/comite-interministerial-de-saneamento-basico-cisb/arquivos/ResultadosdaAgendaRegulatria20222024daANA.pdf
 
 ## Nota de integridade
 
