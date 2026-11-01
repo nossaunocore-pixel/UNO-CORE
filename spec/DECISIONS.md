@@ -10,7 +10,7 @@
 | ADR-0004 | 2026-07-27 | Orquestração por capacidades | Aprovado | Capacidades declarativas, auditáveis, versionáveis e governadas. |
 | ADR-0005 | 2026-07-27 | Gateway de IA server-side | Aprovado como requisito | Segredos de IA somente server-side. A existência/implantação do gateway deve ser verificada antes de declarar integração pronta. |
 | ADR-0006 | 2026-07-27 | Chaves publishable do Supabase | Aprovado | Frontend utiliza somente chave publishable/anon legada; nunca service-role. |
-| ADR-0007 | 2026-10-31 | Google obrigatório para acesso interno | Aprovado | Apenas landing e boas-vindas são anônimas. Todas as rotas internas exigem Google OAuth, IDU provisionado e autorização server-side. E-mail/senha não é alternativa no MVP. |
+| ADR-0007 | 2026-10-31 | Google obrigatório para acesso interno | Aprovado, parcialmente supersedido pelo ADR-0013 quanto às rotas públicas | Google + IDU continuam obrigatórios para identidade pessoal e áreas privadas; a restrição de anonimato somente à landing/boas-vindas foi substituída pela allowlist pública Supabase do ADR-0013. E-mail/senha não é alternativa no MVP. |
 | ADR-0008 | 2026-10-31 | Visitante autenticado sem adesão paga | Aprovado | Autenticação não é assinatura. Visitantes podem usar funções internas gratuitas elegíveis, quando implementadas e seguras. |
 | ADR-0009 | 2026-10-31 | Classificação de capacidades por custo e dependência | Aprovado | Classes gratuita interna, consumo, externa e restrita; pode haver classificação combinada. Negar por padrão quando faltar política. |
 | ADR-0010 | 2026-10-31 | Firebase + Supabase + IDU | Aprovado como direção arquitetural | Firebase para autenticação/identidade/memória interna; Supabase para dados de uso e produto; IDU como identificador UNO independente. Integração Third-Party Auth, RLS e provisionamento ainda precisam de prova. |
@@ -25,6 +25,8 @@
 **Decisão:** landing page e boas-vindas são as únicas experiências anônimas. O CTA “Conheça o UNO” inicia autenticação Google. Todas as rotas internas exigem sessão válida e IDU provisionado. O frontend não oferece login por e-mail/senha como alternativa. Autenticação não significa adesão paga nem acesso a recursos restritos.
 
 **Consequências:** revisar Firebase Auth providers, fluxos OAuth, endpoint de identidade, rotas e testes E2E. O backend e RLS devem aplicar as mesmas regras.
+
+**Nota de precedência:** a regra de ADR-0007 que limitava anonimato à landing e boas-vindas foi substituída, apenas quanto à camada pública, pelo ADR-0013. A autenticação Google continua obrigatória para identidade pessoal e ambientes privados.
 
 ## ADR-0008 — Visitante autenticado
 
