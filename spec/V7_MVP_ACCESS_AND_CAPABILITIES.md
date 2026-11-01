@@ -94,3 +94,15 @@ A allowlist pública inicial é: `praca`, `edificio` (leitura pública), `nos`/V
 A sessão anônima Supabase não é IDU e não deve ser tratada como perfil permanente. O endpoint `/api/public/chat` só responde sobre informações públicas, exige JWT Supabase anônimo válido, limite por usuário e variável `PUBLIC_CHAT_GLOBAL_DAILY_LIMIT`. Se o limite global não estiver configurado, o endpoint falha fechado.
 
 Antes de produção, habilitar Anonymous Sign-Ins, CAPTCHA/Turnstile, limite diário global aprovado pelo fundador, política de limpeza de contas anônimas, tabelas públicas com RLS e testes de negação. A especificação de precedência é `spec/ADR/ADR-0013-public-visitor-supabase-navigation.md`.
+
+## 9. Fronteira de escopo V7/V8 — catálogo não é ativação
+
+No MVP V7, a rota pública de Serviços é um catálogo informativo e transparente: origem própria/terceiro, fornecedor, responsável, condições, estado e preço quando validado. A Vitrine apresenta e permite descobrir ofertas; não realiza checkout nem contratação.
+
+A área Serviços Ativos pode existir como estrutura/estado vazio, ou exibir somente ativações confirmadas por processo autorizado. O V7 não deve iniciar contratação, reserva, matrícula, pedido, pagamento, repasse ou habilitação operacional real.
+
+A expansão e ativação dos serviços, onboarding de fornecedores, contratos, reservas, matrículas, execução operacional, integrações externas e fluxos financeiros correspondentes ficam reservados ao V8 e exigem validações técnicas, jurídicas, contábeis, de segurança e autorização próprias.
+
+As funções sociais nativas sem APIs de terceiros permanecem requisito do MVP, mas precisam de backend próprio, RLS, autorização, moderação, privacidade e testes. A ausência de API de terceiro não autoriza simular persistência ou interação multiusuário.
+
+A apresentação dos 18 universos permanece requisito de navegação do MVP; a lista oficial completa ainda não foi localizada nos documentos/código consultados. Não considerar essa parte concluída até recuperar e conferir os 18 nomes oficiais.
