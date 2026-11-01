@@ -1,8 +1,9 @@
 # Checklist de Prontidão — Antigravity / UNO CORE
 
 **Identificador:** CPA-UNO-001  
-**Versão:** 0.1.0  
-**Estado:** Checklist de verificação
+**Versão:** 0.2.0  
+**Data da atualização:** 01/11/2026  
+**Estado:** Checklist de verificação por fase
 
 ## Regra de aplicabilidade por fase
 
