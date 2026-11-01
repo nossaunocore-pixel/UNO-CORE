@@ -24,6 +24,7 @@ A cronologia acima é seletiva: destaca acontecimentos relevantes para a hipóte
 | Dimensão | Indicador histórico | Leitura e cautela |
 |---|---|---|
 | PIB | -3,3% em 2020 | Queda real anual; não mede distribuição dos efeitos nem bem-estar diretamente. |
+| Desenvolvimento humano | IDH 0,770 (série PNUD, atualização estatística 2025) | Índice composto de saúde, educação e renda; não mede diretamente desigualdade, pobreza ou segurança. |
 | Educação | 99,3% das escolas respondentes suspenderam atividades presenciais; média de 279 dias | Pesquisa suplementar do Censo Escolar; 168.739 respostas, cerca de 94% das escolas. |
 | Educação pública/privada | 287 dias na rede pública; 248 na privada | Diferença de exposição ao fechamento; não mede isoladamente aprendizagem perdida. |
 | Mercado de trabalho | Desocupação média anual posteriormente reportada em torno de 13,8% | A taxa não captura sozinha subutilização, desalento e informalidade; conferir a série metodológica antes de comparação fina. |
@@ -99,6 +100,8 @@ Qualquer alegação de vidas salvas exigiria desenho epidemiológico robusto, co
 - INEP, Censo Escolar 2020 — resposta educacional à pandemia: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
 - INEP, relatório de resultados do SAEB 2021, contexto educacional e dados do Censo Escolar: https://download.inep.gov.br/educacao_basica/saeb/2021/resultados/relatorio_de_resultados_do_saeb_2021_volume_1.pdf
 - Ministério da Saúde, Boletim Epidemiológico Especial COVID-19 nº 144, SE 50/2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2022/boletim-epidemiologico-no-144-boletim-coe-coronavirus
+- PNUD, Human Development Indices: A statistical update 2025 — tabela de tendências do IDH: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Trends_Table.pdf
+- PNUD, definição e dimensões do IDH: https://hdr.undp.org/data-center/human-development-index
 - IBGE, PNAD Contínua — série de mercado de trabalho: https://www.ibge.gov.br/estatisticas/sociais/trabalho.html
 
 ## Conclusão do Ano 1
