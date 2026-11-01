@@ -17,6 +17,7 @@ Uma UNO CORE hipoteticamente em operação desde 2020 poderia ter contribuído p
 | Indicador | 2020 | 2021 | 2022 | Interpretação |
 |---|---:|---:|---:|---|
 | PIB real | -3,3% | +4,8% | +3,0% | Contração seguida de recuperação; a taxa agregada não mede distribuição dos ganhos. |
+| Agropecuária / Indústria / Serviços | +4,2% / -3,0% / -3,7% | 0,0% / +5,0% / +4,8% | -1,1% / +1,5% / +4,3% | Variação real por grande setor; a recuperação foi desigual entre atividades. |
 | Desocupação média anual | 13,8%* | 13,2% | 9,3% | Queda em 2022, mas ainda 10 milhões de pessoas desocupadas na média anual. |
 | Informalidade | 37,7% | 39,6% | 39,5% | Série histórica retrospectiva divulgada pelo IBGE em apresentação da PNAD Contínua de janeiro/2026; preferir a mesma série revisada para comparação longitudinal. |
 | Rendimento domiciliar per capita real | — | R$ 1.353 | — | Em 2021, menor valor da série PNAD Contínua desde 2012; massa real caiu 6,2% ante 2020. |
@@ -127,16 +128,17 @@ O princípio permanece: a transformação do todo começa pela unidade. O valor 
 
 ## 10. Fontes e referências
 
-1. IBGE — Contas Nacionais, revisão e PIB 2021: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/38284-release-contas-nacionais
-2. IBGE — rendimento domiciliar per capita 2021: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34052-em-2021-rendimento-domiciliar-per-capita-cai-ao-menor-nivel-desde-2012
-3. IBGE — PNAD Contínua, mercado de trabalho 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36336-pnad-continua-em-2022-taxa-media-anual-de-desocupacao-foi-de-9-3-enquanto-de-taxa-de-subutilizacao-foi-de-20-8
-4. IBGE — apresentação retrospectiva da PNAD Contínua, janeiro de 2026 (série histórica de informalidade): https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
-5. IBGE — rendimento domiciliar per capita 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36320-ibge-divulga-rendimento-domiciliar-per-capita-2022-para-brasil-e-unidades-da-federacao
-6. IBGE — Síntese de Indicadores Sociais 2023: https://nada.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
-7. INEP — Censo Escolar 2020: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
-8. Ministério da Saúde — Boletim Epidemiológico Especial COVID-19 nº 144, SE 50/2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2022/boletim-epidemiologico-no-144-boletim-coe-coronavirus
-9. Rede PENSSAN — II VIGISAN: https://redepenssan.org.br/olheparaafome/
-10. Ministério das Cidades — SNIS 2022: https://www.gov.br/cidades/pt-br/assuntos/saneamento/comite-interministerial-de-saneamento-basico-cisb/arquivos/ResultadosdaAgendaRegulatria20222024daANA.pdf
+1. IBGE — Contas Nacionais, PIB e setores de 2020: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35349-com-servicos-afetados-pela-pandemia-pib-de-2020-cai-3-3
+2. IBGE — Contas Nacionais, revisão e PIB 2021: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/38284-release-contas-nacionais
+3. IBGE — rendimento domiciliar per capita 2021: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34052-em-2021-rendimento-domiciliar-per-capita-cai-ao-menor-nivel-desde-2012
+4. IBGE — PNAD Contínua, mercado de trabalho 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36336-pnad-continua-em-2022-taxa-media-anual-de-desocupacao-foi-de-9-3-enquanto-de-taxa-de-subutilizacao-foi-de-20-8
+5. IBGE — apresentação retrospectiva da PNAD Contínua, janeiro de 2026 (série histórica de informalidade): https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
+6. IBGE — rendimento domiciliar per capita 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36320-ibge-divulga-rendimento-domiciliar-per-capita-2022-para-brasil-e-unidades-da-federacao
+7. IBGE — Síntese de Indicadores Sociais 2023: https://nada.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
+8. INEP — Censo Escolar 2020: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
+9. Ministério da Saúde — Boletim Epidemiológico Especial COVID-19 nº 144, SE 50/2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2022/boletim-epidemiologico-no-144-boletim-coe-coronavirus
+10. Rede PENSSAN — II VIGISAN: https://redepenssan.org.br/olheparaafome/
+11. Ministério das Cidades — SNIS 2022: https://www.gov.br/cidades/pt-br/assuntos/saneamento/comite-interministerial-de-saneamento-basico-cisb/arquivos/ResultadosdaAgendaRegulatria20222024daANA.pdf
 
 ## Nota de integridade
 
