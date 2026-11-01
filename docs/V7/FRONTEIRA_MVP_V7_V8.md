@@ -80,6 +80,9 @@ Cada capacidade deve ser classificada como: **implementada e testada**, **parcia
 - `src/v6/content/unoRegistry.ts` contém 10 `squareModules`, não a lista oficial de 18 universos.
 - `src/domain/experiences.ts` contém 10 áreas de experiência; não é o registro dos 18 universos.
 - `PageAccessGateV7` declara rotas públicas, mas a proteção de dados e ações depende também de APIs e RLS.
+- `CommunityV6` atualmente apresenta pilares sociais e consulta publicações públicas; o componente não implementa criação de posts, curtidas, comentários, conexões, denúncias ou bloqueios. Essas funções sociais nativas permanecem requisito V7 e lacuna de implementação.
+- `ParticipationV63` consulta itens públicos e apresenta estados informativos; envio de propostas, comentários e votos não está habilitado no componente observado.
+- `NosShowcaseV63` e `ServicesV7` consultam catálogos públicos; a própria interface informa que compra/contratação não está habilitada. `ActiveServicesV7` é atualmente um estado vazio/estrutural, sem integração de ativações.
 - A Conversa pública no código usa sessão anônima Supabase e endpoint separado; sua operação depende de configuração e validação do ambiente, quotas e CAPTCHA/Turnstile.
 - A branch `v7-implementation` tem PR #1 aberto e em Draft; não foi mesclado.
 - A cabeça observada da branch é `f23ef3d3704e5e44b1691e1da302b561526a59b7`. O status combinado consultado apresentou falha no check Vercel por limite de deployments gratuitos; isso não demonstra, por si só, falha do código.
