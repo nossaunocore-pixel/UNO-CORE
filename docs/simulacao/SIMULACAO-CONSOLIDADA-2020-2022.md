@@ -137,7 +137,7 @@ O princípio permanece: a transformação do todo começa pela unidade. O valor 
 7. IBGE — Síntese de Indicadores Sociais 2023: https://nada.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
 8. INEP — Censo Escolar 2020: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
 9. Ministério da Saúde — Boletim Epidemiológico Especial COVID-19 nº 144, SE 50/2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2022/boletim-epidemiologico-no-144-boletim-coe-coronavirus
-10. Rede PENSSAN — II VIGISAN: https://redepenssan.org.br/olheparaafome/
+10. Rede PENSSAN — II VIGISAN: https://redepenssan.org.br/2o-inquerito-nacional-sobre-inseguranca-alimentar-no-contexto-da-pandemia-da-covid-19-no-brasil/
 11. Ministério das Cidades — SNIS 2022: https://www.gov.br/cidades/pt-br/assuntos/saneamento/comite-interministerial-de-saneamento-basico-cisb/arquivos/ResultadosdaAgendaRegulatria20222024daANA.pdf
 
 ## Nota de integridade
