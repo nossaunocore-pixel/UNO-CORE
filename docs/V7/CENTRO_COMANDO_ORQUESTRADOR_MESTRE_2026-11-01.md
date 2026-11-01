@@ -44,3 +44,17 @@ Incorporar ao Painel Mestre uma experiência visual de comando inspirada na refe
 - Console não executa operações externas nesta etapa.
 - V6 permanece preservada.
 - Preview validado; produção não promovida.
+
+
+## Ajuste de experiência pública — boas-vindas da Praça UNO
+
+- O balão inicial “Olá! Quer conhecer o que estamos construindo?” deve oferecer controle visível de fechar, com rótulo acessível.
+- Fechar o balão dispensa a apresentação sem retirar o avatar/atalho da UNO; oferecer ação discreta para reabri-lo.
+- O fechamento encerra também eventual etapa ativa do tour, evitando manter conteúdo de apresentação oculto em estado inconsistente.
+
+## Preparação de identidade — etapa Antigravity/Firebase
+
+- Não ativar nem alterar provedores nesta atualização.
+- Após a configuração inicial do Firebase pelo Antigravity, validar cadastro por e-mail/senha e autenticação Google, recuperação de senha, verificação de e-mail, persistência de sessão e autorização por claims.
+- O fluxo de visitante Supabase permanece separado da Identidade UNO Firebase.
+- Não promover produção nem alterar regras/segredos até revisão dos resultados dessa configuração.
