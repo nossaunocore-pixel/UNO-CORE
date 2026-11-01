@@ -10,7 +10,7 @@ A Plataforma UNO conecta pessoas, organizações, serviços, conhecimento e opor
 
 ## Regras essenciais do MVP
 
-- Somente landing page e boas-vindas podem ser acessadas anonimamente.
+- Visitantes acessam a camada pública definida no ADR-0013 (Praça, Instituições públicas, Vitrine, leitura da Comunidade, Participação pública, Lazer/Eventos, catálogo público de Serviços e Conversa), usando Supabase e RLS; não dependem de Firebase, Google ou IDU.
 - A entrada nos ambientes internos exige autenticação Google.
 - Autenticação não é adesão paga: visitante autenticado pode usar capacidades internas gratuitas elegíveis.
 - Capacidades com consumo de tokens/APIs, integração externa, contratação, qualificação ou autorização ficam condicionadas.
@@ -70,6 +70,7 @@ As variáveis de ambiente devem ser configuradas localmente com base no `.env.ex
 - [Decisões arquiteturais](spec/DECISIONS.md)
 - [Roadmap](spec/ROADMAP.md)
 - [Matriz de acesso e capacidades](spec/V7_MVP_ACCESS_AND_CAPABILITIES.md)
+- [Fronteira de escopo MVP V7 e expansão V8](docs/V7/FRONTEIRA_MVP_V7_V8.md)
 - [Catálogo Stripe de teste](docs/STRIPE_TEST_CATALOG.md)
 
 ## Estado de entrega
