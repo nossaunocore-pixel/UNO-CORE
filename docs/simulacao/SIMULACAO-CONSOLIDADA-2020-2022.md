@@ -18,7 +18,7 @@ Uma UNO CORE hipoteticamente em operação desde 2020 poderia ter contribuído p
 |---|---:|---:|---:|---|
 | PIB real | -3,3% | +4,8% | +3,0% | Contração seguida de recuperação; a taxa agregada não mede distribuição dos ganhos. |
 | Desocupação média anual | 13,8%* | 13,2% | 9,3% | Queda em 2022, mas ainda 10 milhões de pessoas desocupadas na média anual. |
-| Informalidade | 38,3%* | 40,1%* | 39,6% | Participação elevada do trabalho informal; conferir mudanças metodológicas e tabelas históricas antes de uso em série analítica. |
+| Informalidade | 37,7% | 39,6% | 39,5% | Série histórica retrospectiva divulgada pelo IBGE em apresentação da PNAD Contínua de janeiro/2026; preferir a mesma série revisada para comparação longitudinal. |
 | Rendimento domiciliar per capita real | — | R$ 1.353 | — | Em 2021, menor valor da série PNAD Contínua desde 2012; massa real caiu 6,2% ante 2020. |
 | Educação presencial | 99,3% das escolas respondentes suspenderam atividades; média 279 dias | Continuidade de regimes remotos/híbridos e retomadas desiguais | Retomada presencial mais ampla, com recuperação de aprendizagem como desafio | Os indicadores de fechamento não são equivalentes a medidas de aprendizagem. |
 | Óbitos por SRAG (recorte do boletim) | 317.127 até SE 53; 73,2% confirmados COVID-19 | 445.344 até SE 52; 86,5% confirmados COVID-19 | 84.541 até SE 50; 69,5% confirmados COVID-19 | Recorte de vigilância SIVEP-Gripe; não é a série final do SIM nem excesso de mortalidade. |
@@ -26,7 +26,7 @@ Uma UNO CORE hipoteticamente em operação desde 2020 poderia ter contribuído p
 | Fome — insegurança alimentar grave | — | — | 33,1 milhões estimados pelo II VIGISAN | Inquérito domiciliar com trabalho de campo entre nov/2021 e abr/2022; não é cadastro administrativo. |
 | Saneamento — SNIS | — | — | 84,9% rede de água; 56,0% rede de esgoto; 52,2% do esgoto gerado tratado | Indicadores nacionais de 2022; grandes diferenças regionais. |
 
-* Valores de mercado de trabalho e informalidade são referências preliminares da série PNAD Contínua mencionadas na documentação de trabalho. Antes de publicar comparações longitudinais ou usar em cálculos, confirmar as tabelas e revisões da série oficial do IBGE. O traço (—) indica que este documento não reproduz um valor que não foi confirmado com definição comparável; não significa inexistência do indicador.
+**Nota sobre mercado de trabalho:** as taxas de desocupação indicadas são médias anuais da divulgação do IBGE referente a 2022. A informalidade foi harmonizada para a série retrospectiva apresentada pelo IBGE em janeiro de 2026 (37,7% em 2020; 39,6% em 2021; 39,5% em 2022), evitando misturar estimativas de divulgações com bases históricas diferentes. O traço (—) indica que este documento não reproduz um valor que não foi confirmado com definição comparável; não significa inexistência do indicador.
 
 ### Leitura da mortalidade
 
@@ -129,6 +129,7 @@ O princípio permanece: a transformação do todo começa pela unidade. O valor 
 1. IBGE — Contas Nacionais, revisão e PIB 2021: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/38284-release-contas-nacionais
 2. IBGE — rendimento domiciliar per capita 2021: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34052-em-2021-rendimento-domiciliar-per-capita-cai-ao-menor-nivel-desde-2012
 3. IBGE — PNAD Contínua, mercado de trabalho 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36336-pnad-continua-em-2022-taxa-media-anual-de-desocupacao-foi-de-9-3-enquanto-de-taxa-de-subutilizacao-foi-de-20-8
+4. IBGE — apresentação retrospectiva da PNAD Contínua, janeiro de 2026 (série histórica de informalidade): https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf
 4. IBGE — rendimento domiciliar per capita 2022: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36320-ibge-divulga-rendimento-domiciliar-per-capita-2022-para-brasil-e-unidades-da-federacao
 5. IBGE — Síntese de Indicadores Sociais 2023: https://nada.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
 6. INEP — Censo Escolar 2020: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
