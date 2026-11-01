@@ -20,6 +20,7 @@ Uma UNO CORE hipoteticamente em operação desde 2020 poderia ter contribuído p
 | Desocupação média anual | 13,8%* | 13,2% | 9,3% | Queda em 2022, mas ainda 10 milhões de pessoas desocupadas na média anual. |
 | Informalidade | 37,7% | 39,6% | 39,5% | Série histórica retrospectiva divulgada pelo IBGE em apresentação da PNAD Contínua de janeiro/2026; preferir a mesma série revisada para comparação longitudinal. |
 | Rendimento domiciliar per capita real | — | R$ 1.353 | — | Em 2021, menor valor da série PNAD Contínua desde 2012; massa real caiu 6,2% ante 2020. |
+| IDH (série PNUD atualizada em 2025) | 0,770 | 0,768 | 0,780 | Série revisada publicada no HDR 2025; o IDH sintetiza saúde, educação e renda, mas não reflete diretamente desigualdade, pobreza ou segurança. |
 | Educação presencial | 99,3% das escolas respondentes suspenderam atividades; média 279 dias | Continuidade de regimes remotos/híbridos e retomadas desiguais | Retomada presencial mais ampla, com recuperação de aprendizagem como desafio | Os indicadores de fechamento não são equivalentes a medidas de aprendizagem. |
 | Óbitos por SRAG (recorte do boletim) | 317.127 até SE 53; 73,2% confirmados COVID-19 | 445.344 até SE 52; 86,5% confirmados COVID-19 | 84.541 até SE 50; 69,5% confirmados COVID-19 | Recorte de vigilância SIVEP-Gripe; não é a série final do SIM nem excesso de mortalidade. |
 | Pobreza — linha Banco Mundial US$ 6,85 PPC/dia | — | — | 31,6% | Linha internacional; outras linhas produzem percentuais diferentes. |
@@ -139,4 +140,4 @@ O princípio permanece: a transformação do todo começa pela unidade. O valor 
 
 ## Nota de integridade
 
-Os dados são apresentados conforme as fontes e recortes identificados. Revisões estatísticas podem alterar séries históricas. Antes de publicação externa, atualizar tabelas e confirmar séries comparáveis, especialmente desemprego/informalidade, pobreza, mortalidade e saneamento. A simulação não é previsão, promessa de resultado, parecer profissional ou evidência de impacto real da UNO.
+Os dados são apresentados conforme as fontes e recortes identificados. Revisões estatísticas podem alterar séries históricas. Antes de publicação externa, atualizar tabelas e confirmar séries comparáveis, especialmente desemprego/informalidade, pobreza, mortalidade e saneamento. Para IDH, a série utilizada é a revisão estatística do PNUD publicada em 2025; não misturar valores de edições anteriores do relatório. A simulação não é previsão, promessa de resultado, parecer profissional ou evidência de impacto real da UNO.
