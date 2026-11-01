@@ -61,3 +61,7 @@ A referência visual poderá ser incorporada quando:
 5. Executar testes ponta a ponta e registrar evidências.
 6. Aguardar referência visual para acabamento final.
 7. Submeter Preview para liberação humana; não promover automaticamente para produção.
+
+## Nota de precedência — revisão de escopo em 2026-11-01
+
+Este documento preserva o histórico da primeira implementação. As referências acima a login por e-mail/senha e ao provedor Firebase Email/Password estão superadas para o MVP: a autenticação pessoal aprovada é Google com e-mail verificado e IDU provisionado server-side. Visitantes usam a camada pública Supabase e a Conversa pública usa sessão anônima Supabase, conforme ADR-0013. Não habilitar Email/Password como método alternativo do MVP. Para a fronteira atual entre catálogo V7 e ativação V8, prevalece `docs/V7/FRONTEIRA_MVP_V7_V8.md`.
