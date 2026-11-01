@@ -1,7 +1,7 @@
 # Auditoria cruzada da EOU — 40 volumes
 
-- Data: 2026-10-31
-- Revisão: 0.1.0
+- Data: 2026-11-01
+- Revisão: 0.2.0
 - Escopo: leitura cruzada dos 40 volumes, usando especificações técnicas 0.3.0 de V09–V40 e READMEs-base de V01–V08.
 - Estado: relatório de auditoria documental; achados e recomendações não são decisões arquiteturais aprovadas.
 - Branch: `eou-v09-v17-deepening-2026-10-31`
