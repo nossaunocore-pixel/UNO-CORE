@@ -106,3 +106,8 @@ O V7 só pode ser marcado como MVP fechado quando:
 Ao fechar o V7, congelar a versão aprovada, registrar commits, testes, evidências e pendências. As capacidades reservadas ao V8 devem ser planejadas em backlog próprio, sem serem ativadas por consequência automática do deploy do MVP.
 
 **Princípio de separação:** V7 apresenta, conecta, orienta e valida o núcleo essencial; V8 expande e ativa serviços e operações conforme capacidade, autorização e validação.
+
+
+## Inventário oficial dos 18 universos — recuperação pendente
+
+A relação nominal dos 18 universos é um requisito de apresentação e navegação, mas ainda não foi recuperada das fontes técnicas consultadas. Não substituir a lista por 40 volumes EOU, 10 áreas de experiência, 10 módulos legados da Praça, departamentos NÓS S.A. ou o mapa circular 3D de cinco pontos. Ver [Inventário de recuperação — 18 universos](INVENTARIO_18_UNIVERSOS.md). A conclusão da apresentação dos 18 universos depende da recuperação da fonte original e da validação da nomenclatura e ordem.
