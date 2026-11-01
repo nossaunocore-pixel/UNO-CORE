@@ -132,3 +132,13 @@ Build, testes automatizados, testes de RLS, revisão de segredos e validação e
 ## 12. Precedência de navegação pública — ADR-0013
 
 A regra atual de acesso público é a allowlist descrita na seção 3.1 e no ADR-0013. A regra anterior de ADR-0007 que limitava anonimato à landing e boas-vindas foi substituída somente quanto às rotas públicas. Google continua obrigatório para identidade pessoal e ambientes protegidos. A Conversa pública usa Supabase Auth anônimo, limite global diário configurado pelo fundador e conteúdo público exclusivamente.
+
+## 13. Fronteira de escopo entre MVP V7 e V8
+
+A V7 deve concluir o núcleo essencial já definido: Praça UNO e apresentação institucional pública; navegação e leitura pública via Supabase conforme ADR-0013; Conversa pública de visitante com sessão anônima Supabase e limites; identidade pessoal Google + IDU server-side; Vitrine como descoberta e catálogo transparente; Comunidade e funções sociais nativas sem dependência de APIs de redes de terceiros; participação pública de leitura; e apresentação dos 18 universos como mapa navegável, sem afirmar que todos os serviços estejam ativos.
+
+O catálogo público de Serviços pode existir no V7, mas contratação, reserva, matrícula, pedido, ativação operacional, onboarding de fornecedores, integrações externas, logística/mobilidade operacional e expansão dos serviços ficam reservados ao V8. A área Serviços Ativos no V7 deve permanecer estrutural/sem operações reais, salvo consulta a ativações efetivamente confirmadas por processo autorizado. Pagamentos reais, Connect, transferências, payouts e carteira sacável não são liberados por uma tela ou pelo deploy do MVP.
+
+A lista oficial completa dos 18 universos ainda precisa ser recuperada: o registro atual `squareModules` contém 10 itens e `UNO_EXPERIENCE_AREAS` contém 10 áreas de experiência; nenhum deles deve ser tratado como lista dos 18 universos. Não inventar os nomes ausentes.
+
+A definição detalhada, o estado observado e os critérios de fechamento estão em [Fronteira de escopo MVP V7 e expansão V8](../docs/V7/FRONTEIRA_MVP_V7_V8.md). V8 designa a próxima versão do produto, não o Volume 08 da EOU.
