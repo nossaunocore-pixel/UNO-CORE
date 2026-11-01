@@ -317,3 +317,16 @@ Após a rodada de inventário V01–V08, o HEAD consultado do PR #2 é `e1428f51
 ### Complemento de validação — status Vercel do SHA 5632215
 
 Na consulta de status do commit `5632215edb22b9db8b82cca1605107969b6d3278`, não foram retornados workflow runs de GitHub Actions. O status combinado apresentou contexto `Vercel` em estado `failure`, com destino identificando limite de criação/build diário do projeto (build rate limit / necessidade de upgrade). Isso não demonstra falha de testes de código; indica que a verificação/build Vercel não foi concluída por limite de uso. O CI da cabeça segue não aprovado e o Preview atualizado não está confirmado.
+
+
+## 14. Aplicabilidade dos achados ao MVP V7 e às fases posteriores
+
+Este relatório registra riscos e lacunas da coleção EOU como um todo. A severidade P0/P1/P2 classifica a importância do achado no domínio correspondente; **não significa que todo achado seja bloqueador universal do MVP V7**.
+
+- O escopo e o plano do MVP V7, assim como a sequência de evolução posterior, já foram definidos pelo fundador.
+- Um achado bloqueia a implementação atual somente quando o domínio, dado, autoridade, integração ou efeito correspondente faz parte do escopo da tarefa em andamento.
+- Conflitos documentais de volumes futuros, modelos financeiros não ativados, ações societárias e domínios regulados não devem ser antecipados para o MVP nem convertidos em requisitos adicionais de lançamento.
+- Quando uma fase posterior for iniciada, os achados pertinentes deverão ser resolvidos antes de congelar seus contratos, schemas ou ativar seus fluxos.
+- As decisões ainda reservadas ao fundador continuam pendentes e não devem ser preenchidas por inferência; isso não impede a continuidade de tarefas independentes já aprovadas.
+
+O relatório não substitui o roadmap nem autoriza alteração de escopo. A instrução executável vigente é o Prompt de Execução Antigravity, que determina a continuidade da fase aprovada sem reiniciar auditoria ampla.
