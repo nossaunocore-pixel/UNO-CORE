@@ -270,3 +270,7 @@ A sessão anônima Firebase cria um usuário anônimo no Authentication e pode p
 - Build `tsc && vite build` concluído; 1.516 módulos transformados. Bundle JS 774,46 kB (gzip 206,16 kB), acima do limite recomendado de 500 kB.
 - O código inclui a correção da mensagem de privacidade: identidade anônima Firebase não é descrita como temporária; a política de expiração/limpeza das contas anônimas continua pendente.
 - O HEAD documental posterior `8b7fbc5ada2375a9343263724bb42f3f94ccb9ad` não altera código. Nenhuma promoção de produção.
+
+## Nota de precedência — correção da camada pública em 2026-11-01
+
+As seções históricas acima que descrevem visitantes autenticados pelo Firebase Anonymous, quotas em Firestore ou uma allowlist pública mais restrita registram etapas anteriores e não representam a arquitetura atual. Prevalece o ADR-0013: navegação e leitura pública via Supabase; Conversa pública com sessão anônima Supabase e endpoint separado; identidade pessoal e áreas privadas via Google + IDU server-side. A matriz atual está em `spec/V7_MVP_ACCESS_AND_CAPABILITIES.md` e a fronteira de escopo em `docs/V7/FRONTEIRA_MVP_V7_V8.md`.
