@@ -56,6 +56,8 @@ A simulação serve para testar a coerência da engenharia, explicitar mecanismo
 - INEP — Censo Escolar 2020: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
 - Ministério da Saúde — Boletins Epidemiológicos COVID-19: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19
 - Ministério das Cidades — SNIS 2022: https://www.gov.br/cidades/pt-br/assuntos/saneamento/comite-interministerial-de-saneamento-basico-cisb/arquivos/ResultadosdaAgendaRegulatria20222024daANA.pdf
+- PNUD — Human Development Indices: A statistical update 2025 (série histórica do IDH): https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Trends_Table.pdf
+- PNUD — definição e dimensões do IDH: https://hdr.undp.org/data-center/human-development-index
 - IBGE — Síntese de Indicadores Sociais 2023: https://nada.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
 - Rede PENSSAN — VIGISAN II (2022): https://redepenssan.org.br/olheparaafome/
 
