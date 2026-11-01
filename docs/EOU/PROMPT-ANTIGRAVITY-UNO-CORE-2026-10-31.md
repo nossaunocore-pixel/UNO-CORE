@@ -9,7 +9,7 @@
 
 ## Instrução principal
 
-Trabalhe no repositório existente UNO-CORE. A prioridade é auditar o estado real, harmonizar documentação e código, concluir o que estiver especificado e preparar o V7 MVP para validação, sem presumir que documentação equivale a implementação.
+Trabalhe no repositório existente UNO-CORE seguindo o plano de produto e a sequência de fases já aprovados pelo fundador. A prioridade operacional é continuar a implementação do MVP V7 a partir da branch e do pacote V7 indicados nos documentos de implementação, preservando as etapas posteriores no roadmap existente. Não reabra decisões já aprovadas, não reinicie uma auditoria documental ampla e não transforme recomendações de fases futuras em bloqueios do MVP. Verifique apenas os arquivos, contratos, dependências e riscos diretamente relacionados à tarefa em execução. Diferencie sempre documentação, código, integração, teste, Preview e produção.
 
 ### 1. Leitura obrigatória antes de editar
 
@@ -23,9 +23,13 @@ Leia:
 - especificações técnicas dos volumes relacionados ao módulo que será tocado;
 - documentação V7 e relatório de acesso/responsividade/LGPD.
 
-Não edite até produzir um mapa do que existe, do que falta e do que conflita.
+Use a documentação consolidada existente como baseline. Antes de cada alteração, confira o estado atual dos arquivos diretamente envolvidos e faça apenas a verificação técnica necessária para evitar regressões. Se descobrir divergência documental simples, corrija-a preservando decisões existentes. Se surgir uma decisão estrutural realmente não definida e cuja escolha altere identidade, autoridade, segurança, obrigações legais, arquitetura ou escopo aprovado, não invente a resposta: registre o ponto e peça autorização do fundador. Continue normalmente nas tarefas independentes.
 
-### 2. Preservação e segurança
+### 2. Preservação, escopo aprovado e segurança
+
+- O MVP V7 e a sequência de evolução posterior já foram definidos pelo fundador. Preserve o plano e não acrescente escopo por iniciativa própria.
+- A simulação histórica 2020–2022 em `docs/simulacao/` é material analítico contrafactual; não é autorização para ampliar o MVP nem para antecipar módulos posteriores.
+- Requisitos e oportunidades que pertençam a fases futuras devem ser registrados no ponto correspondente do roadmap existente, sem bloquear a entrega V7.
 
 - Preserve V6, V7, main e todos os arquivos históricos.
 - Não apague, mova, renomeie nem reescreva capítulos legados sem autorização expressa.
