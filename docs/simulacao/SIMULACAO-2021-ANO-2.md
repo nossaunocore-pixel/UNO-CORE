@@ -29,6 +29,7 @@ A linha do tempo é seletiva e focada nos domínios relevantes à simulação.
 | Serviços | +4,8% | Recuperação de atividades afetadas por restrições; composição setorial importa. |
 | Agropecuária | Estável | Resultado agregado; não representa a situação de cada cadeia produtiva. |
 | Rendimento domiciliar per capita real | R$ 1.353 | Menor valor da série PNAD Contínua desde 2012; massa real caiu 6,2% ante 2020. |
+| Desenvolvimento humano | IDH 0,768 (série PNUD, atualização estatística 2025) | Recuo frente a 2019 e 2020 na série atualizada; índice composto não resume desigualdades internas. |
 | Desocupação média anual | 13,2% | Indicador de desemprego aberto; deve ser lido junto de subutilização e informalidade. |
 | SRAG | 445.344 óbitos notificados até SE 52; 86,5% confirmados para COVID-19 | Recorte SIVEP-Gripe, não é idêntico ao SIM nem ao excesso de mortalidade. |
 
@@ -107,6 +108,7 @@ A simulação não afirma que a UNO teria reduzido os óbitos de 2021, evitado c
 - IBGE, rendimento domiciliar per capita 2021: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34052-em-2021-rendimento-domiciliar-per-capita-cai-ao-menor-nivel-desde-2012
 - IBGE, PNAD Contínua 2022 (série comparativa de mercado de trabalho): https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/36336-pnad-continua-em-2022-taxa-media-anual-de-desocupacao-foi-de-9-3-enquanto-de-taxa-de-subutilizacao-foi-de-20-8
 - Ministério da Saúde, Boletim Epidemiológico Especial COVID-19 nº 144, SE 50/2022: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2022/boletim-epidemiologico-no-144-boletim-coe-coronavirus
+- PNUD, Human Development Indices: A statistical update 2025 — tabela de tendências do IDH: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Trends_Table.pdf
 
 ## Conclusão do Ano 2
 
