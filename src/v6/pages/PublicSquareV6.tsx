@@ -18,6 +18,7 @@ import type { NavigateV6 } from '../types';
 
 export function PublicSquareV6({ onNavigate }: { onNavigate: NavigateV6 }) {
   const [unoIsPresent, setUnoIsPresent] = useState(false);
+  const [welcomeDismissed, setWelcomeDismissed] = useState(false);
   const [tourStep, setTourStep] = useState<number | null>(null);
 
   useEffect(() => {
@@ -102,13 +103,14 @@ export function PublicSquareV6({ onNavigate }: { onNavigate: NavigateV6 }) {
         </button>
       </div>
 
-      <div className={`v6-uno-presence ${unoIsPresent ? 'is-speaking' : ''}`}>
+      <div className={`v6-uno-presence ${unoIsPresent && !welcomeDismissed ? 'is-speaking' : ''}`}>
         <button className="v6-uno-avatar" onClick={openUno} aria-expanded={unoIsPresent} aria-label="Conversar com a UNO como visitante">
           <img src="/assets/uno/avatar-uno-corpo-inteiro-v1.png" alt="UNO, anfitriã da praça" />
           <span className="v6-avatar-aura" aria-hidden="true" />
         </button>
 
-        <div className="v6-speech" role="status" aria-live="polite">
+        {!welcomeDismissed && <div className="v6-speech" role="status" aria-live="polite">
+          <button type="button" className="v6-speech-close" onClick={() => { setWelcomeDismissed(true); setUnoIsPresent(false); setTourStep(null); }} aria-label="Fechar apresentação da UNO" title="Fechar">×</button>
           <span className="v6-speech-presence">UNO está aqui</span>
           <strong>{activeStep?.title ?? 'Olá! Quer conhecer o que estamos construindo?'}</strong>
           <p>{activeStep?.text ?? 'Posso explicar a proposta social, comercial e institucional. Visitantes também podem conversar comigo.'}</p>
@@ -118,8 +120,10 @@ export function PublicSquareV6({ onNavigate }: { onNavigate: NavigateV6 }) {
             <button onClick={() => onNavigate('conversa')}><MessageCircle size={16}/> Conversar</button>
           </div>
           {tourStep !== null && <small className="v63-tour-progress">{tourStep + 1} de {presentationTour.length} · apresentação informativa</small>}
-        </div>
+        </div>}
       </div>
+
+      {welcomeDismissed && <button type="button" className="v6-speech-reopen" onClick={() => { setWelcomeDismissed(false); setUnoIsPresent(true); }} aria-label="Reabrir apresentação da UNO">Conhecer a UNO</button>}
 
       <button className="v6-square-help" type="button" aria-label="Sobre a Praça UNO" title="A Praça UNO apresenta os ambientes públicos e a proposta da plataforma.">
         <span aria-hidden="true">?</span>
