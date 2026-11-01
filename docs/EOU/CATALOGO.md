@@ -188,3 +188,14 @@ O inventário estrutural dos oito volumes fundamentais, incluindo contagem de ca
 
 O modelo econômico transversal está documentado em [MEU-UNO-001](MODELO-ECONOMICO-UNIVERSAL-UNO-CORE.md), versão 0.3.0, com prevalência do [Adendo de Ciclo Econômico, Territorial e Societário](ADENDO-MEU-UNO-001-CICLO-ECONOMICO-TERRITORIAL-SOCIETARIO-2026-10-31.md). A matriz de enquadramento está em [RJTTF-UNO-001](REGIME-JURIDICO-TRABALHISTA-TRIBUTARIO-FINANCEIRO-UNO-CORE.md). Registro de decisões, lacunas e handoff: [RDL-ECON-UNO-001](DECISOES-E-LACUNAS-ECONOMIA-UNO-CORE-2026-10-31.md), [Plano Antigravity](PLANO-FECHAMENTO-DOCUMENTAL-ANTIGRAVITY-UNO-CORE-2026-10-31.md) e [Checklist](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md).
 
+
+
+## Simulação histórica contrafactual — Brasil 2020–2022
+
+- [Índice da simulação](../simulacao/README.md)
+- [2020 — Ano 1](../simulacao/SIMULACAO-2020-ANO-1.md)
+- [2021 — Ano 2](../simulacao/SIMULACAO-2021-ANO-2.md)
+- [2022 — Ano 3](../simulacao/SIMULACAO-2022-ANO-3.md)
+- [Síntese consolidada](../simulacao/SIMULACAO-CONSOLIDADA-2020-2022.md)
+
+O estudo é contrafactual e não modifica o escopo aprovado do MVP V7 ou a sequência do roadmap.
