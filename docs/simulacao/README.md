@@ -59,7 +59,7 @@ A simulação serve para testar a coerência da engenharia, explicitar mecanismo
 - PNUD — Human Development Indices: A statistical update 2025 (série histórica do IDH): https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Trends_Table.pdf
 - PNUD — definição e dimensões do IDH: https://hdr.undp.org/data-center/human-development-index
 - IBGE — Síntese de Indicadores Sociais 2023: https://nada.ibge.gov.br/media/com_mediaibge/arquivos/070903d82038130a93f0374ada39f81d.pdf
-- Rede PENSSAN — VIGISAN II (2022): https://redepenssan.org.br/olheparaafome/
+- Rede PENSSAN — VIGISAN II (2022): https://redepenssan.org.br/2o-inquerito-nacional-sobre-inseguranca-alimentar-no-contexto-da-pandemia-da-covid-19-no-brasil/
 
 ## Estado
 
