@@ -24,6 +24,9 @@ A cronologia acima é seletiva: destaca acontecimentos relevantes para a hipóte
 | Dimensão | Indicador histórico | Leitura e cautela |
 |---|---|---|
 | PIB | -3,3% em 2020 | Queda real anual; não mede distribuição dos efeitos nem bem-estar diretamente. |
+| Agropecuária | +4,2% | Crescimento agregado, com desempenhos diferentes entre cadeias. |
+| Indústria | -3,0% | Contração anual do setor. |
+| Serviços | -3,7% | Setor mais afetado no agregado; serviços presenciais tiveram quedas expressivas. |
 | Desenvolvimento humano | IDH 0,770 (série PNUD, atualização estatística 2025) | Índice composto de saúde, educação e renda; não mede diretamente desigualdade, pobreza ou segurança. |
 | Educação | 99,3% das escolas respondentes suspenderam atividades presenciais; média de 279 dias | Pesquisa suplementar do Censo Escolar; 168.739 respostas, cerca de 94% das escolas. |
 | Educação pública/privada | 287 dias na rede pública; 248 na privada | Diferença de exposição ao fechamento; não mede isoladamente aprendizagem perdida. |
@@ -96,6 +99,7 @@ Qualquer alegação de vidas salvas exigiria desenho epidemiológico robusto, co
 
 ## 7. Fontes
 
+- IBGE, Contas Nacionais — PIB e setores de 2020 (série revisada): https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35349-com-servicos-afetados-pela-pandemia-pib-de-2020-cai-3-3
 - IBGE, PIB 2021 com revisão das Contas Nacionais e comparação histórica: https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/38284-release-contas-nacionais
 - INEP, Censo Escolar 2020 — resposta educacional à pandemia: https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/estatisticas-e-indicadores-educacionais/resumo-tecnico-do-censo-da-educacao-basica-2020
 - INEP, relatório de resultados do SAEB 2021, contexto educacional e dados do Censo Escolar: https://download.inep.gov.br/educacao_basica/saeb/2021/resultados/relatorio_de_resultados_do_saeb_2021_volume_1.pdf
