@@ -95,10 +95,10 @@ V39 organiza avaliação e documentos jurídicos; V40 registra identidade, atos,
 
 V35 diferencia documentação, código, CI, Preview, produção e adoção. Tornar obrigatório que cada release registre SHA exato, workflow/CI daquele SHA, artefato, ambiente, smoke test, migration, aprovação e responsável. CI de commit anterior não valida HEAD posterior. O estado atual da branch de auditoria não possui workflow run associado confirmado no registro consultado.
 
-### AUD-13 — Catálogo EOU contém trecho com escapes literais
-**Severidade: P2 | Volumes: V37, V38**
+### AUD-13 — Catálogo EOU: escapes literais corrigidos
+**Estado: RESOLVIDO em 01/11/2026 | Severidade original: P2 | Volumes: V37, V38**
 
-No fim de `docs/EOU/CATALOGO.md`, a atualização aparece como texto com sequências literais `\\n` em vez de quebras de linha Markdown. Corrigir editorialmente e revisar a afirmação de que a seção se chama “V09–V17” quando o conteúdo atualizado cobre V09–V40.
+A versão anterior de `docs/EOU/CATALOGO.md` continha sequências literais `\\n` no bloco de aprofundamento técnico. Em 01/11/2026, as quebras foram convertidas em Markdown normal e o cabeçalho foi conferido para indicar V09–V40, coerente com a cobertura do conteúdo. A correção foi verificada por nova leitura do arquivo na branch de revisão.
 
 ### AUD-14 — V01–V08 têm maturidade documental desigual
 **Severidade: P1 | Volumes: V01–V08**
