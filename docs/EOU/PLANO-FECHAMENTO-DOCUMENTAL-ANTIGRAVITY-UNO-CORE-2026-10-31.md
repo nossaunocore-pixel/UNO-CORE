@@ -3,12 +3,12 @@
 **Identificador:** PFDA-UNO-001  
 **Versão:** 0.1.0  
 **Data:** 31/10/2026  
-**Estado:** Plano de trabalho — execução condicionada a validações e autorização  
+**Estado:** Baseline documental consolidada; instrução de handoff para execução incremental por fase  
 **Branch:** eou-economic-closeout-2026-10-31
 
 ## 1. Objetivo
 
-Preparar o conjunto documental e técnico para uma sessão de implementação no Antigravity, sem confundir preparação com deploy, sem alterar serviços externos e sem liberar produção antes dos gates de validação.
+Registrar os critérios de continuidade entre documentação e implementação no Antigravity, preservando o MVP V7 e as fases posteriores já aprovadas. A preparação documental principal está consolidada; este plano não solicita reinício de auditoria ampla. A execução continua condicionada aos gates técnicos, às configurações de conta e às autorizações específicas para operações externas.
 
 ## 2. Resultado esperado do fechamento
 
@@ -94,23 +94,17 @@ O pacote está pronto para handoff quando:
 - a estratégia de rollback e preservação estiver definida;
 - o resultado esperado for relatório + alterações versionadas + evidências.
 
-## 6. Prompt-base para Antigravity
+## 6. Instrução vigente para Antigravity
 
-> Você está trabalhando no repositório UNO-CORE. Antes de modificar qualquer arquivo, leia o README principal, os documentos de arquitetura e governança, o inventário EOU V01–V08, a auditoria cruzada, o MEU-UNO-001 e seus adendos, a matriz RJTTF-UNO-001, o plano PFDA-UNO-001 e as especificações dos volumes relacionados.
->
-> Preserve V6, a branch principal e todos os documentos legados. Não mova, apague ou renomeie capítulos sem autorização expressa. Não faça merge em main nem deploy de produção. Não altere Firebase, Supabase, Vercel, Stripe, domínios, variáveis de ambiente, migrations ou serviços externos. Não revele nem copie segredos.
->
-> Primeiro produza um inventário do estado real do código e da documentação, comparando o repositório com os critérios de aceite. Identifique divergências, dependências, riscos e arquivos a modificar. Não invente funções existentes.
->
-> Implemente somente o que estiver especificado e não depender de decisão reservada ao fundador ou parecer profissional. Para lacunas, crie interfaces/configurações desativadas, documentação e bloqueios seguros, nunca valores arbitrários. Simulações financeiras devem usar dados fictícios e ser marcadas como simulação.
->
-> Para o modelo econômico, respeite a sequência: reconhecimento correto da receita de cada parte; contabilização de custos e obrigações operacionais; apuração do lucro local; 50% do lucro para a dimensão territorial bairro/cidade/estado/país, sem percentuais internos definidos; os outros 50% permanecem sem destinação definida. Não aplique 50% ao faturamento bruto. Não trate valores de terceiros como receita da UNO. Não habilite pagamentos, saques, custódia ou distribuição real.
->
-> Separe emprego, prestador PF/PJ, terceirização, venda direta, marketplace e intermediação. A classificação depende da realidade contratual e operacional e deve ser configurável e auditável.
->
-> Execute testes automatizados e verificações de segurança. Registre cada arquivo alterado, decisões técnicas, comandos executados, testes aprovados/reprovados, limitações, riscos e próximos passos. Se houver bloqueio de build/limite de provedor, registre-o como limitação de infraestrutura, sem alegar falha de código.
->
-> Ao final, não faça merge nem deploy. Entregue um relatório de prontidão, diff revisável, checklist de validação humana e lista de decisões reservadas ao fundador.
+Use como instrução executável principal o [Prompt de Execução Antigravity](PROMPT-ANTIGRAVITY-UNO-CORE-2026-10-31.md), que prevalece sobre este texto histórico quando houver diferença de sequência ou de orientação.
+
+- O plano de produto, o escopo do MVP V7 e a sequência de fases posteriores já foram definidos pelo fundador.
+- Não reiniciar auditoria documental ampla nem reabrir decisões aprovadas.
+- Verificar o estado atual apenas dos arquivos, módulos, contratos e dependências envolvidos na tarefa em execução.
+- Implementar no V7 somente o que pertence ao MVP aprovado e está especificado; não antecipar módulos posteriores.
+- Os gates jurídicos, contábeis, financeiros e regulatórios aplicam-se aos fluxos correspondentes quando esses fluxos forem implementados/ativados; não são bloqueios genéricos para páginas ou capacidades fora do escopo do MVP.
+- Simulações históricas e financeiras permanecem analíticas, identificadas e sem efeito operacional.
+- Se uma decisão estrutural não estiver definida e sua escolha alterar arquitetura, identidade, autoridade, segurança, obrigação legal ou escopo aprovado, registrar e pedir decisão do fundador. Tarefas independentes devem continuar.
 
 ## 7. Relatório de encerramento obrigatório
 
