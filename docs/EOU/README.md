@@ -164,3 +164,8 @@ Nenhuma decisão estrutural da Plataforma UNO deverá existir sem documentação
 - [Checklist de Prontidão Antigravity](CHECKLIST-PRONTIDAO-ANTIGRAVITY-UNO-CORE.md).
 - [Prompt de Execução Antigravity](PROMPT-ANTIGRAVITY-UNO-CORE-2026-10-31.md) — instrução independente para auditoria, implementação e entrega.
 
+
+
+## Simulação histórica contrafactual — Brasil 2020–2022
+
+O estudo histórico em três anos e sua síntese estão organizados em [docs/simulacao](../simulacao/README.md). Os documentos separam fatos históricos, mecanismos plausíveis, hipóteses contrafactuais e resultados comprovados. O estudo **não altera o escopo do MVP V7 nem antecipa fases posteriores**; serve como material analítico e referência para avaliação futura.
