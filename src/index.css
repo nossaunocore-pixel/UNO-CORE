@@ -153,3 +153,29 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 229, 255, 0.7);
 }
+
+
+/* Global responsive/accessibility fallback for every page tree, including legacy routes. */
+html, body, #root { width: 100%; min-width: 320px; min-height: 100%; }
+#root { min-height: 100vh; min-height: 100dvh; }
+:where(main, section, article, aside, header, footer, nav, form, fieldset) { min-width: 0; }
+:where(img, video, canvas, iframe, svg) { max-width: 100%; }
+:where(input, textarea, select, button) { max-width: 100%; }
+:where(pre, code, table) { max-width: 100%; overflow-wrap: anywhere; }
+:where(button, a, input, textarea, select) { touch-action: manipulation; }
+:where(button, a, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 3px solid #8beeff;
+  outline-offset: 3px;
+}
+@media (max-width: 768px) {
+  :where(table) { display: block; width: 100%; overflow-x: auto; }
+  :where(form, fieldset) { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

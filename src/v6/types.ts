@@ -14,7 +14,19 @@ export type V6View =
   | 'comunidade'
   | 'nos'
   | 'mestre'
-  | 'oficina';
+  | 'oficina'
+  | 'instituicoes'
+  | 'lazer'
+  | 'servicos'
+  | 'servicos_ativos'
+  | 'casa'
+  | 'emprego_renda'
+  | 'carteira'
+  | 'painel_administrativo'
+  | 'painel_coordenacao'
+  | 'painel_juridico'
+  | 'painel_contabil_financeiro'
+  | 'painel_atendimento';
 
 export type NavigateV6 = (view: V6View) => void;
 

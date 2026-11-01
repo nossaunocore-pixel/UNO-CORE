@@ -1,0 +1,53 @@
+name: UNO CORE CI
+
+on:
+  push:
+    branches:
+      - main
+      - v7-foundation
+      - v7-implementation
+  pull_request:
+    branches:
+      - main
+      - v7-foundation
+      - v7-implementation
+
+permissions:
+  contents: write
+
+concurrency:
+  group: uno-core-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: TypeScript and Vite production build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Regenerate npm lockfile from package manifest
+        if: github.event_name == 'push' && github.ref == 'refs/heads/v7-implementation'
+        run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+      - name: Commit synchronized lockfile
+        if: github.event_name == 'push' && github.ref == 'refs/heads/v7-implementation'
+        run: |
+          if ! git diff --quiet -- package-lock.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add package-lock.json
+            git commit -m "chore: synchronize npm lockfile"
+            git push
+          fi
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Domain contract tests
+        run: npm test
+      - name: Build
+        run: npm run build

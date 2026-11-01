@@ -1,65 +1,89 @@
-# UNO CORE — Universo Novo Operacional
+# UNO CORE — Plataforma UNO
 
-> **Equipe de Engenharia Oficial:** NOS S.A.  
-> **Projeto:** UNO CORE (Painel de Criação e Administração - PCA)  
-> **Segurança:** Gateway de IA Server-side (`uno-ai-gateway`)
+> Camada universal de orquestração e governança de capacidades.  
+> **Branch de trabalho:** `v7-implementation`  
+> **Status:** V7 em consolidação; não declarar pronta para produção sem build, testes e evidências.
 
-O **UNO CORE** é o núcleo operacional e cognitivo da plataforma **UNO — Universo Novo Operacional**. O sistema funciona como um **Sistema Operacional Adaptativo de Orquestração e Governança de Capacidades**.
+## Propósito
 
----
+A Plataforma UNO conecta pessoas, organizações, serviços, conhecimento e oportunidades com integridade, segurança, rastreabilidade e autorização humana. O UNO CORE governa capacidades, agentes, integrações, missões e permissões.
 
-## ⚡ Tecnologias da Aplicação Base
+## Regras essenciais do MVP
 
-- **Core Framework:** React 18 + TypeScript 5 + Vite 5
-- **Icons & Visuals:** Lucide React + Glassmorphism Cyber-Operations UI
-- **Database & Edge Gateway:** `@supabase/supabase-js` (Invocação de Edge Function `uno-ai-gateway`)
-- **Arquitetura Conceitual:** 9 Subsistemas (`/core`) + Engenharia de Specs (`/spec`)
+- Visitantes acessam a camada pública definida no ADR-0013 (Praça, Instituições públicas, Vitrine, leitura da Comunidade, Participação pública, Lazer/Eventos, catálogo público de Serviços e Conversa), usando Supabase e RLS; não dependem de Firebase, Google ou IDU.
+- A entrada nos ambientes internos exige autenticação Google.
+- Autenticação não é adesão paga: visitante autenticado pode usar capacidades internas gratuitas elegíveis.
+- Capacidades com consumo de tokens/APIs, integração externa, contratação, qualificação ou autorização ficam condicionadas.
+- Painel Mestre exige autorização explícita server-side.
+- Nenhuma interface isolada concede acesso a dados ou operações.
+- Estados de disponibilidade devem refletir implementação e testes reais.
 
----
+## Arquitetura de identidade e dados
 
-## 🔒 Regras de Segurança (NOS S.A.)
+- **Firebase:** autenticação Google, identidade, IDU e memória interna institucional/operacional, conforme integração validada.
+- **IDU:** identificador UNO independente de e-mail, Firebase UID e IDs de banco.
+- **Supabase:** dados de uso/produto, conteúdo e arquivos, protegidos por RLS e políticas de ownership/escopo.
+- **Backend:** valida tokens, provisiona IDU, aplica autorização e mantém segredos fora do navegador.
+- O uso de JWT Firebase no Supabase depende da configuração e validação do Firebase Third-Party Auth no projeto.
+- Nunca expor service-role, service account ou chaves secretas em variáveis `VITE_*`.
 
-- **Frontend Environment**:
-  - `VITE_SUPABASE_URL=https://qfeyppyubxlewskpwtuh.supabase.co`
-  - `VITE_SUPABASE_PUBLISHABLE_KEY=` (ou chave legada `VITE_SUPABASE_ANON_KEY`)
-- **Proibições Estritas**:
-  - ❌ NUNCA utilizar `VITE_GEMINI_API_KEY` no frontend.
-  - ❌ NUNCA utilizar `SUPABASE_SERVICE_ROLE_KEY` no frontend.
-  - 🌐 As requisições para a Gemini API passam exclusivamente pela Supabase Edge Function `uno-ai-gateway` usando o segredo server-side `GEMINI_API_KEY`.
+Consulte [Arquitetura](spec/ARCHITECTURE.md) e [Especificação Mestra](spec/MASTER_SPEC.md).
 
----
+## Stripe — somente ambiente de testes
 
-## 🚀 Como Executar Localmente
+A estrutura inicial de produtos/preços foi criada e verificada na conta principal UNO-Nós S.A., em test mode. Consulte [Catálogo Stripe de teste](docs/STRIPE_TEST_CATALOG.md).
 
-1. **Instalar Dependências:**
-   ```bash
-   npm install
-   ```
+- Não realizar cobranças reais nesta fase.
+- Não ativar Connect, transferências, payouts, saques ou carteira sacável.
+- Não ativar Stripe Tax sem validação das obrigações e registros fiscais.
+- Checkout, webhooks e concessão de acesso ainda precisam ser implementados e testados no backend.
+- Segredos Stripe devem permanecer server-side, preferencialmente em chaves restritas com privilégio mínimo.
 
-2. **Configurar Variáveis de Ambiente:**
-   Crie o arquivo `.env.local` na raiz baseado no `.env.example`:
-   ```bash
-   VITE_SUPABASE_URL=https://qfeyppyubxlewskpwtuh.supabase.co
-   VITE_SUPABASE_PUBLISHABLE_KEY=sua_chave_publica_aqui
-   ```
+## Stack observada
 
-3. **Iniciar Servidor de Desenvolvimento:**
-   ```bash
-   npm run dev
-   ```
+- React 18
+- TypeScript 5
+- Vite 5
+- Firebase 12
+- Supabase JS 2
+- Vercel AI SDK e integração Google AI
 
-4. **Compilar para Produção:**
-   ```bash
-   npm run build
-   ```
+## Como executar localmente
 
----
+```bash
+npm install
+npm run dev
+```
 
-## 📚 Documentação Técnica
+Build:
 
-Toda a documentação oficial da NOS S.A. está estruturada em `/spec`:
-- [Especificação Mestra (MASTER_SPEC.md)](spec/MASTER_SPEC.md)
-- [Arquitetura de Engenharia (ARCHITECTURE.md)](spec/ARCHITECTURE.md)
-- [Registro de Decisões - ADRs (DECISIONS.md)](spec/DECISIONS.md)
-- [ADR-0002 AI Gateway Edge Function (spec/ADR/0002-ai-gateway-edge-function.md)](spec/ADR/0002-ai-gateway-edge-function.md)
-- [Roadmap do Projeto (ROADMAP.md)](spec/ROADMAP.md)
+```bash
+npm run build
+```
+
+As variáveis de ambiente devem ser configuradas localmente com base no `.env.example`. Não comitar segredos. O build ainda precisa ser executado após as alterações desta revisão.
+
+## Documentação
+
+- [Especificação Mestra V7](spec/MASTER_SPEC.md)
+- [Arquitetura](spec/ARCHITECTURE.md)
+- [Decisões arquiteturais](spec/DECISIONS.md)
+- [Roadmap](spec/ROADMAP.md)
+- [Matriz de acesso e capacidades](spec/V7_MVP_ACCESS_AND_CAPABILITIES.md)
+- [Fronteira de escopo MVP V7 e expansão V8](docs/V7/FRONTEIRA_MVP_V7_V8.md)
+- [Catálogo Stripe de teste](docs/STRIPE_TEST_CATALOG.md)
+
+## Estado de entrega
+
+A documentação e parte dos controles de frontend foram atualizados. A jornada pública landing/boas-vindas, o provisionamento server-side do IDU, a validação completa de claims, RLS, capacidades, checkout/webhooks, testes automatizados, build e validação Vercel ainda precisam de implementação ou evidência. Não considerar esta branch homologada para produção.
+
+
+## V7 — pacote atual de implementação (31/10/2026)
+
+- [Pacote de continuidade para Antigravity](docs/V7/PACOTE_IMPLEMENTACAO_CONTINUADA_2026-10-31.md)
+- [Auditoria de prontidão e bloqueios](spec/IMPLEMENTATION_READINESS_2026-10-31.md)
+- [Mapa dos 40 volumes EOU para implementação](spec/EOU_40_VOLUMES_IMPLEMENTATION_MAP.md)
+- [Template de especificação implementável de volume](spec/VOLUME_SPEC_TEMPLATE.md)
+- [ADR-0013 — navegação pública de visitantes via Supabase](spec/ADR/ADR-0013-public-visitor-supabase-navigation.md)
+
+O pacote está em Preview/Teste. Migrações Supabase estão preparadas, não aplicadas. Nenhuma promoção para produção foi realizada.
