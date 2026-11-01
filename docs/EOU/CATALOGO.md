@@ -139,7 +139,12 @@ Nenhuma decisão estrutural deverá existir sem documentação correspondente na
 A coleção EOU possui caráter evolutivo.
 
 Novas versões poderão ampliar os volumes existentes preservando sua compatibilidade histórica e arquitetural.
-\n\n## Aprofundamento técnico V09–V40 (31/10/2026)\n\nCada volume V09–V40 possui um arquivo ESPECIFICACAO-TECNICA.md complementar, revisão documental 0.3.0. Os documentos estão na branch `eou-v09-v17-deepening-2026-10-31` para revisão; a branch main permanece inalterada.\n
+
+
+## Aprofundamento técnico V09–V40 (31/10/2026)
+
+Cada volume V09–V40 possui um arquivo ESPECIFICACAO-TECNICA.md complementar, revisão documental 0.3.0. Os documentos estão na branch `eou-v09-v17-deepening-2026-10-31` para revisão; a branch main permanece inalterada.
+
 
 ### Fronteira entre V26, V27 e V28
 
