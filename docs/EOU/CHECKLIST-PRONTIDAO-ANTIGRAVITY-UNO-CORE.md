@@ -4,6 +4,12 @@
 **Versão:** 0.1.0  
 **Estado:** Checklist de verificação
 
+## Regra de aplicabilidade por fase
+
+Este checklist é um catálogo de critérios para as funcionalidades e fases a que cada item pertence. **Não é uma lista cumulativa de bloqueios universais do MVP V7.** Marcar e executar os itens pertinentes ao escopo efetivamente liberado. Os itens de economia, pagamentos, marketplace, ações societárias e operações reguladas só bloqueiam a ativação dos respectivos fluxos. Não antecipar esses módulos nem transformar verificações de fases futuras em condição genérica de lançamento.
+
+O escopo V7 e a sequência posterior já foram aprovados pelo fundador. Usar o checklist para validar a fase em andamento, sem reiniciar auditoria documental ampla ou reabrir decisões aprovadas.
+
 ## A. Repositório e preservação
 - [ ] Confirmar branch de trabalho e commit-base.
 - [ ] Confirmar PR Draft e branch principal sem alterações.
