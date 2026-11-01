@@ -1,8 +1,8 @@
 # Prompt de Execução — Antigravity / UNO CORE
 
 **Identificador:** PROMPT-ANTIGRAVITY-UNO-001  
-**Versão:** 0.1.0  
-**Data:** 31/10/2026  
+**Versão:** 0.2.0  
+**Data:** 01/11/2026  
 **Repositório:** nossaunocore-pixel/UNO-CORE  
 **Branch documental de referência:** eou-v09-v17-deepening-2026-10-31  
 **PR de revisão:** #2 — manter Draft
