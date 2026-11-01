@@ -4,7 +4,7 @@
 **Versão:** 0.1.0  
 **Data:** 31/10/2026  
 **Estado:** Baseline documental consolidada; instrução de handoff para execução incremental por fase  
-**Branch:** eou-economic-closeout-2026-10-31
+**Branch:** eou-v09-v17-deepening-2026-10-31
 
 ## 1. Objetivo
 
